@@ -202,5 +202,21 @@ Próximo trabajo: ampliar recorridos de combate, mejoras, estaciones, jefes y
 final desde Landing Site, y sustituir
 gradualmente el arte conservando anclajes y límites de cada animación.
 
+El primer fondo nuevo también está integrado en esta escena: Landing Site usa
+el arte de Crateria extraído como referencia para el fondo pintado de
+`assets/remastered/crateria_backdrop.png`. Sólo reemplaza BG2 en gameplay y modo
+mejorado; conserva una contribución del paisaje/lluvia original y el parallax
+sigue la cámara. El HUD, terreno, sprites y ventanas conservan sus capas. F1
+restaura el original; el mapa, menús y otras salas excluyen este fondo.
+
+```sh
+python3 tools/native_probe/verify_art.py
+```
+
+La prueba usa una SRAM propia, reproduce la ruta de Ceres, compara original y
+restaurado con el oráculo, y exige cero diferencias fuera de BG2 respecto al
+modo mejorado sin fondo. Su evidencia está en `docs/qa/native_art_verification.json`.
+El redibujado de las demás familias sigue pendiente.
+
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa
 MIT (`docs/licenses/godot-cpp.txt`). Los gráficos y audio vienen de la ROM local.

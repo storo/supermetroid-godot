@@ -1,0 +1,34 @@
+{
+  "route": {
+    "backdrop_sha256": "ea15abc49913ffe3df9afe2071ef666fb8828052007ab4af2629c42459383c8b",
+    "camera": [
+      986.0,
+      973.0
+    ],
+    "frames": 16836,
+    "full_asset_redraw_complete": false,
+    "presentation_leaves_core_unchanged": true,
+    "rom_unchanged": true,
+    "room": 37368,
+    "scope": "Landing Site BG2 only; native terrain/sprites/HUD and gameplay preserved; original toggle and display-only parallax/selection checks",
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "checks": {
+    "original_mismatched_pixels": 0,
+    "restored_original_mismatched_pixels": 0,
+    "protected_pixels": 77728,
+    "protected_mismatched_pixels": 0,
+    "background_changed_pixels": 151536,
+    "parallax_changed_pixels": 150010,
+    "parallax_protected_mismatched_pixels": 0,
+    "map_excluded_mismatched_pixels": 0,
+    "room_excluded_mismatched_pixels": 0,
+    "fade_zero_mismatched_pixels": 0,
+    "forced_blank_mismatched_pixels": 0
+  },
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false,
+  "full_asset_redraw_complete": false
+}

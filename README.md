@@ -29,6 +29,11 @@ El mando usa A para saltar, B para correr, X para disparar, Y para cancelar,
 Start/Back para Start/Select y R/L para apuntar. La cruz y el stick izquierdo
 controlan el movimiento. Escape congela la aplicación.
 
+En Landing Site, el modo mejorado integra el fondo nuevo de Crateria con
+parallax de cámara. Se aplica sólo a la capa lejana BG2 durante el gameplay;
+el HUD, Samus, la nave y el terreno conservan su composición nativa. F1 recupera
+el dibujo original. El mapa y las demás salas no reciben este fondo.
+
 | Acción | Tecla |
 | --- | --- |
 | Mover | A/D o flechas |

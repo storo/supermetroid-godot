@@ -4,6 +4,9 @@ render_mode unshaded;
 uniform sampler2D main_tex : filter_nearest, repeat_disable;
 uniform sampler2D sub_tex : filter_nearest, repeat_disable;
 uniform bool enhanced=true;
+uniform sampler2D backdrop_tex : filter_linear, repeat_disable;
+uniform bool remastered_background_enabled=false;
+uniform vec2 backdrop_camera=vec2(0.0);
 ivec3 palette5(int row,int pixel) {
 	int word=raster_word(row,256+(pixel&255)*2);
 	return ivec3(word&31,(word>>5)&31,(word>>10)&31);
@@ -54,6 +57,31 @@ vec3 composed(ivec2 p,ivec2 quadrant) {
 	ivec3 expanded=(color<<ivec3(3))|(color>>ivec3(2));
 	return vec3((expanded*raster_byte(row,2))/15)/255.0;
 }
+vec3 remastered_background(ivec2 p,ivec2 quadrant,vec2 cell,vec3 original) {
+	// BG2 is the distant scenery. Protect the HUD, BG1 terrain, all sprites,
+	// blanking and pixels whose Scale2x neighbourhood crosses a layer boundary.
+	if(!remastered_background_enabled || p.y<32 || raster_byte(p.y,3)!=0 || raster_byte(p.y,0)!=1)return original;
+	ivec4 center=meta_at(main_tex,p),main=scaled_meta(main_tex,p,quadrant);
+	if(center.w==0 || center.y!=1 || main.w==0 || main.y!=1)return original;
+	vec2 uv=vec2((cell.x+backdrop_camera.x*0.25)/1024.0,
+		(cell.y-32.0)/256.0+0.1+max(backdrop_camera.y-512.0,0.0)/4096.0);
+	vec3 color=texture(backdrop_tex,clamp(uv,vec2(0.0),vec2(1.0))).rgb*31.0;
+	bool window=window_at(p.y,5,p.x);
+	int clip=raster_byte(p.y,80),prevent=raster_byte(p.y,81);
+	if(clip==3 || (clip==2&&window) || (clip==1&&!window))color=vec3(0.0);
+	bool math=(raster_byte(p.y,83)&2)!=0 && !(prevent==3 || (prevent==2&&window) || (prevent==1&&!window));
+	if(math) {
+		ivec4 sub=scaled_meta(sub_tex,p,quadrant);
+		int sub_layer=sub.w==0?5:sub.y,flags=raster_byte(p.y,82);
+		vec3 other=(flags&1)!=0 && sub_layer!=5?vec3(metadata_color(p.y,sub)):vec3(ivec3(raster_byte(p.y,84),raster_byte(p.y,85),raster_byte(p.y,86)));
+		color=(flags&2)!=0?color-other:color+other;
+		if((flags&4)!=0 && ((flags&1)==0 || sub_layer!=5))color*=0.5;
+		color=clamp(color,vec3(0.0),vec3(31.0));
+	}
+	color=color/31.0*(float(raster_byte(p.y,2))/15.0);
+	// Retain the animated native scenery/rain contribution over the new art.
+	return mix(original,color,0.82);
+}
 void fragment() {
 	vec2 cell=clamp(UV*vec2(256.0,224.0),vec2(0.0),vec2(255.999,223.999));
 	ivec2 p=ivec2(floor(cell)),q=ivec2(fract(cell)*2.0);
@@ -65,5 +93,6 @@ void fragment() {
 		float light=clamp(1.02+dx*0.1-dy*0.14,0.88,1.16);
 		color=mix(vec3(dot(color,weights)),color,1.08)*light;
 	}
+	color=remastered_background(p,q,cell,color);
 	COLOR=vec4(color,1.0);
 }

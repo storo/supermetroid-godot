@@ -61,3 +61,32 @@ La prueba del despertar de Zebes agrega subida, regreso, combate y el evento
 en `native_awaken_*_{original,enhanced,oracle}.png`. Las cuatro capturas originales
 coinciden con la PPU offline; las versiones a 2× usan la mejora actual del shader.
 No se añadieron redibujados en esta comprobación.
+
+## Fondo nuevo en la campaña nativa
+
+El renderer nativo también usa `assets/remastered/crateria_backdrop.png` en
+Landing Site ($91F8), durante el estado de gameplay 8 y con F1 en modo mejorado.
+No se generó otra imagen en esta integración: se reutiliza el fondo creado con
+ImageGen y el prompt documentado arriba, basado en la referencia extraída.
+
+El compositor identifica los píxeles que pertenecen a BG2 en la pantalla
+principal y los mezcla con el fondo nuevo (82% arte nuevo / 18% composición
+original), conservando una contribución de la lluvia y paisaje animados. La
+cámara desplaza la textura a un cuarto del movimiento horizontal; los límites
+de imagen se sujetan sin repetición. Ventanas, color math y brillo por línea
+también se aplican al arte nuevo. No se cambia VRAM, OAM ni la lógica C.
+
+El HUD superior, BG1/terreno, sprites, bordes donde Scale2x cambia de capa y
+blanking quedan protegidos. La luz de relieve se calcula del original antes de
+mezclar el fondo, para que el arte nuevo no cambie la iluminación de Samus o la
+nave. El mapa, menús, transiciones y salas distintas de Landing Site excluyen
+este reemplazo. F1 desactiva tanto el fondo como las mejoras y recupera el
+original.
+
+`python3 tools/native_probe/verify_art.py` reproduce Ceres y la llegada a Zebes,
+compara el modo original/restaurado contra la PPU offline y compara las capas
+protegidas contra el modo mejorado sin fondo. También comprueba el parallax,
+la exclusión por sala/estado, el fundido a brillo cero, el blanking forzado y
+que presentar las variantes no altera el núcleo.
+Capturas e informe: `docs/qa/native_art_*`. El alcance es este fondo de Landing
+Site; no implica que los demás assets estén redibujados ni la campaña completa.

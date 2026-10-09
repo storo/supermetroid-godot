@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle",
+  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -209,6 +209,27 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_art_route.log": {
+      "terminal_markers": [
+        "CAMPAIGN_ROUTE_OK: ridley=1 escape=1 landed=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_art_godot.log": {
+      "terminal_markers": [
+        "ART_GODOT_OK: native Ceres/escape/Landing route; original/filter/new backdrop/parallax/room+map exclusion; unchanged core and ROM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_art_oracle.log": {
+      "terminal_markers": [
+        "RASTER_ORACLE_OK: 1 replay fixtures from 16836 native input ticks"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
@@ -216,5 +237,6 @@
   "campaign_verification_report": "docs/qa/native_campaign_verification.json",
   "zebes_verification_report": "docs/qa/native_zebes_verification.json",
   "missile_verification_report": "docs/qa/native_missile_verification.json",
-  "awaken_verification_report": "docs/qa/native_awaken_verification.json"
+  "awaken_verification_report": "docs/qa/native_awaken_verification.json",
+  "art_verification_report": "docs/qa/native_art_verification.json"
 }

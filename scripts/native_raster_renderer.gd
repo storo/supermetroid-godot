@@ -4,7 +4,9 @@ class_name NativeRasterRenderer
 const SPRITE_SHADER = preload("res://shaders/raster_sprite.gdshader")
 const LAYER_SHADER = preload("res://shaders/raster_layers.gdshader")
 const COMPOSITE_SHADER = preload("res://shaders/raster_composite.gdshader")
+const CRATERIA_BACKDROP = preload("res://assets/remastered/crateria_backdrop.png")
 var enhanced := true
+var remastered_backgrounds := true
 var vram_texture: ImageTexture
 var raster_texture: ImageTexture
 var sprite_view: SubViewport
@@ -80,6 +82,7 @@ func _ready() -> void:
 	composite = material_for(COMPOSITE_SHADER)
 	composite.set_shader_parameter("main_tex",main_view.get_texture())
 	composite.set_shader_parameter("sub_tex",sub_view.get_texture())
+	composite.set_shader_parameter("backdrop_tex",CRATERIA_BACKDROP)
 	quad(self,composite)
 
 func present(snapshot: Dictionary) -> void:
@@ -93,6 +96,10 @@ func present(snapshot: Dictionary) -> void:
 	vram_texture.update(Image.create_from_data(256,256,false,Image.FORMAT_R8,vram))
 	raster_texture.update(Image.create_from_data(1024,256,false,Image.FORMAT_R8,raster))
 	composite.set_shader_parameter("enhanced",enhanced)
+	# Select art by the native room and gameplay state, never by palette alone.
+	# Menus, the map, transitions and underground rooms keep their own backgrounds.
+	composite.set_shader_parameter("remastered_background_enabled",enhanced and remastered_backgrounds and snapshot.get("state",0)==8 and snapshot.get("room",0)==0x91f8)
+	composite.set_shader_parameter("backdrop_camera",snapshot.get("camera",Vector2.ZERO))
 	build_sprites(snapshot)
 
 func build_sprites(snapshot: Dictionary) -> void:

@@ -6,7 +6,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | --- | --- | --- |
 | Ejecución nativa de Godot | CharacterBody2D, StaticBody2D, GDScript, shaders; pruebas de ejecución | Base implementada |
 | Extraer assets de la ROM proporcionada | SHA-256, tiles 4bpp, paletas, DMA/OAM, manifiesto | Implementado para tilesets, 19 conjuntos de Samus (nueve movimientos en ambos sentidos y pose frontal), nave, ascensor y atlas de enemigos |
-| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo de Crateria nuevo, alternancia F1 | Primera mejora; redibujado completo de assets pendiente |
+| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo de Crateria nuevo integrado en Landing Site nativo con parallax y máscaras de capa, alternancia F1 | Primera mejora; redibujado completo de assets pendiente |
 | Conservar todas las salas y geometría | 261 salas / 322 estados; auditoría nativa | Datos importados; comportamiento y fondos originales incompletos |
 | Conservar todas las animaciones de Samus | 19 conjuntos renderizados desde OAM; gráficos específicos para izquierda/derecha y pose frontal del ascensor | Incompleto; faltan poses, tiempos y asimetrías |
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
@@ -114,3 +114,11 @@ por tick con el ejecutable C; cuatro capturas coinciden en 229376 píxeles RGB
 con el oráculo offline. `docs/qa/native_awaken_verification.json` registra ese
 alcance. Esto no verifica todavía la salida de Pit, estaciones, bombas,
 Bomb Torizo, otros jefes, final o la campaña completa.
+
+`verify_art.py` verifica el fondo nuevo en Landing Site durante gameplay. La
+composición protege HUD/BG1/sprites y restaura el modo original con F1; se compara
+ese original contra la PPU offline. El parallax y la selección por sala/estado
+se comprueban con el mismo snapshot, sin escribir al núcleo de juego. El informe
+`docs/qa/native_art_verification.json` registra diferencias por capa y límites
+del alcance. Esto integra el fondo ya generado, no completa el redibujado de
+tiles, personajes, enemigos ni otros fondos.
