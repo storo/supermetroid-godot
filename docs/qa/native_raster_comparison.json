@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "name": "intro_1200",
+      "frame": 1200,
+      "state": 30,
+      "room": 0,
+      "mode": 1,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0,
+      "scanline_modes": [
+        1
+      ],
+      "mode_changes_at_rows": [],
+      "nonblack_pixels": 8959
+    },
+    {
+      "name": "intro_2400",
+      "frame": 2400,
+      "state": 30,
+      "room": 0,
+      "mode": 1,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0,
+      "scanline_modes": [
+        1
+      ],
+      "mode_changes_at_rows": [],
+      "nonblack_pixels": 9931
+    },
+    {
+      "name": "intro_4800",
+      "frame": 4800,
+      "state": 30,
+      "room": 0,
+      "mode": 1,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0,
+      "scanline_modes": [
+        1
+      ],
+      "mode_changes_at_rows": [],
+      "nonblack_pixels": 13076
+    },
+    {
+      "name": "intro_7200",
+      "frame": 7200,
+      "state": 30,
+      "room": 0,
+      "mode": 1,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0,
+      "scanline_modes": [
+        1
+      ],
+      "mode_changes_at_rows": [],
+      "nonblack_pixels": 9693
+    },
+    {
+      "name": "ceres_elevator",
+      "frame": 8417,
+      "state": 8,
+      "room": 57157,
+      "mode": 7,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0,
+      "scanline_modes": [
+        1,
+        7
+      ],
+      "mode_changes_at_rows": [
+        31
+      ],
+      "nonblack_pixels": 47673
+    },
+    {
+      "name": "ceres_corridor",
+      "frame": 8890,
+      "state": 8,
+      "room": 57229,
+      "mode": 1,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0,
+      "scanline_modes": [
+        1
+      ],
+      "mode_changes_at_rows": [],
+      "nonblack_pixels": 49941
+    }
+  ],
+  "pixels": 344064,
+  "mismatched_pixels": 0,
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false
+}

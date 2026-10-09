@@ -2,7 +2,6 @@ shader_type canvas_item;
 render_mode unshaded;
 #include "res://shaders/raster_common.gdshaderinc"
 uniform sampler2D sprites_tex : filter_nearest, repeat_disable;
-uniform int draw_rank = 0;
 uniform bool subscreen = false;
 
 int tilemap_word(int row,int layer,ivec2 p,bool wide) {
@@ -59,13 +58,14 @@ ivec3 background_pixel(int row,int layer,ivec2 screen) {
 		if(layer==1)pixel&=127;
 		return ivec3(pixel,priority,0);
 	}
-	p+=ivec2(raster_word(row,36+layer*8),raster_word(row,38+layer*8));
+	p.x+=raster_word(row,36+layer*8);
 	bool mosaic_active=(raster_byte(row,6)&(1<<layer))!=0;
 	if(mode==5||mode==6) {
 		p.x=p.x*2+((subscreen||mosaic_active)?0:1);
 		int flags=raster_byte(row,82);
 		if((flags&32)!=0)p.y=p.y*2+(((flags&64)!=0||mosaic_active)?0:1);
 	}
+	p.y+=raster_word(row,38+layer*8);
 	if(mode==2||mode==4||mode==6)p=handle_offset(row,layer,p,mode);
 	p&=ivec2(1023);
 	int flags=raster_byte(row,64+layer);
@@ -88,21 +88,21 @@ void fragment() {
 	ivec2 p=ivec2(clamp(floor(UV*vec2(256.0,224.0)),vec2(0.0),vec2(255.0,223.0)));
 	int row=p.y;
 	vec4 result=vec4(0.0);
+	int winning_rank=-1;
 	if(raster_byte(row,3)==0) {
 		vec4 sprite=texture(sprites_tex,(vec2(p)+0.5)/vec2(256.0,224.0));
 		int sprite_priority=int(round(sprite.g*255.0));
-		if(sprite.a>0.5 && raster_byte(row,104+sprite_priority)==draw_rank && layer_active(row,4,p.x,subscreen)) {
+		if(sprite.a>0.5 && layer_active(row,4,p.x,subscreen)) {
+			winning_rank=raster_byte(row,104+sprite_priority);
 			result=vec4(sprite.r,sprite.b,0.0,1.0);
-		} else {
-			for(int layer=0;layer<4;layer++) {
-				if(layer_active(row,layer,p.x,subscreen)) {
-					int low=raster_byte(row,96+layer*2),high=raster_byte(row,97+layer*2);
-					if(low==draw_rank||high==draw_rank) {
-						ivec3 pixel=background_pixel(row,layer,p);
-						if(pixel.x!=0 && raster_byte(row,96+layer*2+pixel.y)==draw_rank) {
-							result=vec4(float(pixel.x&255)/255.0,float(layer)/255.0,float(pixel.z&7)/255.0,1.0);
-						}
-					}
+		}
+		for(int layer=0;layer<4;layer++) {
+			if(raster_byte(row,108+layer)!=0 && layer_active(row,layer,p.x,subscreen)) {
+				ivec3 pixel=background_pixel(row,layer,p);
+				int rank=raster_byte(row,96+layer*2+pixel.y);
+				if(pixel.x!=0 && rank>winning_rank && rank!=255) {
+					winning_rank=rank;
+					result=vec4(float(pixel.x&255)/255.0,float(layer)/255.0,float(pixel.z&7)/255.0,1.0);
 				}
 			}
 		}

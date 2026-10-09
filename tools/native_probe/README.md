@@ -35,9 +35,14 @@ antes y después, requiere el marcador `NATIVE_PROBE_OK` y guarda la evidencia e
 `docs/qa/native_probe.log` y `native_probe.json`. La ROM y el checkout de referencia
 no se modifican. Los parches de la referencia afectan a su copia de ROM en RAM.
 
-Próximo trabajo: separar el host y la dependencia de CPU del núcleo, resolver
-dispatch faltante, exponer estado y datos de dibujo mediante GDExtension y dibujar
-los tiles/sprites con sus reemplazos mejorados en Godot. Conservar este diagnóstico
-como comprobación de arranque y ampliar las pruebas a recorridos completos.
+Este diagnóstico se conserva como comprobación de arranque. La integración
+posterior en `native/` ya separa el host, excluye los intérpretes de CPU/SPC,
+resuelve el dispatch de Bang y expone paquetes de dibujo para los shaders de
+Godot. `native/README.md` documenta el estado actual y sus límites.
+
+`raster_oracle.c`, `raster_test.gd` y `verify_raster.py` forman la comprobación
+offline del renderer por línea: introducción, ascensor y primer corredor de
+Ceres. El oráculo produce los píxeles esperados sólo durante esa comprobación;
+la escena del juego compone los paquetes VRAM/OAM/registros en Godot.
 
 Licencia del código de referencia: `docs/licenses/snesrev-sm.txt`.

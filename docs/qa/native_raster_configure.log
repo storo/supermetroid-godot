@@ -1,0 +1,15 @@
+-- Found Python3: /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9 (found suitable version "3.9.6", minimum required is "3.4") found components: Interpreter
+-- Auto-detected 12 CPU cores available for build parallelism.
+-- If not already cached, setting CMAKE_MSVC_RUNTIME_LIBRARY.
+	For more information please read godot-cpp/cmake/windows.cmake
+-- Using all cores. You can override this at configure time by using -j <n> or --parallel <n> in the build command.
+--   eg. cmake --build . -j 7  ...
+-- Using build profile to trim api file
+-- 	BUILD_PROFILE = '/Users/storo/supermetroid/native/build_profile.json'
+-- 	API_SOURCE = 'gdextension/extension_api.json'
+-- GODOTCPP_GDEXTENSION_API_FILE = '/Users/storo/supermetroid/native/build/godot-cpp/extension_api.json'
+-- There are 84 Files to generate
+-- Found Python3: /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9 (found version "3.9.6") found components: Interpreter
+-- Configuring done (1.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/storo/supermetroid/native/build

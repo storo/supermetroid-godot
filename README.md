@@ -54,7 +54,9 @@ Consulta `docs/FIDELITY.md` para los requisitos del juego completo, `docs/ART.md
 
 Hay además una integración independiente de las rutinas C de la lógica original
 mediante GDExtension en `native/`. Llega a Ceres con movimiento, disparos y audio;
-Godot compone sus tiles/sprites y transforma el fondo de Mode 7 con shaders.
+Godot compone sus tiles/sprites, cambios por línea, HUD, color math y fondo de
+Mode 7 con shaders. Hay una prueba de comparación de píxeles contra un oráculo
+offline; sus resultados y alcance están en `docs/qa/native_raster_comparison.json`.
 Los intérpretes de CPU/SPC no se compilan. La integración sigue en desarrollo y
 todavía no reemplaza la escena principal ni prueba la campaña completa. Consulta
 `native/README.md` para ejecutarla y revisar sus límites.

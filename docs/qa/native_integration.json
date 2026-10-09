@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "native C integration and first Ceres viewport only",
+  "scope": "Native C integration, per-line Godot renderer, four intro frames, Ceres elevator and first corridor",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -27,6 +27,50 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_raster_core_test.log": {
+      "terminal_markers": [
+        "NATIVE_EXTENSION_OK: registered GDExtension, 18000 C ticks, 7804 gameplay ticks, Ceres movement/audio, VRAM/CGRAM/OAM packets, single ownership, close/reboot, intact ROM; full campaign pending"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_raster_capture.log": {
+      "terminal_markers": [
+        "NATIVE_CORE_CAPTURE_OK: Ceres reached through original C menu/intro; Godot draws tile/sprite packets"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_raster_verification.log": {
+      "terminal_markers": [
+        "RASTER_PARITY_OK: 6 captures, 344064 exact RGB pixels; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_optional_extension.log": {
+      "terminal_markers": [
+        "OPTIONAL_EXTENSION_OK: ignored during import, loaded explicitly, 360 native ticks"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_optional_campaign.log": {
+      "terminal_markers": [
+        "NATIVE_CORE_CAPTURE_OK: Ceres reached through original C menu/intro; Godot draws tile/sprite packets"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_public_clone_smoke.log": {
+      "terminal_markers": [
+        "SMOKE_OK: native movement, jump, projectile, morph, room switching, art toggle, save/load; 322 room states verified"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
-  }
+  },
+  "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
+  "clean_clone_without_binary_imported": true
 }

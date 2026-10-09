@@ -49,14 +49,20 @@ introducción y la primera sala de Ceres con movimiento, disparos y audio nativo
 Esta evidencia permite investigar una integración de las rutinas originales en
 Godot, pero no demuestra fidelidad completa ni elimina todas las dependencias de
 hardware de la referencia. Su infraestructura aún usa registros, DMA, PPU y DSP;
-el fallback de Bang y la integración/renderizado de Godot siguen pendientes.
+en ese diagnóstico inicial todavía faltaba la integración/renderizado de Godot.
 Los resultados del diagnóstico inicial están en `docs/qa/native_probe.json`.
 La integración posterior en `native/` registra `SmNativeCore` en Godot y excluye
 los intérpretes CPU/SPC del build. Godot recibe VRAM/CGRAM/OAM y compone los tiles,
 sprites y fondo de Mode 7 mediante shaders. Se verificaron 18000 ticks en la
 extensión, llegada a Ceres, movimiento/audio, propiedad única y cierre/reinicio;
-hay capturas del ascensor inicial. El renderer por línea, ventanas, color math y
-otros modos todavía están pendientes. Esta escena independiente no sustituye la
+hay capturas del ascensor inicial. El renderer de Godot ya recibe registros y
+paletas por línea, compone main/subscreen, recupera el HUD de Ceres y aplica
+ventanas, color math y brillo. Una herramienta offline compara capturas concretas
+con el renderer de referencia, sin tolerancia RGB; el oráculo no se usa durante
+el gameplay. El informe `docs/qa/native_raster_comparison.json` conserva el alcance
+de esa evidencia. Falta verificar más modos, transiciones y efectos, salida hires,
+cambios de VRAM/OAM durante líneas visibles y rotación OAM por línea.
+Esta escena independiente no sustituye la
 campaña principal ni completa los requisitos de la tabla. Consulta
 `native/README.md` para reproducirla y `tools/native_probe/README.md` para el
 diagnóstico anterior.

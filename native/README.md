@@ -16,6 +16,11 @@ Godot 4.5 (probado en 4.7.1). Otras plataformas necesitan su build y entrada de
 `578f90b3cc49557bb70060ad033bb90b8cf8ac50` y godot-cpp
 `e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`.
 
+`native/.gdignore` evita que Godot intente cargar automáticamente un binario
+inexistente al abrir una copia limpia del repo. La escena nativa carga la
+extensión explícitamente y mantiene su recurso mientras usa el núcleo; la escena
+principal GDScript se puede importar y ejecutar sin compilarla.
+
 La escena independiente conserva los menús y la introducción ejecutados por el
 núcleo. Enter envía Start; espacio/Z envía A; J/X envía X; Shift envía B; K envía
 Select para elegir misiles; Q/E envían R/L. A/D o flechas y W/S controlan la cruz.
@@ -38,12 +43,14 @@ recorre la introducción mediante input y captura el ascensor inicial de Ceres.
   controla la propiedad única del núcleo, expone snapshots y entrega 534 frames
   de audio estéreo por tick (32040 Hz a 60 ticks/s). Todas las llamadas al núcleo
   ocurren en el hilo de gameplay; el audio de Godot recibe copias de muestras.
-- Los snapshots contienen estado, VRAM, CGRAM, OAM y parámetros de capas/Mode 7.
+- Los snapshots contienen estado, VRAM, CGRAM, OAM y un paquete `raster` con
+  registros, paletas y límites de sprites para cada una de las 224 líneas.
   **No se expone un framebuffer como textura del juego.**
-- `scripts/native_renderer.gd` compone tiles y sprites mediante MultiMesh de
-  Godot, conservando posiciones, tamaños y flips. Mode 7 se dibuja con una malla
-  y un shader que consulta sus tiles, paleta y matriz. Los shaders aplican Scale2x
-  y luz/saturación moderadas sobre los datos gráficos originales.
+- `scripts/native_raster_renderer.gd` usa tres SubViewports: resuelve primero OAM
+  mediante MultiMesh, luego main/subscreen con prioridades BG/OBJ por línea. El
+  pass final aplica ventanas, color math, CGRAM y brillo. Mode 7 consulta tiles y
+  matriz directamente en el shader. La variante mejorada aplica Scale2x sobre
+  índices y luz/saturación moderadas. `raster_layout.md` documenta el paquete.
 
 `prepare.py` genera una copia de `sm_rtl.c` para sustituir persistencia y convertir
 el dispatch no soportado en un error. No altera el checkout de referencia ni la
@@ -57,21 +64,41 @@ movimiento, muestras de audio no silenciosas, tamaños de datos de dibujo y
 descriptores de Mode 7, cierre/reinicio e integridad de ROM. La captura visual
 comprueba sprites y fondo del ascensor inicial, con las dos variantes de arte.
 
-El renderer aún no reproduce cambios de registros por línea, ventanas, color math,
-mosaico, offset-per-tile, modos 5/6, límites de sprites y todas las variantes de
-Mode 7. El HUD de Ceres y algunas escenas requieren esos cambios por línea.
+El renderer ya lee cambios de registros por línea y recupera el HUD y el color
+math de Ceres. Implementa ventanas, mosaico, offset-per-tile, límites de sprites,
+prioridades, flips y OBJ interlace; estas variantes requieren ampliar las pruebas
+de paridad. La rotación de OAM se ordena al principio del fotograma: cambios de
+rotación dentro de un fotograma no se han implementado. VRAM y OAM se toman al
+final del fotograma, por lo que cambios de esos datos durante líneas visibles
+necesitan snapshots adicionales. La salida de modos 5/6 y pseudo hires conserva
+256 píxeles horizontales; no reproduce la salida completa de 512 píxeles.
 Tampoco se verificaron todos los enemigos, jefes, eventos, habitaciones, estaciones
 y finales ejecutados por la referencia. La prueba no es una campaña completa,
 una prueba de paridad por fotograma ni un reemplazo final del arte.
 
-Próximo trabajo: capturar los parámetros de dibujo por línea y reproducirlos en
-los shaders de Godot; verificar el recorrido de Ceres, escape y Landing Site;
-después ampliar recorridos de combate, mejoras, estaciones, jefes y final.
+La comparación offline ejecuta la misma lógica C con el renderer de referencia
+como oráculo, entrega sus paquetes al renderer de Godot y compara RGB sin
+tolerancia. El oráculo no se usa en la escena de gameplay. Para reproducirla:
 
-La captura de registros por línea ya se expone en el campo `raster` del snapshot.
-Los archivos `shaders/raster_*` contienen el siguiente renderer en desarrollo;
-todavía no están conectados a la escena ni se ha validado su resultado. La escena
-sigue usando `scripts/native_renderer.gd` y conserva los límites indicados arriba.
+```sh
+cmake -S native -B native/build -DCMAKE_BUILD_TYPE=Release -DSM_BUILD_RENDER_ORACLE=ON
+cmake --build native/build --target sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_raster.py
+```
+
+La prueba actual compara cuatro fotogramas de la introducción, el ascensor de
+Ceres (Mode 1 en el HUD y Mode 7 debajo) y el primer corredor tras bajar por las
+plataformas con input normal. Los seis casos suman 344064 píxeles RGB idénticos;
+no se omite un caso si el recorrido falla.
+
+`docs/qa/native_raster_comparison.json` registra los fotogramas concretos,
+discrepancias y alcance. Una captura idéntica demuestra esos píxeles y no la
+campaña entera. El renderer anterior se conserva como referencia en
+`scripts/native_renderer.gd`, pero la escena ya usa el renderer por línea.
+
+Próximo trabajo: verificar el recorrido de Ceres, escape y Landing Site; después
+ampliar recorridos de combate, mejoras, estaciones, jefes y final, y sustituir
+gradualmente el arte conservando anclajes y límites de cada animación.
 
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa
 MIT (`docs/licenses/godot-cpp.txt`). Los gráficos y audio vienen de la ROM local.

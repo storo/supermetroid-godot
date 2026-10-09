@@ -30,6 +30,7 @@ func run_test() -> void:
 	var movement := 0
 	var audible := 0
 	var reached_ceres := false
+	var saw_ceres_split := false
 	var previous := Vector2.ZERO
 	var snapshot: Dictionary = core.get_snapshot()
 	for frame in range(18000):
@@ -44,6 +45,7 @@ func run_test() -> void:
 		require(core.step(joy), "Tick %d: %s" % [frame, core.get_error()])
 		snapshot = core.get_snapshot()
 		require(snapshot.vram.size() == 65536 and snapshot.palette.size() == 512 and snapshot.oam.size() == 544, "Drawing data sizes")
+		require(snapshot.raster.size() == 262144, "Per-line drawing packet size")
 		require(snapshot.backgrounds.size() == 4, "Background descriptors")
 		require(snapshot.mode7.size() == 8 and snapshot.has("obj_enabled") and snapshot.has("bg3priority"), "Mode 7 and layer descriptors")
 		if snapshot.state == 8:
@@ -52,6 +54,8 @@ func run_test() -> void:
 			previous = snapshot.position
 			if snapshot.room == 0xdf45:
 				reached_ceres = true
+				if snapshot.raster[0] == 1 and snapshot.raster[31*1024] == 7:
+					saw_ceres_split = true
 		if frame % 30 == 0:
 			var audio: PackedVector2Array = core.get_audio()
 			require(audio.size() == 534, "Audio packet size")
@@ -63,6 +67,7 @@ func run_test() -> void:
 			print("NATIVE_EXTENSION_FRAME %d state=%d room=%04x" % [frame, snapshot.state, snapshot.room])
 			await process_frame
 	require(gameplay > 300 and movement > 60 and audible > 10 and reached_ceres, "Ceres gameplay, movement and audio evidence")
+	require(saw_ceres_split, "Ceres HUD and Mode 7 captured on separate scanlines")
 	require(snapshot.cpu_opcodes == 0 and snapshot.spc_opcodes == 0, "No CPU/SPC opcode execution")
 	core.close()
 	require(core.get_snapshot().is_empty(), "Closed core has no drawing data")

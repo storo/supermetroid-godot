@@ -29,10 +29,13 @@ Las rutinas de piratas de `scripts/pirate.gd` se adaptaron con referencia al ban
 
 La escena independiente `scenes/native_campaign.tscn` recibe tiles/paletas/OAM
 dinámicos de la ROM a través de `SmNativeCore`. No modifica las imágenes extraídas
-ni usa una captura del juego como textura. Los shaders `native_tiles.gdshader` y
-`native_mode7.gdshader` dibujan los gráficos; la variante mejorada aplica Scale2x,
+ni usa una captura del juego como textura. Los shaders `raster_*.gdshader`
+componen los gráficos, ventanas, paletas y color math por línea;
+la variante mejorada aplica Scale2x,
 luz y saturación moderadas. F1 permite comparar el mismo estado de Ceres. Las
 capturas `native_ceres_original.png` y `native_ceres_enhanced.png` muestran el
-ascensor inicial tras ejecutar la introducción original con input. El renderer
-por línea y los efectos completos siguen pendientes; esto no sustituye el
+ascensor inicial tras ejecutar la introducción original con input. La variante
+original tiene paridad RGB en seis capturas concretas de introducción/Ceres,
+registradas en `docs/qa/native_raster_comparison.json`. Queda ampliar la verificación
+de efectos y escenarios; esto no sustituye el
 redibujado completo de assets ni prueba la campaña.

@@ -1,9 +1,10 @@
 extends Control
 
-const Renderer = preload("res://scripts/native_renderer.gd")
+const Renderer = preload("res://scripts/native_raster_renderer.gd")
 const InputSetup = preload("res://scripts/input_setup.gd")
 const ROM := "res://rom_src/Super Metroid (Japan, USA) (En,Ja).sfc"
 var core: RefCounted
+var extension_resource: Resource
 var renderer: Node2D
 var audio_player: AudioStreamPlayer
 var audio_playback: AudioStreamGeneratorPlayback
@@ -17,8 +18,8 @@ var frame := 0
 func _ready() -> void:
 	InputSetup.install()
 	capture_mode = "--native-core-capture" in OS.get_cmdline_user_args()
-	var extension = load("res://native/sm_native.gdextension")
-	if extension == null or not ClassDB.class_exists("SmNativeCore"):
+	extension_resource = load("res://native/sm_native.gdextension")
+	if extension_resource == null or not ClassDB.class_exists("SmNativeCore"):
 		push_error("Native extension has not been built")
 		get_tree().quit(1)
 		return
@@ -142,4 +143,7 @@ func _exit_tree() -> void:
 	if audio_player:
 		audio_player.stop()
 		audio_player.stream = null
-	if core: core.close()
+	if core:
+		core.close()
+		core = null
+	extension_resource = null

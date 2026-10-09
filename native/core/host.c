@@ -44,7 +44,7 @@ static void capture_line(Ppu *p,int line) {
   memset(r,0,1024);
   r[0]=p->mode; r[1]=p->bg3priority; r[2]=p->brightness; r[3]=p->forcedBlank;
   r[4]=p->m7xFlip|p->m7yFlip<<1|p->m7largeField<<2|p->m7charFill<<3|p->m7extBg<<4;
-  r[5]=p->mosaicSize; r[7]=1;
+  r[5]=p->mosaicSize; r[7]=p->mosaicStartLine;
   for(int i=0;i<5;i++) {
     r[8]|=p->layer[i].mainScreenEnabled<<i; r[9]|=p->layer[i].subScreenEnabled<<i;
     r[10]|=p->layer[i].mainScreenWindowed<<i; r[11]|=p->layer[i].subScreenWindowed<<i;
@@ -68,6 +68,7 @@ static void capture_line(Ppu *p,int line) {
   r[84]=p->fixedColorR; r[85]=p->fixedColorG; r[86]=p->fixedColorB; r[87]=p->objSize;
   put16(r+88,p->objTileAdr1); put16(r+90,p->objTileAdr2);
   r[92]=p->objPriority?(p->oamAdr&0xfe)/2:0;
+  r[93]=p->objInterlace;
   memset(r+96,255,12);
   int mode=p->mode==1&&p->bg3priority?8:p->mode;
   if(p->mode==7&&p->m7extBg) mode=9;
@@ -84,13 +85,13 @@ static void capture_line(Ppu *p,int line) {
     uint8 high=(p->highOam[index/4]>>((index&3)*2))&3;
     int size=sprite_sizes[p->objSize][high>>1];
     uint8 row=(line-1)-(xy>>8);
-    if(row>=size) continue;
+    if(row>=(p->objInterlace?size/2:size)) continue;
     int x=(xy&255)|((high&1)<<8); if(x>=256)x-=512;
     if(x<=-size)continue;
-    if(++found>32)break;
+    if(++found>32) { p->rangeOver=true; break; }
     for(int col=0;col<size;col+=8) {
       if(col+x>-8&&col+x<256) {
-        if(++tiles>34)break;
+        if(++tiles>34) { p->timeOver=true; break; }
         r[128+index]|=1<<(col/8);
       }
     }
@@ -135,6 +136,11 @@ static void native_draw_registers(void) {
   g_snes->hPos=g_snes->vPos=0;
   while (!g_snes->cpu->nmiWanted) {
     do {
+      if(g_snes->disableRender&&g_snes->hPos==512&&g_snes->vPos==0) {
+        Ppu *p=g_snes->ppu;
+        p->mosaicStartLine=1; p->rangeOver=p->timeOver=false;
+        p->evenFrame=!p->evenFrame;
+      }
       if(g_snes->hPos==512&&g_snes->vPos>=1&&g_snes->vPos<=224)
         capture_line(g_snes->ppu,g_snes->vPos);
       snes_handle_pos_stuff(g_snes);
