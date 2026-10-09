@@ -1,0 +1,89 @@
+# Super Metroid — reconstrucción nativa en Godot
+
+Proyecto en desarrollo basado en la ROM local de SNES. El movimiento, las colisiones, los proyectiles y las salas se ejecutan en Godot; no hay emulador. El objetivo sigue siendo conservar el juego completo y mejorar sus assets. **Todavía no es un remake completo ni se puede completar la campaña.**
+
+## Ejecutar
+
+El repositorio incluye el proyecto, los assets extraídos/mejorados y las herramientas.
+La ROM, las partidas, las cachés y los binarios de compilación se mantienen fuera
+del repositorio. La integración opcional de `native/` requiere la ROM local y
+compilar su extensión siguiendo `native/README.md`.
+
+Abre `project.godot` con Godot 4.5 o posterior y pulsa F5, o haz doble clic en `Iniciar.command` en este Mac. Fue probado con Godot 4.7.1.
+
+En el menú puedes empezar en Landing Site o usar **Explorar salas**. El visor habilita equipo básico para revisar los escenarios sin confundirlo con la progresión de una partida nueva.
+
+| Acción | Tecla |
+| --- | --- |
+| Mover | A/D o flechas |
+| Saltar / salto en pared | Espacio o Z |
+| Disparar | J o X |
+| Misiles | K |
+| Correr | Shift |
+| Apuntar arriba / diagonal arriba / diagonal abajo | W / Q / E |
+| Agacharse | S |
+| Morph Ball / bomba | C / B; requieren sus objetos |
+| Activar ascensor desde su plataforma | S / ↓ para bajar; W / ↑ para subir |
+| Mapa / pausa | Tab / Escape |
+| Comparar assets originales y mejorados | F1 |
+| Visor de salas | F4 |
+| Guardar / cargar | F5 / F9 dentro del juego |
+| Pantalla completa | F11 |
+
+También hay bindings de mando. La partida se guarda en el directorio `user://` de Godot, separada de la ROM.
+
+## Estado real
+
+- 261 salas originales, 322 estados, geometría, BTS, puertas, poblaciones de enemigos y ubicaciones de PLM extraídas a JSON.
+- 29 tilesets y 19 conjuntos de animación de Samus (nueve movimientos en ambos sentidos y la pose frontal del ascensor) reconstruidos desde tiles 4bpp, paletas, DMA y OAM de la ROM.
+- Ampliación 4× con Scale2x por tile; conserva índices y límites. F1 permite la comparación directa.
+- Gráficos dinámicos de 17 mejoras de PLM, con sus dos frames y las paletas de cada tileset; los cuatro tipos de tanque conservan sus tiles de CRE.
+- Nave reconstruida con sus capas y desplazamientos originales; gráficos y parámetros de 154 tipos de enemigos extraídos. Zoomer, Ripper y Skree tienen implementación nativa aproximada. Los piratas grises de suelo y pared usan 55 frames compuestos, hitboxes y secuencias de la ROM; sus rutinas de movimiento y ataque están adaptadas a Godot.
+- Movimiento, salto variable, pared, carrera, Morph Ball, bombas, disparos, recogida básica de objetos, transición entre salas, mapa y persistencia.
+- Gravedad, impulso de salto, aceleración y velocidad de carrera leídos de las constantes de la ROM y convertidos a unidades por segundo.
+- 61 condiciones de selección de estado leídas de la ROM: eventos, bits de jefe por área, Morph Ball con misiles y Power Bombs. Se evalúan en su orden original al entrar a una sala; los eventos y bits de jefe se guardan.
+- Puertas grises con condiciones de jefe o cuota de enemigos. Derrotar a los cinco piratas de Pit despierta Zebes; recoger Morph Ball por sí solo no lo hace. Los láseres enemigos dañan a Samus y pueden destruirse con disparos.
+- Los siete pares de ascensores usan posiciones y dirección de la población original, velocidad de 90 px/s, animación de dos cuadros, pose frontal de Samus y demora de 48 ticks antes de la transición descendente. Se puede volver desde Morph Ball. Los disparadores virtuales se conservan separados de las puertas completas.
+- Fondo nuevo de Crateria creado a partir de la referencia extraída, lluvia, partículas, resplandor y viñeta discreta.
+
+Quedan por reconstruir los disparadores de la mayoría de eventos de la historia, jefes, mayoría de IA, secuencias de Ceres y final, música SPC, comportamiento completo de PLM, líquidos y arena, todas las mejoras y fidelidad exacta de la física y las animaciones. Las puertas verdes/amarillas necesitan sus armas; varias puertas grises dependen de enemigos o secuencias todavía pendientes. El visor de salas permite abrirlas para revisar el mapa.
+
+El guardado rápido se habilita al terminar el viaje en ascensor, para conservar una posición desde la que se pueda continuar la partida.
+
+Consulta `docs/FIDELITY.md` para los requisitos del juego completo, `docs/ART.md` para el origen del arte y `docs/qa/` para pruebas y capturas.
+
+Hay además una integración independiente de las rutinas C de la lógica original
+mediante GDExtension en `native/`. Llega a Ceres con movimiento, disparos y audio;
+Godot compone sus tiles/sprites y transforma el fondo de Mode 7 con shaders.
+Los intérpretes de CPU/SPC no se compilan. La integración sigue en desarrollo y
+todavía no reemplaza la escena principal ni prueba la campaña completa. Consulta
+`native/README.md` para ejecutarla y revisar sus límites.
+
+## Regenerar assets desde la ROM local
+
+Python 3 con Pillow y NumPy (`python3 -m pip install -r tools/requirements.txt`). La extracción valida SHA-256 y nunca modifica la ROM.
+
+```sh
+./tools/setup_reference.sh
+python3 tools/extract_rom.py
+python3 tools/extract_objects.py
+```
+
+Se admite la versión NTSC Japan/USA con SHA-256 `12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72`; se reconoce también un encabezado de copiador de 512 bytes. `extract_rom.py --rom /ruta/a/archivo.sfc` permite seleccionar la ROM.
+
+## Verificar
+
+```sh
+python3 tools/verify_assets.py
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . -- --smoke-test
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . -- --room-audit
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . -- --progression-test
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . -- --pirate-test
+/Applications/Godot.app/Contents/MacOS/Godot --headless --max-fps 60 --path . --quit-after 2400 -- --elevator-test
+/Applications/Godot.app/Contents/MacOS/Godot --headless --max-fps 60 --path . --quit-after 120 -- --elevator-morph-test
+/Applications/Godot.app/Contents/MacOS/Godot --path . -- --capture
+```
+
+Las pruebas básicas verifican movimiento, salto, proyectil, Morph Ball, cambio de sala, alternancia de arte y guardado/carga. La auditoría instancia cada sala y estado con colisiones nativas y comprueba un punto de aparición libre. La prueba de progresión verifica los 261 estados por defecto, las 61 condiciones, prioridad, cuotas y persistencia. La prueba de piratas ejecuta sus ataques, comprueba daño y destrucción de láseres, mata a los cinco con proyectiles nativos y verifica puertas y cambio de estado. Estas pruebas **no demuestran equivalencia con el juego completo**.
+
+La prueba de ascensores recorre Crateria ↔ Brinstar con teclado y física del motor; comprueba pausa, bloqueo temporal de controles, retorno desde Morph Ball, comparación de arte y guardado al llegar. Los 14 trayectos se recorren además con pasos nativos deterministas. El caso de Morph Ball comprueba que el contacto con el piso permita ponerse de pie y que un techo real lo impida. Los procesos acotados deben imprimir su marcador `*_OK`; un código de salida 0 por alcanzar `--quit-after` no prueba que la verificación haya terminado.

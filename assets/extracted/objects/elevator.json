@@ -1,0 +1,10 @@
+{
+  "header": "D73F",
+  "frame_size": 64,
+  "frames": 2,
+  "frame_ticks": 2,
+  "speed": 90.0,
+  "samus_offset_y": 26,
+  "down_transition_delay_ticks": 48,
+  "source": "Local ROM bank A3:94D6-962E and 82:E18E"
+}

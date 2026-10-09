@@ -1,0 +1,173 @@
+{
+  "idle": {
+    "frames": 4,
+    "pose": 1,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "run": {
+    "frames": 10,
+    "pose": 9,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "jump": {
+    "frames": 3,
+    "pose": 77,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "spin": {
+    "frames": 8,
+    "pose": 25,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "crouch": {
+    "frames": 3,
+    "pose": 39,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "morph": {
+    "frames": 8,
+    "pose": 29,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "aim_up": {
+    "frames": 2,
+    "pose": 3,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "aim_diagonal": {
+    "frames": 1,
+    "pose": 5,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "fall": {
+    "frames": 3,
+    "pose": 41,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "idle_left": {
+    "frames": 4,
+    "pose": 2,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "run_left": {
+    "frames": 10,
+    "pose": 10,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "jump_left": {
+    "frames": 3,
+    "pose": 78,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "spin_left": {
+    "frames": 8,
+    "pose": 26,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "crouch_left": {
+    "frames": 3,
+    "pose": 40,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "morph_left": {
+    "frames": 8,
+    "pose": 65,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "aim_up_left": {
+    "frames": 2,
+    "pose": 4,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "aim_diagonal_left": {
+    "frames": 1,
+    "pose": 6,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "fall_left": {
+    "frames": 3,
+    "pose": 42,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  },
+  "front": {
+    "frames": 1,
+    "pose": 0,
+    "size": 64,
+    "anchor": [
+      32,
+      32
+    ]
+  }
+}

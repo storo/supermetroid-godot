@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ELEVATOR_TEST_PROGRESS: arrived in Brinstar
+ELEVATOR_TEST_PROGRESS: returned to Crateria
+ELEVATOR_OK: actual Crateria-Brinstar round trip, 90 px/s, 48-tick down delay, input direction, pause/control lock, save after arrival and 14 endpoint transits in deterministic native ticks

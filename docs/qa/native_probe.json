@@ -1,0 +1,17 @@
+{
+  "frames": 18000,
+  "gameplay_frames": 7804,
+  "moving_frames": 6389,
+  "projectile_frames": 5473,
+  "audible_frames": 17827,
+  "states": "00000000c0000b97",
+  "final_state": 11,
+  "room": "df8d",
+  "cpu_opcodes": 0,
+  "spc_opcodes": 0,
+  "campaign_verified": false,
+  "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
+  "rom_sha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72",
+  "godot_integration": false,
+  "scope": "compiled C reference boot, intro, first Ceres room, movement, shooting and native audio; no complete campaign verification"
+}

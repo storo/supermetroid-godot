@@ -1,0 +1,482 @@
+WorkerThreadPool: 12 threads, 3 max low-priority.
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+SDL: Init OK!
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://assets/default_bus_layout.tres remapped: res://assets/default_bus_layout.tres
+Completed load for: 'res://assets/default_bus_layout.tres' remapped 'res://assets/default_bus_layout.tres' at thread -1
+CORE API HASH: 3769296884
+EDITOR API HASH: 3146738256
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://scenes/main.tscn remapped: res://scenes/main.tscn
+Loading resource: res://scripts/game.gd remapped: res://scripts/game.gd
+Loading resource: res://assets/extracted/objects/pirate_laser_original.png remapped: res://assets/extracted/objects/pirate_laser_original.png
+Loading resource: res://.godot/imported/pirate_laser_original.png-17fe5d5e9142fcc76ed2028f8bbfb3fd.ctex remapped: res://.godot/imported/pirate_laser_original.png-17fe5d5e9142fcc76ed2028f8bbfb3fd.ctex
+Completed load for: 'res://assets/extracted/objects/pirate_laser_original.png' remapped 'res://assets/extracted/objects/pirate_laser_original.png' at thread -1
+Loading resource: res://assets/extracted/objects/pirate_laser_enhanced.png remapped: res://assets/extracted/objects/pirate_laser_enhanced.png
+Loading resource: res://.godot/imported/pirate_laser_enhanced.png-23e5da30be768cdfe5bcc9db7109fffa.ctex remapped: res://.godot/imported/pirate_laser_enhanced.png-23e5da30be768cdfe5bcc9db7109fffa.ctex
+Completed load for: 'res://assets/extracted/objects/pirate_laser_enhanced.png' remapped 'res://assets/extracted/objects/pirate_laser_enhanced.png' at thread -1
+Completed load for: 'res://scripts/game.gd' remapped 'res://scripts/game.gd' at thread -1
+Completed load for: 'res://scenes/main.tscn' remapped 'res://scenes/main.tscn' at thread -1
+Loading resource: res://assets/remastered/crateria_backdrop.png remapped: res://assets/remastered/crateria_backdrop.png
+Loading resource: res://.godot/imported/crateria_backdrop.png-10affc4748bf99fb8b01ceb863e8ec8c.ctex remapped: res://.godot/imported/crateria_backdrop.png-10affc4748bf99fb8b01ceb863e8ec8c.ctex
+Completed load for: 'res://assets/remastered/crateria_backdrop.png' remapped 'res://assets/remastered/crateria_backdrop.png' at thread -1
+Loading resource: res://assets/extracted/samus/idle_original.png remapped: res://assets/extracted/samus/idle_original.png
+Loading resource: res://.godot/imported/idle_original.png-19ef081a9c606ccffec5596b224c1125.ctex remapped: res://.godot/imported/idle_original.png-19ef081a9c606ccffec5596b224c1125.ctex
+Completed load for: 'res://assets/extracted/samus/idle_original.png' remapped 'res://assets/extracted/samus/idle_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/idle_enhanced.png remapped: res://assets/extracted/samus/idle_enhanced.png
+Loading resource: res://.godot/imported/idle_enhanced.png-8e84a9ddc0b09c59f673b9f4368aa79a.ctex remapped: res://.godot/imported/idle_enhanced.png-8e84a9ddc0b09c59f673b9f4368aa79a.ctex
+Completed load for: 'res://assets/extracted/samus/idle_enhanced.png' remapped 'res://assets/extracted/samus/idle_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/idle_left_original.png remapped: res://assets/extracted/samus/idle_left_original.png
+Loading resource: res://.godot/imported/idle_left_original.png-fc9f439f06e35f78dfe3039fa464b8cd.ctex remapped: res://.godot/imported/idle_left_original.png-fc9f439f06e35f78dfe3039fa464b8cd.ctex
+Completed load for: 'res://assets/extracted/samus/idle_left_original.png' remapped 'res://assets/extracted/samus/idle_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/idle_left_enhanced.png remapped: res://assets/extracted/samus/idle_left_enhanced.png
+Loading resource: res://.godot/imported/idle_left_enhanced.png-e3ada602264e54ccd1da5a1450cb4768.ctex remapped: res://.godot/imported/idle_left_enhanced.png-e3ada602264e54ccd1da5a1450cb4768.ctex
+Completed load for: 'res://assets/extracted/samus/idle_left_enhanced.png' remapped 'res://assets/extracted/samus/idle_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/run_original.png remapped: res://assets/extracted/samus/run_original.png
+Loading resource: res://.godot/imported/run_original.png-a54297463f652411aa0b307eecef9516.ctex remapped: res://.godot/imported/run_original.png-a54297463f652411aa0b307eecef9516.ctex
+Completed load for: 'res://assets/extracted/samus/run_original.png' remapped 'res://assets/extracted/samus/run_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/run_enhanced.png remapped: res://assets/extracted/samus/run_enhanced.png
+Loading resource: res://.godot/imported/run_enhanced.png-a9148c84081e8fbb1d04caa0069e55c9.ctex remapped: res://.godot/imported/run_enhanced.png-a9148c84081e8fbb1d04caa0069e55c9.ctex
+Completed load for: 'res://assets/extracted/samus/run_enhanced.png' remapped 'res://assets/extracted/samus/run_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/run_left_original.png remapped: res://assets/extracted/samus/run_left_original.png
+Loading resource: res://.godot/imported/run_left_original.png-c8766af7ccd598c9ec406dca09d837ff.ctex remapped: res://.godot/imported/run_left_original.png-c8766af7ccd598c9ec406dca09d837ff.ctex
+Completed load for: 'res://assets/extracted/samus/run_left_original.png' remapped 'res://assets/extracted/samus/run_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/run_left_enhanced.png remapped: res://assets/extracted/samus/run_left_enhanced.png
+Loading resource: res://.godot/imported/run_left_enhanced.png-ab724b9bb820b622b4f9af2e42944a5b.ctex remapped: res://.godot/imported/run_left_enhanced.png-ab724b9bb820b622b4f9af2e42944a5b.ctex
+Completed load for: 'res://assets/extracted/samus/run_left_enhanced.png' remapped 'res://assets/extracted/samus/run_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/jump_original.png remapped: res://assets/extracted/samus/jump_original.png
+Loading resource: res://.godot/imported/jump_original.png-56633a4bd737ecbee6becebf69d43728.ctex remapped: res://.godot/imported/jump_original.png-56633a4bd737ecbee6becebf69d43728.ctex
+Completed load for: 'res://assets/extracted/samus/jump_original.png' remapped 'res://assets/extracted/samus/jump_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/jump_enhanced.png remapped: res://assets/extracted/samus/jump_enhanced.png
+Loading resource: res://.godot/imported/jump_enhanced.png-8bf56259d9d38b3c4cddc3c27d73cce1.ctex remapped: res://.godot/imported/jump_enhanced.png-8bf56259d9d38b3c4cddc3c27d73cce1.ctex
+Completed load for: 'res://assets/extracted/samus/jump_enhanced.png' remapped 'res://assets/extracted/samus/jump_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/jump_left_original.png remapped: res://assets/extracted/samus/jump_left_original.png
+Loading resource: res://.godot/imported/jump_left_original.png-059dc78fdb05296b07343cdac8c40d2f.ctex remapped: res://.godot/imported/jump_left_original.png-059dc78fdb05296b07343cdac8c40d2f.ctex
+Completed load for: 'res://assets/extracted/samus/jump_left_original.png' remapped 'res://assets/extracted/samus/jump_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/jump_left_enhanced.png remapped: res://assets/extracted/samus/jump_left_enhanced.png
+Loading resource: res://.godot/imported/jump_left_enhanced.png-23807c42946a64e4cfe4fb79bea586f0.ctex remapped: res://.godot/imported/jump_left_enhanced.png-23807c42946a64e4cfe4fb79bea586f0.ctex
+Completed load for: 'res://assets/extracted/samus/jump_left_enhanced.png' remapped 'res://assets/extracted/samus/jump_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/spin_original.png remapped: res://assets/extracted/samus/spin_original.png
+Loading resource: res://.godot/imported/spin_original.png-6645c94304d6ef8d6584a012d1df41ed.ctex remapped: res://.godot/imported/spin_original.png-6645c94304d6ef8d6584a012d1df41ed.ctex
+Completed load for: 'res://assets/extracted/samus/spin_original.png' remapped 'res://assets/extracted/samus/spin_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/spin_enhanced.png remapped: res://assets/extracted/samus/spin_enhanced.png
+Loading resource: res://.godot/imported/spin_enhanced.png-3ead35a2b81392d21bca047ed44f3485.ctex remapped: res://.godot/imported/spin_enhanced.png-3ead35a2b81392d21bca047ed44f3485.ctex
+Completed load for: 'res://assets/extracted/samus/spin_enhanced.png' remapped 'res://assets/extracted/samus/spin_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/spin_left_original.png remapped: res://assets/extracted/samus/spin_left_original.png
+Loading resource: res://.godot/imported/spin_left_original.png-99acbcc354826ccd9624cda2177adee7.ctex remapped: res://.godot/imported/spin_left_original.png-99acbcc354826ccd9624cda2177adee7.ctex
+Completed load for: 'res://assets/extracted/samus/spin_left_original.png' remapped 'res://assets/extracted/samus/spin_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/spin_left_enhanced.png remapped: res://assets/extracted/samus/spin_left_enhanced.png
+Loading resource: res://.godot/imported/spin_left_enhanced.png-530a3b13db425c479a7aa56b937076ee.ctex remapped: res://.godot/imported/spin_left_enhanced.png-530a3b13db425c479a7aa56b937076ee.ctex
+Completed load for: 'res://assets/extracted/samus/spin_left_enhanced.png' remapped 'res://assets/extracted/samus/spin_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/crouch_original.png remapped: res://assets/extracted/samus/crouch_original.png
+Loading resource: res://.godot/imported/crouch_original.png-5304659beeb5422cfbb26a62d40f5f25.ctex remapped: res://.godot/imported/crouch_original.png-5304659beeb5422cfbb26a62d40f5f25.ctex
+Completed load for: 'res://assets/extracted/samus/crouch_original.png' remapped 'res://assets/extracted/samus/crouch_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/crouch_enhanced.png remapped: res://assets/extracted/samus/crouch_enhanced.png
+Loading resource: res://.godot/imported/crouch_enhanced.png-10a019ad94374de4b859beb0f2dc4814.ctex remapped: res://.godot/imported/crouch_enhanced.png-10a019ad94374de4b859beb0f2dc4814.ctex
+Completed load for: 'res://assets/extracted/samus/crouch_enhanced.png' remapped 'res://assets/extracted/samus/crouch_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/crouch_left_original.png remapped: res://assets/extracted/samus/crouch_left_original.png
+Loading resource: res://.godot/imported/crouch_left_original.png-7e25157e053491eefa9ea6ef89e12596.ctex remapped: res://.godot/imported/crouch_left_original.png-7e25157e053491eefa9ea6ef89e12596.ctex
+Completed load for: 'res://assets/extracted/samus/crouch_left_original.png' remapped 'res://assets/extracted/samus/crouch_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/crouch_left_enhanced.png remapped: res://assets/extracted/samus/crouch_left_enhanced.png
+Loading resource: res://.godot/imported/crouch_left_enhanced.png-d17c626a4d9ea3b5ad75ee5a4f550d75.ctex remapped: res://.godot/imported/crouch_left_enhanced.png-d17c626a4d9ea3b5ad75ee5a4f550d75.ctex
+Completed load for: 'res://assets/extracted/samus/crouch_left_enhanced.png' remapped 'res://assets/extracted/samus/crouch_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/morph_original.png remapped: res://assets/extracted/samus/morph_original.png
+Loading resource: res://.godot/imported/morph_original.png-8975958e160c1027c7c76e0826294772.ctex remapped: res://.godot/imported/morph_original.png-8975958e160c1027c7c76e0826294772.ctex
+Completed load for: 'res://assets/extracted/samus/morph_original.png' remapped 'res://assets/extracted/samus/morph_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/morph_enhanced.png remapped: res://assets/extracted/samus/morph_enhanced.png
+Loading resource: res://.godot/imported/morph_enhanced.png-3b16bed19df4d0addca60ed953b5eb45.ctex remapped: res://.godot/imported/morph_enhanced.png-3b16bed19df4d0addca60ed953b5eb45.ctex
+Completed load for: 'res://assets/extracted/samus/morph_enhanced.png' remapped 'res://assets/extracted/samus/morph_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/morph_left_original.png remapped: res://assets/extracted/samus/morph_left_original.png
+Loading resource: res://.godot/imported/morph_left_original.png-04aee7c790bcaa5abe41f429d67c9eec.ctex remapped: res://.godot/imported/morph_left_original.png-04aee7c790bcaa5abe41f429d67c9eec.ctex
+Completed load for: 'res://assets/extracted/samus/morph_left_original.png' remapped 'res://assets/extracted/samus/morph_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/morph_left_enhanced.png remapped: res://assets/extracted/samus/morph_left_enhanced.png
+Loading resource: res://.godot/imported/morph_left_enhanced.png-4c7ecb221e5b8f8598af60114b0e8870.ctex remapped: res://.godot/imported/morph_left_enhanced.png-4c7ecb221e5b8f8598af60114b0e8870.ctex
+Completed load for: 'res://assets/extracted/samus/morph_left_enhanced.png' remapped 'res://assets/extracted/samus/morph_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_up_original.png remapped: res://assets/extracted/samus/aim_up_original.png
+Loading resource: res://.godot/imported/aim_up_original.png-8eae66c95272cc262e275b697606802b.ctex remapped: res://.godot/imported/aim_up_original.png-8eae66c95272cc262e275b697606802b.ctex
+Completed load for: 'res://assets/extracted/samus/aim_up_original.png' remapped 'res://assets/extracted/samus/aim_up_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_up_enhanced.png remapped: res://assets/extracted/samus/aim_up_enhanced.png
+Loading resource: res://.godot/imported/aim_up_enhanced.png-5475a08ec24282c8c2558254af3af318.ctex remapped: res://.godot/imported/aim_up_enhanced.png-5475a08ec24282c8c2558254af3af318.ctex
+Completed load for: 'res://assets/extracted/samus/aim_up_enhanced.png' remapped 'res://assets/extracted/samus/aim_up_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_up_left_original.png remapped: res://assets/extracted/samus/aim_up_left_original.png
+Loading resource: res://.godot/imported/aim_up_left_original.png-05d0df0dceb3aba1fe9aacbb6887e28c.ctex remapped: res://.godot/imported/aim_up_left_original.png-05d0df0dceb3aba1fe9aacbb6887e28c.ctex
+Completed load for: 'res://assets/extracted/samus/aim_up_left_original.png' remapped 'res://assets/extracted/samus/aim_up_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_up_left_enhanced.png remapped: res://assets/extracted/samus/aim_up_left_enhanced.png
+Loading resource: res://.godot/imported/aim_up_left_enhanced.png-eba42064f33ebdc345bfa5e981799bb1.ctex remapped: res://.godot/imported/aim_up_left_enhanced.png-eba42064f33ebdc345bfa5e981799bb1.ctex
+Completed load for: 'res://assets/extracted/samus/aim_up_left_enhanced.png' remapped 'res://assets/extracted/samus/aim_up_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_diagonal_original.png remapped: res://assets/extracted/samus/aim_diagonal_original.png
+Loading resource: res://.godot/imported/aim_diagonal_original.png-098da03fd4daa68d0257236fd2a6a1fa.ctex remapped: res://.godot/imported/aim_diagonal_original.png-098da03fd4daa68d0257236fd2a6a1fa.ctex
+Completed load for: 'res://assets/extracted/samus/aim_diagonal_original.png' remapped 'res://assets/extracted/samus/aim_diagonal_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_diagonal_enhanced.png remapped: res://assets/extracted/samus/aim_diagonal_enhanced.png
+Loading resource: res://.godot/imported/aim_diagonal_enhanced.png-85bc7fda89a20a94027075d4af39f6d2.ctex remapped: res://.godot/imported/aim_diagonal_enhanced.png-85bc7fda89a20a94027075d4af39f6d2.ctex
+Completed load for: 'res://assets/extracted/samus/aim_diagonal_enhanced.png' remapped 'res://assets/extracted/samus/aim_diagonal_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_diagonal_left_original.png remapped: res://assets/extracted/samus/aim_diagonal_left_original.png
+Loading resource: res://.godot/imported/aim_diagonal_left_original.png-c15a90fa0f257f117624d8a687d97133.ctex remapped: res://.godot/imported/aim_diagonal_left_original.png-c15a90fa0f257f117624d8a687d97133.ctex
+Completed load for: 'res://assets/extracted/samus/aim_diagonal_left_original.png' remapped 'res://assets/extracted/samus/aim_diagonal_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/aim_diagonal_left_enhanced.png remapped: res://assets/extracted/samus/aim_diagonal_left_enhanced.png
+Loading resource: res://.godot/imported/aim_diagonal_left_enhanced.png-9f155532eaa40e86838c57d520f14194.ctex remapped: res://.godot/imported/aim_diagonal_left_enhanced.png-9f155532eaa40e86838c57d520f14194.ctex
+Completed load for: 'res://assets/extracted/samus/aim_diagonal_left_enhanced.png' remapped 'res://assets/extracted/samus/aim_diagonal_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/fall_original.png remapped: res://assets/extracted/samus/fall_original.png
+Loading resource: res://.godot/imported/fall_original.png-024a161007c531508d842593bac22f1c.ctex remapped: res://.godot/imported/fall_original.png-024a161007c531508d842593bac22f1c.ctex
+Completed load for: 'res://assets/extracted/samus/fall_original.png' remapped 'res://assets/extracted/samus/fall_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/fall_enhanced.png remapped: res://assets/extracted/samus/fall_enhanced.png
+Loading resource: res://.godot/imported/fall_enhanced.png-c037bcc5e9f08007aedaa2248886896e.ctex remapped: res://.godot/imported/fall_enhanced.png-c037bcc5e9f08007aedaa2248886896e.ctex
+Completed load for: 'res://assets/extracted/samus/fall_enhanced.png' remapped 'res://assets/extracted/samus/fall_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/fall_left_original.png remapped: res://assets/extracted/samus/fall_left_original.png
+Loading resource: res://.godot/imported/fall_left_original.png-9ac00368f91604aef08fcbf10f951b65.ctex remapped: res://.godot/imported/fall_left_original.png-9ac00368f91604aef08fcbf10f951b65.ctex
+Completed load for: 'res://assets/extracted/samus/fall_left_original.png' remapped 'res://assets/extracted/samus/fall_left_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/fall_left_enhanced.png remapped: res://assets/extracted/samus/fall_left_enhanced.png
+Loading resource: res://.godot/imported/fall_left_enhanced.png-0c5233c6a26beb7088ac9523b90ab5a6.ctex remapped: res://.godot/imported/fall_left_enhanced.png-0c5233c6a26beb7088ac9523b90ab5a6.ctex
+Completed load for: 'res://assets/extracted/samus/fall_left_enhanced.png' remapped 'res://assets/extracted/samus/fall_left_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/samus/front_original.png remapped: res://assets/extracted/samus/front_original.png
+Loading resource: res://.godot/imported/front_original.png-71eb3afc5bbf26900b7d2ab45c0bd057.ctex remapped: res://.godot/imported/front_original.png-71eb3afc5bbf26900b7d2ab45c0bd057.ctex
+Completed load for: 'res://assets/extracted/samus/front_original.png' remapped 'res://assets/extracted/samus/front_original.png' at thread -1
+Loading resource: res://assets/extracted/samus/front_enhanced.png remapped: res://assets/extracted/samus/front_enhanced.png
+Loading resource: res://.godot/imported/front_enhanced.png-59a5eebacbc255e0dcfd930c57e92e7c.ctex remapped: res://.godot/imported/front_enhanced.png-59a5eebacbc255e0dcfd930c57e92e7c.ctex
+Completed load for: 'res://assets/extracted/samus/front_enhanced.png' remapped 'res://assets/extracted/samus/front_enhanced.png' at thread -1
+Loading resource: res://assets/remastered/sprite_lighting.tres remapped: res://assets/remastered/sprite_lighting.tres
+Loading resource: res://shaders/asset_lighting.gdshader remapped: res://shaders/asset_lighting.gdshader
+Completed load for: 'res://shaders/asset_lighting.gdshader' remapped 'res://shaders/asset_lighting.gdshader' at thread -1
+Completed load for: 'res://assets/remastered/sprite_lighting.tres' remapped 'res://assets/remastered/sprite_lighting.tres' at thread -1
+Loading resource: res://shaders/postprocess.gdshader remapped: res://shaders/postprocess.gdshader
+Completed load for: 'res://shaders/postprocess.gdshader' remapped 'res://shaders/postprocess.gdshader' at thread -1
+Loading resource: res://assets/extracted/tilesets/00_original.png remapped: res://assets/extracted/tilesets/00_original.png
+Loading resource: res://.godot/imported/00_original.png-ad01a6b0572a71c8dd1f6ea1a82a00ea.ctex remapped: res://.godot/imported/00_original.png-ad01a6b0572a71c8dd1f6ea1a82a00ea.ctex
+Completed load for: 'res://assets/extracted/tilesets/00_original.png' remapped 'res://assets/extracted/tilesets/00_original.png' at thread -1
+Loading resource: res://assets/extracted/tilesets/00_enhanced.png remapped: res://assets/extracted/tilesets/00_enhanced.png
+Loading resource: res://.godot/imported/00_enhanced.png-a7862fbb06f754308b36497f0f6266e1.ctex remapped: res://.godot/imported/00_enhanced.png-a7862fbb06f754308b36497f0f6266e1.ctex
+Completed load for: 'res://assets/extracted/tilesets/00_enhanced.png' remapped 'res://assets/extracted/tilesets/00_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/objects/ship_enhanced.png remapped: res://assets/extracted/objects/ship_enhanced.png
+Loading resource: res://.godot/imported/ship_enhanced.png-90014ae21a882c0006d7129227dfd3df.ctex remapped: res://.godot/imported/ship_enhanced.png-90014ae21a882c0006d7129227dfd3df.ctex
+Completed load for: 'res://assets/extracted/objects/ship_enhanced.png' remapped 'res://assets/extracted/objects/ship_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/04_original.png remapped: res://assets/extracted/items/00/04_original.png
+Loading resource: res://.godot/imported/04_original.png-1b66bf18b95ecd0ae394b4e9f0fb8d4c.ctex remapped: res://.godot/imported/04_original.png-1b66bf18b95ecd0ae394b4e9f0fb8d4c.ctex
+Completed load for: 'res://assets/extracted/items/00/04_original.png' remapped 'res://assets/extracted/items/00/04_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/04_enhanced.png remapped: res://assets/extracted/items/00/04_enhanced.png
+Loading resource: res://.godot/imported/04_enhanced.png-8d4b9350ecd7521edd477550864f5003.ctex remapped: res://.godot/imported/04_enhanced.png-8d4b9350ecd7521edd477550864f5003.ctex
+Completed load for: 'res://assets/extracted/items/00/04_enhanced.png' remapped 'res://assets/extracted/items/00/04_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/05_original.png remapped: res://assets/extracted/items/00/05_original.png
+Loading resource: res://.godot/imported/05_original.png-a622b900f132705cea6b1ae2f0ed4527.ctex remapped: res://.godot/imported/05_original.png-a622b900f132705cea6b1ae2f0ed4527.ctex
+Completed load for: 'res://assets/extracted/items/00/05_original.png' remapped 'res://assets/extracted/items/00/05_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/05_enhanced.png remapped: res://assets/extracted/items/00/05_enhanced.png
+Loading resource: res://.godot/imported/05_enhanced.png-63e058a2715aad79044ccbf99e540b32.ctex remapped: res://.godot/imported/05_enhanced.png-63e058a2715aad79044ccbf99e540b32.ctex
+Completed load for: 'res://assets/extracted/items/00/05_enhanced.png' remapped 'res://assets/extracted/items/00/05_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/06_original.png remapped: res://assets/extracted/items/00/06_original.png
+Loading resource: res://.godot/imported/06_original.png-775b02c586883e6ef66a52d5be926e98.ctex remapped: res://.godot/imported/06_original.png-775b02c586883e6ef66a52d5be926e98.ctex
+Completed load for: 'res://assets/extracted/items/00/06_original.png' remapped 'res://assets/extracted/items/00/06_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/06_enhanced.png remapped: res://assets/extracted/items/00/06_enhanced.png
+Loading resource: res://.godot/imported/06_enhanced.png-202244c0be97345c9fe623e5e2f3b8dd.ctex remapped: res://.godot/imported/06_enhanced.png-202244c0be97345c9fe623e5e2f3b8dd.ctex
+Completed load for: 'res://assets/extracted/items/00/06_enhanced.png' remapped 'res://assets/extracted/items/00/06_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/07_original.png remapped: res://assets/extracted/items/00/07_original.png
+Loading resource: res://.godot/imported/07_original.png-8f9326256213d32bf69d224c3c7056fa.ctex remapped: res://.godot/imported/07_original.png-8f9326256213d32bf69d224c3c7056fa.ctex
+Completed load for: 'res://assets/extracted/items/00/07_original.png' remapped 'res://assets/extracted/items/00/07_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/07_enhanced.png remapped: res://assets/extracted/items/00/07_enhanced.png
+Loading resource: res://.godot/imported/07_enhanced.png-5c92f82601724138efea64e034f883e2.ctex remapped: res://.godot/imported/07_enhanced.png-5c92f82601724138efea64e034f883e2.ctex
+Completed load for: 'res://assets/extracted/items/00/07_enhanced.png' remapped 'res://assets/extracted/items/00/07_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/08_original.png remapped: res://assets/extracted/items/00/08_original.png
+Loading resource: res://.godot/imported/08_original.png-36cbaba926e4b465c8bb8b1e40c3a0be.ctex remapped: res://.godot/imported/08_original.png-36cbaba926e4b465c8bb8b1e40c3a0be.ctex
+Completed load for: 'res://assets/extracted/items/00/08_original.png' remapped 'res://assets/extracted/items/00/08_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/08_enhanced.png remapped: res://assets/extracted/items/00/08_enhanced.png
+Loading resource: res://.godot/imported/08_enhanced.png-6de55d78d1ebc8979ae058b6a7a45319.ctex remapped: res://.godot/imported/08_enhanced.png-6de55d78d1ebc8979ae058b6a7a45319.ctex
+Completed load for: 'res://assets/extracted/items/00/08_enhanced.png' remapped 'res://assets/extracted/items/00/08_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/09_original.png remapped: res://assets/extracted/items/00/09_original.png
+Loading resource: res://.godot/imported/09_original.png-2315928ac63257caec1a846be1d24b54.ctex remapped: res://.godot/imported/09_original.png-2315928ac63257caec1a846be1d24b54.ctex
+Completed load for: 'res://assets/extracted/items/00/09_original.png' remapped 'res://assets/extracted/items/00/09_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/09_enhanced.png remapped: res://assets/extracted/items/00/09_enhanced.png
+Loading resource: res://.godot/imported/09_enhanced.png-c369191b772c88ae9afd292e714a9161.ctex remapped: res://.godot/imported/09_enhanced.png-c369191b772c88ae9afd292e714a9161.ctex
+Completed load for: 'res://assets/extracted/items/00/09_enhanced.png' remapped 'res://assets/extracted/items/00/09_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/10_original.png remapped: res://assets/extracted/items/00/10_original.png
+Loading resource: res://.godot/imported/10_original.png-680cbbeb929b2285ac7914e33fa16b08.ctex remapped: res://.godot/imported/10_original.png-680cbbeb929b2285ac7914e33fa16b08.ctex
+Completed load for: 'res://assets/extracted/items/00/10_original.png' remapped 'res://assets/extracted/items/00/10_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/10_enhanced.png remapped: res://assets/extracted/items/00/10_enhanced.png
+Loading resource: res://.godot/imported/10_enhanced.png-c64e1b54206fe2336c24065d89187ec9.ctex remapped: res://.godot/imported/10_enhanced.png-c64e1b54206fe2336c24065d89187ec9.ctex
+Completed load for: 'res://assets/extracted/items/00/10_enhanced.png' remapped 'res://assets/extracted/items/00/10_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/11_original.png remapped: res://assets/extracted/items/00/11_original.png
+Loading resource: res://.godot/imported/11_original.png-c505c6c832b84a92896e951677bf27f3.ctex remapped: res://.godot/imported/11_original.png-c505c6c832b84a92896e951677bf27f3.ctex
+Completed load for: 'res://assets/extracted/items/00/11_original.png' remapped 'res://assets/extracted/items/00/11_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/11_enhanced.png remapped: res://assets/extracted/items/00/11_enhanced.png
+Loading resource: res://.godot/imported/11_enhanced.png-e75753a23c436302ebba488f13ac1152.ctex remapped: res://.godot/imported/11_enhanced.png-e75753a23c436302ebba488f13ac1152.ctex
+Completed load for: 'res://assets/extracted/items/00/11_enhanced.png' remapped 'res://assets/extracted/items/00/11_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/12_original.png remapped: res://assets/extracted/items/00/12_original.png
+Loading resource: res://.godot/imported/12_original.png-55031633adf01273b1b726df1fa6700e.ctex remapped: res://.godot/imported/12_original.png-55031633adf01273b1b726df1fa6700e.ctex
+Completed load for: 'res://assets/extracted/items/00/12_original.png' remapped 'res://assets/extracted/items/00/12_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/12_enhanced.png remapped: res://assets/extracted/items/00/12_enhanced.png
+Loading resource: res://.godot/imported/12_enhanced.png-9468f6180e47c976b5ab1677e87b2e61.ctex remapped: res://.godot/imported/12_enhanced.png-9468f6180e47c976b5ab1677e87b2e61.ctex
+Completed load for: 'res://assets/extracted/items/00/12_enhanced.png' remapped 'res://assets/extracted/items/00/12_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/13_original.png remapped: res://assets/extracted/items/00/13_original.png
+Loading resource: res://.godot/imported/13_original.png-c3c6657051bfe1f14cee8dd60975bf71.ctex remapped: res://.godot/imported/13_original.png-c3c6657051bfe1f14cee8dd60975bf71.ctex
+Completed load for: 'res://assets/extracted/items/00/13_original.png' remapped 'res://assets/extracted/items/00/13_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/13_enhanced.png remapped: res://assets/extracted/items/00/13_enhanced.png
+Loading resource: res://.godot/imported/13_enhanced.png-04c4d0f0a297bc2efa07a69d189fae44.ctex remapped: res://.godot/imported/13_enhanced.png-04c4d0f0a297bc2efa07a69d189fae44.ctex
+Completed load for: 'res://assets/extracted/items/00/13_enhanced.png' remapped 'res://assets/extracted/items/00/13_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/14_original.png remapped: res://assets/extracted/items/00/14_original.png
+Loading resource: res://.godot/imported/14_original.png-615e1a02e2669133009436d5be28e6ba.ctex remapped: res://.godot/imported/14_original.png-615e1a02e2669133009436d5be28e6ba.ctex
+Completed load for: 'res://assets/extracted/items/00/14_original.png' remapped 'res://assets/extracted/items/00/14_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/14_enhanced.png remapped: res://assets/extracted/items/00/14_enhanced.png
+Loading resource: res://.godot/imported/14_enhanced.png-d1208d4943ca0a965dfa548193c2d2ce.ctex remapped: res://.godot/imported/14_enhanced.png-d1208d4943ca0a965dfa548193c2d2ce.ctex
+Completed load for: 'res://assets/extracted/items/00/14_enhanced.png' remapped 'res://assets/extracted/items/00/14_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/15_original.png remapped: res://assets/extracted/items/00/15_original.png
+Loading resource: res://.godot/imported/15_original.png-929f09a0b87810fd2f75806dd1090850.ctex remapped: res://.godot/imported/15_original.png-929f09a0b87810fd2f75806dd1090850.ctex
+Completed load for: 'res://assets/extracted/items/00/15_original.png' remapped 'res://assets/extracted/items/00/15_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/15_enhanced.png remapped: res://assets/extracted/items/00/15_enhanced.png
+Loading resource: res://.godot/imported/15_enhanced.png-4de1769d52682adb276f8990c4e02e49.ctex remapped: res://.godot/imported/15_enhanced.png-4de1769d52682adb276f8990c4e02e49.ctex
+Completed load for: 'res://assets/extracted/items/00/15_enhanced.png' remapped 'res://assets/extracted/items/00/15_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/16_original.png remapped: res://assets/extracted/items/00/16_original.png
+Loading resource: res://.godot/imported/16_original.png-1f86fdfed4254acc9de9568e77135341.ctex remapped: res://.godot/imported/16_original.png-1f86fdfed4254acc9de9568e77135341.ctex
+Completed load for: 'res://assets/extracted/items/00/16_original.png' remapped 'res://assets/extracted/items/00/16_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/16_enhanced.png remapped: res://assets/extracted/items/00/16_enhanced.png
+Loading resource: res://.godot/imported/16_enhanced.png-39fc935eb52230e554c650ac4abe1a89.ctex remapped: res://.godot/imported/16_enhanced.png-39fc935eb52230e554c650ac4abe1a89.ctex
+Completed load for: 'res://assets/extracted/items/00/16_enhanced.png' remapped 'res://assets/extracted/items/00/16_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/17_original.png remapped: res://assets/extracted/items/00/17_original.png
+Loading resource: res://.godot/imported/17_original.png-c03e449d0166fc045dc15a4028a434da.ctex remapped: res://.godot/imported/17_original.png-c03e449d0166fc045dc15a4028a434da.ctex
+Completed load for: 'res://assets/extracted/items/00/17_original.png' remapped 'res://assets/extracted/items/00/17_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/17_enhanced.png remapped: res://assets/extracted/items/00/17_enhanced.png
+Loading resource: res://.godot/imported/17_enhanced.png-0b2db3108a6946dea8434e3f1a23f262.ctex remapped: res://.godot/imported/17_enhanced.png-0b2db3108a6946dea8434e3f1a23f262.ctex
+Completed load for: 'res://assets/extracted/items/00/17_enhanced.png' remapped 'res://assets/extracted/items/00/17_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/18_original.png remapped: res://assets/extracted/items/00/18_original.png
+Loading resource: res://.godot/imported/18_original.png-a8c11584bac737ee79f53cbea224b92d.ctex remapped: res://.godot/imported/18_original.png-a8c11584bac737ee79f53cbea224b92d.ctex
+Completed load for: 'res://assets/extracted/items/00/18_original.png' remapped 'res://assets/extracted/items/00/18_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/18_enhanced.png remapped: res://assets/extracted/items/00/18_enhanced.png
+Loading resource: res://.godot/imported/18_enhanced.png-f722d4e0a61446e185cc39125290b9cb.ctex remapped: res://.godot/imported/18_enhanced.png-f722d4e0a61446e185cc39125290b9cb.ctex
+Completed load for: 'res://assets/extracted/items/00/18_enhanced.png' remapped 'res://assets/extracted/items/00/18_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/19_original.png remapped: res://assets/extracted/items/00/19_original.png
+Loading resource: res://.godot/imported/19_original.png-2c50d9dd684c1b92fe438ceffcf3e045.ctex remapped: res://.godot/imported/19_original.png-2c50d9dd684c1b92fe438ceffcf3e045.ctex
+Completed load for: 'res://assets/extracted/items/00/19_original.png' remapped 'res://assets/extracted/items/00/19_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/19_enhanced.png remapped: res://assets/extracted/items/00/19_enhanced.png
+Loading resource: res://.godot/imported/19_enhanced.png-0499207e08042e493dc9d08250b7a5cd.ctex remapped: res://.godot/imported/19_enhanced.png-0499207e08042e493dc9d08250b7a5cd.ctex
+Completed load for: 'res://assets/extracted/items/00/19_enhanced.png' remapped 'res://assets/extracted/items/00/19_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/20_original.png remapped: res://assets/extracted/items/00/20_original.png
+Loading resource: res://.godot/imported/20_original.png-415d22209553b5443442062604d9c09f.ctex remapped: res://.godot/imported/20_original.png-415d22209553b5443442062604d9c09f.ctex
+Completed load for: 'res://assets/extracted/items/00/20_original.png' remapped 'res://assets/extracted/items/00/20_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/20_enhanced.png remapped: res://assets/extracted/items/00/20_enhanced.png
+Loading resource: res://.godot/imported/20_enhanced.png-99f99993c154431d17d4a7a4cd0a2b58.ctex remapped: res://.godot/imported/20_enhanced.png-99f99993c154431d17d4a7a4cd0a2b58.ctex
+Completed load for: 'res://assets/extracted/items/00/20_enhanced.png' remapped 'res://assets/extracted/items/00/20_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/04_original.png remapped: res://assets/extracted/items/00/04_original.png
+Loading resource: res://.godot/imported/04_original.png-1b66bf18b95ecd0ae394b4e9f0fb8d4c.ctex remapped: res://.godot/imported/04_original.png-1b66bf18b95ecd0ae394b4e9f0fb8d4c.ctex
+Completed load for: 'res://assets/extracted/items/00/04_original.png' remapped 'res://assets/extracted/items/00/04_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/04_enhanced.png remapped: res://assets/extracted/items/00/04_enhanced.png
+Loading resource: res://.godot/imported/04_enhanced.png-8d4b9350ecd7521edd477550864f5003.ctex remapped: res://.godot/imported/04_enhanced.png-8d4b9350ecd7521edd477550864f5003.ctex
+Completed load for: 'res://assets/extracted/items/00/04_enhanced.png' remapped 'res://assets/extracted/items/00/04_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/05_original.png remapped: res://assets/extracted/items/00/05_original.png
+Loading resource: res://.godot/imported/05_original.png-a622b900f132705cea6b1ae2f0ed4527.ctex remapped: res://.godot/imported/05_original.png-a622b900f132705cea6b1ae2f0ed4527.ctex
+Completed load for: 'res://assets/extracted/items/00/05_original.png' remapped 'res://assets/extracted/items/00/05_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/05_enhanced.png remapped: res://assets/extracted/items/00/05_enhanced.png
+Loading resource: res://.godot/imported/05_enhanced.png-63e058a2715aad79044ccbf99e540b32.ctex remapped: res://.godot/imported/05_enhanced.png-63e058a2715aad79044ccbf99e540b32.ctex
+Completed load for: 'res://assets/extracted/items/00/05_enhanced.png' remapped 'res://assets/extracted/items/00/05_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/06_original.png remapped: res://assets/extracted/items/00/06_original.png
+Loading resource: res://.godot/imported/06_original.png-775b02c586883e6ef66a52d5be926e98.ctex remapped: res://.godot/imported/06_original.png-775b02c586883e6ef66a52d5be926e98.ctex
+Completed load for: 'res://assets/extracted/items/00/06_original.png' remapped 'res://assets/extracted/items/00/06_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/06_enhanced.png remapped: res://assets/extracted/items/00/06_enhanced.png
+Loading resource: res://.godot/imported/06_enhanced.png-202244c0be97345c9fe623e5e2f3b8dd.ctex remapped: res://.godot/imported/06_enhanced.png-202244c0be97345c9fe623e5e2f3b8dd.ctex
+Completed load for: 'res://assets/extracted/items/00/06_enhanced.png' remapped 'res://assets/extracted/items/00/06_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/07_original.png remapped: res://assets/extracted/items/00/07_original.png
+Loading resource: res://.godot/imported/07_original.png-8f9326256213d32bf69d224c3c7056fa.ctex remapped: res://.godot/imported/07_original.png-8f9326256213d32bf69d224c3c7056fa.ctex
+Completed load for: 'res://assets/extracted/items/00/07_original.png' remapped 'res://assets/extracted/items/00/07_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/07_enhanced.png remapped: res://assets/extracted/items/00/07_enhanced.png
+Loading resource: res://.godot/imported/07_enhanced.png-5c92f82601724138efea64e034f883e2.ctex remapped: res://.godot/imported/07_enhanced.png-5c92f82601724138efea64e034f883e2.ctex
+Completed load for: 'res://assets/extracted/items/00/07_enhanced.png' remapped 'res://assets/extracted/items/00/07_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/08_original.png remapped: res://assets/extracted/items/00/08_original.png
+Loading resource: res://.godot/imported/08_original.png-36cbaba926e4b465c8bb8b1e40c3a0be.ctex remapped: res://.godot/imported/08_original.png-36cbaba926e4b465c8bb8b1e40c3a0be.ctex
+Completed load for: 'res://assets/extracted/items/00/08_original.png' remapped 'res://assets/extracted/items/00/08_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/08_enhanced.png remapped: res://assets/extracted/items/00/08_enhanced.png
+Loading resource: res://.godot/imported/08_enhanced.png-6de55d78d1ebc8979ae058b6a7a45319.ctex remapped: res://.godot/imported/08_enhanced.png-6de55d78d1ebc8979ae058b6a7a45319.ctex
+Completed load for: 'res://assets/extracted/items/00/08_enhanced.png' remapped 'res://assets/extracted/items/00/08_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/09_original.png remapped: res://assets/extracted/items/00/09_original.png
+Loading resource: res://.godot/imported/09_original.png-2315928ac63257caec1a846be1d24b54.ctex remapped: res://.godot/imported/09_original.png-2315928ac63257caec1a846be1d24b54.ctex
+Completed load for: 'res://assets/extracted/items/00/09_original.png' remapped 'res://assets/extracted/items/00/09_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/09_enhanced.png remapped: res://assets/extracted/items/00/09_enhanced.png
+Loading resource: res://.godot/imported/09_enhanced.png-c369191b772c88ae9afd292e714a9161.ctex remapped: res://.godot/imported/09_enhanced.png-c369191b772c88ae9afd292e714a9161.ctex
+Completed load for: 'res://assets/extracted/items/00/09_enhanced.png' remapped 'res://assets/extracted/items/00/09_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/10_original.png remapped: res://assets/extracted/items/00/10_original.png
+Loading resource: res://.godot/imported/10_original.png-680cbbeb929b2285ac7914e33fa16b08.ctex remapped: res://.godot/imported/10_original.png-680cbbeb929b2285ac7914e33fa16b08.ctex
+Completed load for: 'res://assets/extracted/items/00/10_original.png' remapped 'res://assets/extracted/items/00/10_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/10_enhanced.png remapped: res://assets/extracted/items/00/10_enhanced.png
+Loading resource: res://.godot/imported/10_enhanced.png-c64e1b54206fe2336c24065d89187ec9.ctex remapped: res://.godot/imported/10_enhanced.png-c64e1b54206fe2336c24065d89187ec9.ctex
+Completed load for: 'res://assets/extracted/items/00/10_enhanced.png' remapped 'res://assets/extracted/items/00/10_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/11_original.png remapped: res://assets/extracted/items/00/11_original.png
+Loading resource: res://.godot/imported/11_original.png-c505c6c832b84a92896e951677bf27f3.ctex remapped: res://.godot/imported/11_original.png-c505c6c832b84a92896e951677bf27f3.ctex
+Completed load for: 'res://assets/extracted/items/00/11_original.png' remapped 'res://assets/extracted/items/00/11_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/11_enhanced.png remapped: res://assets/extracted/items/00/11_enhanced.png
+Loading resource: res://.godot/imported/11_enhanced.png-e75753a23c436302ebba488f13ac1152.ctex remapped: res://.godot/imported/11_enhanced.png-e75753a23c436302ebba488f13ac1152.ctex
+Completed load for: 'res://assets/extracted/items/00/11_enhanced.png' remapped 'res://assets/extracted/items/00/11_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/12_original.png remapped: res://assets/extracted/items/00/12_original.png
+Loading resource: res://.godot/imported/12_original.png-55031633adf01273b1b726df1fa6700e.ctex remapped: res://.godot/imported/12_original.png-55031633adf01273b1b726df1fa6700e.ctex
+Completed load for: 'res://assets/extracted/items/00/12_original.png' remapped 'res://assets/extracted/items/00/12_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/12_enhanced.png remapped: res://assets/extracted/items/00/12_enhanced.png
+Loading resource: res://.godot/imported/12_enhanced.png-9468f6180e47c976b5ab1677e87b2e61.ctex remapped: res://.godot/imported/12_enhanced.png-9468f6180e47c976b5ab1677e87b2e61.ctex
+Completed load for: 'res://assets/extracted/items/00/12_enhanced.png' remapped 'res://assets/extracted/items/00/12_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/13_original.png remapped: res://assets/extracted/items/00/13_original.png
+Loading resource: res://.godot/imported/13_original.png-c3c6657051bfe1f14cee8dd60975bf71.ctex remapped: res://.godot/imported/13_original.png-c3c6657051bfe1f14cee8dd60975bf71.ctex
+Completed load for: 'res://assets/extracted/items/00/13_original.png' remapped 'res://assets/extracted/items/00/13_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/13_enhanced.png remapped: res://assets/extracted/items/00/13_enhanced.png
+Loading resource: res://.godot/imported/13_enhanced.png-04c4d0f0a297bc2efa07a69d189fae44.ctex remapped: res://.godot/imported/13_enhanced.png-04c4d0f0a297bc2efa07a69d189fae44.ctex
+Completed load for: 'res://assets/extracted/items/00/13_enhanced.png' remapped 'res://assets/extracted/items/00/13_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/14_original.png remapped: res://assets/extracted/items/00/14_original.png
+Loading resource: res://.godot/imported/14_original.png-615e1a02e2669133009436d5be28e6ba.ctex remapped: res://.godot/imported/14_original.png-615e1a02e2669133009436d5be28e6ba.ctex
+Completed load for: 'res://assets/extracted/items/00/14_original.png' remapped 'res://assets/extracted/items/00/14_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/14_enhanced.png remapped: res://assets/extracted/items/00/14_enhanced.png
+Loading resource: res://.godot/imported/14_enhanced.png-d1208d4943ca0a965dfa548193c2d2ce.ctex remapped: res://.godot/imported/14_enhanced.png-d1208d4943ca0a965dfa548193c2d2ce.ctex
+Completed load for: 'res://assets/extracted/items/00/14_enhanced.png' remapped 'res://assets/extracted/items/00/14_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/15_original.png remapped: res://assets/extracted/items/00/15_original.png
+Loading resource: res://.godot/imported/15_original.png-929f09a0b87810fd2f75806dd1090850.ctex remapped: res://.godot/imported/15_original.png-929f09a0b87810fd2f75806dd1090850.ctex
+Completed load for: 'res://assets/extracted/items/00/15_original.png' remapped 'res://assets/extracted/items/00/15_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/15_enhanced.png remapped: res://assets/extracted/items/00/15_enhanced.png
+Loading resource: res://.godot/imported/15_enhanced.png-4de1769d52682adb276f8990c4e02e49.ctex remapped: res://.godot/imported/15_enhanced.png-4de1769d52682adb276f8990c4e02e49.ctex
+Completed load for: 'res://assets/extracted/items/00/15_enhanced.png' remapped 'res://assets/extracted/items/00/15_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/16_original.png remapped: res://assets/extracted/items/00/16_original.png
+Loading resource: res://.godot/imported/16_original.png-1f86fdfed4254acc9de9568e77135341.ctex remapped: res://.godot/imported/16_original.png-1f86fdfed4254acc9de9568e77135341.ctex
+Completed load for: 'res://assets/extracted/items/00/16_original.png' remapped 'res://assets/extracted/items/00/16_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/16_enhanced.png remapped: res://assets/extracted/items/00/16_enhanced.png
+Loading resource: res://.godot/imported/16_enhanced.png-39fc935eb52230e554c650ac4abe1a89.ctex remapped: res://.godot/imported/16_enhanced.png-39fc935eb52230e554c650ac4abe1a89.ctex
+Completed load for: 'res://assets/extracted/items/00/16_enhanced.png' remapped 'res://assets/extracted/items/00/16_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/17_original.png remapped: res://assets/extracted/items/00/17_original.png
+Loading resource: res://.godot/imported/17_original.png-c03e449d0166fc045dc15a4028a434da.ctex remapped: res://.godot/imported/17_original.png-c03e449d0166fc045dc15a4028a434da.ctex
+Completed load for: 'res://assets/extracted/items/00/17_original.png' remapped 'res://assets/extracted/items/00/17_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/17_enhanced.png remapped: res://assets/extracted/items/00/17_enhanced.png
+Loading resource: res://.godot/imported/17_enhanced.png-0b2db3108a6946dea8434e3f1a23f262.ctex remapped: res://.godot/imported/17_enhanced.png-0b2db3108a6946dea8434e3f1a23f262.ctex
+Completed load for: 'res://assets/extracted/items/00/17_enhanced.png' remapped 'res://assets/extracted/items/00/17_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/18_original.png remapped: res://assets/extracted/items/00/18_original.png
+Loading resource: res://.godot/imported/18_original.png-a8c11584bac737ee79f53cbea224b92d.ctex remapped: res://.godot/imported/18_original.png-a8c11584bac737ee79f53cbea224b92d.ctex
+Completed load for: 'res://assets/extracted/items/00/18_original.png' remapped 'res://assets/extracted/items/00/18_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/18_enhanced.png remapped: res://assets/extracted/items/00/18_enhanced.png
+Loading resource: res://.godot/imported/18_enhanced.png-f722d4e0a61446e185cc39125290b9cb.ctex remapped: res://.godot/imported/18_enhanced.png-f722d4e0a61446e185cc39125290b9cb.ctex
+Completed load for: 'res://assets/extracted/items/00/18_enhanced.png' remapped 'res://assets/extracted/items/00/18_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/19_original.png remapped: res://assets/extracted/items/00/19_original.png
+Loading resource: res://.godot/imported/19_original.png-2c50d9dd684c1b92fe438ceffcf3e045.ctex remapped: res://.godot/imported/19_original.png-2c50d9dd684c1b92fe438ceffcf3e045.ctex
+Completed load for: 'res://assets/extracted/items/00/19_original.png' remapped 'res://assets/extracted/items/00/19_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/19_enhanced.png remapped: res://assets/extracted/items/00/19_enhanced.png
+Loading resource: res://.godot/imported/19_enhanced.png-0499207e08042e493dc9d08250b7a5cd.ctex remapped: res://.godot/imported/19_enhanced.png-0499207e08042e493dc9d08250b7a5cd.ctex
+Completed load for: 'res://assets/extracted/items/00/19_enhanced.png' remapped 'res://assets/extracted/items/00/19_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/00/20_original.png remapped: res://assets/extracted/items/00/20_original.png
+Loading resource: res://.godot/imported/20_original.png-415d22209553b5443442062604d9c09f.ctex remapped: res://.godot/imported/20_original.png-415d22209553b5443442062604d9c09f.ctex
+Completed load for: 'res://assets/extracted/items/00/20_original.png' remapped 'res://assets/extracted/items/00/20_original.png' at thread -1
+Loading resource: res://assets/extracted/items/00/20_enhanced.png remapped: res://assets/extracted/items/00/20_enhanced.png
+Loading resource: res://.godot/imported/20_enhanced.png-99f99993c154431d17d4a7a4cd0a2b58.ctex remapped: res://.godot/imported/20_enhanced.png-99f99993c154431d17d4a7a4cd0a2b58.ctex
+Completed load for: 'res://assets/extracted/items/00/20_enhanced.png' remapped 'res://assets/extracted/items/00/20_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/tilesets/06_original.png remapped: res://assets/extracted/tilesets/06_original.png
+Loading resource: res://.godot/imported/06_original.png-c3ea102d8f4c9f24cf567298168f2c78.ctex remapped: res://.godot/imported/06_original.png-c3ea102d8f4c9f24cf567298168f2c78.ctex
+Completed load for: 'res://assets/extracted/tilesets/06_original.png' remapped 'res://assets/extracted/tilesets/06_original.png' at thread -1
+Loading resource: res://assets/extracted/tilesets/06_enhanced.png remapped: res://assets/extracted/tilesets/06_enhanced.png
+Loading resource: res://.godot/imported/06_enhanced.png-63438f34181c3cf2bfac6facd653d48e.ctex remapped: res://.godot/imported/06_enhanced.png-63438f34181c3cf2bfac6facd653d48e.ctex
+Completed load for: 'res://assets/extracted/tilesets/06_enhanced.png' remapped 'res://assets/extracted/tilesets/06_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/objects/elevator_enhanced.png remapped: res://assets/extracted/objects/elevator_enhanced.png
+Loading resource: res://.godot/imported/elevator_enhanced.png-12f2ded87626489921803aa82c8e9eb9.ctex remapped: res://.godot/imported/elevator_enhanced.png-12f2ded87626489921803aa82c8e9eb9.ctex
+Completed load for: 'res://assets/extracted/objects/elevator_enhanced.png' remapped 'res://assets/extracted/objects/elevator_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/04_original.png remapped: res://assets/extracted/items/06/04_original.png
+Loading resource: res://.godot/imported/04_original.png-209c1df7254ad64fb860dbd3a2b96545.ctex remapped: res://.godot/imported/04_original.png-209c1df7254ad64fb860dbd3a2b96545.ctex
+Completed load for: 'res://assets/extracted/items/06/04_original.png' remapped 'res://assets/extracted/items/06/04_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/04_enhanced.png remapped: res://assets/extracted/items/06/04_enhanced.png
+Loading resource: res://.godot/imported/04_enhanced.png-ff1171e4cc0b6d6b0cbfa63b720781d3.ctex remapped: res://.godot/imported/04_enhanced.png-ff1171e4cc0b6d6b0cbfa63b720781d3.ctex
+Completed load for: 'res://assets/extracted/items/06/04_enhanced.png' remapped 'res://assets/extracted/items/06/04_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/05_original.png remapped: res://assets/extracted/items/06/05_original.png
+Loading resource: res://.godot/imported/05_original.png-a45adbf0d884ce752e3132192b75d69c.ctex remapped: res://.godot/imported/05_original.png-a45adbf0d884ce752e3132192b75d69c.ctex
+Completed load for: 'res://assets/extracted/items/06/05_original.png' remapped 'res://assets/extracted/items/06/05_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/05_enhanced.png remapped: res://assets/extracted/items/06/05_enhanced.png
+Loading resource: res://.godot/imported/05_enhanced.png-d9b2815260c7aeff88fd8710b02d01ee.ctex remapped: res://.godot/imported/05_enhanced.png-d9b2815260c7aeff88fd8710b02d01ee.ctex
+Completed load for: 'res://assets/extracted/items/06/05_enhanced.png' remapped 'res://assets/extracted/items/06/05_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/06_original.png remapped: res://assets/extracted/items/06/06_original.png
+Loading resource: res://.godot/imported/06_original.png-549534a3e3a30050f5a46b00dbbe0bbf.ctex remapped: res://.godot/imported/06_original.png-549534a3e3a30050f5a46b00dbbe0bbf.ctex
+Completed load for: 'res://assets/extracted/items/06/06_original.png' remapped 'res://assets/extracted/items/06/06_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/06_enhanced.png remapped: res://assets/extracted/items/06/06_enhanced.png
+Loading resource: res://.godot/imported/06_enhanced.png-4ea9f0710c19c575b8f84c035d5a2a45.ctex remapped: res://.godot/imported/06_enhanced.png-4ea9f0710c19c575b8f84c035d5a2a45.ctex
+Completed load for: 'res://assets/extracted/items/06/06_enhanced.png' remapped 'res://assets/extracted/items/06/06_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/07_original.png remapped: res://assets/extracted/items/06/07_original.png
+Loading resource: res://.godot/imported/07_original.png-aff54c8ca7030698e6f7be6e4b8e0c9c.ctex remapped: res://.godot/imported/07_original.png-aff54c8ca7030698e6f7be6e4b8e0c9c.ctex
+Completed load for: 'res://assets/extracted/items/06/07_original.png' remapped 'res://assets/extracted/items/06/07_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/07_enhanced.png remapped: res://assets/extracted/items/06/07_enhanced.png
+Loading resource: res://.godot/imported/07_enhanced.png-b1e2c5d0d8e6fa90b7814600bef083d8.ctex remapped: res://.godot/imported/07_enhanced.png-b1e2c5d0d8e6fa90b7814600bef083d8.ctex
+Completed load for: 'res://assets/extracted/items/06/07_enhanced.png' remapped 'res://assets/extracted/items/06/07_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/08_original.png remapped: res://assets/extracted/items/06/08_original.png
+Loading resource: res://.godot/imported/08_original.png-c832edcf2b93b86d4489c979cf839ff0.ctex remapped: res://.godot/imported/08_original.png-c832edcf2b93b86d4489c979cf839ff0.ctex
+Completed load for: 'res://assets/extracted/items/06/08_original.png' remapped 'res://assets/extracted/items/06/08_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/08_enhanced.png remapped: res://assets/extracted/items/06/08_enhanced.png
+Loading resource: res://.godot/imported/08_enhanced.png-d33a884e26d710bf8a4638ef5fb3f7b0.ctex remapped: res://.godot/imported/08_enhanced.png-d33a884e26d710bf8a4638ef5fb3f7b0.ctex
+Completed load for: 'res://assets/extracted/items/06/08_enhanced.png' remapped 'res://assets/extracted/items/06/08_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/09_original.png remapped: res://assets/extracted/items/06/09_original.png
+Loading resource: res://.godot/imported/09_original.png-cc0ea1cb6ee60292bd69aa5b2d00c448.ctex remapped: res://.godot/imported/09_original.png-cc0ea1cb6ee60292bd69aa5b2d00c448.ctex
+Completed load for: 'res://assets/extracted/items/06/09_original.png' remapped 'res://assets/extracted/items/06/09_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/09_enhanced.png remapped: res://assets/extracted/items/06/09_enhanced.png
+Loading resource: res://.godot/imported/09_enhanced.png-1c4646d96a78b73ad2015f0a7eafc668.ctex remapped: res://.godot/imported/09_enhanced.png-1c4646d96a78b73ad2015f0a7eafc668.ctex
+Completed load for: 'res://assets/extracted/items/06/09_enhanced.png' remapped 'res://assets/extracted/items/06/09_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/10_original.png remapped: res://assets/extracted/items/06/10_original.png
+Loading resource: res://.godot/imported/10_original.png-7f1665e1def29a566e4cff141d42ceac.ctex remapped: res://.godot/imported/10_original.png-7f1665e1def29a566e4cff141d42ceac.ctex
+Completed load for: 'res://assets/extracted/items/06/10_original.png' remapped 'res://assets/extracted/items/06/10_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/10_enhanced.png remapped: res://assets/extracted/items/06/10_enhanced.png
+Loading resource: res://.godot/imported/10_enhanced.png-66fb51096231db57cb17ac1c49ca397e.ctex remapped: res://.godot/imported/10_enhanced.png-66fb51096231db57cb17ac1c49ca397e.ctex
+Completed load for: 'res://assets/extracted/items/06/10_enhanced.png' remapped 'res://assets/extracted/items/06/10_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/11_original.png remapped: res://assets/extracted/items/06/11_original.png
+Loading resource: res://.godot/imported/11_original.png-59c3932feadeb87091bb7182da4cf6b5.ctex remapped: res://.godot/imported/11_original.png-59c3932feadeb87091bb7182da4cf6b5.ctex
+Completed load for: 'res://assets/extracted/items/06/11_original.png' remapped 'res://assets/extracted/items/06/11_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/11_enhanced.png remapped: res://assets/extracted/items/06/11_enhanced.png
+Loading resource: res://.godot/imported/11_enhanced.png-30915e3159743c6c12b5532118d3059f.ctex remapped: res://.godot/imported/11_enhanced.png-30915e3159743c6c12b5532118d3059f.ctex
+Completed load for: 'res://assets/extracted/items/06/11_enhanced.png' remapped 'res://assets/extracted/items/06/11_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/12_original.png remapped: res://assets/extracted/items/06/12_original.png
+Loading resource: res://.godot/imported/12_original.png-7e2207bc4f39d13342d289fd97ce053f.ctex remapped: res://.godot/imported/12_original.png-7e2207bc4f39d13342d289fd97ce053f.ctex
+Completed load for: 'res://assets/extracted/items/06/12_original.png' remapped 'res://assets/extracted/items/06/12_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/12_enhanced.png remapped: res://assets/extracted/items/06/12_enhanced.png
+Loading resource: res://.godot/imported/12_enhanced.png-63131681570aa998db4d62367c534a9b.ctex remapped: res://.godot/imported/12_enhanced.png-63131681570aa998db4d62367c534a9b.ctex
+Completed load for: 'res://assets/extracted/items/06/12_enhanced.png' remapped 'res://assets/extracted/items/06/12_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/13_original.png remapped: res://assets/extracted/items/06/13_original.png
+Loading resource: res://.godot/imported/13_original.png-0e8c3f01759e299916fb73335dcb263d.ctex remapped: res://.godot/imported/13_original.png-0e8c3f01759e299916fb73335dcb263d.ctex
+Completed load for: 'res://assets/extracted/items/06/13_original.png' remapped 'res://assets/extracted/items/06/13_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/13_enhanced.png remapped: res://assets/extracted/items/06/13_enhanced.png
+Loading resource: res://.godot/imported/13_enhanced.png-043e652c8189ff3e00addc5616b13312.ctex remapped: res://.godot/imported/13_enhanced.png-043e652c8189ff3e00addc5616b13312.ctex
+Completed load for: 'res://assets/extracted/items/06/13_enhanced.png' remapped 'res://assets/extracted/items/06/13_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/14_original.png remapped: res://assets/extracted/items/06/14_original.png
+Loading resource: res://.godot/imported/14_original.png-40223dcd66592dd1c4699cab3d268536.ctex remapped: res://.godot/imported/14_original.png-40223dcd66592dd1c4699cab3d268536.ctex
+Completed load for: 'res://assets/extracted/items/06/14_original.png' remapped 'res://assets/extracted/items/06/14_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/14_enhanced.png remapped: res://assets/extracted/items/06/14_enhanced.png
+Loading resource: res://.godot/imported/14_enhanced.png-08e40321abbeb4e35fc8bdf79256a27a.ctex remapped: res://.godot/imported/14_enhanced.png-08e40321abbeb4e35fc8bdf79256a27a.ctex
+Completed load for: 'res://assets/extracted/items/06/14_enhanced.png' remapped 'res://assets/extracted/items/06/14_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/15_original.png remapped: res://assets/extracted/items/06/15_original.png
+Loading resource: res://.godot/imported/15_original.png-dca6f2a6c1aec6d297d825343c46c616.ctex remapped: res://.godot/imported/15_original.png-dca6f2a6c1aec6d297d825343c46c616.ctex
+Completed load for: 'res://assets/extracted/items/06/15_original.png' remapped 'res://assets/extracted/items/06/15_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/15_enhanced.png remapped: res://assets/extracted/items/06/15_enhanced.png
+Loading resource: res://.godot/imported/15_enhanced.png-f69fafd865932c57d7c6526ac8573756.ctex remapped: res://.godot/imported/15_enhanced.png-f69fafd865932c57d7c6526ac8573756.ctex
+Completed load for: 'res://assets/extracted/items/06/15_enhanced.png' remapped 'res://assets/extracted/items/06/15_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/16_original.png remapped: res://assets/extracted/items/06/16_original.png
+Loading resource: res://.godot/imported/16_original.png-3a81a614fc9adb610612072d667e609f.ctex remapped: res://.godot/imported/16_original.png-3a81a614fc9adb610612072d667e609f.ctex
+Completed load for: 'res://assets/extracted/items/06/16_original.png' remapped 'res://assets/extracted/items/06/16_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/16_enhanced.png remapped: res://assets/extracted/items/06/16_enhanced.png
+Loading resource: res://.godot/imported/16_enhanced.png-0ca3de0f1e3e6fce2e9a71558a236269.ctex remapped: res://.godot/imported/16_enhanced.png-0ca3de0f1e3e6fce2e9a71558a236269.ctex
+Completed load for: 'res://assets/extracted/items/06/16_enhanced.png' remapped 'res://assets/extracted/items/06/16_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/17_original.png remapped: res://assets/extracted/items/06/17_original.png
+Loading resource: res://.godot/imported/17_original.png-22b8f97abdf1c94b8b5c2c57b1c837bf.ctex remapped: res://.godot/imported/17_original.png-22b8f97abdf1c94b8b5c2c57b1c837bf.ctex
+Completed load for: 'res://assets/extracted/items/06/17_original.png' remapped 'res://assets/extracted/items/06/17_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/17_enhanced.png remapped: res://assets/extracted/items/06/17_enhanced.png
+Loading resource: res://.godot/imported/17_enhanced.png-55133ea2a105d9584a3074e4013c786d.ctex remapped: res://.godot/imported/17_enhanced.png-55133ea2a105d9584a3074e4013c786d.ctex
+Completed load for: 'res://assets/extracted/items/06/17_enhanced.png' remapped 'res://assets/extracted/items/06/17_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/18_original.png remapped: res://assets/extracted/items/06/18_original.png
+Loading resource: res://.godot/imported/18_original.png-6ae52010a9f2f27c7c65bfd68f43dc89.ctex remapped: res://.godot/imported/18_original.png-6ae52010a9f2f27c7c65bfd68f43dc89.ctex
+Completed load for: 'res://assets/extracted/items/06/18_original.png' remapped 'res://assets/extracted/items/06/18_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/18_enhanced.png remapped: res://assets/extracted/items/06/18_enhanced.png
+Loading resource: res://.godot/imported/18_enhanced.png-d66b0aef8f40af10032f846bc30ce483.ctex remapped: res://.godot/imported/18_enhanced.png-d66b0aef8f40af10032f846bc30ce483.ctex
+Completed load for: 'res://assets/extracted/items/06/18_enhanced.png' remapped 'res://assets/extracted/items/06/18_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/19_original.png remapped: res://assets/extracted/items/06/19_original.png
+Loading resource: res://.godot/imported/19_original.png-8b3f5a601427f2a47b6b753a18922438.ctex remapped: res://.godot/imported/19_original.png-8b3f5a601427f2a47b6b753a18922438.ctex
+Completed load for: 'res://assets/extracted/items/06/19_original.png' remapped 'res://assets/extracted/items/06/19_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/19_enhanced.png remapped: res://assets/extracted/items/06/19_enhanced.png
+Loading resource: res://.godot/imported/19_enhanced.png-ead8b5c126d7eebdbd6c251e24b0267e.ctex remapped: res://.godot/imported/19_enhanced.png-ead8b5c126d7eebdbd6c251e24b0267e.ctex
+Completed load for: 'res://assets/extracted/items/06/19_enhanced.png' remapped 'res://assets/extracted/items/06/19_enhanced.png' at thread -1
+Loading resource: res://assets/extracted/items/06/20_original.png remapped: res://assets/extracted/items/06/20_original.png
+Loading resource: res://.godot/imported/20_original.png-a41e17b25398ee51c3d88f4e8cd8c822.ctex remapped: res://.godot/imported/20_original.png-a41e17b25398ee51c3d88f4e8cd8c822.ctex
+Completed load for: 'res://assets/extracted/items/06/20_original.png' remapped 'res://assets/extracted/items/06/20_original.png' at thread -1
+Loading resource: res://assets/extracted/items/06/20_enhanced.png remapped: res://assets/extracted/items/06/20_enhanced.png
+Loading resource: res://.godot/imported/20_enhanced.png-aad17ff8c66e45618c00a9c6a2e010f7.ctex remapped: res://.godot/imported/20_enhanced.png-aad17ff8c66e45618c00a9c6a2e010f7.ctex
+Completed load for: 'res://assets/extracted/items/06/20_enhanced.png' remapped 'res://assets/extracted/items/06/20_enhanced.png' at thread -1
+ELEVATOR_MORPH_OK: floor contact allows unrolling, real ceiling blocks it, and ball form can board
+WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: AudioStreamWAV:9223372078680376939 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372704436979357 - Reference count: 1
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+Orphan StringName: Master (static: 0, total: 1)
+StringName: 1 unclaimed string names at exit.

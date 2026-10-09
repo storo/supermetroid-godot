@@ -1,0 +1,8 @@
+[  0%] Built target generate_bindings
+[  1%] Building C object CMakeFiles/sm_gameplay.dir/core/host.c.o
+[ 58%] Built target godot-cpp
+[ 59%] Linking C static library libsm_gameplay.a
+[ 98%] Built target sm_gameplay
+[ 99%] Building CXX object CMakeFiles/sm_native.dir/bridge.cpp.o
+[100%] Linking CXX shared library /Users/storo/supermetroid/native/bin/libsm_native.dylib
+[100%] Built target sm_native

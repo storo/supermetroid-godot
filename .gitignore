@@ -1,0 +1,17 @@
+.godot/
+.DS_Store
+rom_src/*.sfc
+rom_src/*.smc
+.remember/
+third_party/
+tools/reference_disassembly/
+tools/__pycache__/
+tools/**/__pycache__/
+tools/reference_native/
+tools/native_probe/build/
+native/build/
+native/bin/
+__pycache__/
+*.py[cod]
+*.srm
+*.sav

@@ -1,0 +1,32 @@
+{
+  "complete_remake_verified": false,
+  "scope": "native C integration and first Ceres viewport only",
+  "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
+  "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "architecture": "x86_64",
+  "cpu_and_spc_interpreters_compiled": false,
+  "tests": {
+    "native_extension_test.log": {
+      "terminal_markers": [
+        "NATIVE_EXTENSION_OK: registered GDExtension, 18000 C ticks, 7804 gameplay ticks, Ceres movement/audio, VRAM/CGRAM/OAM packets, single ownership, close/reboot, intact ROM; full campaign pending"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_core_capture.log": {
+      "terminal_markers": [
+        "NATIVE_CORE_CAPTURE_OK: Ceres reached through original C menu/intro; Godot draws tile/sprite packets"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_integration_smoke.log": {
+      "terminal_markers": [
+        "SMOKE_OK: native movement, jump, projectile, morph, room switching, art toggle, save/load; 322 room states verified"
+      ],
+      "errors": [],
+      "process_exit": 0
+    }
+  }
+}

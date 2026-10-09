@@ -1,0 +1,77 @@
+{
+  "import.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": []
+  },
+  "smoke.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "SMOKE_OK: native movement, jump, projectile, morph, room switching, art toggle, save/load; 322 room states verified"
+    ]
+  },
+  "room_audit.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "ROOM_AUDIT_OK: 261 original rooms and 322 states instantiated with native collision, art and a clear spawn"
+    ]
+  },
+  "progression.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "PROGRESSION_OK: 261 defaults, 61 ROM predicates, priority, area boss flags, death quota, save/load and new game reset"
+    ]
+  },
+  "pirate.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "PIRATE_OK: five Pit pirates, ROM animation/attack streams, 13 laser emissions, laser damage, beam hitboxes, five actual deaths and Zebes awake transition"
+    ]
+  },
+  "elevator.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "ELEVATOR_OK: actual Crateria-Brinstar round trip, 90 px/s, 48-tick down delay, input direction, pause/control lock, save after arrival and 14 endpoint transits in deterministic native ticks"
+    ]
+  },
+  "elevator_morph.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "ELEVATOR_MORPH_OK: floor contact allows unrolling, real ceiling blocks it, and ball form can board"
+    ]
+  },
+  "elevator_capture.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "ELEVATOR_CAPTURE_OK"
+    ]
+  },
+  "pirate_capture.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "PIRATE_CAPTURE_OK"
+    ]
+  },
+  "capture.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "CAPTURE_OK"
+    ]
+  },
+  "verify.log": {
+    "errors": [],
+    "warnings": [],
+    "terminal_markers": [
+      "ASSET_INTEGRITY_OK {\"rom_unchanged\": true, \"rooms\": 261, \"room_states\": 322, \"state_predicates\": 61, \"doors\": 605, \"tilesets\": 29, \"samus_animation_sets\": 19, \"enemy_tile_atlases\": 154, \"pirate_animation_frames\": 55, \"pirate_instruction_nodes\": 174, \"elevator_endpoints\": 14, \"dynamic_item_types\": 17, \"dynamic_item_palette_variants\": 29, \"complete_remake_verified\": false, \"scope\": \"Asset integrity and original room data only, not full runtime behavior\"}"
+    ]
+  }
+}

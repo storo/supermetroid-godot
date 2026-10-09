@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "sm_native_init"
+compatibility_minimum = "4.5"
+reloadable = false
+
+[libraries]
+macos.debug.x86_64 = "res://native/bin/libsm_native.dylib"
+macos.release.x86_64 = "res://native/bin/libsm_native.dylib"

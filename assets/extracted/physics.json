@@ -1,0 +1,49 @@
+{
+  "source": "Local NTSC ROM",
+  "tick_rate": 60,
+  "gravity_air": 393.75,
+  "jump_air": 292.5,
+  "jump_hi": 360.0,
+  "jump_wall": 277.5,
+  "bomb_jump": 165.0,
+  "dash_acceleration": 225.0,
+  "dash_extra_max": 120.0,
+  "speed_extra_max": 420.0,
+  "movement": {
+    "stand": {
+      "acceleration": 2700.0,
+      "max_speed": 0.0,
+      "deceleration": 1800.0
+    },
+    "run": {
+      "acceleration": 675.0,
+      "max_speed": 165.0,
+      "deceleration": 1800.0
+    },
+    "jump": {
+      "acceleration": 2700.0,
+      "max_speed": 75.0,
+      "deceleration": 1800.0
+    },
+    "spin": {
+      "acceleration": 2700.0,
+      "max_speed": 82.5,
+      "deceleration": 1800.0
+    },
+    "morph": {
+      "acceleration": 2700.0,
+      "max_speed": 195.0,
+      "deceleration": 1800.0
+    },
+    "crouch": {
+      "acceleration": 2700.0,
+      "max_speed": 0.0,
+      "deceleration": 1800.0
+    },
+    "fall": {
+      "acceleration": 2700.0,
+      "max_speed": 60.0,
+      "deceleration": 1800.0
+    }
+  }
+}
