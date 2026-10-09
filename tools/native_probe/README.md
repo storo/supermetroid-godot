@@ -54,3 +54,31 @@ sólo esos fotogramas. La prueba de navegación del menú usa
 `campaign_menu_test.gd -- --native-core-ui-test` y no toca la SRAM normal.
 
 Licencia del código de referencia: `docs/licenses/snesrev-sm.txt`.
+
+## Recorrido hacia las bombas: en desarrollo
+
+`bomb_route.c` y `bomb_route.h` prolongan el recorrido de despertar de Zebes.
+El último ensayo del controlador C vuelve por Climb y Parlor y llega a Flyway
+(`$8F:9879`). Allí se estanca: **todavía no recoge las bombas ni derrota a Bomb
+Torizo**. Este tramo tampoco tiene aún una reproducción verificada en Godot.
+El ejecutable comunica `BOMB_ROUTE_INCOMPLETE` y devuelve 1 cuando no logra
+la recogida y el bit de derrota originales; compilarlo no demuestra que pase.
+
+El target es opcional, queda fuera de la compilación normal y requiere POSIX
+(macOS/Linux). `route_lookahead.h` prueba saltos con pulsaciones normales en
+procesos hijos, recibe sólo secuencias de botones y comprueba que el estado del
+proceso principal no cambió. `parlor_return.h` contiene máscaras de geometría
+de sólo lectura. Estas herramientas no se incorporan al juego.
+
+Después de preparar `native/`, se puede repetir el ensayo con una carpeta
+temporal nueva y una ROM local:
+
+```sh
+cmake --build native/build --target sm_bomb_route --parallel 4
+route_output=$(mktemp -d)
+native/build/sm_bomb_route '/ruta/a/Super Metroid.sfc' "$route_output"
+```
+
+La carpeta guarda `bomb.inputs` y `bomb.csv` para diagnosticar el recorrido.
+Usa exclusivamente SRAM temporal; no reutilices una carpeta con una partida
+que quieras conservar.
