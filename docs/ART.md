@@ -45,3 +45,9 @@ comparadas sin tolerancia RGB en `native_campaign_verification.json`. Las versio
 `native_campaign_*_enhanced.png` se dibujan a 2× con Scale2x y luz/saturación; sus
 anclajes, tiles y paletas provienen del mismo estado que las capturas originales.
 Este tratamiento del arte sigue siendo una primera mejora, no su redibujado final.
+
+La ruta de Zebes añade capturas de Parlor, Climb, Brinstar y Morph Ball en
+`native_zebes_*_{original,enhanced,oracle}.png`. El renderer nativo produce la
+variante mejorada a 2× con el mismo tratamiento; las versiones originales se
+comparan sin tolerancia RGB en `native_zebes_verification.json`. No se añadieron
+redibujados de personajes en esta ampliación.

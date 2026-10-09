@@ -24,6 +24,12 @@ principal GDScript se puede importar y ejecutar sin compilarla.
 La escena independiente conserva los menús y la introducción ejecutados por el
 núcleo. Enter envía Start; espacio/Z envía A; J/X envía X; Shift envía B; K envía
 Select para elegir misiles; Q/E envían R/L. A/D o flechas y W/S controlan la cruz.
+Retroceso envía Y para cancelar la selección de arma. El mando usa A para salto,
+B para carrera, X para disparo, Y para cancelar, R/L para apuntar, Start/Back para
+Start/Select, cruz y stick izquierdo para movimiento. Estas acciones nativas
+tienen bindings independientes de la escena GDScript y no se duplican al volver
+a abrirla. `native_input_test.gd` comprueba eventos reales de teclado, botones y
+stick, combinaciones, liberación y zona muerta.
 F1 alterna arte; Escape congela la prueba. Las acciones de Morph Ball y bombas
 siguen los botones originales del núcleo (Down y X). No hay equipo concedido por
 la escena. La SRAM usa `user://native_campaign.srm` y no sustituye el JSON de la
@@ -124,6 +130,29 @@ Cuatro capturas concretas de jefe, retirada, timer y llegada coinciden en sus
 `docs/qa/native_campaign_verification.json` conserva esa evidencia. La comparación
 de estados prueba la integración con la referencia C; no es una comparación de
 la CPU SNES ni verifica todos los desenlaces del combate o la campaña completa.
+
+El recorrido posterior hasta Morph Ball también se puede reproducir:
+
+```sh
+cmake --build native/build --target sm_zebes_route sm_raster_oracle sm_native --parallel 4
+python3 tools/native_probe/verify_zebes.py
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script tools/native_probe/native_input_test.gd
+```
+
+`zebes_route.h` continúa la ruta de Ceres por Landing Site, Parlor, Climb, Pit,
+el ascensor a Brinstar y Morph Ball. Dispara a las puertas y salta sobre las
+plataformas; pulsa los controles originales del ascensor, recoge el PLM, cierra
+su mensaje y transforma a Samus para rodar. Son 21959 ticks desde SRAM vacía;
+ninguna acción escribe posición, inventario, eventos o salud. Las máscaras de
+aire de `zebes_descent.h` proceden de la geometría extraída y sólo guían ese
+controlador de pruebas, que no se enlaza con el juego.
+
+Godot reproduce el input y compara todos los ticks con el ejecutable C, incluido
+el inventario y el tipo de movimiento. Se comparan cuatro capturas concretas de
+Parlor, Climb, Brinstar y Morph Ball con el oráculo offline. El alcance y los
+resultados están en `docs/qa/native_zebes_verification.json`; esto no prueba los
+primeros misiles, bombas, el despertar de Zebes, el resto de la campaña o la
+equivalencia de lógica con la CPU SNES.
 
 Próximo trabajo: ampliar recorridos de combate, mejoras, estaciones, jefes y
 final desde Landing Site, y sustituir

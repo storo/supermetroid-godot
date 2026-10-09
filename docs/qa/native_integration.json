@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native Godot integration; intro, all six Ceres rooms, Ridley low-health retreat, timed escape, playable Landing Site, menu lifecycle",
+  "scope": "Native Godot integration; intro, Ceres/Ridley low-health retreat/timed escape, playable Landing Site, Zebes descent/elevator/Morph Ball acquisition and rolling, keyboard/gamepad/stick and menu lifecycle",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -104,9 +104,52 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_zebes_route.log": {
+      "terminal_markers": [
+        "ZEBES_ROUTE_OK: morph_ball=1 rolling=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_zebes_godot.log": {
+      "terminal_markers": [
+        "ZEBES_GODOT_OK: 21959 ticks, Landing/Parlor/Climb/Pit/elevator/Brinstar/Morph Ball, acquisition and rolling, exact input/state replay, intact ROM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_zebes_verification.log": {
+      "terminal_markers": [
+        "ZEBES_VERIFICATION_OK: 21959 native Godot ticks; Landing/Parlor/Climb/Pit/elevator/Brinstar/Morph Ball; 229376 exact RGB pixels; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_input.log": {
+      "terminal_markers": [
+        "NATIVE_INPUT_OK: actual key/gamepad/stick events, twelve SNES buttons, combinations, release, deadzone, idempotent bindings"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_zebes_menu.log": {
+      "terminal_markers": [
+        "CAMPAIGN_MENU_OK: title launches native campaign, controls fit below gameplay, F10 returns, core reopens; dedicated test SRAM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_zebes_smoke.log": {
+      "terminal_markers": [
+        "SMOKE_OK: native movement, jump, projectile, morph, room switching, art toggle, save/load; 322 room states verified"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
   "clean_clone_without_binary_imported": true,
-  "campaign_verification_report": "docs/qa/native_campaign_verification.json"
+  "campaign_verification_report": "docs/qa/native_campaign_verification.json",
+  "zebes_verification_report": "docs/qa/native_zebes_verification.json"
 }

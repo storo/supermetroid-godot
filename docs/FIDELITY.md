@@ -24,7 +24,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 ## Orden de trabajo pendiente
 
 1. Completar la extracción de poses, fondos, gráficos de PLM y metadatos de eventos; conservar las direcciones originales como trazabilidad.
-2. Implementar el recorrido Landing Site → Parlor → Climb → Morph Ball con puertas/elevadores/objetos reales, sin habilitar equipo de prueba en partida normal.
+2. Ampliar la ruta nativa verificada Landing Site → Parlor → Climb → Pit → ascensor → Morph Ball hasta los primeros misiles, bombas y despertar de Zebes, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
 3. Implementar el sistema de eventos y selección de estado de sala; establecer pruebas por escena original y condición de progresión.
 4. Portar las armas, mejoras, colisiones especiales, líquidos y estaciones; comparar controles y física a 60 Hz con capturas/datos del original.
 5. Portar todas las familias de enemigos y jefes, con estados y vulnerabilidades originales.
@@ -80,3 +80,17 @@ No prueba la paridad de lógica con la CPU SNES, la retirada por daño a Ridley,
 todos los fotogramas, todos los efectos o el resto de la campaña. El menú permite
 entrar a esta escena cuando están presentes ROM/binario, y F10 vuelve liberando
 el núcleo. La prueba de navegación usa una SRAM distinta de la partida del usuario.
+
+`verify_zebes.py` amplía ese recorrido a 21959 ticks con las salas iniciales de
+Zebes y la recogida de Morph Ball. El controlador usa botones normales, cierra el
+mensaje original, transforma a Samus y comprueba su desplazamiento rodando.
+Godot coincide con la referencia C por tick en estado, sala, posición, pose,
+salud, inventario y tipo/velocidad de movimiento. Cuatro checkpoints adicionales
+se comparan en RGB sin tolerancia con el oráculo offline; el informe es
+`docs/qa/native_zebes_verification.json`. Los misiles, bombas, despertar de Zebes
+y campaña restante aún no están verificados en esta integración.
+
+La campaña nativa tiene sus doce botones SNES accesibles por teclado y mando,
+incluidos Start, Select y cancelar arma, cruz y stick izquierdo. La prueba
+`native_input_test.gd` envía eventos a Godot y verifica sus máscaras, combinaciones,
+liberación, zona muerta y registro sin duplicados al reabrir la escena.

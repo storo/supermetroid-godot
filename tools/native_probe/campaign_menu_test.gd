@@ -28,6 +28,12 @@ func run() -> void:
 	await scene_changed
 	for i in range(30):await physics_frame
 	require(current_scene.core!=null and current_scene.core.get_state().frame>=10,"Native campaign running from title menu")
+	await RenderingServer.frame_post_draw
+	var clip: Control=current_scene.get_node("GameplayViewport")
+	var help: Label=current_scene.get_node("ControlsHint")
+	require(clip.position.y+clip.size.y*clip.scale.y<=help.position.y,"Controls below gameplay viewport")
+	require(help.position.y+help.size.y<=get_root().size.y,"Complete controls visible inside window")
+	get_root().get_texture().get_image().save_png("res://docs/qa/native_campaign_controls.png")
 	var event := InputEventKey.new()
 	event.pressed=true
 	event.keycode=KEY_F10
@@ -39,5 +45,5 @@ func run() -> void:
 	await scene_changed
 	for i in range(10):await physics_frame
 	require(current_scene.core!=null and not current_scene.core.get_state().is_empty(),"Core can reopen after ownership cleanup")
-	print("CAMPAIGN_MENU_OK: title launches native campaign, F10 returns, core reopens; dedicated test SRAM")
+	print("CAMPAIGN_MENU_OK: title launches native campaign, controls fit below gameplay, F10 returns, core reopens; dedicated test SRAM")
 	quit()

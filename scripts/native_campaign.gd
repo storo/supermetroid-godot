@@ -3,6 +3,9 @@ extends Control
 const Renderer = preload("res://scripts/native_raster_renderer.gd")
 const InputSetup = preload("res://scripts/input_setup.gd")
 const ROM := "res://rom_src/Super Metroid (Japan, USA) (En,Ja).sfc"
+const BUTTONS := {"right":0x100,"left":0x200,"up":0x800,"down":0x400,
+	"jump":0x80,"fire":0x40,"run":0x8000,"aim_up":0x10,"aim_down":0x20,
+	"select":0x2000,"start":0x1000,"cancel":0x4000}
 var core: RefCounted
 var extension_resource: Resource
 var renderer: Node2D
@@ -18,6 +21,7 @@ var frame := 0
 
 func _ready() -> void:
 	InputSetup.install()
+	InputSetup.install_native()
 	capture_mode = "--native-core-capture" in OS.get_cmdline_user_args()
 	ui_test_mode = "--native-core-ui-test" in OS.get_cmdline_user_args()
 	extension_resource = load("res://native/sm_native.gdextension")
@@ -42,7 +46,8 @@ func _ready() -> void:
 	status.position = Vector2(36,57)
 	add_child(status)
 	var clip := Control.new()
-	clip.position = Vector2(256,96)
+	clip.name = "GameplayViewport"
+	clip.position = Vector2(256,64)
 	clip.size = Vector2(256,224)
 	clip.scale = Vector2(3,3)
 	clip.clip_contents = true
@@ -50,8 +55,9 @@ func _ready() -> void:
 	renderer = Renderer.new()
 	clip.add_child(renderer)
 	var help := Label.new()
-	help.text = "A/D mover · Espacio saltar · J disparar · Enter iniciar · F1 comparar · Esc pausar · F10 menú"
-	help.position = Vector2(36,775)
+	help.name = "ControlsHint"
+	help.text = "A/D mover · Espacio saltar · J disparar/bombas · Shift correr · S/↓ agacharse/Morph Ball\nQ/E apuntar · K elegir arma · Retroceso cancelar · Enter mapa/iniciar · F1 arte · Esc pausa · F10 menú"
+	help.position = Vector2(36,740)
 	add_child(help)
 	if capture_mode:
 		# Reach Ceres using the reference's own menu/intro flow, without RAM edits.
@@ -89,17 +95,8 @@ func _ready() -> void:
 
 func joypad() -> int:
 	var joy := 0
-	if Input.is_action_pressed("right"): joy |= 0x100
-	if Input.is_action_pressed("left"): joy |= 0x200
-	if Input.is_action_pressed("up"): joy |= 0x800
-	if Input.is_action_pressed("down"): joy |= 0x400
-	if Input.is_action_pressed("jump"): joy |= 0x80
-	if Input.is_action_pressed("fire"): joy |= 0x40
-	if Input.is_action_pressed("run"): joy |= 0x8000
-	if Input.is_action_pressed("aim_up"): joy |= 0x10
-	if Input.is_action_pressed("aim_down"): joy |= 0x20
-	if Input.is_key_pressed(KEY_K): joy |= 0x2000
-	if Input.is_key_pressed(KEY_ENTER): joy |= 0x1000
+	for name in BUTTONS:
+		if Input.is_action_pressed("native_"+name):joy|=BUTTONS[name]
 	return joy
 
 func _physics_process(_delta: float) -> void:
@@ -110,7 +107,8 @@ func _physics_process(_delta: float) -> void:
 		return
 	snapshot = core.get_snapshot()
 	renderer.present(snapshot)
-	status.text = "Arte %s · %s" % ["mejorado" if enhanced else "original", "Ceres" if snapshot.area==6 else "Zebes"]
+	var location := "Inicio" if snapshot.room==0 else "Ceres" if snapshot.area==6 else "Zebes"
+	status.text = "Arte %s · %s" % ["mejorado" if enhanced else "original",location]
 	if audio_playback and audio_playback.get_frames_available() >= 534:
 		audio_playback.push_buffer(core.get_audio())
 	frame += 1

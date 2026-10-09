@@ -7,6 +7,7 @@ var core: RefCounted
 var extension_resource: Resource
 var renderer: Node2D
 var captures: Dictionary = {}
+var capture_prefix := "native_campaign"
 
 func _initialize() -> void:
 	call_deferred("run")
@@ -29,13 +30,13 @@ func capture(name: String, state: Dictionary) -> void:
 	renderer.enhanced = false
 	renderer.present(snapshot)
 	for i in range(5): await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://docs/qa/native_campaign_%s_original.png" % name)
+	root.get_texture().get_image().save_png("res://docs/qa/%s_%s_original.png" % [capture_prefix,name])
 	root.size = Vector2i(512,448)
 	renderer.scale = Vector2(2,2)
 	renderer.enhanced = true
 	renderer.present(snapshot)
 	for i in range(5): await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://docs/qa/native_campaign_%s_enhanced.png" % name)
+	root.get_texture().get_image().save_png("res://docs/qa/%s_%s_enhanced.png" % [capture_prefix,name])
 	print("CAMPAIGN_CAPTURE %s frame=%d" % [name,state.frame])
 
 func run() -> void:

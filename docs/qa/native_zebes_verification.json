@@ -1,0 +1,147 @@
+{
+  "route": {
+    "audible_packets": 121,
+    "captures": {
+      "brinstar": {
+        "frame": 20657,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1024,
+          4608
+        ],
+        "room": 40607,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "climb": {
+        "frame": 18856,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          0,
+          3194
+        ],
+        "room": 38586,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "morph": {
+        "frame": 21959,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          774,
+          5120
+        ],
+        "room": 40607,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "parlor": {
+        "frame": 17693,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          0,
+          1177
+        ],
+        "room": 37629,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      }
+    },
+    "final_pose": 30,
+    "final_position": "(1162.0, 681.0)",
+    "frames": 21959,
+    "items": 4,
+    "missiles": 0,
+    "morph_rolling": true,
+    "rom_unchanged": true,
+    "rooms": [
+      57157,
+      57229,
+      57303,
+      57377,
+      57451,
+      57525,
+      37368,
+      37629,
+      38586,
+      38748,
+      38837,
+      40607
+    ],
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "pixel_comparisons": [
+    {
+      "name": "brinstar",
+      "frame": 20657,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "climb",
+      "frame": 18856,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "morph",
+      "frame": 21959,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "parlor",
+      "frame": 17693,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    }
+  ],
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false
+}
