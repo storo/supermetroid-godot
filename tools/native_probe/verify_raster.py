@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[2]
 QA = ROOT / "docs" / "qa"
 
 
-def run(command, name, marker):
-    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=180)
+def run(command, name, marker, timeout=180):
+    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=timeout)
     output = result.stdout + result.stderr
     (QA / name).write_text(output)
     if result.returncode or marker not in output or "SCRIPT ERROR:" in output or "ERROR:" in output:

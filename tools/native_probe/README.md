@@ -55,14 +55,17 @@ sólo esos fotogramas. La prueba de navegación del menú usa
 
 Licencia del código de referencia: `docs/licenses/snesrev-sm.txt`.
 
-## Recorrido hacia las bombas: en desarrollo
+## Recorrido hasta bombas y Bomb Torizo
 
 `bomb_route.c` y `bomb_route.h` prolongan el recorrido de despertar de Zebes.
-El último ensayo del controlador C vuelve por Climb y Parlor y llega a Flyway
-(`$8F:9879`). Allí se estanca: **todavía no recoge las bombas ni derrota a Bomb
-Torizo**. Este tramo tampoco tiene aún una reproducción verificada en Godot.
+El ensayo verificado vuelve por Climb y Parlor, cruza el pasaje de Morph Ball,
+recupera energía en Flyway (`$8F:9879`), abre la puerta roja con cinco misiles,
+recoge las bombas y derrota a Bomb Torizo. Coloca una bomba, espera su explosión
+y recupera una pose de pie. `bomb_test.gd` reproduce los 68964 ticks en Godot con
+paridad de estado; `verify_bombs.py` compara siete capturas originales sin
+diferencias RGB. No prueba todavía estaciones, mejoras posteriores ni el final.
 El ejecutable comunica `BOMB_ROUTE_INCOMPLETE` y devuelve 1 cuando no logra
-la recogida y el bit de derrota originales; compilarlo no demuestra que pase.
+todas sus condiciones; compilarlo no demuestra que pase.
 
 El target es opcional, queda fuera de la compilación normal y requiere POSIX
 (macOS/Linux). `route_lookahead.h` prueba saltos con pulsaciones normales en
@@ -70,15 +73,26 @@ procesos hijos, recibe sólo secuencias de botones y comprueba que el estado del
 proceso principal no cambió. `parlor_return.h` contiene máscaras de geometría
 de sólo lectura. Estas herramientas no se incorporan al juego.
 
-Después de preparar `native/`, se puede repetir el ensayo con una carpeta
-temporal nueva y una ROM local:
+Después de preparar `native/`, la comprobación completa usa:
 
 ```sh
-cmake --build native/build --target sm_bomb_route --parallel 4
+cmake --build native/build --target sm_bomb_route sm_native sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_bombs.py
+```
+
+Por defecto reproduce desde el arranque los 33156 botones registrados de
+`fixtures/bomb_prefix.inputs`, validados con `bomb_prefix.json`, y continúa el
+controlador desde Flyway. El prefijo no contiene ROM, SRAM ni memoria del juego.
+También se puede ejecutar sólo el controlador con una carpeta temporal nueva:
+
+```sh
 route_output=$(mktemp -d)
-native/build/sm_bomb_route '/ruta/a/Super Metroid.sfc' "$route_output"
+native/build/sm_bomb_route '/ruta/a/Super Metroid.sfc' "$route_output" tools/native_probe/fixtures/bomb_prefix.inputs
 ```
 
 La carpeta guarda `bomb.inputs` y `bomb.csv` para diagnosticar el recorrido.
 Usa exclusivamente SRAM temporal; no reutilices una carpeta con una partida
 que quieras conservar.
+Omitir el prefijo, o usar `verify_bombs.py --plan-from-start`, recalcula también
+la ruta inicial con los procesos hijos; ese modo completo de planificación no
+forma parte del resultado verificado publicado.

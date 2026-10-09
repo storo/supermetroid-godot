@@ -63,6 +63,7 @@ public:
     result["items"]=s.items; result["beams"]=s.beams;
     result["missile_capacity"]=s.missile_capacity; result["selected_item"]=s.selected_item;
     result["active_projectiles"]=s.active_projectiles;
+    result["active_bombs"]=s.active_bombs;
     result["room_kills"]=s.room_kills; result["room_quota"]=s.room_quota;
     result["room_state"]=s.room_state;
     PackedByteArray events,bosses;

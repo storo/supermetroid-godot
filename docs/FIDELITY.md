@@ -12,7 +12,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
 | Puertas, elevadores, estaciones y PLM | Restricciones por color, condiciones de jefe/cuota y 14 extremos de ascensor con transporte nativo; estaciones y secuencia de la estatua de Tourian pendientes | Incompleto |
 | Enemigos y sus IA originales | 154 atlas y parámetros; tres IA aproximadas; piratas grises de suelo/pared con instrucciones, frames e hitboxes de ROM y rutinas nativas | Incompleto; faltan las demás familias y comparación por fotograma |
-| Jefes y minijefes | Assets crudos y rutinas C integradas; recorrido nativo de Ridley de Ceres por salud baja | Incompleto; demás jefes y variantes por verificar |
+| Jefes y minijefes | Assets crudos y rutinas C integradas; retirada de Ridley de Ceres por salud baja y derrota original de Bomb Torizo en Godot | Incompleto; demás jefes y variantes por verificar |
 | Mejoras, armas y restricciones originales | Objetos y equipo básico; parte de las habilidades | Incompleto |
 | Líquidos, calor, arena y tipos de bloque | Datos disponibles; colisiones sólidas y pendientes | Incompleto |
 | Ceres, historia, eventos y cambios de estado | 61 selectores de ROM en GDScript; Ceres → Ridley → escape → llegada controlable a Landing Site en la integración C/Godot | Tramo Ceres verificado en la integración; historia y campaña restantes incompletas |
@@ -24,7 +24,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 ## Orden de trabajo pendiente
 
 1. Completar la extracción de poses, fondos, gráficos de PLM y metadatos de eventos; conservar las direcciones originales como trazabilidad.
-2. Ampliar la ruta nativa verificada Landing Site → Morph Ball → primeros misiles → regreso a Crateria → despertar de Zebes hasta bombas y Bomb Torizo, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
+2. Ampliar la ruta nativa verificada hasta bombas y Bomb Torizo hacia tanques de energía, estaciones, Brinstar y Kraid, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
 3. Implementar el sistema de eventos y selección de estado de sala; establecer pruebas por escena original y condición de progresión.
 4. Portar las armas, mejoras, colisiones especiales, líquidos y estaciones; comparar controles y física a 60 Hz con capturas/datos del original.
 5. Portar todas las familias de enemigos y jefes, con estados y vulnerabilidades originales.
@@ -39,6 +39,18 @@ Los piratas grises interpretan las listas de $B2:ECC0–EE40 y $B2:FB4C–FC68. 
 Los ascensores siguen $A3:94D6–962E: dos cuadros cada dos ticks, 1.5 píxeles/tick, Samus a 26 píxeles sobre la plataforma y posición de entrada leída de `parameter2`. La demora descendente de 48 ticks procede de $82:E18E. La prueba ejecuta un viaje real de ida y vuelta con input/física del motor y los 14 trayectos con pasos nativos deterministas. El fundido, cámara, sonidos y orden de transición no tienen comparación por fotograma con SNES; los requisitos de acceso de la campaña siguen dependiendo de sus PLM, jefes y eventos pendientes.
 
 La ROM debe permanecer intacta. El modo de exploración es una herramienta de inspección; no representa la progresión de la campaña.
+
+`verify_bombs.py` verifica una partida nueva de 68964 ticks hasta bombas y
+Bomb Torizo. Reproduce un prefijo registrado de botones, vuelve por Climb/Parlor
+despiertos, cruza el pasaje de Morph Ball, usa drops para recuperar energía,
+abre la puerta roja con cinco misiles y recoge las bombas. El jefe recibe daño
+desde sus 800 puntos originales hasta la secuencia que activa el bit de derrota.
+Samus coloca una bomba, espera su explosión y recupera una pose de pie. Godot
+coincide con el registro C en cada tick y siete capturas originales suman 401408
+píxeles RGB idénticos al oráculo offline. No se modifica memoria de juego ni
+equipo para avanzar. El informe `docs/qa/native_bomb_verification.json` mantiene
+`whole_campaign_verified: false`: la evidencia cubre este recorrido, no todos
+los combates, la salida de la puerta gris, estaciones, secretos o el final.
 
 ## Investigación de la lógica C original
 
@@ -88,7 +100,7 @@ Godot coincide con la referencia C por tick en estado, sala, posición, pose,
 salud, inventario y tipo/velocidad de movimiento. Cuatro checkpoints adicionales
 se comparan en RGB sin tolerancia con el oráculo offline; el informe es
 `docs/qa/native_zebes_verification.json`. Los misiles y el despertar se comprueban
-con los recorridos posteriores descritos abajo; bombas y campaña restante siguen pendientes.
+con los recorridos posteriores descritos abajo; la campaña restante sigue pendiente.
 
 La campaña nativa tiene sus doce botones SNES accesibles por teclado y mando,
 incluidos Start, Select y cancelar arma, cruz y stick izquierdo. La prueba

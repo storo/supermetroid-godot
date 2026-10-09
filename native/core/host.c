@@ -221,6 +221,7 @@ int sm_native_state(SmNativeState *s) {
   s->items=equipped_items; s->beams=equipped_beams;
   s->missile_capacity=samus_max_missiles; s->selected_item=hud_item_index;
   s->active_projectiles=projectile_counter;
+  s->active_bombs=bomb_counter;
   s->room_kills=num_enemies_killed_in_room; s->room_quota=num_enemy_deaths_left_to_clear;
   s->room_state=roomdefroomstate_ptr;
   memcpy(s->event_flags,events_that_happened,sizeof(s->event_flags));

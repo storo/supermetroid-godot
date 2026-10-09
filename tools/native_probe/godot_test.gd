@@ -47,6 +47,7 @@ func run_test() -> void:
 		require(snapshot.vram.size() == 65536 and snapshot.palette.size() == 512 and snapshot.oam.size() == 544, "Drawing data sizes")
 		require(snapshot.raster.size() == 262144, "Per-line drawing packet size")
 		require(snapshot.backgrounds.size() == 4, "Background descriptors")
+		require(snapshot.active_bombs == 0, "Fresh Ceres route has no active bombs")
 		require(snapshot.mode7.size() == 8 and snapshot.has("obj_enabled") and snapshot.has("bg3priority"), "Mode 7 and layer descriptors")
 		if snapshot.state == 8:
 			if snapshot.position != previous:

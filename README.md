@@ -17,9 +17,12 @@ Con la ROM local y la extensión compilada (`sh native/setup.sh`), el menú tamb
 ofrece **Jugar desde Ceres**. Esa escena conserva la introducción, Ridley, el escape
 y la llegada a Zebes de las rutinas C originales. También se verificó el recorrido
 Landing Site → Parlor → Climb → Pit → ascensor → Morph Ball → Construction Zone
-→ primeros misiles → regreso a Crateria y combate con los cinco piratas de Pit.
+→ primeros misiles → regreso a Crateria → cinco piratas de Pit → Climb → Parlor
+→ pasaje de Morph Ball → Flyway → bombas y derrota de Bomb Torizo.
 La recogida, transformación, disparo, consumo de munición y despertar de Zebes
-se comprueban con controles normales. F10 vuelve al menú. Su partida
+se comprueban con controles normales. La nueva prueba también abre la puerta roja
+con cinco misiles, recupera salud con drops originales, coloca una bomba y espera
+su explosión y la vuelta al control de Samus. F10 vuelve al menú. Su partida
 SRAM es independiente del guardado JSON de la reconstrucción GDScript.
 
 En esa campaña nativa, S/↓ agacha y transforma a Samus después de conseguir Morph
@@ -75,7 +78,8 @@ Consulta `docs/FIDELITY.md` para los requisitos del juego completo, `docs/ART.md
 
 Hay además una integración independiente de las rutinas C de la lógica original
 mediante GDExtension en `native/`. Se verificó el recorrido Ceres → Ridley → escape
-→ llegada a Landing Site → Morph Ball → primeros misiles con control de Samus,
+→ llegada a Landing Site → Morph Ball → primeros misiles → despertar de Zebes
+→ bombas y Bomb Torizo con control de Samus,
 transformación, movimiento, disparos, consumo de munición y audio;
 Godot compone sus tiles/sprites, cambios por línea, HUD, color math y fondo de
 Mode 7 con shaders. Hay una prueba de comparación de píxeles contra un oráculo
@@ -83,6 +87,12 @@ offline; sus resultados y alcance están en `docs/qa/native_raster_comparison.js
 Los intérpretes de CPU/SPC no se compilan. La integración sigue en desarrollo y
 se puede abrir desde el menú, pero todavía no prueba la campaña completa. Consulta
 `native/README.md` para ejecutarla y revisar sus límites.
+
+La comprobación de bombas usa `python3 tools/native_probe/verify_bombs.py`: 68964
+ticks desde una partida nueva, estado idéntico entre C y Godot y siete capturas
+originales comparadas sin diferencias RGB. Requiere compilar los targets
+`sm_bomb_route`, `sm_raster_oracle` y `sm_native`. No verifica todavía los demás
+jefes, estaciones ni el final.
 
 ## Regenerar assets desde la ROM local
 

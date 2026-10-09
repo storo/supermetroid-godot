@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration",
+  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration; native Climb/Parlor/Morph passage/Flyway five-missile door/bomb pickup/Bomb Torizo defeat/bomb placement and standing control; complete fresh-game input/state replay and seven original RGB checkpoints",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -230,6 +230,41 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_bomb_controller.log": {
+      "terminal_markers": [
+        "BOMB_ROUTE_OK: awake=1 bombs=1 boss=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_bomb_godot.log": {
+      "terminal_markers": [
+        "BOMB_GODOT_OK: 68964 ticks, awake Climb/Parlor/Morph passage/red missile door/native bombs/Bomb Torizo/bomb placement, exact replay and intact ROM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_bomb_oracle.log": {
+      "terminal_markers": [
+        "RASTER_ORACLE_OK: 7 replay fixtures from 68964 native input ticks"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_bomb_verification.log": {
+      "terminal_markers": [
+        "BOMB_VERIFICATION_OK: 68964 native Godot ticks; five missile door/bombs/Bomb Torizo/bomb placement; 401408 exact RGB pixels; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_bomb_core.log": {
+      "terminal_markers": [
+        "NATIVE_EXTENSION_OK: registered GDExtension, 18000 C ticks, 7804 gameplay ticks, Ceres movement/audio, VRAM/CGRAM/OAM packets, single ownership, close/reboot, intact ROM; full campaign pending"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
@@ -238,5 +273,6 @@
   "zebes_verification_report": "docs/qa/native_zebes_verification.json",
   "missile_verification_report": "docs/qa/native_missile_verification.json",
   "awaken_verification_report": "docs/qa/native_awaken_verification.json",
-  "art_verification_report": "docs/qa/native_art_verification.json"
+  "art_verification_report": "docs/qa/native_art_verification.json",
+  "bomb_verification_report": "docs/qa/native_bomb_verification.json"
 }

@@ -1,0 +1,6003 @@
+BOMB_FRAME 1 state=0 room=0000/0000 x=0 y=0 pose=0000 health=0 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 181 state=1 room=0000/0000 x=0 y=0 pose=0000 health=0 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 361 state=4 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 541 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 721 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 901 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 1081 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 1261 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 1441 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 1621 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 1801 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 1981 state=30 room=0000/0000 x=0 y=0 pose=0000 health=99 items=0000 missiles=900/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+v1=f6
+BOMB_FRAME 2161 state=30 room=0000/0000 x=155 y=115 pose=0002 health=99 items=0000 missiles=899/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+BOMB_FRAME 2341 state=30 room=0000/0000 x=148 y=115 pose=00a7 health=99 items=0000 missiles=898/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f8
+v1=f6
+v1=f6
+BOMB_FRAME 2521 state=30 room=0000/0000 x=148 y=115 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+BOMB_FRAME 2701 state=30 room=0000/0000 x=148 y=115 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 2881 state=30 room=0000/0000 x=148 y=115 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 3061 state=30 room=0000/0000 x=148 y=115 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 3241 state=30 room=0000/0000 x=148 y=115 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+BOMB_FRAME 3421 state=30 room=0000/0000 x=376 y=147 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+v1=ff
+v1=ff
+v1=ff
+v1=f6
+BOMB_FRAME 3601 state=30 room=0000/0000 x=161 y=147 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+BOMB_FRAME 3781 state=30 room=0000/0000 x=161 y=147 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 3961 state=30 room=0000/0000 x=161 y=147 pose=0006 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=ff
+v1=ff
+v1=f6
+v1=f6
+v1=f6
+BOMB_FRAME 4141 state=30 room=0000/0000 x=161 y=147 pose=0002 health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+v1=f6
+v1=f6
+v1=f6
+v1=ff
+v1=ff
+BOMB_FRAME 4321 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 4501 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 4681 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 4861 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 5041 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 5221 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 5401 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 5581 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 5761 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 5941 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 6121 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 6301 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 6481 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 6661 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 6841 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 7021 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 7201 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 7381 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=896/900 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 7561 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 7741 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 7921 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 8101 state=30 room=0000/0000 x=40 y=147 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=1080
+BOMB_FRAME 8139 state=31 room=df45/df57 x=128 y=72 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 8281 state=8 room=df45/df57 x=128 y=16 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0100
+v1=ff
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 8461 state=8 room=df45/df57 x=131 y=233 pose=002a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 8641 state=8 room=df45/df57 x=180 y=505 pose=0029 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 8721 state=11 room=df8d/df57 x=236 y=651 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+BOMB_FRAME 8821 state=8 room=df8d/df9f x=76 y=159 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8100
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 8990 state=11 room=dfd7/df9f x=492 y=139 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 9001 state=11 room=dfd7/dfe9 x=65525 y=139 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=ff
+v1=ff
+v1=f8
+v1=fe
+BOMB_FRAME 9181 state=8 room=dfd7/dfe9 x=158 y=228 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0200
+v1=ff
+v1=ff
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=ff
+v1=ff
+BOMB_FRAME 9361 state=9 room=dfd7/dfe9 x=237 y=395 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0100
+BOMB_FRAME 9379 state=11 room=e021/dfe9 x=237 y=395 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+v1=0
+v1=0
+v1=0
+BOMB_FRAME 9541 state=8 room=e021/e033 x=350 y=187 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8100
+v1=0
+v1=ff
+BOMB_FRAME 9618 state=11 room=e06b/e033 x=492 y=139 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+BOMB_FRAME 9721 state=8 room=e06b/e07d x=105 y=139 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8100
+v1=0
+v1=0
+v1=0
+v1=0
+v1=ff
+BOMB_FRAME 9845 state=11 room=e0b5/e07d x=492 y=139 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 9901 state=11 room=e0b5/e0c7 x=25 y=139 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=f8
+BOMB_FRAME 10081 state=8 room=e0b5/e0c7 x=159 y=187 pose=0002 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 10261 state=8 room=e0b5/e0c7 x=159 y=187 pose=0002 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 10441 state=8 room=e0b5/e0c7 x=159 y=187 pose=0002 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=f8
+v1=f8
+BOMB_FRAME 10621 state=8 room=e0b5/e0c7 x=156 y=187 pose=0001 health=94 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=f8
+BOMB_FRAME 10801 state=8 room=e0b5/e0c7 x=149 y=174 pose=0029 health=84 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0100
+v1=f8
+BOMB_FRAME 10981 state=8 room=e0b5/e0c7 x=157 y=187 pose=0001 health=84 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 11161 state=8 room=e0b5/e0c7 x=163 y=187 pose=0002 health=64 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=f8
+v1=f8
+BOMB_FRAME 11341 state=8 room=e0b5/e0c7 x=157 y=187 pose=0001 health=49 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 11521 state=8 room=e0b5/e0c7 x=164 y=187 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=f6
+v1=fe
+BOMB_FRAME 11701 state=8 room=e0b5/e0c7 x=164 y=187 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=f8
+v1=f6
+v1=fe
+v1=fe
+BOMB_FRAME 11881 state=8 room=e0b5/e0c7 x=235 y=187 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 12061 state=8 room=e0b5/e0c7 x=235 y=187 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 12241 state=11 room=e0b5/e0c7 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 12244 state=11 room=e06b/e0c7 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+BOMB_FRAME 12421 state=8 room=e06b/e097 x=57 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8200
+v1=ff
+BOMB_FRAME 12471 state=11 room=e021/e097 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+v1=0
+BOMB_FRAME 12601 state=8 room=e021/e04d x=292 y=187 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8200
+v1=0
+v1=0
+v1=0
+BOMB_FRAME 12704 state=11 room=dfd7/e04d x=19 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 12781 state=11 room=dfd7/e003 x=216 y=395 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+v1=fe
+v1=ff
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 12961 state=8 room=dfd7/e003 x=154 y=212 pose=0051 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8180
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=ff
+v1=ff
+v1=f8
+v1=0
+v1=0
+BOMB_FRAME 13125 state=11 room=df8d/e003 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 13141 state=11 room=df8d/e003 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=0
+v1=fe
+BOMB_FRAME 13321 state=8 room=df8d/dfb9 x=269 y=107 pose=001a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8280
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 13501 state=11 room=df8d/dfb9 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 13503 state=11 room=df45/dfb9 x=20 y=139 pose=000a health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 13681 state=8 room=df45/df71 x=63 y=505 pose=0053 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8080
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+BOMB_FRAME 13861 state=8 room=df45/df71 x=70 y=344 pose=0051 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8180
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 14041 state=8 room=df45/df71 x=132 y=199 pose=004e health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8080
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 14221 state=32 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 14401 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 14581 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 14761 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 14941 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 15121 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 15301 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 15481 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 15661 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 15841 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 16021 state=34 room=df45/df71 x=144 y=75 pose=0002 health=19 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 16098 state=6 room=91f8/9213 x=1152 y=128 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 16201 state=7 room=91f8/9213 x=1152 y=249 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 16381 state=8 room=91f8/9213 x=1152 y=937 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8240
+BOMB_FRAME 16561 state=8 room=91f8/9213 x=1153 y=1137 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8240
+BOMB_FRAME 16741 state=8 room=91f8/9213 x=1153 y=1088 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8240
+v1=ff
+v1=f8
+v1=0
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 16921 state=8 room=91f8/9213 x=834 y=1192 pose=000c health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8240
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+BOMB_FRAME 17101 state=8 room=91f8/9213 x=36 y=1163 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8240
+BOMB_FRAME 17130 state=11 room=92fd/9213 x=17 y=1163 pose=000c health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+BOMB_FRAME 17281 state=8 room=92fd/9314 x=1111 y=171 pose=000a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8280
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fe
+BOMB_FRAME 17461 state=8 room=92fd/9314 x=754 y=120 pose=001a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8280
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=0
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 17641 state=8 room=92fd/9314 x=373 y=231 pose=002a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+BOMB_FRAME 17821 state=8 room=92fd/9314 x=328 y=499 pose=0009 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0100
+v1=ff
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 18001 state=8 room=92fd/9314 x=372 y=869 pose=002a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=f0
+BOMB_FRAME 18181 state=8 room=92fd/9314 x=372 y=1213 pose=006f health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=8540
+v1=f8
+v1=fe
+BOMB_FRAME 18258 state=11 room=96ba/9314 x=375 y=1257 pose=002d health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=f8
+v1=fd
+v1=fe
+BOMB_FRAME 18361 state=8 room=96ba/96d1 x=367 y=72 pose=0052 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=02c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+BOMB_FRAME 18541 state=8 room=96ba/96d1 x=365 y=388 pose=0067 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0040
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+BOMB_FRAME 18721 state=8 room=96ba/96d1 x=393 y=736 pose=0067 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0140
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=f8
+BOMB_FRAME 18901 state=8 room=96ba/96d1 x=372 y=1048 pose=0068 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0040
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 19081 state=8 room=96ba/96d1 x=372 y=1499 pose=0026 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0140
+v1=f8
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=f8
+BOMB_FRAME 19261 state=8 room=96ba/96d1 x=392 y=1803 pose=000c health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 19441 state=8 room=96ba/96d1 x=473 y=2171 pose=0067 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0140
+v1=fe
+BOMB_FRAME 19491 state=11 room=975c/96d1 x=493 y=2187 pose=000b health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+BOMB_FRAME 19621 state=8 room=975c/976d x=102 y=143 pose=0019 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+BOMB_FRAME 19801 state=8 room=975c/976d x=299 y=148 pose=0051 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 19981 state=8 room=975c/976d x=481 y=187 pose=004d health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+BOMB_FRAME 20161 state=8 room=975c/976d x=651 y=148 pose=0051 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 20305 state=11 room=97b5/976d x=748 y=139 pose=000b health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 20341 state=11 room=97b5/97c6 x=9 y=139 pose=000b health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=ff
+v1=fd
+v1=fd
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 20521 state=9 room=97b5/97c6 x=128 y=235 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 20577 state=11 room=9e9f/97c6 x=128 y=292 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 20701 state=8 room=9e9f/9eb1 x=1408 y=65 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=82c0
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 20881 state=8 room=9e9f/9eb1 x=1408 y=335 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=82c0
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 21061 state=8 room=9e9f/9eb1 x=1408 y=605 pose=0000 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=82c0
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 21241 state=8 room=9e9f/9eb1 x=1285 y=681 pose=001a health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 21421 state=8 room=9e9f/9eb1 x=1173 y=684 pose=0052 health=99 items=0000 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 21601 state=8 room=9e9f/9eb1 x=1103 y=639 pose=0052 health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0080
+BOMB_FRAME 21781 state=8 room=9e9f/9eb1 x=1103 y=639 pose=0052 health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=f9
+v1=ff
+BOMB_FRAME 21961 state=8 room=9e9f/9eb1 x=1169 y=681 pose=001e health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0100
+v1=ff
+v1=fd
+v1=f6
+v1=f9
+v1=ff
+v1=fd
+v1=ff
+v1=ff
+v1=fd
+BOMB_FRAME 22141 state=8 room=9e9f/9eb1 x=1339 y=695 pose=0051 health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=0
+v1=0
+v1=fe
+v1=fe
+BOMB_FRAME 22321 state=8 room=9e9f/9eb1 x=1914 y=618 pose=0019 health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=81c0
+v1=fe
+BOMB_FRAME 22389 state=11 room=9f11/9eb1 x=2031 y=651 pose=000b health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+BOMB_FRAME 22501 state=8 room=9f11/9f23 x=89 y=100 pose=006b health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0540
+v1=f0
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 22681 state=8 room=9f11/9f23 x=135 y=382 pose=0017 health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0400
+v1=fe
+v1=f8
+v1=fd
+v1=f9
+v1=ff
+v1=fd
+BOMB_FRAME 22838 state=11 room=a107/9f23 x=17 y=395 pose=000c health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 22861 state=11 room=a107/a114 x=254 y=139 pose=000c health=99 items=0004 missiles=0/0 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+BOMB_FRAME 23041 state=8 room=a107/a114 x=85 y=139 pose=008a health=99 items=0004 missiles=5/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 23221 state=8 room=a107/a114 x=85 y=139 pose=008a health=99 items=0004 missiles=5/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 23401 state=8 room=a107/a114 x=85 y=139 pose=008a health=99 items=0004 missiles=5/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=ff
+v1=f8
+v1=0
+v1=0
+BOMB_FRAME 23502 state=11 room=9f11/a114 x=239 y=139 pose=000b health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 23581 state=11 room=9f11/9f23 x=39 y=395 pose=000b health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fd
+v1=f9
+v1=ff
+v1=fd
+v1=f6
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 23761 state=8 room=9f11/9f23 x=112 y=305 pose=0052 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=8280
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 23941 state=8 room=9f11/9f23 x=113 y=235 pose=0004 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0840
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 24121 state=8 room=9f11/9f23 x=101 y=134 pose=0052 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=8280
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 24301 state=8 room=9f11/9f23 x=101 y=144 pose=004e health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=8080
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 24475 state=11 room=9e9f/9f23 x=17 y=139 pose=000c health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 24481 state=11 room=9e9f/9f23 x=17 y=139 pose=000c health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 24661 state=8 room=9e9f/9eb1 x=1826 y=675 pose=001a health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=82c0
+v1=0
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=f8
+BOMB_FRAME 24841 state=8 room=9e9f/9eb1 x=1403 y=683 pose=0009 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0100
+v1=f8
+v1=f8
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 25021 state=8 room=9e9f/9eb1 x=1408 y=492 pose=0000 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 25201 state=8 room=9e9f/9eb1 x=1408 y=222 pose=0000 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 25370 state=11 room=97b5/9eb1 x=1408 y=65531 pose=0000 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 25381 state=11 room=97b5/97e0 x=128 y=294 pose=0000 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 25561 state=8 room=97b5/97e0 x=127 y=139 pose=0025 health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=8240
+v1=f8
+v1=0
+BOMB_FRAME 25624 state=11 room=975c/97e0 x=17 y=139 pose=000c health=99 items=0004 missiles=4/5 kills=0/0 events=00 boss=00 stage=0 joy=0000
+BOMB_FRAME 25741 state=8 room=975c/9787 x=681 y=147 pose=0068 health=99 items=0004 missiles=4/5 kills=1/5 events=00 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=ff
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 25921 state=8 room=975c/9787 x=581 y=187 pose=008a health=99 items=0004 missiles=5/5 kills=2/5 events=00 boss=00 stage=0 joy=8240
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 26101 state=8 room=975c/9787 x=405 y=149 pose=0052 health=99 items=0004 missiles=5/5 kills=3/5 events=00 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 26281 state=8 room=975c/9787 x=299 y=187 pose=0089 health=99 items=0004 missiles=5/5 kills=4/5 events=00 boss=00 stage=0 joy=8140
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 26461 state=8 room=975c/9787 x=475 y=149 pose=0051 health=99 items=0004 missiles=5/5 kills=4/5 events=00 boss=00 stage=0 joy=8140
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=ff
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+BOMB_FRAME 26641 state=8 room=975c/9787 x=581 y=144 pose=0052 health=99 items=0004 missiles=5/5 kills=5/5 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 26821 state=8 room=975c/9787 x=398 y=183 pose=0052 health=99 items=0004 missiles=5/5 kills=5/5 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+BOMB_FRAME 27001 state=8 room=975c/9787 x=197 y=144 pose=0052 health=99 items=0004 missiles=5/5 kills=5/5 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 27165 state=11 room=96ba/9787 x=19 y=139 pose=000c health=99 items=0004 missiles=5/5 kills=5/5 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 27181 state=11 room=96ba/96eb x=518 y=2187 pose=000c health=99 items=0004 missiles=5/5 kills=0/11 events=01 boss=00 stage=0 joy=0000
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 27361 state=8 room=96ba/96eb x=451 y=2020 pose=0051 health=99 items=0004 missiles=5/5 kills=0/11 events=01 boss=00 stage=0 joy=81c0
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=f0
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 27541 state=8 room=96ba/96eb x=421 y=2093 pose=0013 health=84 items=0004 missiles=5/5 kills=1/11 events=01 boss=00 stage=0 joy=8040
+v1=f8
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 27721 state=8 room=96ba/96eb x=387 y=1920 pose=0019 health=89 items=0004 missiles=5/5 kills=1/11 events=01 boss=00 stage=0 joy=80c0
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+BOMB_FRAME 27901 state=8 room=96ba/96eb x=434 y=1829 pose=0014 health=89 items=0004 missiles=5/5 kills=2/11 events=01 boss=00 stage=0 joy=80c0
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 28081 state=8 room=96ba/96eb x=401 y=1702 pose=001a health=89 items=0004 missiles=5/5 kills=3/11 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+BOMB_FRAME 28261 state=8 room=96ba/96eb x=451 y=1587 pose=00e7 health=89 items=0004 missiles=5/5 kills=4/11 events=01 boss=00 stage=0 joy=8240
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 28441 state=8 room=96ba/96eb x=403 y=1390 pose=001a health=89 items=0004 missiles=5/5 kills=4/11 events=01 boss=00 stage=0 joy=8040
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 28621 state=8 room=96ba/96eb x=452 y=1284 pose=0013 health=89 items=0004 missiles=5/5 kills=4/11 events=01 boss=00 stage=0 joy=8040
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 28801 state=8 room=96ba/96eb x=370 y=1189 pose=001a health=74 items=0004 missiles=5/5 kills=5/11 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+BOMB_FRAME 28981 state=8 room=96ba/96eb x=428 y=1050 pose=0051 health=74 items=0004 missiles=5/5 kills=6/11 events=01 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 29161 state=8 room=96ba/96eb x=376 y=987 pose=0052 health=94 items=0004 missiles=5/5 kills=6/11 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 29341 state=8 room=96ba/96eb x=421 y=875 pose=00e6 health=94 items=0004 missiles=5/5 kills=6/11 events=01 boss=00 stage=0 joy=8040
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=f8
+v1=f0
+v1=fe
+v1=f8
+BOMB_FRAME 29521 state=8 room=96ba/96eb x=420 y=817 pose=0019 health=79 items=0004 missiles=5/5 kills=7/11 events=01 boss=00 stage=0 joy=80c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+BOMB_FRAME 29701 state=8 room=96ba/96eb x=386 y=724 pose=006a health=79 items=0004 missiles=5/5 kills=7/11 events=01 boss=00 stage=0 joy=82d0
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 29881 state=8 room=96ba/96eb x=420 y=619 pose=00e6 health=79 items=0004 missiles=5/5 kills=8/11 events=01 boss=00 stage=0 joy=8040
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+BOMB_FRAME 30061 state=8 room=96ba/96eb x=422 y=548 pose=0069 health=64 items=0004 missiles=5/5 kills=8/11 events=01 boss=00 stage=0 joy=81d0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 30241 state=8 room=96ba/96eb x=381 y=470 pose=0052 health=84 items=0004 missiles=5/5 kills=9/11 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+BOMB_FRAME 30421 state=8 room=96ba/96eb x=421 y=353 pose=0013 health=84 items=0004 missiles=5/5 kills=10/11 events=01 boss=00 stage=0 joy=8040
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 30601 state=8 room=96ba/96eb x=428 y=198 pose=0051 health=74 items=0004 missiles=5/5 kills=10/11 events=01 boss=00 stage=0 joy=8000
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+BOMB_FRAME 30781 state=8 room=96ba/96eb x=376 y=93 pose=0015 health=74 items=0004 missiles=5/5 kills=10/11 events=01 boss=00 stage=0 joy=08c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+BOMB_FRAME 30898 state=11 room=92fd/96eb x=376 y=34 pose=0015 health=74 items=0004 missiles=5/5 kills=10/11 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 30961 state=11 room=92fd/932e x=376 y=1211 pose=0015 health=74 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=fe
+v1=ff
+v1=ff
+v1=ff
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+BOMB_FRAME 31141 state=8 room=92fd/932e x=400 y=1077 pose=0051 health=74 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 31321 state=8 room=92fd/932e x=395 y=992 pose=0030 health=74 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8180
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+BOMB_FRAME 31501 state=8 room=92fd/932e x=444 y=1013 pose=0052 health=74 items=0004 missiles=5/5 kills=1/16 events=01 boss=00 stage=0 joy=8280
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 31681 state=8 room=92fd/932e x=380 y=764 pose=004e health=69 items=0004 missiles=5/5 kills=1/16 events=01 boss=00 stage=0 joy=8000
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 31861 state=8 room=92fd/932e x=432 y=619 pose=00a4 health=69 items=0004 missiles=5/5 kills=1/16 events=01 boss=00 stage=0 joy=8100
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 32041 state=8 room=92fd/932e x=440 y=356 pose=0052 health=64 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+BOMB_FRAME 32221 state=8 room=92fd/932e x=377 y=212 pose=0051 health=59 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 32401 state=8 room=92fd/932e x=569 y=155 pose=004b health=59 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=81c0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+BOMB_FRAME 32581 state=8 room=92fd/932e x=794 y=176 pose=0027 health=44 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=0400
+v1=f9
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 32761 state=8 room=92fd/932e x=872 y=479 pose=0031 health=44 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=fd
+v1=f6
+v1=fd
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+BOMB_FRAME 32941 state=8 room=92fd/932e x=902 y=626 pose=0051 health=39 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=81c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 33030 state=11 room=9879/932e x=1004 y=620 pose=0019 health=39 items=0004 missiles=5/5 kills=2/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=343 y=64 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=654 y=56 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=424 y=552 health=200 ai=0000
+BOMB_ENEMY slot=9 id=dcff x=488 y=1174 health=15 ai=0080
+BOMB_ENEMY slot=10 id=dcff x=385 y=1064 health=15 ai=ff80
+BOMB_ENEMY slot=11 id=dcff x=344 y=840 health=15 ai=ff80
+BOMB_ENEMY slot=12 id=dcff x=471 y=808 health=15 ai=ff80
+BOMB_ENEMY slot=13 id=dcff x=472 y=527 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=424 y=250 health=15 ai=ff80
+BOMB_ENEMY slot=15 id=d47f x=992 y=488 health=200 ai=0000
+BOMB_FRAME 33121 state=11 room=9879/9890 x=21 y=108 pose=0019 health=39 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+BOMB_STAGE frame=33157 room=9879 stage=0 x=41 y=104 movement=2 yd=1 ys=4
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 33301 state=8 room=9879/9890 x=210 y=187 pose=000f health=39 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=1 id=d0ff x=350 y=91 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=296 y=117 health=9 ai=0008
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fd
+v1=f8
+BOMB_FRAME 33481 state=8 room=9879/9890 x=271 y=101 pose=0051 health=36 items=0004 missiles=5/5 kills=8/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=87 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=403 y=128 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=452 y=61 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=f8
+v1=f0
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 33661 state=8 room=9879/9890 x=355 y=187 pose=000b health=53 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0140
+v1=ff
+v1=f8
+v1=fd
+v1=fe
+BOMB_FRAME 33841 state=8 room=9879/9890 x=393 y=160 pose=0052 health=53 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=0
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 34021 state=11 room=9879/9890 x=19 y=139 pose=00a7 health=53 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 34053 state=11 room=92fd/9890 x=19 y=139 pose=00a7 health=53 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 34201 state=11 room=92fd/932e x=1007 y=651 pose=000b health=53 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 34206 state=11 room=9879/932e x=1007 y=651 pose=000b health=53 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 34381 state=8 room=9879/9890 x=188 y=187 pose=0026 health=45 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=350 y=91 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=218 y=182 health=9 ai=0025
+BOMB_ENEMY slot=3 id=d0ff x=261 y=159 health=9 ai=001e
+BOMB_ENEMY slot=4 id=d0ff x=312 y=98 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=150 y=117 health=9 ai=0013
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=164 y=160 health=9 ai=0019
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+BOMB_FRAME 34561 state=8 room=9879/9890 x=186 y=75 pose=0068 health=59 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=176 y=83 health=9 ai=0004
+BOMB_ENEMY slot=5 id=d0ff x=194 y=79 health=9 ai=0004
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=176 y=113 health=9 ai=0009
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+BOMB_FRAME 34741 state=8 room=9879/9890 x=173 y=180 pose=0016 health=51 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=174 y=117 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 34921 state=8 room=9879/9890 x=240 y=123 pose=0050 health=35 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=82c0
+BOMB_ENEMY slot=1 id=d0ff x=229 y=152 health=9 ai=0010
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=239 y=125 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=267 y=91 health=9 ai=0008
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 35101 state=8 room=9879/9890 x=329 y=187 pose=000c health=35 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 35281 state=8 room=9879/9890 x=37 y=92 pose=0052 health=55 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 35324 state=11 room=92fd/9890 x=20 y=139 pose=000c health=55 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 35461 state=11 room=92fd/932e x=1007 y=651 pose=000b health=55 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 35477 state=11 room=9879/932e x=1007 y=651 pose=000b health=55 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+BOMB_FRAME 35641 state=8 room=9879/9890 x=190 y=187 pose=008c health=47 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=346 y=89 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=236 y=156 health=9 ai=001a
+BOMB_ENEMY slot=3 id=d0ff x=275 y=127 health=9 ai=0013
+BOMB_ENEMY slot=4 id=d0ff x=319 y=100 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=166 y=146 health=9 ai=001e
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=183 y=180 health=9 ai=0024
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+BOMB_FRAME 35821 state=8 room=9879/9890 x=176 y=78 pose=0014 health=79 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=174 y=100 health=9 ai=0002
+BOMB_ENEMY slot=5 id=d0ff x=203 y=119 health=9 ai=000f
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=181 y=113 health=9 ai=0014
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+BOMB_FRAME 36001 state=8 room=9879/9890 x=173 y=158 pose=0014 health=63 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=175 y=161 health=9 ai=000b
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+BOMB_FRAME 36181 state=8 room=9879/9890 x=239 y=169 pose=0016 health=55 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=223 y=110 health=9 ai=0005
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=236 y=122 health=9 ai=000b
+BOMB_ENEMY slot=10 id=d0ff x=272 y=59 health=9 ai=0002
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 36361 state=8 room=9879/9890 x=341 y=157 pose=0052 health=47 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 36541 state=8 room=9879/9890 x=51 y=80 pose=0052 health=47 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 36595 state=11 room=92fd/9890 x=20 y=139 pose=000c health=47 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 36721 state=8 room=92fd/932e x=992 y=651 pose=000b health=47 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+BOMB_FRAME 36748 state=11 room=9879/932e x=1007 y=651 pose=000b health=47 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 36901 state=8 room=9879/9890 x=191 y=187 pose=008b health=47 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=353 y=93 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=253 y=130 health=9 ai=000f
+BOMB_ENEMY slot=3 id=d0ff x=290 y=94 health=9 ai=0008
+BOMB_ENEMY slot=4 id=d0ff x=311 y=103 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=183 y=159 health=9 ai=0023
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=203 y=167 health=9 ai=001d
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+BOMB_FRAME 37081 state=8 room=9879/9890 x=182 y=92 pose=0052 health=71 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=82c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=177 y=97 health=9 ai=000d
+BOMB_ENEMY slot=5 id=d0ff x=211 y=123 health=9 ai=0010
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=189 y=128 health=9 ai=0006
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+BOMB_FRAME 37261 state=8 room=9879/9890 x=173 y=148 pose=0014 health=55 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=175 y=173 health=9 ai=000e
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+BOMB_FRAME 37441 state=8 room=9879/9890 x=266 y=187 pose=0010 health=47 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=223 y=88 health=9 ai=0005
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=244 y=126 health=9 ai=0016
+BOMB_ENEMY slot=10 id=d0ff x=280 y=62 health=9 ai=000d
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+BOMB_FRAME 37621 state=8 room=9879/9890 x=355 y=118 pose=0052 health=59 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 37801 state=8 room=9879/9890 x=65 y=86 pose=0052 health=79 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 37866 state=11 room=92fd/9890 x=20 y=139 pose=000c health=79 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+BOMB_FRAME 37981 state=8 room=92fd/932e x=987 y=651 pose=0089 health=79 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+v1=ff
+BOMB_FRAME 38019 state=11 room=9879/932e x=1007 y=651 pose=000b health=79 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 38161 state=8 room=9879/9890 x=185 y=187 pose=000f health=79 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=271 y=104 health=9 ai=0004
+BOMB_ENEMY slot=3 id=d0ff x=302 y=69 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=313 y=99 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=199 y=130 health=9 ai=0018
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=222 y=147 health=9 ai=0012
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+BOMB_FRAME 38341 state=8 room=9879/9890 x=183 y=119 pose=0014 health=63 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=95 health=9 ai=0018
+BOMB_ENEMY slot=5 id=d0ff x=219 y=83 health=9 ai=0005
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=206 y=126 health=9 ai=0005
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+BOMB_FRAME 38521 state=8 room=9879/9890 x=173 y=183 pose=0016 health=52 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=176 y=129 health=9 ai=0003
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+BOMB_FRAME 38701 state=8 room=9879/9890 x=274 y=187 pose=008b health=44 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=230 y=91 health=9 ai=0010
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=262 y=129 health=9 ai=0008
+BOMB_ENEMY slot=10 id=d0ff x=277 y=59 health=9 ai=0018
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 38881 state=8 room=9879/9890 x=362 y=91 pose=002f health=36 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 39061 state=8 room=9879/9890 x=79 y=108 pose=0052 health=41 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 39137 state=11 room=92fd/9890 x=20 y=139 pose=000c health=41 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+BOMB_FRAME 39241 state=8 room=92fd/932e x=987 y=651 pose=0089 health=41 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+v1=ff
+BOMB_FRAME 39290 state=11 room=9879/932e x=1007 y=651 pose=000b health=41 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 39421 state=8 room=9879/9890 x=156 y=187 pose=000f health=41 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=217 y=122 health=9 ai=000c
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=282 y=94 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=310 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=318 y=99 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=216 y=101 health=9 ai=000d
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=242 y=127 health=9 ai=0007
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+BOMB_FRAME 39601 state=8 room=9879/9890 x=183 y=160 pose=0014 health=45 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=139 health=9 ai=000a
+BOMB_ENEMY slot=5 id=d0ff x=220 y=61 health=9 ai=0005
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=211 y=111 health=9 ai=0005
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+BOMB_FRAME 39781 state=8 room=9879/9890 x=177 y=178 pose=0016 health=34 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=172 y=114 health=9 ai=0007
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=172 y=129 health=9 ai=0009
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+BOMB_FRAME 39961 state=8 room=9879/9890 x=270 y=187 pose=000f health=26 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=1 id=d0ff x=230 y=97 health=9 ai=0002
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=284 y=135 health=9 ai=0013
+BOMB_ENEMY slot=10 id=d0ff x=291 y=92 health=9 ai=000a
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 40141 state=8 room=9879/9890 x=343 y=78 pose=0051 health=38 items=0004 missiles=5/5 kills=11/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=11 id=d0ff x=437 y=65 health=9 ai=0004
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+BOMB_FRAME 40321 state=8 room=9879/9890 x=92 y=144 pose=0052 health=58 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 40408 state=11 room=92fd/9890 x=20 y=139 pose=000c health=58 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 40501 state=8 room=92fd/932e x=982 y=651 pose=0026 health=58 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+v1=f8
+v1=ff
+BOMB_FRAME 40561 state=11 room=9879/932e x=1007 y=651 pose=000b health=58 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+BOMB_FRAME 40681 state=8 room=9879/9890 x=135 y=175 pose=006d health=58 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=236 y=100 health=9 ai=0001
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=287 y=94 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=232 y=73 health=9 ai=0002
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+BOMB_FRAME 40861 state=8 room=9879/9890 x=183 y=178 pose=002c health=52 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=180 y=119 health=9 ai=0005
+BOMB_ENEMY slot=5 id=d0ff x=227 y=64 health=9 ai=0010
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=218 y=114 health=9 ai=0010
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+BOMB_FRAME 41041 state=8 room=9879/9890 x=179 y=132 pose=0014 health=56 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=180 y=118 health=9 ai=0012
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=179 y=132 health=9 ai=0014
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+BOMB_FRAME 41221 state=8 room=9879/9890 x=267 y=187 pose=00e3 health=48 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=247 y=124 health=9 ai=000d
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=306 y=142 health=9 ai=001e
+BOMB_ENEMY slot=10 id=d0ff x=306 y=124 health=9 ai=0015
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 41401 state=8 room=9879/9890 x=324 y=78 pose=0051 health=60 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=460 y=109 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=449 y=63 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 41581 state=8 room=9879/9890 x=101 y=187 pose=004c health=60 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 41679 state=11 room=92fd/9890 x=20 y=139 pose=000c health=60 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 41761 state=11 room=92fd/932e x=984 y=651 pose=000c health=60 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 41832 state=11 room=9879/932e x=1007 y=651 pose=000b health=60 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+BOMB_FRAME 41941 state=8 room=9879/9890 x=106 y=153 pose=006d health=60 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=240 y=93 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=237 y=62 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=259 y=114 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 42121 state=8 room=9879/9890 x=186 y=132 pose=002c health=64 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=182 y=95 health=9 ai=0005
+BOMB_ENEMY slot=5 id=d0ff x=222 y=61 health=9 ai=0002
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=214 y=106 health=9 ai=0002
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 42301 state=8 room=9879/9890 x=179 y=100 pose=0014 health=73 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=93 health=9 ai=0004
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=176 y=101 health=9 ai=0006
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+BOMB_FRAME 42481 state=8 room=9879/9890 x=282 y=151 pose=0068 health=65 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=264 y=151 health=9 ai=0018
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=327 y=147 health=9 ai=0027
+BOMB_ENEMY slot=10 id=d0ff x=321 y=157 health=9 ai=0020
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 42661 state=8 room=9879/9890 x=304 y=91 pose=0051 health=62 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=458 y=105 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=454 y=63 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 42841 state=8 room=9879/9890 x=101 y=187 pose=008a health=62 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 42950 state=11 room=92fd/9890 x=20 y=139 pose=000c health=62 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 43021 state=11 room=92fd/932e x=984 y=651 pose=000c health=62 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 43103 state=11 room=9879/932e x=1007 y=651 pose=000b health=62 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+BOMB_FRAME 43201 state=8 room=9879/9890 x=78 y=145 pose=006d health=62 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=0 id=d0ff x=232 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=229 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=251 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 43381 state=8 room=9879/9890 x=186 y=100 pose=0068 health=66 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=189 y=99 health=9 ai=0010
+BOMB_ENEMY slot=5 id=d0ff x=201 y=70 health=9 ai=000d
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=193 y=93 health=9 ai=000d
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 43561 state=8 room=9879/9890 x=180 y=81 pose=0014 health=50 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=105 health=9 ai=0001
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=174 y=89 health=9 ai=0009
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+BOMB_FRAME 43741 state=8 room=9879/9890 x=293 y=125 pose=0087 health=42 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=282 y=178 health=9 ai=0023
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=349 y=141 health=9 ai=001c
+BOMB_ENEMY slot=10 id=d0ff x=335 y=166 health=9 ai=0023
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 43921 state=8 room=9879/9890 x=285 y=116 pose=0051 health=34 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 44101 state=8 room=9879/9890 x=140 y=187 pose=000c health=34 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 44221 state=11 room=92fd/9890 x=20 y=139 pose=000c health=34 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 44281 state=11 room=92fd/932e x=996 y=651 pose=000c health=34 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 44374 state=11 room=9879/932e x=1007 y=651 pose=000b health=34 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 44461 state=8 room=9879/9890 x=39 y=139 pose=000b health=34 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+BOMB_FRAME 44641 state=8 room=9879/9890 x=190 y=80 pose=0068 health=38 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=190 y=103 health=9 ai=0002
+BOMB_ENEMY slot=5 id=d0ff x=179 y=78 health=9 ai=0018
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=172 y=80 health=9 ai=0018
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 44821 state=8 room=9879/9890 x=179 y=75 pose=004f health=62 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=186 y=107 health=9 ai=0009
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=172 y=125 health=9 ai=0001
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+BOMB_FRAME 45001 state=8 room=9879/9890 x=293 y=111 pose=0067 health=54 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=299 y=171 health=9 ai=0020
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=371 y=134 health=9 ai=0011
+BOMB_ENEMY slot=10 id=d0ff x=350 y=133 health=9 ai=0018
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 45181 state=8 room=9879/9890 x=266 y=156 pose=0069 health=46 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 45361 state=8 room=9879/9890 x=159 y=187 pose=000a health=66 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 45492 state=11 room=92fd/9890 x=20 y=139 pose=000c health=66 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 45541 state=11 room=92fd/932e x=1005 y=651 pose=000c health=66 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 45645 state=11 room=9879/932e x=1007 y=651 pose=000b health=66 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 45721 state=11 room=9879/9890 x=39 y=139 pose=000b health=66 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=239 y=93 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=236 y=62 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=258 y=114 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+BOMB_FRAME 45901 state=8 room=9879/9890 x=203 y=74 pose=002a health=55 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=188 y=71 health=9 ai=0001
+BOMB_ENEMY slot=4 id=d0ff x=208 y=128 health=9 ai=000d
+BOMB_ENEMY slot=5 id=d0ff x=158 y=74 health=9 ai=0013
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=151 y=88 health=9 ai=0011
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+BOMB_FRAME 46081 state=8 room=9879/9890 x=178 y=82 pose=0030 health=67 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=82c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=190 y=106 health=9 ai=0014
+BOMB_ENEMY slot=5 id=d0ff x=170 y=61 health=9 ai=0008
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=177 y=125 health=9 ai=000c
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+BOMB_FRAME 46261 state=8 room=9879/9890 x=310 y=121 pose=0053 health=51 items=0004 missiles=5/5 kills=6/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=316 y=144 health=9 ai=0015
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=91 health=9 ai=0002
+BOMB_ENEMY slot=9 id=d0ff x=393 y=128 health=9 ai=0006
+BOMB_ENEMY slot=10 id=d0ff x=365 y=101 health=9 ai=000d
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 46441 state=8 room=9879/9890 x=247 y=187 pose=000f health=43 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 46621 state=8 room=9879/9890 x=179 y=151 pose=001a health=63 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 46763 state=11 room=92fd/9890 x=20 y=139 pose=000c health=63 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 46801 state=11 room=92fd/932e x=1013 y=651 pose=000c health=63 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 46916 state=11 room=9879/932e x=1007 y=651 pose=000b health=63 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 46981 state=11 room=9879/9890 x=34 y=139 pose=000b health=63 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+BOMB_FRAME 47161 state=8 room=9879/9890 x=191 y=76 pose=0014 health=60 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=185 y=70 health=9 ai=0005
+BOMB_ENEMY slot=4 id=d0ff x=226 y=154 health=9 ai=0018
+BOMB_ENEMY slot=5 id=d0ff x=136 y=66 health=9 ai=0008
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=130 y=101 health=9 ai=0006
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+BOMB_FRAME 47341 state=8 room=9879/9890 x=177 y=101 pose=0052 health=84 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=173 y=107 health=9 ai=0002
+BOMB_ENEMY slot=5 id=d0ff x=177 y=65 health=9 ai=0013
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=179 y=121 health=9 ai=0017
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+BOMB_FRAME 47521 state=8 room=9879/9890 x=281 y=164 pose=0069 health=76 items=0004 missiles=5/5 kills=6/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=1 id=d0ff x=333 y=117 health=9 ai=000a
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=86 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=402 y=122 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=379 y=68 health=9 ai=0002
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 47701 state=8 room=9879/9890 x=241 y=187 pose=008c health=60 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 47881 state=8 room=9879/9890 x=199 y=114 pose=001a health=60 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 48034 state=11 room=92fd/9890 x=20 y=139 pose=000c health=80 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 48061 state=11 room=92fd/932e x=1022 y=651 pose=000c health=80 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 48187 state=11 room=9879/932e x=1007 y=651 pose=000b health=80 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 48241 state=11 room=9879/9890 x=26 y=139 pose=000b health=80 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+BOMB_FRAME 48421 state=8 room=9879/9890 x=199 y=83 pose=0052 health=72 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=82c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=188 y=67 health=9 ai=0010
+BOMB_ENEMY slot=4 id=d0ff x=244 y=179 health=9 ai=0023
+BOMB_ENEMY slot=5 id=d0ff x=118 y=60 health=9 ai=0002
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=115 y=110 health=9 ai=0004
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+BOMB_FRAME 48601 state=8 room=9879/9890 x=178 y=133 pose=0013 health=56 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=166 y=102 health=9 ai=0008
+BOMB_ENEMY slot=5 id=d0ff x=177 y=84 health=9 ai=0005
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=178 y=137 health=9 ai=0003
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+BOMB_FRAME 48781 state=8 room=9879/9890 x=240 y=187 pose=000f health=48 items=0004 missiles=5/5 kills=6/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=1 id=d0ff x=349 y=92 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 48961 state=8 room=9879/9890 x=241 y=187 pose=0004 health=32 items=0004 missiles=5/5 kills=9/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=242 y=90 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 49141 state=8 room=9879/9890 x=220 y=90 pose=001a health=37 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 49305 state=11 room=92fd/9890 x=20 y=139 pose=000c health=57 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 49321 state=11 room=92fd/932e x=1031 y=651 pose=000c health=57 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 49458 state=11 room=9879/932e x=1007 y=651 pose=000b health=57 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 49501 state=11 room=9879/9890 x=17 y=139 pose=000b health=57 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 49681 state=8 room=9879/9890 x=212 y=103 pose=006a health=54 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=82d0
+BOMB_ENEMY slot=1 id=d0ff x=350 y=91 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=197 y=76 health=9 ai=0002
+BOMB_ENEMY slot=4 id=d0ff x=262 y=172 health=9 ai=0020
+BOMB_ENEMY slot=5 id=d0ff x=112 y=62 health=9 ai=000d
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=111 y=108 health=9 ai=000f
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+BOMB_FRAME 49861 state=8 room=9879/9890 x=178 y=178 pose=0069 health=58 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=174 y=107 health=9 ai=0013
+BOMB_ENEMY slot=5 id=d0ff x=180 y=128 health=9 ai=0010
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=177 y=120 health=9 ai=0007
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 50041 state=8 room=9879/9890 x=197 y=187 pose=000f health=50 items=0004 missiles=5/5 kills=6/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 50221 state=8 room=9879/9890 x=243 y=187 pose=0003 health=34 items=0004 missiles=5/5 kills=9/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=241 y=86 health=9 ai=000b
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 50401 state=8 room=9879/9890 x=241 y=79 pose=001a health=34 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 50576 state=11 room=92fd/9890 x=20 y=139 pose=000c health=34 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 50581 state=11 room=92fd/932e x=1039 y=651 pose=000c health=34 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 50729 state=11 room=9879/932e x=1007 y=651 pose=000b health=34 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 50761 state=11 room=9879/9890 x=9 y=139 pose=000b health=34 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 50941 state=8 room=9879/9890 x=226 y=136 pose=006a health=46 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=82d0
+BOMB_ENEMY slot=1 id=d0ff x=353 y=89 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=211 y=109 health=9 ai=000d
+BOMB_ENEMY slot=4 id=d0ff x=280 y=147 health=9 ai=0015
+BOMB_ENEMY slot=5 id=d0ff x=118 y=65 health=9 ai=0017
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=119 y=115 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=382 y=60 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 51121 state=8 room=9879/9890 x=174 y=160 pose=0067 health=40 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=172 y=126 health=9 ai=0005
+BOMB_ENEMY slot=5 id=d0ff x=184 y=92 health=9 ai=0007
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=185 y=125 health=9 ai=0012
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 51301 state=8 room=9879/9890 x=177 y=187 pose=000f health=32 items=0004 missiles=5/5 kills=6/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 51481 state=8 room=9879/9890 x=243 y=187 pose=0015 health=16 items=0004 missiles=5/5 kills=9/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=248 y=89 health=9 ai=0016
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 51661 state=8 room=9879/9890 x=261 y=86 pose=001a health=21 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 51841 state=11 room=9879/9890 x=20 y=139 pose=000c health=26 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 51847 state=11 room=92fd/9890 x=20 y=139 pose=000c health=26 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 52000 state=11 room=9879/932e x=1007 y=651 pose=000b health=26 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 52021 state=11 room=9879/9890 x=0 y=139 pose=000b health=26 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 52201 state=8 room=9879/9890 x=226 y=183 pose=0015 health=18 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=226 y=141 health=9 ai=0018
+BOMB_ENEMY slot=4 id=d0ff x=298 y=122 health=9 ai=000a
+BOMB_ENEMY slot=5 id=d0ff x=118 y=65 health=9 ai=0017
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=119 y=115 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=387 y=60 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+BOMB_FRAME 52381 state=8 room=9879/9890 x=177 y=119 pose=0068 health=62 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=171 y=103 health=9 ai=0003
+BOMB_ENEMY slot=5 id=d0ff x=185 y=62 health=9 ai=0003
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=181 y=101 health=9 ai=0004
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+BOMB_FRAME 52561 state=8 room=9879/9890 x=174 y=187 pose=008b health=54 items=0004 missiles=5/5 kills=6/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 52741 state=8 room=9879/9890 x=241 y=151 pose=0013 health=38 items=0004 missiles=5/5 kills=8/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=242 y=122 health=9 ai=0008
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=238 y=126 health=9 ai=0002
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 52921 state=8 room=9879/9890 x=282 y=108 pose=001a health=58 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 53101 state=11 room=9879/9890 x=20 y=139 pose=000c health=63 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 53118 state=11 room=92fd/9890 x=20 y=139 pose=000c health=63 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 53271 state=11 room=9879/932e x=1007 y=651 pose=000b health=63 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+BOMB_FRAME 53281 state=11 room=9879/9890 x=65527 y=139 pose=000b health=63 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=d0ff x=237 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=234 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=256 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 53461 state=8 room=9879/9890 x=203 y=187 pose=000b health=55 items=0004 missiles=5/5 kills=2/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=241 y=174 health=9 ai=0023
+BOMB_ENEMY slot=4 id=d0ff x=314 y=99 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=127 y=78 health=9 ai=0004
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=137 y=133 health=9 ai=000a
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+BOMB_FRAME 53641 state=8 room=9879/9890 x=182 y=91 pose=0068 health=69 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=179 y=107 health=9 ai=000e
+BOMB_ENEMY slot=5 id=d0ff x=192 y=65 health=9 ai=000e
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=175 y=97 health=9 ai=0005
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+BOMB_FRAME 53821 state=8 room=9879/9890 x=175 y=187 pose=0003 health=61 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=174 y=115 health=9 ai=000a
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 54001 state=8 room=9879/9890 x=239 y=128 pose=0051 health=45 items=0004 missiles=5/5 kills=8/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=1 id=d0ff x=237 y=164 health=9 ai=0013
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=246 y=130 health=9 ai=000d
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 54181 state=8 room=9879/9890 x=303 y=144 pose=001a health=50 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 54361 state=8 room=9879/9890 x=31 y=130 pose=0052 health=50 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+BOMB_FRAME 54389 state=11 room=92fd/9890 x=20 y=139 pose=000c health=50 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 54541 state=11 room=92fd/932e x=1007 y=651 pose=000b health=50 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 54542 state=11 room=9879/932e x=1007 y=651 pose=000b health=50 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 54721 state=8 room=9879/9890 x=189 y=187 pose=0026 health=42 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=353 y=88 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=212 y=182 health=9 ai=0025
+BOMB_ENEMY slot=3 id=d0ff x=255 y=171 health=9 ai=0022
+BOMB_ENEMY slot=4 id=d0ff x=309 y=99 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=144 y=107 health=9 ai=000f
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=156 y=153 health=9 ai=0015
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+BOMB_FRAME 54901 state=8 room=9879/9890 x=182 y=77 pose=0088 health=31 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=176 y=99 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=191 y=64 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=172 y=112 health=9 ai=0005
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+BOMB_FRAME 55081 state=8 room=9879/9890 x=173 y=187 pose=00e1 health=23 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=177 y=112 health=9 ai=0015
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 55261 state=8 room=9879/9890 x=231 y=118 pose=0013 health=7 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=231 y=168 health=9 ai=0014
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=242 y=129 health=9 ai=0018
+BOMB_ENEMY slot=10 id=d0ff x=265 y=106 health=9 ai=000c
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 55441 state=8 room=9879/9890 x=323 y=187 pose=000c health=12 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 55621 state=8 room=9879/9890 x=37 y=100 pose=0052 health=32 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 55660 state=11 room=92fd/9890 x=20 y=139 pose=000c health=32 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 55801 state=11 room=92fd/932e x=1007 y=651 pose=000b health=32 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 55813 state=11 room=9879/932e x=1007 y=651 pose=000b health=32 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+BOMB_FRAME 55981 state=8 room=9879/9890 x=190 y=187 pose=008b health=24 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=345 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=229 y=166 health=9 ai=001e
+BOMB_ENEMY slot=3 id=d0ff x=270 y=139 health=9 ai=0017
+BOMB_ENEMY slot=4 id=d0ff x=317 y=103 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=160 y=135 health=9 ai=001a
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=176 y=172 health=9 ai=0020
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+BOMB_FRAME 56161 state=8 room=9879/9890 x=181 y=69 pose=0054 health=53 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=82c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=176 y=95 health=9 ai=0001
+BOMB_ENEMY slot=5 id=d0ff x=200 y=105 health=9 ai=000b
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=180 y=116 health=9 ai=0010
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+v1=fe
+BOMB_FRAME 56341 state=8 room=9879/9890 x=173 y=164 pose=0014 health=45 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=174 y=145 health=9 ai=0007
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+BOMB_FRAME 56521 state=8 room=9879/9890 x=232 y=152 pose=0090 health=37 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=225 y=126 health=9 ai=0009
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=234 y=125 health=9 ai=0007
+BOMB_ENEMY slot=10 id=d0ff x=271 y=64 health=9 ai=0001
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 56701 state=8 room=9879/9890 x=336 y=175 pose=0052 health=34 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 56881 state=8 room=9879/9890 x=46 y=83 pose=0052 health=54 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 56931 state=11 room=92fd/9890 x=20 y=139 pose=000c health=54 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 57061 state=8 room=92fd/932e x=998 y=651 pose=000b health=54 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+BOMB_FRAME 57084 state=11 room=9879/932e x=1007 y=651 pose=000b health=54 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 57241 state=8 room=9879/9890 x=190 y=187 pose=008b health=46 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=247 y=140 health=9 ai=0013
+BOMB_ENEMY slot=3 id=d0ff x=285 y=106 health=9 ai=000c
+BOMB_ENEMY slot=4 id=d0ff x=314 y=100 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=177 y=164 health=9 ai=0025
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=196 y=174 health=9 ai=0021
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+BOMB_FRAME 57421 state=8 room=9879/9890 x=180 y=86 pose=0052 health=58 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=82c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=174 y=95 health=9 ai=0009
+BOMB_ENEMY slot=5 id=d0ff x=208 y=138 health=9 ai=0014
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=182 y=119 health=9 ai=0002
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+BOMB_FRAME 57601 state=8 room=9879/9890 x=173 y=150 pose=0014 health=42 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=175 y=189 health=9 ai=0012
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+BOMB_FRAME 57781 state=8 room=9879/9890 x=257 y=187 pose=0010 health=34 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=220 y=90 health=9 ai=0001
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=240 y=127 health=9 ai=0012
+BOMB_ENEMY slot=10 id=d0ff x=277 y=60 health=9 ai=0009
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+BOMB_FRAME 57961 state=8 room=9879/9890 x=350 y=131 pose=0052 health=31 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 58141 state=8 room=9879/9890 x=60 y=81 pose=0052 health=31 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 58202 state=11 room=92fd/9890 x=20 y=139 pose=000c health=31 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 58321 state=8 room=92fd/932e x=987 y=651 pose=0089 health=31 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+BOMB_FRAME 58355 state=11 room=9879/932e x=1007 y=651 pose=000b health=31 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 58501 state=8 room=9879/9890 x=191 y=187 pose=000f health=31 items=0004 missiles=5/5 kills=1/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=1 id=d0ff x=352 y=88 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=265 y=114 health=9 ai=0008
+BOMB_ENEMY slot=3 id=d0ff x=300 y=74 health=9 ai=0001
+BOMB_ENEMY slot=4 id=d0ff x=310 y=98 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=193 y=141 health=9 ai=001c
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=215 y=154 health=9 ai=0016
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+BOMB_FRAME 58681 state=8 room=9879/9890 x=183 y=108 pose=0014 health=40 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=182 y=99 health=9 ai=0014
+BOMB_ENEMY slot=5 id=d0ff x=216 y=97 health=9 ai=0009
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=200 y=136 health=9 ai=0009
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fd
+BOMB_FRAME 58861 state=8 room=9879/9890 x=173 y=164 pose=0016 health=44 items=0004 missiles=5/5 kills=5/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=175 y=145 health=9 ai=0007
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+v1=f8
+BOMB_FRAME 59041 state=8 room=9879/9890 x=272 y=187 pose=0004 health=36 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=227 y=93 health=9 ai=000c
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=254 y=127 health=9 ai=0004
+BOMB_ENEMY slot=10 id=d0ff x=280 y=57 health=9 ai=0014
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 59221 state=8 room=9879/9890 x=362 y=99 pose=002f health=48 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 59401 state=8 room=9879/9890 x=74 y=98 pose=0052 health=68 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 59473 state=11 room=92fd/9890 x=20 y=139 pose=000c health=68 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+BOMB_FRAME 59581 state=8 room=92fd/932e x=987 y=651 pose=0089 health=68 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+v1=ff
+BOMB_FRAME 59626 state=11 room=9879/932e x=1007 y=651 pose=000b health=68 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 59761 state=8 room=9879/9890 x=162 y=187 pose=000f health=68 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=210 y=130 health=9 ai=0010
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=279 y=93 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=307 y=74 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=317 y=102 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=210 y=112 health=9 ai=0011
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=235 y=135 health=9 ai=000b
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+v1=fd
+BOMB_FRAME 59941 state=8 room=9879/9890 x=183 y=144 pose=0014 health=62 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=80c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=123 health=9 ai=0006
+BOMB_ENEMY slot=5 id=d0ff x=222 y=64 health=9 ai=0001
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=213 y=114 health=9 ai=0001
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+BOMB_FRAME 60121 state=8 room=9879/9890 x=175 y=187 pose=0010 health=66 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=173 y=117 health=9 ai=0003
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=169 y=131 health=9 ai=0005
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+v1=f8
+BOMB_FRAME 60301 state=8 room=9879/9890 x=274 y=187 pose=0003 health=58 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8840
+BOMB_ENEMY slot=1 id=d0ff x=225 y=89 health=9 ai=0017
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=276 y=133 health=9 ai=000f
+BOMB_ENEMY slot=10 id=d0ff x=286 y=80 health=9 ai=0006
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 60481 state=8 room=9879/9890 x=350 y=81 pose=0051 health=70 items=0004 missiles=5/5 kills=11/0 events=01 boss=00 stage=0 joy=8140
+BOMB_ENEMY slot=11 id=d0ff x=429 y=66 health=9 ai=0008
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 60661 state=8 room=9879/9890 x=87 y=129 pose=0052 health=75 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 60744 state=11 room=92fd/9890 x=20 y=139 pose=000c health=75 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=f8
+BOMB_FRAME 60841 state=8 room=92fd/932e x=985 y=651 pose=000b health=75 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=8140
+v1=ff
+BOMB_FRAME 60897 state=11 room=9879/932e x=1007 y=651 pose=000b health=75 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+v1=fe
+BOMB_FRAME 61021 state=8 room=9879/9890 x=146 y=186 pose=006d health=75 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=229 y=108 health=9 ai=0005
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=286 y=97 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=307 y=70 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=226 y=83 health=9 ai=0006
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=254 y=115 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f0
+BOMB_FRAME 61201 state=8 room=9879/9890 x=183 y=187 pose=0056 health=84 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=88c0
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=180 y=135 health=9 ai=0009
+BOMB_ENEMY slot=5 id=d0ff x=225 y=61 health=9 ai=000c
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=216 y=111 health=9 ai=000c
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+BOMB_FRAME 61381 state=8 room=9879/9890 x=179 y=148 pose=0014 health=73 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=177 y=116 health=9 ai=000e
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=176 y=134 health=9 ai=0010
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+v1=f0
+BOMB_FRAME 61561 state=8 room=9879/9890 x=266 y=187 pose=009d health=65 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8150
+BOMB_ENEMY slot=1 id=d0ff x=241 y=115 health=9 ai=0009
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=298 y=140 health=9 ai=001a
+BOMB_ENEMY slot=10 id=d0ff x=301 y=113 health=9 ai=0011
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 61741 state=8 room=9879/9890 x=331 y=76 pose=0051 health=62 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=458 y=106 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=446 y=62 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=fd
+BOMB_FRAME 61921 state=8 room=9879/9890 x=101 y=173 pose=0052 health=62 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 62015 state=11 room=92fd/9890 x=20 y=139 pose=000c health=62 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 62101 state=11 room=92fd/932e x=984 y=651 pose=000c health=62 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 62168 state=11 room=9879/932e x=1007 y=651 pose=000b health=62 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+v1=f0
+BOMB_FRAME 62281 state=8 room=9879/9890 x=117 y=159 pose=006d health=62 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=242 y=97 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=239 y=66 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=261 y=118 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 62461 state=8 room=9879/9890 x=185 y=147 pose=006e health=86 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8250
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=179 y=98 health=9 ai=0001
+BOMB_ENEMY slot=5 id=d0ff x=229 y=59 health=9 ai=0017
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=220 y=110 health=9 ai=0017
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 62641 state=8 room=9879/9890 x=179 y=110 pose=0014 health=83 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=109 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=176 y=117 health=9 ai=0002
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+BOMB_FRAME 62821 state=8 room=9879/9890 x=276 y=164 pose=0068 health=75 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=258 y=141 health=9 ai=0014
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=320 y=146 health=9 ai=0025
+BOMB_ENEMY slot=10 id=d0ff x=315 y=145 health=9 ai=001c
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 63001 state=8 room=9879/9890 x=311 y=84 pose=0051 health=67 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=461 y=104 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=453 y=66 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 63181 state=8 room=9879/9890 x=101 y=187 pose=008a health=87 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8240
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 63286 state=11 room=92fd/9890 x=20 y=139 pose=000c health=87 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 63361 state=11 room=92fd/932e x=984 y=651 pose=000c health=87 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+v1=f8
+v1=ff
+BOMB_FRAME 63439 state=11 room=9879/932e x=1007 y=651 pose=000b health=87 items=0004 missiles=5/5 kills=0/16 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=dcff x=1142 y=81 health=15 ai=ff80
+BOMB_ENEMY slot=1 id=dcff x=1080 y=162 health=15 ai=ff80
+BOMB_ENEMY slot=2 id=dcff x=1096 y=184 health=15 ai=0080
+BOMB_ENEMY slot=3 id=db7f x=766 y=59 health=15 ai=0000
+BOMB_ENEMY slot=4 id=db7f x=702 y=91 health=15 ai=0000
+BOMB_ENEMY slot=5 id=db7f x=638 y=59 health=15 ai=0000
+BOMB_ENEMY slot=6 id=dcff x=416 y=376 health=15 ai=0080
+BOMB_ENEMY slot=7 id=d47f x=440 y=552 health=200 ai=0000
+BOMB_ENEMY slot=8 id=dcff x=296 y=1080 health=15 ai=0080
+BOMB_ENEMY slot=9 id=dcff x=468 y=1080 health=15 ai=ff80
+BOMB_ENEMY slot=10 id=dcff x=384 y=1032 health=15 ai=0080
+BOMB_ENEMY slot=11 id=dcff x=360 y=808 health=15 ai=0080
+BOMB_ENEMY slot=12 id=dcff x=490 y=746 health=15 ai=0080
+BOMB_ENEMY slot=13 id=dcff x=456 y=632 health=15 ai=0080
+BOMB_ENEMY slot=14 id=dcff x=385 y=277 health=15 ai=0080
+BOMB_ENEMY slot=15 id=d47f x=941 y=488 health=200 ai=0000
+v1=0
+v1=f0
+BOMB_FRAME 63541 state=8 room=9879/9890 x=88 y=146 pose=006d health=87 items=0004 missiles=5/5 kills=0/0 events=01 boss=00 stage=0 joy=81d0
+BOMB_ENEMY slot=0 id=d0ff x=235 y=98 health=9 ai=0000
+BOMB_ENEMY slot=1 id=d0ff x=350 y=92 health=9 ai=0000
+BOMB_ENEMY slot=2 id=d0ff x=283 y=96 health=9 ai=0000
+BOMB_ENEMY slot=3 id=d0ff x=306 y=73 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=314 y=101 health=9 ai=0000
+BOMB_ENEMY slot=5 id=d0ff x=232 y=67 health=9 ai=0000
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=254 y=119 health=9 ai=0000
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=383 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=f0
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 63721 state=8 room=9879/9890 x=186 y=110 pose=0068 health=91 items=0004 missiles=5/5 kills=3/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=186 y=100 health=9 ai=000c
+BOMB_ENEMY slot=5 id=d0ff x=209 y=67 health=9 ai=0009
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=200 y=98 health=9 ai=0009
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=f0
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=fd
+v1=f8
+v1=f8
+v1=f8
+BOMB_FRAME 63901 state=8 room=9879/9890 x=179 y=86 pose=0014 health=83 items=0004 missiles=5/5 kills=4/0 events=01 boss=00 stage=0 joy=8040
+BOMB_ENEMY slot=1 id=d0ff x=346 y=93 health=9 ai=0000
+BOMB_ENEMY slot=4 id=d0ff x=181 y=89 health=9 ai=0005
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=7 id=d0ff x=175 y=73 health=9 ai=000d
+BOMB_ENEMY slot=8 id=d0ff x=410 y=88 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=400 y=126 health=9 ai=0000
+BOMB_ENEMY slot=10 id=d0ff x=377 y=62 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=450 y=65 health=9 ai=0000
+v1=fe
+v1=fd
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=0
+v1=fe
+v1=f8
+BOMB_FRAME 64081 state=8 room=9879/9890 x=291 y=133 pose=0068 health=75 items=0004 missiles=5/5 kills=7/0 events=01 boss=00 stage=0 joy=8240
+BOMB_ENEMY slot=1 id=d0ff x=275 y=168 health=9 ai=001f
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=9 id=d0ff x=341 y=143 health=9 ai=0020
+BOMB_ENEMY slot=10 id=d0ff x=330 y=178 health=9 ai=0027
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=f0
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=fe
+BOMB_FRAME 64261 state=8 room=9879/9890 x=292 y=106 pose=0051 health=87 items=0004 missiles=5/5 kills=10/0 events=01 boss=00 stage=0 joy=81c0
+BOMB_ENEMY slot=6 id=d0ff x=458 y=107 health=9 ai=0000
+BOMB_ENEMY slot=11 id=d0ff x=451 y=62 health=9 ai=0000
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 64441 state=8 room=9879/9890 x=620 y=187 pose=000b health=87 items=0004 missiles=5/5 kills=12/0 events=01 boss=00 stage=0 joy=8140
+v1=0
+v1=fe
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+BOMB_FRAME 64621 state=11 room=9879/9890 x=749 y=139 pose=000b health=87 items=0004 missiles=0/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+BOMB_FRAME 64628 state=11 room=9804/9890 x=749 y=139 pose=000b health=87 items=0004 missiles=0/5 kills=12/0 events=01 boss=00 stage=0 joy=0000
+v1=fe
+v1=fe
+v1=0
+BOMB_FRAME 64801 state=8 room=9804/981b x=187 y=187 pose=0089 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=eeff x=219 y=179 health=800 ai=0000
+BOMB_FRAME 64981 state=8 room=9804/981b x=187 y=187 pose=0089 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=eeff x=219 y=179 health=800 ai=0000
+BOMB_FRAME 65161 state=8 room=9804/981b x=187 y=187 pose=0089 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0000
+BOMB_ENEMY slot=0 id=eeff x=219 y=179 health=800 ai=0000
+v1=ff
+v1=f8
+v1=0
+v1=f8
+BOMB_FRAME 65341 state=8 room=9804/981b x=53 y=187 pose=0001 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=219 y=179 health=800 ai=0000
+BOMB_FRAME 65521 state=8 room=9804/981b x=53 y=187 pose=0001 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=219 y=179 health=800 ai=0000
+BOMB_FRAME 65701 state=8 room=9804/981b x=53 y=187 pose=0001 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=219 y=179 health=800 ai=0000
+BOMB_FRAME 65881 state=8 room=9804/981b x=53 y=187 pose=0001 health=87 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=179 y=160 health=800 ai=0000
+v1=f8
+BOMB_FRAME 66061 state=8 room=9804/981b x=39 y=187 pose=0001 health=77 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=130 y=97 health=720 ai=0300
+BOMB_FRAME 66241 state=8 room=9804/981b x=37 y=173 pose=0067 health=69 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=208 y=160 health=720 ai=0300
+v1=f8
+BOMB_FRAME 66421 state=8 room=9804/981b x=37 y=187 pose=0001 health=69 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=67 y=160 health=640 ai=fffb
+v1=f8
+BOMB_FRAME 66601 state=8 room=9804/981b x=51 y=187 pose=0001 health=59 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=214 y=160 health=620 ai=0300
+v1=f8
+BOMB_FRAME 66781 state=8 room=9804/981b x=37 y=187 pose=0001 health=51 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=143 y=160 health=560 ai=ffef
+v1=f8
+BOMB_FRAME 66961 state=8 room=9804/981b x=37 y=187 pose=0001 health=41 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=213 y=160 health=520 ai=0300
+BOMB_FRAME 67141 state=8 room=9804/981b x=37 y=174 pose=0067 health=33 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=213 y=160 health=520 ai=0300
+v1=f8
+BOMB_FRAME 67321 state=8 room=9804/981b x=37 y=187 pose=00e6 health=23 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=72 y=160 health=380 ai=fffb
+v1=f8
+BOMB_FRAME 67501 state=8 room=9804/981b x=37 y=187 pose=0001 health=23 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=214 y=160 health=360 ai=0300
+BOMB_FRAME 67681 state=8 room=9804/981b x=37 y=187 pose=0001 health=33 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=167 y=160 health=320 ai=fff9
+v1=f8
+BOMB_FRAME 67861 state=8 room=9804/981b x=37 y=187 pose=0001 health=23 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=174 y=115 health=220 ai=0300
+BOMB_FRAME 68041 state=8 room=9804/981b x=37 y=187 pose=0001 health=23 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=213 y=160 health=220 ai=0300
+BOMB_FRAME 68221 state=8 room=9804/981b x=37 y=171 pose=0067 health=13 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=72 y=160 health=120 ai=fffb
+v1=f8
+BOMB_FRAME 68401 state=8 room=9804/981b x=37 y=187 pose=0001 health=13 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_ENEMY slot=0 id=eeff x=213 y=160 health=40 ai=0005
+BOMB_FRAME 68581 state=8 room=9804/981b x=37 y=187 pose=0001 health=13 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+BOMB_FRAME 68761 state=8 room=9804/981b x=37 y=187 pose=0001 health=13 items=1004 missiles=0/5 kills=0/0 events=01 boss=00 stage=0 joy=0040
+v1=fd
+v1=f9
+v1=fd
+v1=f6
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+BOMB_FRAME 68941 state=8 room=9804/981b x=37 y=157 pose=0015 health=13 items=1004 missiles=0/5 kills=0/0 events=01 boss=04 stage=0 joy=0800
+v1=fe
+BOMB_ROUTE_OK: awake=1 bombs=1 boss=1

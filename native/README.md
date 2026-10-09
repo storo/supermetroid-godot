@@ -56,7 +56,7 @@ comprobación de navegación usa `--native-core-ui-test` con su propia SRAM temp
   `get_state()` expone un diagnóstico de lectura sin copiar texturas: posición,
   estado, salud, equipo, evento de Ceres, cuenta regresiva y primer slot enemigo.
   También entrega capacidad de misiles, selección de arma, cantidad de
-  proyectiles, cuota/derrotas de la sala, dirección de estado y los ocho bytes
+  proyectiles y bombas activas, cuota/derrotas de la sala, dirección de estado y los ocho bytes
   originales de eventos y jefes. Estos campos son copias de lectura de la lógica;
   no conceden objetos ni disparan eventos.
   `get_enemies()` devuelve los slots vivos con ID, posición, salud, propiedades
@@ -196,7 +196,39 @@ ni eventos. Godot coincide por tick con el ejecutable C, incluido el estado de
 sala, cuota y evento. Cuatro capturas de subida, regreso, combate y activación
 coinciden en 229376 píxeles RGB con el oráculo offline.
 `docs/qa/native_awaken_verification.json` conserva esa evidencia. La salida de
-Pit, las bombas, demás jefes y el resto de la campaña siguen por verificar.
+Pit y las bombas se amplían en la prueba siguiente; los demás jefes y el resto
+de la campaña siguen por verificar.
+
+El recorrido de bombas y Bomb Torizo se comprueba con:
+
+```sh
+cmake --build native/build --target sm_bomb_route sm_raster_oracle sm_native --parallel 4
+python3 tools/native_probe/verify_bombs.py
+```
+
+Son 68964 ticks desde una partida nueva: regresa por Climb y Parlor despiertos,
+cruza el pasaje de Morph Ball y combate en Flyway. El controlador vuelve a entrar
+en Flyway para recuperar energía con drops originales; abre la puerta roja con
+cinco pulsaciones de misil y recoge las bombas de la estatua. Después reduce la
+salud original de Bomb Torizo de 800 a cero y espera el evento de derrota del
+jefe. Coloca una bomba desde Morph Ball, espera su explosión y el regreso a una
+pose de pie. No concede salud, munición, equipo ni eventos.
+
+El ensayo reproduce primero `tools/native_probe/fixtures/bomb_prefix.inputs`:
+33156 máscaras de mando registradas desde el arranque hasta la primera entrada
+en Flyway. Se valida su hash y el de la ROM y se ejecuta cada tick; no es una
+partida guardada ni un volcado de memoria. `--plan-from-start` permite recalcular
+ese tramo con el controlador POSIX; ese modo de planificación completo no forma
+parte de la evidencia publicada. Los procesos hijos de planificación sólo
+proponen botones; no alteran el estado vivo ni entran al binario del juego.
+
+Godot coincide con el registro C en todos los ticks, incluyendo bombas activas,
+inventario, salud, puertas/salas, cuotas y bits de evento/jefe. Siete capturas de
+Climb, pasaje, puerta roja, mensaje, combate, bomba y derrota suman 401408
+píxeles RGB idénticos al oráculo offline. Hay audio no silencioso y la ROM
+permanece intacta. `docs/qa/native_bomb_verification.json` conserva esta
+evidencia. No prueba todos los desenlaces del combate, la salida de la puerta
+gris, estaciones, mejoras posteriores ni la campaña completa.
 
 Próximo trabajo: ampliar recorridos de combate, mejoras, estaciones, jefes y
 final desde Landing Site, y sustituir

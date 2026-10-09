@@ -1,0 +1,260 @@
+{
+  "route": {
+    "audible_packets": 383,
+    "bomb_placed": true,
+    "bomb_torizo_defeated": true,
+    "boss_initial_health": 800,
+    "boss_min_live_health": 20,
+    "bosses": [
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "capacity": 5,
+    "captures": {
+      "bomb": {
+        "frame": 68868,
+        "health": 13,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          1536
+        ],
+        "room": 38916,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "climb": {
+        "frame": 27511,
+        "health": 84,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          0,
+          4228
+        ],
+        "room": 38586,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "combat": {
+        "frame": 65898,
+        "health": 87,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          1536
+        ],
+        "room": 38916,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "defeated": {
+        "frame": 68964,
+        "health": 13,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          1536
+        ],
+        "room": 38916,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "passage": {
+        "frame": 32629,
+        "health": 44,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          424,
+          1024
+        ],
+        "room": 37629,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "pickup": {
+        "frame": 64874,
+        "health": 87,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          1536
+        ],
+        "room": 38916,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "red_door": {
+        "frame": 64500,
+        "health": 87,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1280,
+          1536
+        ],
+        "room": 39033,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      }
+    },
+    "events": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "flyway_missiles_fired": 5,
+    "frames": 68964,
+    "health": 13,
+    "items": 4100,
+    "missiles": 0,
+    "rom_unchanged": true,
+    "rooms": [
+      57157,
+      57229,
+      57303,
+      57377,
+      57451,
+      57525,
+      37368,
+      37629,
+      38586,
+      38748,
+      38837,
+      40607,
+      40721,
+      41223,
+      39033,
+      38916
+    ],
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "pixel_comparisons": [
+    {
+      "name": "bomb",
+      "frame": 68868,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "climb",
+      "frame": 27511,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "combat",
+      "frame": 65898,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "defeated",
+      "frame": 68964,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "passage",
+      "frame": 32629,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "pickup",
+      "frame": 64874,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "red_door",
+      "frame": 64500,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    }
+  ],
+  "prefix_replayed_from_fresh_game": true,
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false
+}

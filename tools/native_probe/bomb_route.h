@@ -26,7 +26,7 @@ typedef struct {
   uint16_t room;
   int active,age,stage,phase,end_age,descent_target,bomb_age,jump_hold,jump_release,start_y,start_x,previous_x,velocity;
   RoutePlan plan;
-  int plan_index,search_age,search_stage;
+  int plan_index,search_age,search_stage,bomb_seen;
 } BombRoute;
 
 static uint16_t bomb_ascent(BombRoute *r,const SmNativeState *s,const RouteLedge *ledges,int count) {
@@ -135,25 +135,46 @@ static uint16_t bomb_parlor(BombRoute *r,const SmNativeState *s) {
 
 static uint16_t bomb_flyway(BombRoute *r,const SmNativeState *s) {
   if(r->phase==0) {
-    if(s->x>640)r->phase=s->health>=80?2:1;
-    return 0x8100|0x40|(r->age%60<40?0x80:0);
+    SmNativeEnemy enemies[32];
+    int count=sm_native_enemies(enemies,32),nearest=65535,target_x=400,target_y=100,flies=0;
+    for(int i=0;i<count;i++)if(enemies[i].id==0xd0ff) {
+      flies++;
+      int dx=(int)enemies[i].x-s->x,dy=(int)enemies[i].y-s->y;
+      int distance=(dx<0?-dx:dx)+(dy<0?-dy:dy);
+      if(distance<nearest) { nearest=distance; target_x=enemies[i].x; target_y=enemies[i].y; }
+    }
+    if(!flies) {
+      if(++r->end_age>180)r->phase=s->health>=80?2:1;
+      return route_towards(s->x,400)|0x40;
+    }
+    uint16_t direction=route_towards(s->x+r->velocity*3,target_x);
+    uint16_t joy=0x8000|0x40|direction;
+    if(target_y+25<s->y)joy|=direction?0x10:0x800;
+    if(target_y<160&&r->age%100<49)joy|=0x80;
+    return joy;
   }
   if(r->phase==1) {
-    if(s->x<220)r->phase=0;
     return 0x8200|0x40|(r->age%60<40?0x80:0);
   }
   if(s->x<710)return 0x8100|0x40|(r->age%60<40?0x80:0);
   if(s->selected_item!=1&&s->missiles>0)return r->age%30<2?0x2000:0;
-  return 0x100|0x40;
+  return 0x100|(r->age%20<6?0x40:0);
 }
 
 static uint16_t bomb_torizo(BombRoute *r,const SmNativeState *s) {
+  if(s->boss_flags[0]&4) {
+    if(s->active_bombs)r->bomb_seen=1;
+    if(r->bomb_seen)return 0x800;
+    if(s->movement_type!=4&&s->movement_type!=8)return r->age%30<2?0x400:0;
+    return r->age%20<6?0x40:0;
+  }
   if(!(s->items&0x1000))return 0x8100|0x40|(r->age%60<40?0x80:0);
   r->bomb_age++;
   if(r->bomb_age<420)return r->bomb_age%30<2?0x80:0;
   if(s->selected_item!=0)return 0x4000;
-  if(s->x>80)return 0x8200|0x40;
-  return 0x100|0x40|(r->age%60<40?0x80:0);
+  if(s->x>64) { r->phase=0; return 0x8200|0x40; }
+  if(r->phase==0) { r->phase=1; return 0x100|0x40; }
+  return 0x40;
 }
 
 static uint16_t bomb_route_input(BombRoute *r,const SmNativeState *s) {
@@ -188,7 +209,9 @@ static uint16_t bomb_route_input(BombRoute *r,const SmNativeState *s) {
     if(s->room_kills>=s->room_quota&&s->room_quota>0&&r->stage<(int)(sizeof(climb_ledges)/sizeof(climb_ledges[0])))return joy&~0x40;
     return bomb_aim(joy,s);
   }
-  case 0x92fd:return bomb_parlor(r,s);
+  case 0x92fd:
+    if(s->x>800&&s->y>500)return 0x8100|0x40;
+    return bomb_parlor(r,s);
   case 0x9879:return bomb_flyway(r,s);
   case 0x9804:return bomb_torizo(r,s);
   }

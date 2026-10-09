@@ -62,6 +62,13 @@ en `native_awaken_*_{original,enhanced,oracle}.png`. Las cuatro capturas origina
 coinciden con la PPU offline; las versiones a 2× usan la mejora actual del shader.
 No se añadieron redibujados en esta comprobación.
 
+El recorrido de bombas y Bomb Torizo añade siete capturas en
+`native_bomb_*_{original,enhanced,oracle}.png`: Climb despierto, el pasaje de
+Morph Ball, la puerta roja, el mensaje de las bombas, combate, colocación de una
+bomba y derrota del jefe. Sus 401408 píxeles originales coinciden con la PPU
+offline en `native_bomb_verification.json`. Las variantes a 2× conservan el
+tratamiento del shader; no se generaron redibujados nuevos para este recorrido.
+
 ## Fondo nuevo en la campaña nativa
 
 El renderer nativo también usa `assets/remastered/crateria_backdrop.png` en

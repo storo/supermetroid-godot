@@ -1,0 +1,19 @@
+{
+  "description": "Ordinary SNES joypad buttons recorded from a fresh game through Ceres, Morph Ball, first missiles, Pit awakening, Climb, Parlor and the Morph passage to the first Flyway arrival. No save state or game-memory dump.",
+  "frames": 33156,
+  "encoding": "little-endian uint16 joypad mask per tick",
+  "sha256": "640c00cc422c2841ca65a8c542be4af1c5db86c6cb8d9adfcb84162ecfe5d69b",
+  "rom_sha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72",
+  "final": {
+    "state": 8,
+    "room": "9879",
+    "x": 39,
+    "y": 108,
+    "health": 39,
+    "items": 4,
+    "missiles": 5,
+    "capacity": 5,
+    "events_low": 1
+  },
+  "whole_campaign_verified": false
+}
