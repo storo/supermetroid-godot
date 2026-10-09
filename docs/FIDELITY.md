@@ -24,7 +24,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 ## Orden de trabajo pendiente
 
 1. Completar la extracción de poses, fondos, gráficos de PLM y metadatos de eventos; conservar las direcciones originales como trazabilidad.
-2. Ampliar la ruta nativa verificada Landing Site → Parlor → Climb → Pit → ascensor → Morph Ball hasta los primeros misiles, bombas y despertar de Zebes, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
+2. Ampliar la ruta nativa verificada Landing Site → Morph Ball → primeros misiles → regreso a Crateria → despertar de Zebes hasta bombas y Bomb Torizo, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
 3. Implementar el sistema de eventos y selección de estado de sala; establecer pruebas por escena original y condición de progresión.
 4. Portar las armas, mejoras, colisiones especiales, líquidos y estaciones; comparar controles y física a 60 Hz con capturas/datos del original.
 5. Portar todas las familias de enemigos y jefes, con estados y vulnerabilidades originales.
@@ -87,10 +87,30 @@ mensaje original, transforma a Samus y comprueba su desplazamiento rodando.
 Godot coincide con la referencia C por tick en estado, sala, posición, pose,
 salud, inventario y tipo/velocidad de movimiento. Cuatro checkpoints adicionales
 se comparan en RGB sin tolerancia con el oráculo offline; el informe es
-`docs/qa/native_zebes_verification.json`. Los misiles, bombas, despertar de Zebes
-y campaña restante aún no están verificados en esta integración.
+`docs/qa/native_zebes_verification.json`. Los misiles y el despertar se comprueban
+con los recorridos posteriores descritos abajo; bombas y campaña restante siguen pendientes.
 
 La campaña nativa tiene sus doce botones SNES accesibles por teclado y mando,
 incluidos Start, Select y cancelar arma, cruz y stick izquierdo. La prueba
 `native_input_test.gd` envía eventos a Godot y verifica sus máscaras, combinaciones,
 liberación, zona muerta y registro sin duplicados al reabrir la escena.
+
+`verify_missiles.py` continúa hasta Construction Zone y First Missile en 23436
+ticks de una partida nueva. Comprueba bloques y pasajes bajos, tanque/estatua,
+mensaje original, selección, un disparo, capacidad 5/munición 4, cancelación y
+movimiento posterior. Godot coincide por tick con la referencia C en los estados
+y en los nuevos diagnósticos de inventario, proyectiles, cuotas y eventos.
+Cuatro capturas suman 229376 píxeles RGB idénticos al oráculo offline, incluido
+el mensaje con cambios de BG3 por HDMA. El informe es
+`docs/qa/native_missile_verification.json`. Las bombas y demás mejoras/combates
+de la campaña siguen pendientes.
+
+`verify_awaken.py` prolonga el recorrido a 26570 ticks, sube por Construction
+Zone, vuelve a Crateria por el ascensor y derrota los cinco piratas originales
+de Pit. La sala selecciona el estado $9787 al tener Morph Ball y misiles. Se
+comprueba que el evento 0 permanece apagado con menos de cinco derrotas y se
+activa al cumplir la cuota, sin escrituras de RAM del controlador. Godot coincide
+por tick con el ejecutable C; cuatro capturas coinciden en 229376 píxeles RGB
+con el oráculo offline. `docs/qa/native_awaken_verification.json` registra ese
+alcance. Esto no verifica todavía la salida de Pit, estaciones, bombas,
+Bomb Torizo, otros jefes, final o la campaña completa.

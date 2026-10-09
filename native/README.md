@@ -55,6 +55,12 @@ comprobación de navegación usa `--native-core-ui-test` con su propia SRAM temp
   ocurren en el hilo de gameplay; el audio de Godot recibe copias de muestras.
   `get_state()` expone un diagnóstico de lectura sin copiar texturas: posición,
   estado, salud, equipo, evento de Ceres, cuenta regresiva y primer slot enemigo.
+  También entrega capacidad de misiles, selección de arma, cantidad de
+  proyectiles, cuota/derrotas de la sala, dirección de estado y los ocho bytes
+  originales de eventos y jefes. Estos campos son copias de lectura de la lógica;
+  no conceden objetos ni disparan eventos.
+  `get_enemies()` devuelve los slots vivos con ID, posición, salud, propiedades
+  y AI. Es un diagnóstico opcional; no se copia en cada snapshot de dibujo.
   `get_snapshot()` añade los datos de dibujo al mismo estado.
 - Los snapshots contienen estado, VRAM, CGRAM, OAM y un paquete `raster` con
   registros, paletas y límites de sprites para cada una de las 224 líneas.
@@ -153,6 +159,44 @@ Parlor, Climb, Brinstar y Morph Ball con el oráculo offline. El alcance y los
 resultados están en `docs/qa/native_zebes_verification.json`; esto no prueba los
 primeros misiles, bombas, el despertar de Zebes, el resto de la campaña o la
 equivalencia de lógica con la CPU SNES.
+
+La comprobación de los primeros misiles continúa esa partida desde el comienzo:
+
+```sh
+cmake -S native -B native/build -DCMAKE_BUILD_TYPE=Release -DSM_BUILD_RENDER_ORACLE=ON
+cmake --build native/build --target sm_missile_route sm_raster_oracle sm_native --parallel 4
+python3 tools/native_probe/verify_missiles.py
+```
+
+Son 23436 ticks hasta Construction Zone y First Missile. El controlador dispara
+al bloque del pasaje, pasa como Morph Ball, rompe los pisos con el cañón y cruza
+el segundo pasaje bajo. Recoge el tanque de la estatua original, conserva su
+mensaje, selecciona misiles, dispara uno, verifica capacidad 5/munición 4,
+cancela la selección y recupera movimiento. No cambia equipo ni memoria de juego.
+Godot coincide por tick con el ejecutable C en inventario, selección, proyectiles
+y eventos, además del estado y movimiento de Samus. Cuatro checkpoints, incluido
+el mensaje por HDMA, coinciden en 229376 píxeles RGB con el oráculo offline.
+`docs/qa/native_missile_verification.json` registra ese alcance; no prueba el
+resto de mejoras, combate, estaciones o campaña.
+
+El regreso a Crateria y el despertar de Zebes se comprueban con:
+
+```sh
+cmake --build native/build --target sm_awaken_route sm_raster_oracle sm_native --parallel 4
+python3 tools/native_probe/verify_awaken.py
+```
+
+La ruta suma 26570 ticks desde el comienzo. Sube por Construction Zone, vuelve
+al ascensor y entra en Pit, cuyo selector original elige el estado $9787 al
+tener Morph Ball y misiles. Combate con los cuatro piratas de suelo y el de pared;
+Zebes conserva el evento 0 apagado hasta completar la cuota de cinco derrotas.
+El controlador sólo pulsa el mando, recoge los drops originales y consulta
+enemigos vivos para apuntar al último pirata. No cambia salud, inventario, AI
+ni eventos. Godot coincide por tick con el ejecutable C, incluido el estado de
+sala, cuota y evento. Cuatro capturas de subida, regreso, combate y activación
+coinciden en 229376 píxeles RGB con el oráculo offline.
+`docs/qa/native_awaken_verification.json` conserva esa evidencia. La salida de
+Pit, las bombas, demás jefes y el resto de la campaña siguen por verificar.
 
 Próximo trabajo: ampliar recorridos de combate, mejoras, estaciones, jefes y
 final desde Landing Site, y sustituir

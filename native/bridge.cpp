@@ -23,6 +23,7 @@ protected:
     ClassDB::bind_method(D_METHOD("step", "joy1"), &SmNativeCore::step);
     ClassDB::bind_method(D_METHOD("get_snapshot"), &SmNativeCore::get_snapshot);
     ClassDB::bind_method(D_METHOD("get_state"), &SmNativeCore::get_state);
+    ClassDB::bind_method(D_METHOD("get_enemies"), &SmNativeCore::get_enemies);
     ClassDB::bind_method(D_METHOD("get_audio"), &SmNativeCore::get_audio);
     ClassDB::bind_method(D_METHOD("get_error"), &SmNativeCore::get_error);
     ClassDB::bind_method(D_METHOD("close"), &SmNativeCore::close);
@@ -60,6 +61,14 @@ public:
     result["position"]=Vector2(s.x,s.y); result["camera"]=Vector2(s.camera_x,s.camera_y); result["pose"]=s.pose;
     result["health"]=s.health; result["missiles"]=s.missiles; result["supers"]=s.supers; result["power_bombs"]=s.power_bombs;
     result["items"]=s.items; result["beams"]=s.beams;
+    result["missile_capacity"]=s.missile_capacity; result["selected_item"]=s.selected_item;
+    result["active_projectiles"]=s.active_projectiles;
+    result["room_kills"]=s.room_kills; result["room_quota"]=s.room_quota;
+    result["room_state"]=s.room_state;
+    PackedByteArray events,bosses;
+    events.resize(8); bosses.resize(8);
+    for(int i=0;i<8;i++) { events.set(i,s.event_flags[i]); bosses.set(i,s.boss_flags[i]); }
+    result["event_flags"]=events; result["boss_flags"]=bosses;
     result["ceres_status"]=s.ceres_phase; result["timer_status"]=s.timer_phase;
     result["timer_digits"]=Vector3(s.clock_minutes,s.clock_seconds,s.clock_centiseconds);
     result["y_direction"]=s.y_direction; result["y_speed"]=s.y_speed; result["movement_type"]=s.movement_type;
@@ -71,6 +80,20 @@ public:
     SmNativeState s;
     if(owner!=this||!sm_native_state(&s))return Dictionary();
     return state_fields(s);
+  }
+  Array get_enemies() const {
+    Array result;
+    if(owner!=this)return result;
+    SmNativeEnemy enemies[32];
+    int count=sm_native_enemies(enemies,32);
+    for(int i=0;i<count;i++) {
+      const SmNativeEnemy &e=enemies[i];
+      Dictionary entry;
+      entry["slot"]=e.slot; entry["id"]=e.id; entry["position"]=Vector2(e.x,e.y);
+      entry["health"]=e.health; entry["properties"]=e.properties; entry["ai"]=e.ai;
+      result.append(entry);
+    }
+    return result;
   }
   Dictionary get_snapshot() const {
     Dictionary result;

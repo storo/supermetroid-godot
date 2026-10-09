@@ -202,6 +202,16 @@ int sm_native_raster(uint8_t *destination) {
   if(!ready)return 0;
   memcpy(destination,raster,sizeof(raster)); return 1;
 }
+int sm_native_enemies(SmNativeEnemy *destination,int capacity) {
+  if(!ready||!destination||capacity<=0)return 0;
+  int count=0;
+  for(int i=0;i<32&&count<capacity;i++) {
+    EnemyData *e=&enemy_data[i];
+    if(!e->enemy_ptr||!e->health||(e->properties&kEnemyProps_Deleted))continue;
+    destination[count++]=(SmNativeEnemy){i,e->enemy_ptr,e->x_pos,e->y_pos,e->health,e->properties,e->ai_var_A};
+  }
+  return count;
+}
 int sm_native_state(SmNativeState *s) {
   if (!ready) return 0;
   memset(s,0,sizeof(*s));
@@ -209,6 +219,12 @@ int sm_native_state(SmNativeState *s) {
   s->x=samus_x_pos; s->y=samus_y_pos; s->camera_x=layer1_x_pos; s->camera_y=layer1_y_pos; s->pose=samus_pose;
   s->health=samus_health; s->missiles=samus_missiles; s->supers=samus_super_missiles; s->power_bombs=samus_power_bombs;
   s->items=equipped_items; s->beams=equipped_beams;
+  s->missile_capacity=samus_max_missiles; s->selected_item=hud_item_index;
+  s->active_projectiles=projectile_counter;
+  s->room_kills=num_enemies_killed_in_room; s->room_quota=num_enemy_deaths_left_to_clear;
+  s->room_state=roomdefroomstate_ptr;
+  memcpy(s->event_flags,events_that_happened,sizeof(s->event_flags));
+  memcpy(s->boss_flags,boss_bits_for_area,sizeof(s->boss_flags));
   s->ceres_phase=ceres_status; s->timer_phase=timer_status;
   s->clock_minutes=timer_minutes; s->clock_seconds=timer_seconds; s->clock_centiseconds=timer_centiseconds;
   s->y_direction=samus_y_dir; s->y_speed=samus_y_speed; s->movement_type=samus_movement_type;

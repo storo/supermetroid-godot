@@ -51,3 +51,13 @@ La ruta de Zebes añade capturas de Parlor, Climb, Brinstar y Morph Ball en
 variante mejorada a 2× con el mismo tratamiento; las versiones originales se
 comparan sin tolerancia RGB en `native_zebes_verification.json`. No se añadieron
 redibujados de personajes en esta ampliación.
+
+`native_missile_*_{original,enhanced,oracle}.png` añade Construction Zone, el
+mensaje del tanque y el disparo de misiles. La mejora a 2× mantiene el tratamiento
+actual del renderer; cuatro capturas originales coinciden con el oráculo en
+`native_missile_verification.json`, incluido el texto y HDMA del mensaje.
+
+La prueba del despertar de Zebes agrega subida, regreso, combate y el evento
+en `native_awaken_*_{original,enhanced,oracle}.png`. Las cuatro capturas originales
+coinciden con la PPU offline; las versiones a 2× usan la mejora actual del shader.
+No se añadieron redibujados en esta comprobación.

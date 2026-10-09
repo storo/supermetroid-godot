@@ -1,0 +1,160 @@
+{
+  "route": {
+    "audible_packets": 130,
+    "capacity": 5,
+    "captures": {
+      "construction": {
+        "frame": 22655,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1792,
+          5222
+        ],
+        "room": 40721,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "control": {
+        "frame": 23436,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          5376
+        ],
+        "room": 41223,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "fired": {
+        "frame": 23408,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          5376
+        ],
+        "room": 41223,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "pickup": {
+        "frame": 23067,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          1536,
+          5376
+        ],
+        "room": 41223,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      }
+    },
+    "events": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "frames": 23436,
+    "items": 4,
+    "missile_fired": true,
+    "missiles": 4,
+    "morph_rolling": true,
+    "rom_unchanged": true,
+    "rooms": [
+      57157,
+      57229,
+      57303,
+      57377,
+      57451,
+      57525,
+      37368,
+      37629,
+      38586,
+      38748,
+      38837,
+      40607,
+      40721,
+      41223
+    ],
+    "selected_item": 0,
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "pixel_comparisons": [
+    {
+      "name": "construction",
+      "frame": 22655,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "control",
+      "frame": 23436,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "fired",
+      "frame": 23408,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "pickup",
+      "frame": 23067,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    }
+  ],
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false
+}

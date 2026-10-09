@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native Godot integration; intro, Ceres/Ridley low-health retreat/timed escape, playable Landing Site, Zebes descent/elevator/Morph Ball acquisition and rolling, keyboard/gamepad/stick and menu lifecycle",
+  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -146,10 +146,75 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_missile_core.log": {
+      "terminal_markers": [
+        "NATIVE_EXTENSION_OK: registered GDExtension, 18000 C ticks, 7804 gameplay ticks, Ceres movement/audio, VRAM/CGRAM/OAM packets, single ownership, close/reboot, intact ROM; full campaign pending"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_missile_input.log": {
+      "terminal_markers": [
+        "NATIVE_INPUT_OK: actual key/gamepad/stick events, twelve SNES buttons, combinations, release, deadzone, idempotent bindings"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_missile_smoke.log": {
+      "terminal_markers": [
+        "SMOKE_OK: native movement, jump, projectile, morph, room switching, art toggle, save/load; 322 room states verified"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_missile_route.log": {
+      "terminal_markers": [
+        "MISSILE_ROUTE_OK: morph=1 fired=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_missile_godot.log": {
+      "terminal_markers": [
+        "MISSILE_GODOT_OK: 23436 ticks, Morph tunnel/Construction Zone/first missiles, original pickup message, missile fired and cancelled, exact input/state replay, intact ROM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_missile_verification.log": {
+      "terminal_markers": [
+        "MISSILE_VERIFICATION_OK: 23436 native Godot ticks; first missile PLM/message/selection/projectile/ammo/cancel/control; 229376 exact RGB pixels; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_awaken_route.log": {
+      "terminal_markers": [
+        "AWAKEN_ROUTE_OK: missiles=1 awake=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_awaken_godot.log": {
+      "terminal_markers": [
+        "AWAKEN_GODOT_OK: 26570 ticks, first missiles/return elevator/five original Pit pirates/death quota/Zebes event, exact input/state replay, intact ROM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_awaken_verification.log": {
+      "terminal_markers": [
+        "AWAKEN_VERIFICATION_OK: 26570 native Godot ticks; return elevator/five original Pit pirates/death quota/Zebes event; 229376 exact RGB pixels; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
   "clean_clone_without_binary_imported": true,
   "campaign_verification_report": "docs/qa/native_campaign_verification.json",
-  "zebes_verification_report": "docs/qa/native_zebes_verification.json"
+  "zebes_verification_report": "docs/qa/native_zebes_verification.json",
+  "missile_verification_report": "docs/qa/native_missile_verification.json",
+  "awaken_verification_report": "docs/qa/native_awaken_verification.json"
 }

@@ -1,0 +1,127 @@
+{
+  "audible_packets": 147,
+  "capacity": 5,
+  "captures": {
+    "ascent": {
+      "frame": 23833,
+      "health": 99,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        1792,
+        5217
+      ],
+      "room": 40721,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "awake": {
+      "frame": 26570,
+      "health": 99,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        751,
+        4352
+      ],
+      "room": 38748,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "combat": {
+      "frame": 25736,
+      "health": 99,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        768,
+        4352
+      ],
+      "room": 38748,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "return": {
+      "frame": 24589,
+      "health": 99,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        1536,
+        5120
+      ],
+      "room": 40607,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    }
+  },
+  "events": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "frames": 26570,
+  "health": 99,
+  "items": 4,
+  "kills": 5,
+  "missiles": 5,
+  "quota": 5,
+  "rom_unchanged": true,
+  "room_state": 38791,
+  "rooms": [
+    57157,
+    57229,
+    57303,
+    57377,
+    57451,
+    57525,
+    37368,
+    37629,
+    38586,
+    38748,
+    38837,
+    40607,
+    40721,
+    41223
+  ],
+  "state_trace_matches": true,
+  "whole_campaign_verified": false,
+  "zebes_awake": true
+}

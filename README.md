@@ -16,8 +16,10 @@ En el menú puedes empezar en Landing Site o usar **Explorar salas**. El visor h
 Con la ROM local y la extensión compilada (`sh native/setup.sh`), el menú también
 ofrece **Jugar desde Ceres**. Esa escena conserva la introducción, Ridley, el escape
 y la llegada a Zebes de las rutinas C originales. También se verificó el recorrido
-Landing Site → Parlor → Climb → Pit → ascensor → Morph Ball, su recogida y
-desplazamiento con controles normales. F10 vuelve al menú. Su partida
+Landing Site → Parlor → Climb → Pit → ascensor → Morph Ball → Construction Zone
+→ primeros misiles → regreso a Crateria y combate con los cinco piratas de Pit.
+La recogida, transformación, disparo, consumo de munición y despertar de Zebes
+se comprueban con controles normales. F10 vuelve al menú. Su partida
 SRAM es independiente del guardado JSON de la reconstrucción GDScript.
 
 En esa campaña nativa, S/↓ agacha y transforma a Samus después de conseguir Morph
@@ -68,8 +70,8 @@ Consulta `docs/FIDELITY.md` para los requisitos del juego completo, `docs/ART.md
 
 Hay además una integración independiente de las rutinas C de la lógica original
 mediante GDExtension en `native/`. Se verificó el recorrido Ceres → Ridley → escape
-→ llegada a Landing Site → Morph Ball con control de Samus, transformación,
-movimiento, disparos y audio;
+→ llegada a Landing Site → Morph Ball → primeros misiles con control de Samus,
+transformación, movimiento, disparos, consumo de munición y audio;
 Godot compone sus tiles/sprites, cambios por línea, HUD, color math y fondo de
 Mode 7 con shaders. Hay una prueba de comparación de píxeles contra un oráculo
 offline; sus resultados y alcance están en `docs/qa/native_raster_comparison.json`.
