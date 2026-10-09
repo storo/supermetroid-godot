@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native C integration, per-line Godot renderer, four intro frames, Ceres elevator and first corridor",
+  "scope": "Native Godot integration; intro, all six Ceres rooms, Ridley low-health retreat, timed escape, playable Landing Site, menu lifecycle",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -69,8 +69,44 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_campaign_route.log": {
+      "terminal_markers": [
+        "CAMPAIGN_ROUTE_OK: ridley=1 escape=1 landed=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_campaign_godot.log": {
+      "terminal_markers": [
+        "CAMPAIGN_GODOT_OK: 16836 native ticks, all Ceres rooms, Ridley/getaway/timer, escape, playable Landing Site, exact input/state replay, intact ROM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_campaign_verification.log": {
+      "terminal_markers": [
+        "CAMPAIGN_VERIFICATION_OK: 16836 native Godot ticks; Ceres/Ridley/escape/playable Landing Site; 229376 exact RGB pixels; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_campaign_menu.log": {
+      "terminal_markers": [
+        "CAMPAIGN_MENU_OK: title launches native campaign, F10 returns, core reopens; dedicated test SRAM"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_campaign_smoke.log": {
+      "terminal_markers": [
+        "SMOKE_OK: native movement, jump, projectile, morph, room switching, art toggle, save/load; 322 room states verified"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
-  "clean_clone_without_binary_imported": true
+  "clean_clone_without_binary_imported": true,
+  "campaign_verification_report": "docs/qa/native_campaign_verification.json"
 }

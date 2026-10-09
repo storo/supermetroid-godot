@@ -1,0 +1,305 @@
+ROUTE_FRAME 1 state=0 room=0000 x=0 y=0 health=0 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 601 state=30 room=0000 x=0 y=0 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 1201 state=30 room=0000 x=0 y=0 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 1801 state=30 room=0000 x=0 y=0 health=99 escape=0 timer=0 enemy=0000 ai=0000
+v1=f6
+v1=f6
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=f8
+ROUTE_FRAME 2401 state=30 room=0000 x=148 y=115 health=99 escape=0 timer=0 enemy=0000 ai=0000
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+ROUTE_FRAME 3001 state=30 room=0000 x=148 y=115 health=99 escape=0 timer=0 enemy=0000 ai=0000
+v1=f6
+v1=f6
+v1=ff
+v1=ff
+v1=ff
+v1=f6
+ROUTE_FRAME 3601 state=30 room=0000 x=161 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+v1=f6
+ROUTE_FRAME 4201 state=30 room=0000 x=161 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+v1=f6
+v1=ff
+v1=ff
+ROUTE_FRAME 4801 state=30 room=0000 x=40 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 5401 state=30 room=0000 x=40 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 6001 state=30 room=0000 x=40 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 6601 state=30 room=0000 x=40 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 7201 state=30 room=0000 x=40 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 7801 state=30 room=0000 x=40 y=147 health=99 escape=0 timer=0 enemy=0000 ai=0000
+ROUTE_FRAME 8139 state=31 room=df45 x=128 y=72 health=99 escape=0 timer=0 enemy=0000 ai=0000
+v1=ff
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+ROUTE_FRAME 8401 state=8 room=df45 x=180 y=148 health=99 escape=0 timer=0 enemy=e23f ai=f7bd
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+ROUTE_FRAME 8721 state=11 room=df8d x=236 y=651 health=99 escape=0 timer=0 enemy=e23f ai=f7bd
+v1=0
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=0
+ROUTE_FRAME 8990 state=11 room=dfd7 x=492 y=139 health=99 escape=0 timer=0 enemy=e23f ai=f76b
+ROUTE_FRAME 9001 state=11 room=dfd7 x=65525 y=139 health=99 escape=0 timer=0 enemy=e23f ai=f76b
+v1=ff
+v1=ff
+v1=f8
+v1=fe
+v1=ff
+v1=ff
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=ff
+v1=ff
+ROUTE_FRAME 9379 state=11 room=e021 x=237 y=395 health=99 escape=0 timer=0 enemy=e23f ai=f76b
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=ff
+ROUTE_FRAME 9601 state=11 room=e021 x=492 y=139 health=99 escape=0 timer=0 enemy=e23f ai=f76b
+ROUTE_FRAME 9618 state=11 room=e06b x=492 y=139 health=99 escape=0 timer=0 enemy=e23f ai=f76b
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=ff
+ROUTE_FRAME 9845 state=11 room=e0b5 x=492 y=139 health=99 escape=0 timer=0 enemy=e23f ai=f76b
+v1=fe
+v1=f8
+ROUTE_FRAME 10201 state=8 room=e0b5 x=159 y=187 health=99 escape=0 timer=0 enemy=e13f ai=a377
+v1=f8
+v1=f8
+v1=f8
+ROUTE_FRAME 10801 state=8 room=e0b5 x=149 y=174 health=84 escape=0 timer=0 enemy=e13f ai=a478
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+v1=f8
+ROUTE_FRAME 11401 state=8 room=e0b5 x=157 y=188 health=34 escape=0 timer=0 enemy=e13f ai=a6e8
+v1=fe
+v1=f8
+v1=f8
+v1=f8
+v1=f6
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=f6
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+ROUTE_FRAME 12001 state=8 room=e0b5 x=235 y=187 health=19 escape=1 timer=0 enemy=e13f ai=c04e
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+ROUTE_FRAME 12244 state=11 room=e06b x=20 y=139 health=19 escape=2 timer=32773 enemy=e13f ai=aa50
+v1=0
+v1=0
+v1=0
+v1=0
+v1=0
+v1=ff
+ROUTE_FRAME 12471 state=11 room=e021 x=20 y=139 health=19 escape=2 timer=32774 enemy=e23f ai=f76b
+v1=0
+v1=0
+ROUTE_FRAME 12601 state=8 room=e021 x=292 y=187 health=19 escape=2 timer=32774 enemy=e23f ai=f76b
+v1=0
+v1=0
+v1=0
+ROUTE_FRAME 12704 state=11 room=dfd7 x=19 y=139 health=19 escape=2 timer=32774 enemy=e23f ai=f76b
+v1=0
+v1=fe
+v1=ff
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=ff
+v1=ff
+v1=f8
+v1=0
+v1=0
+ROUTE_FRAME 13125 state=11 room=df8d x=20 y=139 health=19 escape=2 timer=32774 enemy=e23f ai=f76b
+ROUTE_FRAME 13201 state=11 room=df8d x=487 y=139 health=19 escape=2 timer=32774 enemy=e1ff ai=eff4
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+ROUTE_FRAME 13503 state=11 room=df45 x=20 y=139 health=19 escape=2 timer=32774 enemy=e1ff ai=eff4
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+ROUTE_FRAME 13801 state=8 room=df45 x=103 y=417 health=19 escape=32768 timer=32774 enemy=e23f ai=f850
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+ROUTE_FRAME 14401 state=34 room=df45 x=144 y=75 health=19 escape=0 timer=0 enemy=e23f ai=f850
+ROUTE_FRAME 15001 state=34 room=df45 x=144 y=75 health=19 escape=0 timer=0 enemy=e23f ai=f850
+ROUTE_FRAME 15601 state=34 room=df45 x=144 y=75 health=19 escape=0 timer=0 enemy=e23f ai=f850
+ROUTE_FRAME 16098 state=6 room=91f8 x=1152 y=128 health=99 escape=0 timer=0 enemy=e23f ai=f850
+ROUTE_FRAME 16201 state=7 room=91f8 x=1152 y=249 health=99 escape=0 timer=0 enemy=d07f ai=0000
+ROUTE_FRAME 16801 state=8 room=91f8 x=1153 y=1088 health=99 escape=0 timer=0 enemy=d07f ai=000e
+v1=ff
+v1=f8
+CAMPAIGN_ROUTE_OK: ridley=1 escape=1 landed=1

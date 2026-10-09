@@ -12,11 +12,11 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
 | Puertas, elevadores, estaciones y PLM | Restricciones por color, condiciones de jefe/cuota y 14 extremos de ascensor con transporte nativo; estaciones y secuencia de la estatua de Tourian pendientes | Incompleto |
 | Enemigos y sus IA originales | 154 atlas y parámetros; tres IA aproximadas; piratas grises de suelo/pared con instrucciones, frames e hitboxes de ROM y rutinas nativas | Incompleto; faltan las demás familias y comparación por fotograma |
-| Jefes y minijefes | Assets crudos disponibles, sin comportamientos completos | Pendiente |
+| Jefes y minijefes | Assets crudos y rutinas C integradas; recorrido nativo de Ridley de Ceres por salud baja | Incompleto; demás jefes y variantes por verificar |
 | Mejoras, armas y restricciones originales | Objetos y equipo básico; parte de las habilidades | Incompleto |
 | Líquidos, calor, arena y tipos de bloque | Datos disponibles; colisiones sólidas y pendientes | Incompleto |
-| Ceres, historia, eventos y cambios de estado | 61 selectores de ROM evaluados al entrar; eventos y bits de jefe por área persistentes; cuota de enemigos puede despertar Zebes | Base implementada; faltan disparadores de eventos, jefes, Ceres y secuencias |
-| Música y efectos originales | Efectos provisionales sintetizados; datos de ROM disponibles | Pendiente |
+| Ceres, historia, eventos y cambios de estado | 61 selectores de ROM en GDScript; Ceres → Ridley → escape → llegada controlable a Landing Site en la integración C/Godot | Tramo Ceres verificado en la integración; historia y campaña restantes incompletas |
+| Música y efectos originales | Efectos sintetizados en GDScript; reproductor SPC nativo con audio audible durante el recorrido de Ceres | Repertorio y paridad de audio completos pendientes |
 | Guardado, menú, mapa | Guardado JSON, mapa de salas, menú y controles | Implementados como base; formato/comportamiento SNES no equivalentes |
 | Campaña completa de principio a fin | No hay recorrido completo ni final funcional | Pendiente |
 | Verificación del juego completo | Auditoría de salas y pruebas básicas; capturas | Incompleto |
@@ -66,3 +66,17 @@ Esta escena independiente no sustituye la
 campaña principal ni completa los requisitos de la tabla. Consulta
 `native/README.md` para reproducirla y `tools/native_probe/README.md` para el
 diagnóstico anterior.
+
+`verify_campaign.py` registra 16836 controles normales de menús, introducción,
+las seis salas de Ceres, combate con Ridley, retirada por salud baja, cuenta
+regresiva, subida y llegada a Landing Site con movimiento de Samus. Godot reproduce
+ese input y coincide con el ejecutable C en estado, sala, posición, pose, salud y
+evento/timer para todos los ticks. Cuatro checkpoints de dibujo coinciden en
+229376 píxeles RGB con el oráculo de PPU offline; se conservan capturas originales
+y mejoradas a 2×. El informe es `docs/qa/native_campaign_verification.json`.
+
+Esta evidencia verifica un recorrido y el enlace de Godot con la referencia C.
+No prueba la paridad de lógica con la CPU SNES, la retirada por daño a Ridley,
+todos los fotogramas, todos los efectos o el resto de la campaña. El menú permite
+entrar a esta escena cuando están presentes ROM/binario, y F10 vuelve liberando
+el núcleo. La prueba de navegación usa una SRAM distinta de la partida del usuario.

@@ -39,3 +39,9 @@ original tiene paridad RGB en seis capturas concretas de introducción/Ceres,
 registradas en `docs/qa/native_raster_comparison.json`. Queda ampliar la verificación
 de efectos y escenarios; esto no sustituye el
 redibujado completo de assets ni prueba la campaña.
+
+El recorrido nativo Ceres → Ridley → escape → Landing Site añade cuatro capturas
+comparadas sin tolerancia RGB en `native_campaign_verification.json`. Las versiones
+`native_campaign_*_enhanced.png` se dibujan a 2× con Scale2x y luz/saturación; sus
+anclajes, tiles y paletas provienen del mismo estado que las capturas originales.
+Este tratamiento del arte sigue siendo una primera mejora, no su redibujado final.

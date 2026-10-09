@@ -13,6 +13,11 @@ Abre `project.godot` con Godot 4.5 o posterior y pulsa F5, o haz doble clic en `
 
 En el menú puedes empezar en Landing Site o usar **Explorar salas**. El visor habilita equipo básico para revisar los escenarios sin confundirlo con la progresión de una partida nueva.
 
+Con la ROM local y la extensión compilada (`sh native/setup.sh`), el menú también
+ofrece **Jugar desde Ceres**. Esa escena conserva la introducción, Ridley, el escape
+y la llegada a Zebes de las rutinas C originales. F10 vuelve al menú. Su partida
+SRAM es independiente del guardado JSON de la reconstrucción GDScript.
+
 | Acción | Tecla |
 | --- | --- |
 | Mover | A/D o flechas |
@@ -53,12 +58,13 @@ El guardado rápido se habilita al terminar el viaje en ascensor, para conservar
 Consulta `docs/FIDELITY.md` para los requisitos del juego completo, `docs/ART.md` para el origen del arte y `docs/qa/` para pruebas y capturas.
 
 Hay además una integración independiente de las rutinas C de la lógica original
-mediante GDExtension en `native/`. Llega a Ceres con movimiento, disparos y audio;
+mediante GDExtension en `native/`. Se verificó el recorrido Ceres → Ridley → escape
+→ llegada a Landing Site con control de Samus, movimiento, disparos y audio;
 Godot compone sus tiles/sprites, cambios por línea, HUD, color math y fondo de
 Mode 7 con shaders. Hay una prueba de comparación de píxeles contra un oráculo
 offline; sus resultados y alcance están en `docs/qa/native_raster_comparison.json`.
 Los intérpretes de CPU/SPC no se compilan. La integración sigue en desarrollo y
-todavía no reemplaza la escena principal ni prueba la campaña completa. Consulta
+se puede abrir desde el menú, pero todavía no prueba la campaña completa. Consulta
 `native/README.md` para ejecutarla y revisar sus límites.
 
 ## Regenerar assets desde la ROM local

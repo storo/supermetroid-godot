@@ -1,0 +1,4 @@
+[ 95%] Built target sm_gameplay
+[ 97%] Building C object CMakeFiles/sm_raster_oracle.dir/Users/storo/supermetroid/tools/native_probe/raster_oracle.c.o
+[100%] Linking C executable sm_raster_oracle
+[100%] Built target sm_raster_oracle

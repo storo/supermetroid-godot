@@ -1,0 +1,138 @@
+{
+  "route": {
+    "audible_packets": 93,
+    "captures": {
+      "escape": {
+        "frame": 12331,
+        "health": 19,
+        "mode": 1,
+        "mode7_flags": 0,
+        "mode7_matrix": [
+          27,
+          15,
+          -15,
+          27,
+          64,
+          64,
+          1792,
+          768
+        ],
+        "room": 57451,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 32773
+      },
+      "getaway": {
+        "frame": 11713,
+        "health": 19,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          684,
+          264,
+          -264,
+          684,
+          64,
+          64,
+          8144,
+          8083
+        ],
+        "room": 57525,
+        "scanline_modes": [
+          1,
+          7
+        ],
+        "timer_status": 0
+      },
+      "landing": {
+        "frame": 16836,
+        "health": 99,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          2010,
+          973
+        ],
+        "room": 37368,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      },
+      "ridley": {
+        "frame": 10567,
+        "health": 94,
+        "mode": 1,
+        "mode7_flags": 0,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          1008,
+          2048,
+          768
+        ],
+        "room": 57525,
+        "scanline_modes": [
+          1
+        ],
+        "timer_status": 0
+      }
+    },
+    "frames": 16836,
+    "rom_unchanged": true,
+    "rooms": [
+      57157,
+      57229,
+      57303,
+      57377,
+      57451,
+      57525,
+      37368
+    ],
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "pixel_comparisons": [
+    {
+      "name": "escape",
+      "frame": 12331,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "getaway",
+      "frame": 11713,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "landing",
+      "frame": 16836,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "ridley",
+      "frame": 10567,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    }
+  ],
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false
+}

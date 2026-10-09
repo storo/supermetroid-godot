@@ -30,6 +30,10 @@ la escena. La SRAM usa `user://native_campaign.srm` y no sustituye el JSON de la
 escena principal. El `--native-core-capture` usa SRAM de prueba independiente,
 recorre la introducción mediante input y captura el ascensor inicial de Ceres.
 
+El menú de la escena principal ofrece **Jugar desde Ceres** cuando existen la ROM
+y el binario de este Mac. F10 vuelve a ese menú y libera el núcleo/audio. La
+comprobación de navegación usa `--native-core-ui-test` con su propia SRAM temporal.
+
 ## Arquitectura
 
 - `core/host.c` inicializa memoria y dispositivos, ejecuta `RunOneFrameOfGame` y
@@ -43,6 +47,9 @@ recorre la introducción mediante input y captura el ascensor inicial de Ceres.
   controla la propiedad única del núcleo, expone snapshots y entrega 534 frames
   de audio estéreo por tick (32040 Hz a 60 ticks/s). Todas las llamadas al núcleo
   ocurren en el hilo de gameplay; el audio de Godot recibe copias de muestras.
+  `get_state()` expone un diagnóstico de lectura sin copiar texturas: posición,
+  estado, salud, equipo, evento de Ceres, cuenta regresiva y primer slot enemigo.
+  `get_snapshot()` añade los datos de dibujo al mismo estado.
 - Los snapshots contienen estado, VRAM, CGRAM, OAM y un paquete `raster` con
   registros, paletas y límites de sprites para cada una de las 224 líneas.
   **No se expone un framebuffer como textura del juego.**
@@ -96,8 +103,30 @@ discrepancias y alcance. Una captura idéntica demuestra esos píxeles y no la
 campaña entera. El renderer anterior se conserva como referencia en
 `scripts/native_renderer.gd`, pero la escena ya usa el renderer por línea.
 
-Próximo trabajo: verificar el recorrido de Ceres, escape y Landing Site; después
-ampliar recorridos de combate, mejoras, estaciones, jefes y final, y sustituir
+También se verificó el recorrido completo de Ceres y la llegada a Landing Site:
+
+```sh
+cmake --build native/build --target sm_campaign_route sm_raster_oracle sm_native --parallel 4
+python3 tools/native_probe/verify_campaign.py
+/Applications/Godot.app/Contents/MacOS/Godot --path . --script tools/native_probe/campaign_menu_test.gd -- --native-core-ui-test
+```
+
+El controlador de prueba envía botones normales: baja por las seis salas, activa
+a Ridley, recibe daño hasta la retirada original por salud baja, espera su
+secuencia, vuelve por las plataformas antes del límite y permite que la nave
+aterrice. Al final Samus camina en Landing Site. No cambia RAM, posiciones,
+equipo, salud ni eventos; no entra en la extensión de gameplay.
+
+Se registran 16836 inputs/estados y se reproducen en Godot, comparando estado,
+sala, posición, pose, salud y evento/timer en cada tick contra el ejecutable C.
+Cuatro capturas concretas de jefe, retirada, timer y llegada coinciden en sus
+229376 píxeles RGB con el oráculo offline. La variante mejorada se captura a 2×.
+`docs/qa/native_campaign_verification.json` conserva esa evidencia. La comparación
+de estados prueba la integración con la referencia C; no es una comparación de
+la CPU SNES ni verifica todos los desenlaces del combate o la campaña completa.
+
+Próximo trabajo: ampliar recorridos de combate, mejoras, estaciones, jefes y
+final desde Landing Site, y sustituir
 gradualmente el arte conservando anclajes y límites de cada animación.
 
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa

@@ -1,0 +1,4 @@
+[ 95%] Built target sm_gameplay
+[ 97%] Building C object CMakeFiles/sm_campaign_route.dir/Users/storo/supermetroid/tools/native_probe/campaign_route.c.o
+[100%] Linking C executable sm_campaign_route
+[100%] Built target sm_campaign_route

@@ -31,7 +31,7 @@ static void fixture(const char *directory,const char *name,int frame) {
   fprintf(manifest,"%s{\"name\":\"%s\",\"frame\":%d,\"state\":%d,\"room\":%d,\"mode\":%d}",cases++?",\n":"",name,frame,state.state,state.room,state.mode);
 }
 int main(int argc,char **argv) {
-  if(argc!=3) { fprintf(stderr,"Usage: sm_raster_oracle ROM OUTPUT_DIRECTORY\n"); return 1; }
+  if(argc!=3&&argc!=5) { fprintf(stderr,"Usage: sm_raster_oracle ROM OUTPUT_DIRECTORY [INPUT_TRACE CHECKPOINT_CSV]\n"); return 1; }
   char save[4096]; snprintf(save,sizeof(save),"%s/oracle.srm",argv[2]); remove(save);
   if(!sm_native_boot(argv[1],save)) { fprintf(stderr,"%s\n",sm_native_error()); return 1; }
   g_snes->disableRender=false;
@@ -42,6 +42,32 @@ int main(int argc,char **argv) {
   fprintf(manifest,"[\n");
   SmNativeState state;
   int tick;
+  if(argc==5) {
+    FILE *trace=fopen(argv[3],"rb"),*points=fopen(argv[4],"r");
+    if(!trace||!points) { fprintf(stderr,"Cannot read replay/checkpoints\n"); goto fail; }
+    int frames[32],count=0; char names[32][64],line[128];
+    while(fgets(line,sizeof(line),points)) {
+      if(count>=32||sscanf(line,"%d,%63[a-z_]",&frames[count],names[count])!=2) {
+        fprintf(stderr,"Invalid checkpoint\n"); fclose(trace); fclose(points); goto fail;
+      }
+      count++;
+    }
+    fclose(points);
+    uint8_t input[2]; tick=0;
+    while(fread(input,1,2,trace)==2) {
+      tick++;
+      int point=-1;
+      for(int i=0;i<count;i++)if(frames[i]==tick)point=i;
+      g_snes->disableRender=point<0;
+      if(!sm_native_tick(input[0]|input[1]<<8,audio)) { fclose(trace); goto fail; }
+      if(point>=0)fixture(argv[2],names[point],tick);
+    }
+    fclose(trace);
+    if(cases!=count||count==0) { fprintf(stderr,"Missing replay checkpoints\n"); goto fail; }
+    fprintf(manifest,"\n]\n"); fclose(manifest); manifest=NULL;
+    printf("RASTER_ORACLE_OK: %d replay fixtures from %d native input ticks\n",cases,tick);
+    sm_native_close(); remove(save); return 0;
+  }
   for(tick=0;tick<9000;tick++) {
     if(!sm_native_tick(tick%60<2?0x1080:0,audio))goto fail;
     sm_native_snapshot(&state,vram,palette,oam);

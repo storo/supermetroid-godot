@@ -22,6 +22,7 @@ protected:
     ClassDB::bind_method(D_METHOD("boot", "rom_path", "sram_path"), &SmNativeCore::boot);
     ClassDB::bind_method(D_METHOD("step", "joy1"), &SmNativeCore::step);
     ClassDB::bind_method(D_METHOD("get_snapshot"), &SmNativeCore::get_snapshot);
+    ClassDB::bind_method(D_METHOD("get_state"), &SmNativeCore::get_state);
     ClassDB::bind_method(D_METHOD("get_audio"), &SmNativeCore::get_audio);
     ClassDB::bind_method(D_METHOD("get_error"), &SmNativeCore::get_error);
     ClassDB::bind_method(D_METHOD("close"), &SmNativeCore::close);
@@ -53,6 +54,24 @@ public:
     for(int i=0;i<534;i++) result.set(i,Vector2(audio[i*2]/32768.0f,audio[i*2+1]/32768.0f));
     return result;
   }
+  Dictionary state_fields(const SmNativeState &s) const {
+    Dictionary result;
+    result["frame"]=frames; result["state"]=s.state; result["room"]=s.room; result["area"]=s.area;
+    result["position"]=Vector2(s.x,s.y); result["camera"]=Vector2(s.camera_x,s.camera_y); result["pose"]=s.pose;
+    result["health"]=s.health; result["missiles"]=s.missiles; result["supers"]=s.supers; result["power_bombs"]=s.power_bombs;
+    result["items"]=s.items; result["beams"]=s.beams;
+    result["ceres_status"]=s.ceres_phase; result["timer_status"]=s.timer_phase;
+    result["timer_digits"]=Vector3(s.clock_minutes,s.clock_seconds,s.clock_centiseconds);
+    result["y_direction"]=s.y_direction; result["y_speed"]=s.y_speed; result["movement_type"]=s.movement_type;
+    result["enemy0_id"]=s.enemy0_id; result["enemy0_health"]=s.enemy0_health; result["enemy0_ai"]=s.enemy0_ai;
+    result["enemy0_position"]=Vector2(s.enemy0_x,s.enemy0_y);
+    return result;
+  }
+  Dictionary get_state() const {
+    SmNativeState s;
+    if(owner!=this||!sm_native_state(&s))return Dictionary();
+    return state_fields(s);
+  }
   Dictionary get_snapshot() const {
     Dictionary result;
     if (owner != this) return result;
@@ -62,10 +81,8 @@ public:
     if (!sm_native_snapshot(&s,vram.ptrw(),palette.ptrw(),oam.ptrw())) return result;
     raster.resize(1024*256);
     if(!sm_native_raster(raster.ptrw()))return result;
-    result["frame"]=frames; result["state"]=s.state; result["room"]=s.room; result["area"]=s.area;
-    result["position"]=Vector2(s.x,s.y); result["camera"]=Vector2(s.camera_x,s.camera_y); result["pose"]=s.pose;
-    result["health"]=s.health; result["missiles"]=s.missiles; result["supers"]=s.supers; result["power_bombs"]=s.power_bombs;
-    result["items"]=s.items; result["beams"]=s.beams; result["mode"]=s.mode;
+    result=state_fields(s);
+    result["mode"]=s.mode;
     result["brightness"]=s.brightness; result["forced_blank"]=bool(s.forced_blank);
     result["bg3priority"]=bool(s.bg3priority); result["obj_enabled"]=bool(s.obj_enabled);
     Array mode7;

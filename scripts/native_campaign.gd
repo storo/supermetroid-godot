@@ -13,19 +13,21 @@ var enhanced := true
 var paused := false
 var snapshot: Dictionary = {}
 var capture_mode := false
+var ui_test_mode := false
 var frame := 0
 
 func _ready() -> void:
 	InputSetup.install()
 	capture_mode = "--native-core-capture" in OS.get_cmdline_user_args()
+	ui_test_mode = "--native-core-ui-test" in OS.get_cmdline_user_args()
 	extension_resource = load("res://native/sm_native.gdextension")
 	if extension_resource == null or not ClassDB.class_exists("SmNativeCore"):
 		push_error("Native extension has not been built")
 		get_tree().quit(1)
 		return
 	core = ClassDB.instantiate("SmNativeCore")
-	var save := "user://native_campaign_capture.srm" if capture_mode else "user://native_campaign.srm"
-	if capture_mode and FileAccess.file_exists(save):
+	var save := "user://native_campaign_capture.srm" if capture_mode else "user://native_campaign_ui_test.srm" if ui_test_mode else "user://native_campaign.srm"
+	if (capture_mode or ui_test_mode) and FileAccess.file_exists(save):
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(save))
 	if not core.boot(ROM,save):
 		push_error(core.get_error())
@@ -48,7 +50,7 @@ func _ready() -> void:
 	renderer = Renderer.new()
 	clip.add_child(renderer)
 	var help := Label.new()
-	help.text = "A/D mover · Espacio saltar · J disparar · Enter iniciar · F1 comparar gráficos · Esc pausar"
+	help.text = "A/D mover · Espacio saltar · J disparar · Enter iniciar · F1 comparar · Esc pausar · F10 menú"
 	help.position = Vector2(36,775)
 	add_child(help)
 	if capture_mode:
@@ -58,7 +60,7 @@ func _ready() -> void:
 				push_error(core.get_error())
 				get_tree().quit(1)
 				return
-			snapshot = core.get_snapshot()
+			snapshot = core.get_state()
 			if snapshot.state == 8 and snapshot.room == 0xdf45:
 				break
 		if snapshot.get("state",-1) != 8:
@@ -122,6 +124,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.keycode == KEY_ESCAPE:
 			paused = not paused
 			if audio_player: audio_player.stream_paused = paused
+		elif event.keycode == KEY_F10:
+			get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func capture_views() -> void:
 	await RenderingServer.frame_post_draw
@@ -147,3 +151,5 @@ func _exit_tree() -> void:
 		core.close()
 		core = null
 	extension_resource = null
+	if ui_test_mode and FileAccess.file_exists("user://native_campaign_ui_test.srm"):
+		DirAccess.remove_absolute(ProjectSettings.globalize_path("user://native_campaign_ui_test.srm"))

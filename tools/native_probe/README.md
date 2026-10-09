@@ -45,4 +45,12 @@ offline del renderer por línea: introducción, ascensor y primer corredor de
 Ceres. El oráculo produce los píxeles esperados sólo durante esa comprobación;
 la escena del juego compone los paquetes VRAM/OAM/registros en Godot.
 
+`campaign_route.c` y `ceres_route.h` añaden un controlador de prueba que sólo
+envía botones normales y registra input/estado de Ceres hasta Landing Site.
+`campaign_test.gd` reproduce ese registro mediante `SmNativeCore`; la comparación
+por tick y las cuatro capturas se automatizan con `verify_campaign.py`. El oráculo
+acepta opcionalmente el input registrado y una lista de checkpoints para dibujar
+sólo esos fotogramas. La prueba de navegación del menú usa
+`campaign_menu_test.gd -- --native-core-ui-test` y no toca la SRAM normal.
+
 Licencia del código de referencia: `docs/licenses/snesrev-sm.txt`.

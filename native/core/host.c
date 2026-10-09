@@ -1,4 +1,5 @@
 #include "host.h"
+#include "ida_types.h"
 #include "sm_cpu_infra.h"
 #include "sm_rtl.h"
 #include "funcs.h"
@@ -201,13 +202,18 @@ int sm_native_raster(uint8_t *destination) {
   if(!ready)return 0;
   memcpy(destination,raster,sizeof(raster)); return 1;
 }
-int sm_native_snapshot(SmNativeState *s,uint8_t *vram,uint8_t *palette,uint8_t *oam) {
+int sm_native_state(SmNativeState *s) {
   if (!ready) return 0;
   memset(s,0,sizeof(*s));
   s->state=game_state; s->room=room_ptr; s->area=area_index;
   s->x=samus_x_pos; s->y=samus_y_pos; s->camera_x=layer1_x_pos; s->camera_y=layer1_y_pos; s->pose=samus_pose;
   s->health=samus_health; s->missiles=samus_missiles; s->supers=samus_super_missiles; s->power_bombs=samus_power_bombs;
   s->items=equipped_items; s->beams=equipped_beams;
+  s->ceres_phase=ceres_status; s->timer_phase=timer_status;
+  s->clock_minutes=timer_minutes; s->clock_seconds=timer_seconds; s->clock_centiseconds=timer_centiseconds;
+  s->y_direction=samus_y_dir; s->y_speed=samus_y_speed; s->movement_type=samus_movement_type;
+  s->enemy0_id=enemy_data[0].enemy_ptr; s->enemy0_health=enemy_data[0].health;
+  s->enemy0_ai=enemy_data[0].ai_var_A; s->enemy0_x=enemy_data[0].x_pos; s->enemy0_y=enemy_data[0].y_pos;
   Ppu *p=g_snes->ppu;
   s->mode=p->mode; s->brightness=p->brightness; s->forced_blank=p->forcedBlank;
   s->bg3priority=p->bg3priority; s->obj_enabled=p->layer[4].mainScreenEnabled;
@@ -219,6 +225,11 @@ int sm_native_snapshot(SmNativeState *s,uint8_t *vram,uint8_t *palette,uint8_t *
     s->bg[i].map=b->tilemapAdr; s->bg[i].tiles=b->tileAdr; s->bg[i].x=b->hScroll; s->bg[i].y=b->vScroll;
     s->bg[i].wide=b->tilemapWider; s->bg[i].high=b->tilemapHigher; s->bg[i].big=b->bigTiles; s->bg[i].enabled=p->layer[i].mainScreenEnabled;
   }
+  return 1;
+}
+int sm_native_snapshot(SmNativeState *s,uint8_t *vram,uint8_t *palette,uint8_t *oam) {
+  if(!sm_native_state(s))return 0;
+  Ppu *p=g_snes->ppu;
   memcpy(vram,p->vram,65536); memcpy(palette,p->cgram,512);
   memcpy(oam,p->oam,512); memcpy(oam+512,p->highOam,32);
   return 1;

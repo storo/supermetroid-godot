@@ -728,15 +728,22 @@ func show_title() -> void:
 	var gap:=Control.new()
 	gap.custom_minimum_size.y=30
 	box.add_child(gap)
-	box.add_child(button("NUEVA PARTIDA   →",new_game,true))
-	var continue_button:=button("CONTINUAR",load_game)
+	var native_available := FileAccess.file_exists("res://native/bin/libsm_native.dylib") and FileAccess.file_exists("res://rom_src/Super Metroid (Japan, USA) (En,Ja).sfc")
+	if native_available:
+		box.add_child(button("JUGAR DESDE CERES   →",start_native_campaign,true))
+	box.add_child(button("JUGAR EN ZEBES   →" if native_available else "NUEVA PARTIDA   →",new_game,not native_available))
+	var continue_button:=button("CONTINUAR EN ZEBES" if native_available else "CONTINUAR",load_game)
 	continue_button.disabled=not FileAccess.file_exists(save_path)
 	box.add_child(continue_button)
 	box.add_child(button("EXPLORAR SALAS",show_catalog))
 	box.add_child(button("CONTROLES",show_controls))
-	var footer:=label("CRATERIA · ARTE EXTRAÍDO DE TU ROM Y MEJORADO\nVersión jugable en construcción. Historia y jefes todavía pendientes.",13,Color("94afa3"))
+	var footer:=label("CRATERIA · ARTE EXTRAÍDO DE TU ROM Y MEJORADO\nVersión en construcción. Campaña completa y redibujado pendientes.",13,Color("94afa3"))
 	footer.position=Vector2(92,727)
 	overlay.add_child(footer)
+
+func start_native_campaign() -> void:
+	var error := get_tree().change_scene_to_file("res://scenes/native_campaign.tscn")
+	if error != OK:notify("No se pudo abrir la campaña desde Ceres")
 
 func show_pause() -> void:
 	var box:=overlay_shell("pause")
