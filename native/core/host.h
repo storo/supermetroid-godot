@@ -8,6 +8,8 @@ typedef struct {
   uint16_t state, room, area, x, y, camera_x, camera_y, pose;
   uint16_t health, missiles, supers, power_bombs, items, beams;
   uint16_t missile_capacity, selected_item, active_projectiles, room_kills, room_quota, room_state, active_bombs;
+  uint16_t max_health, save_station, save_slot;
+  uint32_t save_writes;
   uint8_t event_flags[8], boss_flags[8];
   uint16_t ceres_phase, timer_phase, y_direction, y_speed, movement_type;
   uint16_t enemy0_id, enemy0_health, enemy0_ai, enemy0_x, enemy0_y;

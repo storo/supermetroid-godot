@@ -1,0 +1,33 @@
+{
+  "description": "Ordinary SNES joypad buttons from a fresh game through Ceres, early Zebes, Bomb Torizo, the grey exit, bomb barriers, Terminator energy tank and first arrival at Crateria Save. No ROM data, SRAM or game-memory dump.",
+  "frames": 75973,
+  "encoding": "little-endian uint16 joypad mask per tick",
+  "sha256": "449f278ae493db4d8f9b1f9a9fd023e5c2e2e99a3193550e8c7b1a3056e2c094",
+  "rom_sha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72",
+  "final": {
+    "frame": 75973,
+    "state": 8,
+    "room": "93d5",
+    "x": 216,
+    "y": 139,
+    "pose": 12,
+    "health": 189,
+    "items": 4100,
+    "missiles": 5,
+    "capacity": 5,
+    "selected": 0,
+    "projectiles": 0,
+    "kills": 0,
+    "quota": 16,
+    "events_low": 1,
+    "movement_type": 1,
+    "room_state": 37858,
+    "bosses_low": 4,
+    "bombs": 0,
+    "max_health": 199,
+    "save_station": 0,
+    "save_slot": 0,
+    "save_writes": 5
+  },
+  "whole_campaign_verified": false
+}

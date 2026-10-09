@@ -96,3 +96,28 @@ que quieras conservar.
 Omitir el prefijo, o usar `verify_bombs.py --plan-from-start`, recalcula también
 la ruta inicial con los procesos hijos; ese modo completo de planificación no
 forma parte del resultado verificado publicado.
+
+## Tanque de energía, estación y recarga
+
+```sh
+cmake --build native/build --target sm_station_route sm_native sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_station.py
+```
+
+La prueba reproduce desde una partida nueva los botones de
+`fixtures/station_prefix.inputs`, comprobados con su manifiesto. Continúa hasta
+guardar en Crateria Save con el diálogo original. El prefijo incluye la salida
+gris de Bomb Torizo, los bloques de bombas de Parlor y el tanque de Terminator;
+es una secuencia de botones, sin SRAM ni memoria del juego.
+
+`station_test.gd` compara 23 campos por tick con el registro C, exige SRAM de
+8192 bytes idéntica, cierra el núcleo y arranca con esa partida. Comprueba sala,
+energía, equipo, munición, eventos y jefes, espera la animación de entrada de la
+estación y prueba movimiento con botones normales. Compara seis capturas RGB
+con el oráculo offline; para la recarga, éste usa una copia privada de la SRAM
+de prueba y conserva el archivo fuente. También rechaza semillas de tamaño
+incorrecto. Los resultados quedan en `docs/qa/native_station_*`; un fallo o
+un marcador ausente impide considerar completa la comprobación.
+
+El guardado de la prueba es independiente de la partida del jugador. Estos
+controladores y procesos hijos permanecen fuera del binario del juego.

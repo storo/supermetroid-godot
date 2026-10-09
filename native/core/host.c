@@ -22,6 +22,7 @@ uint16 currently_installed_bug_fix_counter;
 static jmp_buf failure;
 static bool guarded, ready;
 static char error_message[512], save_path[4096];
+static uint32_t save_writes;
 static uint8 raster[1024*256];
 static const uint8 sprite_sizes[8][2]={{8,16},{8,32},{8,64},{16,32},{16,64},{32,64},{16,32},{16,32}};
 /* Priority order from the reference's ppu.c, highest first. MIT attribution retained. */
@@ -131,7 +132,11 @@ void RtlReadSram(void) {
 }
 void RtlWriteSram(void) {
   FILE *f=fopen(save_path,"wb");
-  if (f) { fwrite(g_sram,1,8192,f); fclose(f); }
+  if (f) {
+    size_t written=fwrite(g_sram,1,8192,f);
+    int closed=fclose(f);
+    if(written==8192&&closed==0)save_writes++;
+  }
 }
 static void native_draw_registers(void) {
   g_snes->hPos=g_snes->vPos=0;
@@ -153,6 +158,7 @@ static void native_draw_registers(void) {
 int sm_native_boot(const char *rom_path, const char *sram_path) {
   sm_native_close();
   error_message[0]=0; g_fail=false;
+  save_writes=0;
   if (strlen(sram_path)>=sizeof(save_path)) { snprintf(error_message,sizeof(error_message),"Save path too long"); return 0; }
   snprintf(save_path,sizeof(save_path),"%s",sram_path);
   guarded=true;
@@ -168,6 +174,7 @@ int sm_native_boot(const char *rom_path, const char *sram_path) {
   g_snes->ppu=g_snes->my_ppu; g_snes->disableRender=true;
   snes_reset(g_snes,true);
   memset(g_sram,0,8192);
+  RtlReadSram();
   g_spc_player=SpcPlayer_Create(); SpcPlayer_Initialize(g_spc_player);
   RtlSetupEmuCallbacks(NULL,NULL,NULL);
   coroutine_state_0=1;
@@ -222,6 +229,8 @@ int sm_native_state(SmNativeState *s) {
   s->missile_capacity=samus_max_missiles; s->selected_item=hud_item_index;
   s->active_projectiles=projectile_counter;
   s->active_bombs=bomb_counter;
+  s->max_health=samus_max_health; s->save_station=load_station_index;
+  s->save_slot=selected_save_slot; s->save_writes=save_writes;
   s->room_kills=num_enemies_killed_in_room; s->room_quota=num_enemy_deaths_left_to_clear;
   s->room_state=roomdefroomstate_ptr;
   memcpy(s->event_flags,events_that_happened,sizeof(s->event_flags));

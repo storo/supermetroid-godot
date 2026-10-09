@@ -33,7 +33,9 @@ stick, combinaciones, liberación y zona muerta.
 F1 alterna arte; Escape congela la prueba. Las acciones de Morph Ball y bombas
 siguen los botones originales del núcleo (Down y X). No hay equipo concedido por
 la escena. La SRAM usa `user://native_campaign.srm` y no sustituye el JSON de la
-escena principal. El `--native-core-capture` usa SRAM de prueba independiente,
+escena principal. Al arrancar, el host lee la SRAM existente antes de los menús
+originales para poder continuar desde la estación guardada. El
+`--native-core-capture` usa SRAM de prueba independiente,
 recorre la introducción mediante input y captura el ascensor inicial de Ceres.
 
 El menú de la escena principal ofrece **Jugar desde Ceres** cuando existen la ROM
@@ -59,6 +61,8 @@ comprobación de navegación usa `--native-core-ui-test` con su propia SRAM temp
   proyectiles y bombas activas, cuota/derrotas de la sala, dirección de estado y los ocho bytes
   originales de eventos y jefes. Estos campos son copias de lectura de la lógica;
   no conceden objetos ni disparan eventos.
+  También expone energía máxima, índice de estación, slot de partida y un
+  contador de escrituras SRAM completas, reiniciado al arrancar el núcleo.
   `get_enemies()` devuelve los slots vivos con ID, posición, salud, propiedades
   y AI. Es un diagnóstico opcional; no se copia en cada snapshot de dibujo.
   `get_snapshot()` añade los datos de dibujo al mismo estado.
@@ -230,7 +234,35 @@ permanece intacta. `docs/qa/native_bomb_verification.json` conserva esta
 evidencia. No prueba todos los desenlaces del combate, la salida de la puerta
 gris, estaciones, mejoras posteriores ni la campaña completa.
 
-Próximo trabajo: ampliar recorridos de combate, mejoras, estaciones, jefes y
+El recorrido posterior de tanque de energía y estación se comprueba con:
+
+```sh
+cmake --build native/build --target sm_station_route sm_raster_oracle sm_native --parallel 4
+python3 tools/native_probe/verify_station.py
+```
+
+Se reproducen 76436 ticks desde una partida nueva, incluyendo la salida gris
+del jefe, los bloques de bombas de Parlor, el tanque de Terminator (energía
+máxima 99 → 199) y el diálogo de Crateria Save. Los 23 campos del registro C
+coinciden en Godot. La escritura original deja la estación en el índice 1 y
+produce SRAM de 8192 bytes idéntica en ambos hosts.
+
+Se cierra el núcleo, se vuelve a leer esa SRAM y se carga la partida mediante
+los menús originales. Los 1247 ticks de recarga conservan sala, salud máxima y
+actual, equipo, munición y bytes de eventos/jefes; el ensayo espera la animación
+de entrada y demuestra movimiento. El oráculo de la recarga escribe solamente
+en una copia privada de la SRAM de prueba. La prueba adicional de tamaño y
+propiedad del archivo está en `native_station_seed_io.json`.
+
+El prefijo `fixtures/station_prefix.inputs` contiene 75973 máscaras de mando
+desde el arranque hasta la primera llegada a la estación. Su manifiesto valida
+los hashes del input y la ROM. No contiene SRAM ni memoria del juego, y el
+controlador continúa con botones normales. Esta evidencia cubre esa estación
+y ese tanque; las demás estaciones, mejoras y rutas siguen pendientes.
+Las seis capturas originales suman 344064 píxeles RGB idénticos al oráculo
+offline; informe completo en `docs/qa/native_station_verification.json`.
+
+Próximo trabajo: ampliar recorridos de combate, mejoras, otras estaciones, jefes y
 final desde Landing Site, y sustituir
 gradualmente el arte conservando anclajes y límites de cada animación.
 

@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
+#include <unistd.h>
 
 extern Snes *g_snes;
 static uint8_t pixels[256*240*4];
@@ -31,9 +32,26 @@ static void fixture(const char *directory,const char *name,int frame) {
   fprintf(manifest,"%s{\"name\":\"%s\",\"frame\":%d,\"state\":%d,\"room\":%d,\"mode\":%d}",cases++?",\n":"",name,frame,state.state,state.room,state.mode);
 }
 int main(int argc,char **argv) {
-  if(argc!=3&&argc!=5) { fprintf(stderr,"Usage: sm_raster_oracle ROM OUTPUT_DIRECTORY [INPUT_TRACE CHECKPOINT_CSV]\n"); return 1; }
-  char save[4096]; snprintf(save,sizeof(save),"%s/oracle.srm",argv[2]); remove(save);
-  if(!sm_native_boot(argv[1],save)) { fprintf(stderr,"%s\n",sm_native_error()); return 1; }
+  if(argc!=3&&argc!=5&&argc!=6) { fprintf(stderr,"Usage: sm_raster_oracle ROM OUTPUT_DIRECTORY [INPUT_TRACE CHECKPOINT_CSV [SRAM_SEED]]\n"); return 1; }
+  char save[4096];
+  if(argc==6) {
+    /* Read the seed without altering it; gameplay writes only a unique copy. */
+    uint8_t seed_data[8192];
+    FILE *seed=fopen(argv[5],"rb");
+    if(!seed) { fprintf(stderr,"Cannot read SRAM seed\n"); return 1; }
+    size_t size=fread(seed_data,1,sizeof(seed_data),seed);
+    int extra=fgetc(seed); fclose(seed);
+    if(size!=sizeof(seed_data)||extra!=EOF) { fprintf(stderr,"SRAM seed must be exactly 8192 bytes\n"); return 1; }
+    snprintf(save,sizeof(save),"%s/oracle_XXXXXX",argv[2]);
+    int fd=mkstemp(save);
+    if(fd<0) { fprintf(stderr,"Cannot create private SRAM copy\n"); return 1; }
+    FILE *copy=fdopen(fd,"wb");
+    if(!copy) { close(fd); remove(save); return 1; }
+    size_t written=fwrite(seed_data,1,sizeof(seed_data),copy);
+    int closed=fclose(copy);
+    if(written!=sizeof(seed_data)||closed) { remove(save); return 1; }
+  } else { snprintf(save,sizeof(save),"%s/oracle.srm",argv[2]); remove(save); }
+  if(!sm_native_boot(argv[1],save)) { fprintf(stderr,"%s\n",sm_native_error()); remove(save); return 1; }
   g_snes->disableRender=false;
   g_snes->ppu->renderBuffer=pixels;
   g_snes->ppu->renderPitch=256*4;
@@ -42,7 +60,7 @@ int main(int argc,char **argv) {
   fprintf(manifest,"[\n");
   SmNativeState state;
   int tick;
-  if(argc==5) {
+  if(argc>=5) {
     FILE *trace=fopen(argv[3],"rb"),*points=fopen(argv[4],"r");
     if(!trace||!points) { fprintf(stderr,"Cannot read replay/checkpoints\n"); goto fail; }
     int frames[32],count=0; char names[32][64],line[128];

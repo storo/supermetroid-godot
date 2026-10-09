@@ -97,3 +97,11 @@ la exclusión por sala/estado, el fundido a brillo cero, el blanking forzado y
 que presentar las variantes no altera el núcleo.
 Capturas e informe: `docs/qa/native_art_*`. El alcance es este fondo de Landing
 Site; no implica que los demás assets estén redibujados ni la campaña completa.
+
+El recorrido de Terminator y Crateria Save añade seis grupos de capturas
+`native_station_*_{original,enhanced,oracle}.png`: salida gris, bloques de
+bombas, tanque, entrada a la estación, partida guardada y partida recargada.
+Los 344064 píxeles originales coinciden con el oráculo offline en
+`native_station_verification.json`. Las variantes a 2× usan el filtro del
+renderer sobre los assets originales de esas salas. El redibujado de esas
+familias de assets sigue pendiente.

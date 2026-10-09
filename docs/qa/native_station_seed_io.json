@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "seed_bytes": 4097,
+      "exit": 1,
+      "accepted": false,
+      "seed_unchanged": true,
+      "private_copy_removed": true
+    },
+    {
+      "seed_bytes": 8192,
+      "exit": 0,
+      "accepted": true,
+      "seed_unchanged": true,
+      "private_copy_removed": true
+    }
+  ],
+  "rom_unchanged": true,
+  "whole_campaign_verified": false
+}

@@ -10,21 +10,21 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | Conservar todas las salas y geometría | 261 salas / 322 estados; auditoría nativa | Datos importados; comportamiento y fondos originales incompletos |
 | Conservar todas las animaciones de Samus | 19 conjuntos renderizados desde OAM; gráficos específicos para izquierda/derecha y pose frontal del ascensor | Incompleto; faltan poses, tiempos y asimetrías |
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
-| Puertas, elevadores, estaciones y PLM | Restricciones por color, condiciones de jefe/cuota y 14 extremos de ascensor con transporte nativo; estaciones y secuencia de la estatua de Tourian pendientes | Incompleto |
+| Puertas, elevadores, estaciones y PLM | Restricciones por color, condiciones de jefe/cuota y 14 extremos de ascensor; una estación con guardado/recarga y bloques de bombas de Parlor verificados en C/Godot | Incompleto; demás estaciones y estatua de Tourian pendientes |
 | Enemigos y sus IA originales | 154 atlas y parámetros; tres IA aproximadas; piratas grises de suelo/pared con instrucciones, frames e hitboxes de ROM y rutinas nativas | Incompleto; faltan las demás familias y comparación por fotograma |
 | Jefes y minijefes | Assets crudos y rutinas C integradas; retirada de Ridley de Ceres por salud baja y derrota original de Bomb Torizo en Godot | Incompleto; demás jefes y variantes por verificar |
 | Mejoras, armas y restricciones originales | Objetos y equipo básico; parte de las habilidades | Incompleto |
 | Líquidos, calor, arena y tipos de bloque | Datos disponibles; colisiones sólidas y pendientes | Incompleto |
 | Ceres, historia, eventos y cambios de estado | 61 selectores de ROM en GDScript; Ceres → Ridley → escape → llegada controlable a Landing Site en la integración C/Godot | Tramo Ceres verificado en la integración; historia y campaña restantes incompletas |
 | Música y efectos originales | Efectos sintetizados en GDScript; reproductor SPC nativo con audio audible durante el recorrido de Ceres | Repertorio y paridad de audio completos pendientes |
-| Guardado, menú, mapa | Guardado JSON, mapa de salas, menú y controles | Implementados como base; formato/comportamiento SNES no equivalentes |
+| Guardado, menú, mapa | Guardado JSON, mapa y controles en GDScript; estación de Crateria, SRAM original de 8192 bytes y recarga con equipo/eventos/movimiento comprobados en la integración C/Godot | Una estación nativa verificada; demás rutas y estaciones pendientes |
 | Campaña completa de principio a fin | No hay recorrido completo ni final funcional | Pendiente |
 | Verificación del juego completo | Auditoría de salas y pruebas básicas; capturas | Incompleto |
 
 ## Orden de trabajo pendiente
 
 1. Completar la extracción de poses, fondos, gráficos de PLM y metadatos de eventos; conservar las direcciones originales como trazabilidad.
-2. Ampliar la ruta nativa verificada hasta bombas y Bomb Torizo hacia tanques de energía, estaciones, Brinstar y Kraid, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
+2. Ampliar la ruta nativa verificada hasta el primer tanque de energía y Crateria Save hacia Brinstar y Kraid, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
 3. Implementar el sistema de eventos y selección de estado de sala; establecer pruebas por escena original y condición de progresión.
 4. Portar las armas, mejoras, colisiones especiales, líquidos y estaciones; comparar controles y física a 60 Hz con capturas/datos del original.
 5. Portar todas las familias de enemigos y jefes, con estados y vulnerabilidades originales.
@@ -51,6 +51,16 @@ píxeles RGB idénticos al oráculo offline. No se modifica memoria de juego ni
 equipo para avanzar. El informe `docs/qa/native_bomb_verification.json` mantiene
 `whole_campaign_verified: false`: la evidencia cubre este recorrido, no todos
 los combates, la salida de la puerta gris, estaciones, secretos o el final.
+
+`verify_station.py` prolonga esa evidencia hasta Terminator y Crateria Save.
+Comprueba 76436 ticks desde una partida nueva, la salida gris, bloques de
+bombas, energía máxima de 199, diálogo y escritura original de la estación 1.
+La SRAM de 8192 bytes coincide entre C y Godot. Después de cerrar y abrir el
+núcleo, 1247 ticks de menús/carga conservan sala, salud, equipo, munición y
+eventos/jefes; Samus vuelve a moverse tras la animación de entrada. Los informes
+`docs/qa/native_station_*` limitan el resultado a esa ruta, tanque y estación.
+Las seis capturas de esa prueba suman 344064 píxeles RGB idénticos al oráculo
+offline. La campaña completa, demás estaciones, secretos y final siguen pendientes.
 
 ## Investigación de la lógica C original
 

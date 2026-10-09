@@ -25,7 +25,7 @@ static int route_transfer(int fd,void *data,size_t size,int writing) {
   }
   return 1;
 }
-static RoutePlan route_search_ledge(const SmNativeState *start,int target_x,int target_y) {
+static RoutePlan route_search_jump(const SmNativeState *start,int target_x,int target_y,int horizontal) {
   RoutePlan best={0};
   static const int delays[]={0,1,3,5,8};
   for(int variant=0;variant<62;variant++) {
@@ -58,7 +58,8 @@ static RoutePlan route_search_ledge(const SmNativeState *start,int target_x,int 
         if(!sm_native_tick(joy,trial_audio)||!sm_native_state(&s))break;
         if(s.state>=19&&s.state<=26)break;
         if(s.room!=start->room)break;
-        if(tick>delay+8&&s.state==8&&route_grounded(&s)&&s.y+16<start->y&&s.y+4<=target_y) {
+        int reached_x=abs((int)s.x-target_x)<=24;
+        if(tick>delay+8&&s.state==8&&route_grounded(&s)&&(horizontal?reached_x:s.y+16<start->y)&&s.y+4<=target_y) {
           int distance=s.x>target_x?s.x-target_x:target_x-s.x;
           int vertical=(int)s.y+21-target_y;
           if(vertical<0)vertical=-vertical;
@@ -81,4 +82,7 @@ static RoutePlan route_search_ledge(const SmNativeState *start,int target_x,int 
     fprintf(stderr,"Lookahead modified the live core\n"); abort();
   }
   return best;
+}
+static RoutePlan route_search_ledge(const SmNativeState *start,int target_x,int target_y) {
+  return route_search_jump(start,target_x,target_y,0);
 }

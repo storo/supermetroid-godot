@@ -1,6 +1,6 @@
 # Super Metroid — reconstrucción nativa en Godot
 
-Proyecto en desarrollo basado en la ROM local de SNES. El movimiento, las colisiones, los proyectiles y las salas se ejecutan en Godot; no hay emulador. El objetivo sigue siendo conservar el juego completo y mejorar sus assets. **Todavía no es un remake completo ni se puede completar la campaña.**
+Proyecto en desarrollo basado en la ROM local de SNES. El movimiento, las colisiones, los proyectiles y las salas se ejecutan en Godot; no hay emulador. El objetivo sigue siendo conservar el juego completo y mejorar sus assets. **Todavía no es un remake completo; la campaña entera sigue sin verificar.**
 
 ## Ejecutar
 
@@ -18,12 +18,15 @@ ofrece **Jugar desde Ceres**. Esa escena conserva la introducción, Ridley, el e
 y la llegada a Zebes de las rutinas C originales. También se verificó el recorrido
 Landing Site → Parlor → Climb → Pit → ascensor → Morph Ball → Construction Zone
 → primeros misiles → regreso a Crateria → cinco piratas de Pit → Climb → Parlor
-→ pasaje de Morph Ball → Flyway → bombas y derrota de Bomb Torizo.
+→ pasaje de Morph Ball → Flyway → bombas y derrota de Bomb Torizo
+→ tanque de Terminator → estación de guardado de Crateria.
 La recogida, transformación, disparo, consumo de munición y despertar de Zebes
 se comprueban con controles normales. La nueva prueba también abre la puerta roja
 con cinco misiles, recupera salud con drops originales, coloca una bomba y espera
 su explosión y la vuelta al control de Samus. F10 vuelve al menú. Su partida
 SRAM es independiente del guardado JSON de la reconstrucción GDScript.
+La extensión lee esa SRAM al arrancar y permite continuar desde la estación
+mediante los menús originales.
 
 En esa campaña nativa, S/↓ agacha y transforma a Samus después de conseguir Morph
 Ball; J/X dispara o coloca bombas cuando se dispone de ellas. Enter envía Start
@@ -93,6 +96,16 @@ ticks desde una partida nueva, estado idéntico entre C y Godot y siete capturas
 originales comparadas sin diferencias RGB. Requiere compilar los targets
 `sm_bomb_route`, `sm_raster_oracle` y `sm_native`. No verifica todavía los demás
 jefes, estaciones ni el final.
+
+La prueba `python3 tools/native_probe/verify_station.py` amplía el recorrido a
+76436 ticks desde una partida nueva: salida gris del jefe, bloques de bombas,
+primer tanque de energía y guardado en Crateria. Compara 23 campos por tick y
+exige SRAM de 8192 bytes idéntica entre C y Godot. Cierra y abre el núcleo,
+recorre 1247 ticks de carga y comprueba sala, energía, equipo, munición,
+eventos, jefes y movimiento. Sus seis capturas originales suman 344064 píxeles
+RGB idénticos al oráculo offline. Requiere los targets `sm_station_route`,
+`sm_raster_oracle` y `sm_native`; evidencia en `docs/qa/native_station_*`.
+El resto de estaciones, mejoras, jefes y final siguen sin verificar.
 
 ## Regenerar assets desde la ROM local
 

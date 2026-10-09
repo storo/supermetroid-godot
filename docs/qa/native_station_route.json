@@ -1,0 +1,169 @@
+{
+  "audible_packets": 424,
+  "c_and_godot_sram_identical": true,
+  "capacity": 5,
+  "captures": {
+    "barrier": {
+      "frame": 70305,
+      "health": 99,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        539,
+        1037
+      ],
+      "room": 37629,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "exit": {
+      "frame": 69400,
+      "health": 99,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        1280,
+        1536
+      ],
+      "room": 39033,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "loaded": {
+      "frame": 1247,
+      "health": 189,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        0,
+        0
+      ],
+      "room": 37845,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "saved": {
+      "frame": 76436,
+      "health": 189,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        7936,
+        1536
+      ],
+      "room": 37845,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "station": {
+      "frame": 75973,
+      "health": 189,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        7936,
+        1536
+      ],
+      "room": 37845,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "tank": {
+      "frame": 73940,
+      "health": 199,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        0,
+        0,
+        0,
+        0,
+        56,
+        24,
+        6400,
+        1531
+      ],
+      "room": 39181,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    }
+  },
+  "frames": 76436,
+  "health": 189,
+  "inventory_events_restored": true,
+  "items": 4100,
+  "loaded_movement": true,
+  "max_health": 199,
+  "missiles": 5,
+  "reload_frames": 1247,
+  "rom_unchanged": true,
+  "rooms": [
+    57157,
+    57229,
+    57303,
+    57377,
+    57451,
+    57525,
+    37368,
+    37629,
+    38586,
+    38748,
+    38837,
+    40607,
+    40721,
+    41223,
+    39033,
+    38916,
+    39181,
+    37845
+  ],
+  "save_slot": 0,
+  "save_station": 1,
+  "save_writes": 6,
+  "sram_bytes": 8192,
+  "sram_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+  "state_trace_matches": true,
+  "whole_campaign_verified": false
+}
