@@ -121,3 +121,24 @@ un marcador ausente impide considerar completa la comprobación.
 
 El guardado de la prueba es independiente de la partida del jugador. Estos
 controladores y procesos hijos permanecen fuera del binario del juego.
+
+## Fondo redibujado de Ceres
+
+`extract_ceres_bg2.py` decodifica el BG2 original desde tiles planares, mapa y
+CGRAM del fixture `ceres_corridor` del oráculo; no usa sus píxeles renderizados.
+Guarda PNG y manifiesto de referencia. ImageGen editó esa referencia para el
+asset `ceres_bg2_wall.png`, con su prompt y hashes en el JSON contiguo.
+
+```sh
+cmake --build native/build --target sm_campaign_route sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_ceres_art.py
+```
+
+El ensayo recorre una partida nueva de Ceres a Landing Site, compara input y
+estado por tick y captura las tres salas que comparten ese BG2 antes y durante
+el escape. Compara original/restaurado con el oráculo y exige que sólo cambien
+píxeles de fondo elegibles. Los fixtures adicionales sólo cambian copias del
+paquete de presentación, para comprobar scroll, CGRAM, fundidos y exclusiones;
+no escriben memoria del juego. La regresión del fondo de Crateria se ejecuta
+con `verify_art.py`. Los informes mantienen campaña y redibujado completos
+como pendientes.

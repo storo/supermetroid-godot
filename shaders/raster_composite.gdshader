@@ -5,7 +5,9 @@ uniform sampler2D main_tex : filter_nearest, repeat_disable;
 uniform sampler2D sub_tex : filter_nearest, repeat_disable;
 uniform bool enhanced=true;
 uniform sampler2D backdrop_tex : filter_linear, repeat_disable;
+uniform sampler2D ceres_wall_tex : filter_linear, repeat_enable;
 uniform bool remastered_background_enabled=false;
+uniform int remastered_background_kind=0;
 uniform vec2 backdrop_camera=vec2(0.0);
 ivec3 palette5(int row,int pixel) {
 	int word=raster_word(row,256+(pixel&255)*2);
@@ -57,15 +59,37 @@ vec3 composed(ivec2 p,ivec2 quadrant) {
 	ivec3 expanded=(color<<ivec3(3))|(color>>ivec3(2));
 	return vec3((expanded*raster_byte(row,2))/15)/255.0;
 }
+vec3 ceres_reference_color(int index) {
+	// Native palette 5 at the extracted Ceres reference checkpoint (5-bit RGB).
+	// Carry subsequent CGRAM changes into the new art, including escape flashes.
+	if(index==81)return vec3(0.0,11.0,13.0);
+	if(index==82)return vec3(0.0,6.0,9.0);
+	if(index==83)return vec3(0.0,0.0,2.0);
+	if(index==84)return vec3(0.0,0.0,1.0);
+	if(index==85)return vec3(0.0,9.0,12.0);
+	if(index==86)return vec3(0.0,4.0,6.0);
+	if(index==87)return vec3(0.0,2.0,5.0);
+	return vec3(0.0,0.0,7.0);
+}
 vec3 remastered_background(ivec2 p,ivec2 quadrant,vec2 cell,vec3 original) {
 	// BG2 is the distant scenery. Protect the HUD, BG1 terrain, all sprites,
 	// blanking and pixels whose Scale2x neighbourhood crosses a layer boundary.
 	if(!remastered_background_enabled || p.y<32 || raster_byte(p.y,3)!=0 || raster_byte(p.y,0)!=1)return original;
 	ivec4 center=meta_at(main_tex,p),main=scaled_meta(main_tex,p,quadrant);
 	if(center.w==0 || center.y!=1 || main.w==0 || main.y!=1)return original;
-	vec2 uv=vec2((cell.x+backdrop_camera.x*0.25)/1024.0,
-		(cell.y-32.0)/256.0+0.1+max(backdrop_camera.y-512.0,0.0)/4096.0);
-	vec3 color=texture(backdrop_tex,clamp(uv,vec2(0.0),vec2(1.0))).rgb*31.0;
+	vec3 color;
+	if(remastered_background_kind==2) {
+		if(main.x<81 || main.x>88)return original;
+		// Sample the same 512x256 BG2 map coordinates as native tiles. The
+		// captured scroll registers include camera motion, shaking and HDMA.
+		vec2 uv=(cell+vec2(float(raster_word(p.y,44)),1.0+float(raster_word(p.y,46))))/vec2(512.0,256.0);
+		color=texture(ceres_wall_tex,uv).rgb*31.0;
+		color=clamp(color+vec3(palette5(p.y,main.x))-ceres_reference_color(main.x),vec3(0.0),vec3(31.0));
+	} else {
+		vec2 uv=vec2((cell.x+backdrop_camera.x*0.25)/1024.0,
+			(cell.y-32.0)/256.0+0.1+max(backdrop_camera.y-512.0,0.0)/4096.0);
+		color=texture(backdrop_tex,clamp(uv,vec2(0.0),vec2(1.0))).rgb*31.0;
+	}
 	bool window=window_at(p.y,5,p.x);
 	int clip=raster_byte(p.y,80),prevent=raster_byte(p.y,81);
 	if(clip==3 || (clip==2&&window) || (clip==1&&!window))color=vec3(0.0);

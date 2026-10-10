@@ -1,0 +1,25 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "mode": "edit",
+  "prompt": "Use case: style-transfer. Asset type: exact-layout remastered BG2 wall texture for a 2D side-scrolling game. Edit target: the supplied original 512x256 Ceres space-station background extracted from the user's ROM. Redraw this supplied background at high resolution, 1536x768 landscape, maintaining EXACT normalized layout, six repeated tall cylindrical blue industrial wall modules at their existing x positions, their rounded domed tops, narrow necks, broad lower housings, side ribs, conduits between modules, panel divisions, and the wide nearly black bands at top and bottom. Preserve original silhouettes and spacing. Improve only surface artwork: precise hand-painted science-fiction steel, restrained bevels, blue and cyan edge reflections, rivets, subtle weathered metal, finely detailed vents and seams, elegant dimensional shading. Flat orthographic side elevation, camera perpendicular to wall, no depth-perspective vanishing point. Dark navy/teal original palette, understated highlights; the wall must remain darker than gameplay characters. Keep the first and last edges visually matching for horizontal repetition, and keep the nearly black top and bottom unobstructed. Six modules only, same motif and scale as reference, no new props. No characters, text, UI, floor, foreground platforms, doors, spaceship, effects, watermark, decoration outside the original wall. This is a production background asset, not a game screenshot or concept scene.",
+  "reference": "assets/extracted/references/ceres_bg2_original.png",
+  "reference_sha256": "2e7b32e013de74e846e67805fb2ca605d3c1d3210f716d95956c257617a79cd8",
+  "output_sha256": "621dbe1dba0fe8e61816b963edfc72bc3ef12a2c84959eb7927902ede81280e5",
+  "output_size": [
+    1774,
+    887
+  ],
+  "native_bg2_size": [
+    512,
+    256
+  ],
+  "native_library": "8F:E4A5 LibBG_Tourian_D_E_StatueHall",
+  "rooms": [
+    "DF8D",
+    "DFD7",
+    "E06B"
+  ],
+  "source_original_preserved": true,
+  "gameplay_data_modified": false,
+  "full_asset_redraw_complete": false
+}

@@ -5,6 +5,12 @@ const SPRITE_SHADER = preload("res://shaders/raster_sprite.gdshader")
 const LAYER_SHADER = preload("res://shaders/raster_layers.gdshader")
 const COMPOSITE_SHADER = preload("res://shaders/raster_composite.gdshader")
 const CRATERIA_BACKDROP = preload("res://assets/remastered/crateria_backdrop.png")
+const CERES_WALL = preload("res://assets/remastered/ceres_bg2_wall.png")
+const CERES_WALL_STATES := {
+	0xdf8d:[0xdf9f,0xdfb9],
+	0xdfd7:[0xdfe9,0xe003],
+	0xe06b:[0xe07d,0xe097],
+}
 var enhanced := true
 var remastered_backgrounds := true
 var vram_texture: ImageTexture
@@ -83,6 +89,7 @@ func _ready() -> void:
 	composite.set_shader_parameter("main_tex",main_view.get_texture())
 	composite.set_shader_parameter("sub_tex",sub_view.get_texture())
 	composite.set_shader_parameter("backdrop_tex",CRATERIA_BACKDROP)
+	composite.set_shader_parameter("ceres_wall_tex",CERES_WALL)
 	quad(self,composite)
 
 func present(snapshot: Dictionary) -> void:
@@ -97,8 +104,13 @@ func present(snapshot: Dictionary) -> void:
 	raster_texture.update(Image.create_from_data(1024,256,false,Image.FORMAT_R8,raster))
 	composite.set_shader_parameter("enhanced",enhanced)
 	# Select art by the native room and gameplay state, never by palette alone.
-	# Menus, the map, transitions and underground rooms keep their own backgrounds.
-	composite.set_shader_parameter("remastered_background_enabled",enhanced and remastered_backgrounds and snapshot.get("state",0)==8 and snapshot.get("room",0)==0x91f8)
+	# Ceres' three matching rooms share the original StatueHall BG2 library.
+	# Other Ceres libraries, Mode 7, menus and transitions keep their own art.
+	var room: int=snapshot.get("room",0)
+	var kind := 1 if room==0x91f8 else 0
+	if CERES_WALL_STATES.has(room) and snapshot.get("room_state",0) in CERES_WALL_STATES[room]:kind=2
+	composite.set_shader_parameter("remastered_background_kind",kind)
+	composite.set_shader_parameter("remastered_background_enabled",enhanced and remastered_backgrounds and snapshot.get("state",0)==8 and kind!=0)
 	composite.set_shader_parameter("backdrop_camera",snapshot.get("camera",Vector2.ZERO))
 	build_sprites(snapshot)
 

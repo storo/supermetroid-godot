@@ -280,6 +280,28 @@ python3 tools/native_probe/verify_art.py
 La prueba usa una SRAM propia, reproduce la ruta de Ceres, compara original y
 restaurado con el oráculo, y exige cero diferencias fuera de BG2 respecto al
 modo mejorado sin fondo. Su evidencia está en `docs/qa/native_art_verification.json`.
+
+El fondo de pared de Ceres también está redibujado e integrado en las tres
+salas que comparten la biblioteca `$8F:E4A5`: `$DF8D`, `$DFD7` y `$E06B`, tanto
+antes de Ridley como durante el escape. `ceres_bg2_wall.png` procede de la
+referencia BG2 decodificada de tiles/mapa/CGRAM; su JSON conserva el prompt de
+ImageGen. Sólo reemplaza BG2 visible con índices 81–88. Sigue los registros de
+scroll por línea y transfiere cambios CGRAM antes de ventanas, color math y
+brillo. Las otras bibliotecas de Ceres, mapa, transiciones y Mode 7 mantienen
+su composición. F1 devuelve el original.
+
+```sh
+cmake --build native/build --target sm_campaign_route sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_ceres_art.py
+python3 tools/native_probe/verify_art.py
+```
+
+El primer ensayo verifica 16836 ticks, tres salas y sus dos estados: seis
+capturas originales/restauradas idénticas al oráculo y 1007964 píxeles de HUD,
+terreno y sprites protegidos sin cambios. Además comprueba período/scroll de
+BG2, CGRAM, fade/blanking y exclusiones. La segunda prueba vuelve a comprobar
+Crateria. El alcance y las capturas están en `docs/qa/native_ceres_art_*`;
+las demás familias de assets y la campaña completa siguen pendientes.
 El redibujado de las demás familias sigue pendiente.
 
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa

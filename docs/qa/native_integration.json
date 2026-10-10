@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration; native Climb/Parlor/Morph passage/Flyway five-missile door/bomb pickup/Bomb Torizo defeat/bomb placement and standing control; complete fresh-game input/state replay and seven original RGB checkpoints; Terminator energy tank, grey exit and Parlor bomb barriers, Crateria Save original dialog/write, 8192-byte C/Godot-identical SRAM, close/reopen through original menus, restored inventory/events and movement, six RGB checkpoints",
+  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration; native Climb/Parlor/Morph passage/Flyway five-missile door/bomb pickup/Bomb Torizo defeat/bomb placement and standing control; complete fresh-game input/state replay and seven original RGB checkpoints; Terminator energy tank, grey exit and Parlor bomb barriers, Crateria Save original dialog/write, 8192-byte C/Godot-identical SRAM, close/reopen through original menus, restored inventory/events and movement, six RGB checkpoints; original Ceres StatueHall BG2 decoded and redrawn with ImageGen, integrated in three rooms/both states using native BG2 scroll and CGRAM, six original/restored RGB checkpoints, protected layers and display-only scroll/palette/fade/exclusion checks",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -307,6 +307,41 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_ceres_art_controller.log": {
+      "terminal_markers": [
+        "CAMPAIGN_ROUTE_OK: ridley=1 escape=1 landed=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_ceres_art_godot.log": {
+      "terminal_markers": [
+        "CERES_ART_GODOT_OK: 16836 fresh ticks; three wall rooms/two states, unchanged native state, scroll/palette/fade/exclusion fixtures"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_ceres_art_oracle.log": {
+      "terminal_markers": [
+        "RASTER_ORACLE_OK: 6 replay fixtures from 16836 native input ticks"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_ceres_art_verification.log": {
+      "terminal_markers": [
+        "CERES_ART_VERIFICATION_OK: 16836 fresh ticks; 3 rooms/2 states; 344064 exact original/restored RGB pixels; 1007964 protected pixels unchanged; native scroll/CGRAM/fade/selection; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_art_verification.log": {
+      "terminal_markers": [
+        "ART_VERIFICATION_OK: 16836 native ticks; original/restored exact RGB; 77728 protected HUD/terrain/sprite pixels unchanged; 151536 background pixels replaced; parallax and map/room exclusion; ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
@@ -318,5 +353,6 @@
   "art_verification_report": "docs/qa/native_art_verification.json",
   "bomb_verification_report": "docs/qa/native_bomb_verification.json",
   "station_verification_report": "docs/qa/native_station_verification.json",
-  "station_seed_io_report": "docs/qa/native_station_seed_io.json"
+  "station_seed_io_report": "docs/qa/native_station_seed_io.json",
+  "ceres_art_verification_report": "docs/qa/native_ceres_art_verification.json"
 }

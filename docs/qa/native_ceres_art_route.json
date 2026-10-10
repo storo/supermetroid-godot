@@ -1,0 +1,96 @@
+{
+  "asset_sha256": "621dbe1dba0fe8e61816b963edfc72bc3ef12a2c84959eb7927902ede81280e5",
+  "captures": {
+    "escape_corridor": {
+      "bg2_scroll": [
+        697,
+        1023
+      ],
+      "camera": [
+        248.0,
+        0.0
+      ],
+      "ceres_status": 2,
+      "frame": 13254,
+      "room": 57229,
+      "room_state": 57273
+    },
+    "escape_hall": {
+      "bg2_scroll": [
+        673,
+        1023
+      ],
+      "camera": [
+        216.0,
+        0.0
+      ],
+      "ceres_status": 2,
+      "frame": 12354,
+      "room": 57451,
+      "room_state": 57495
+    },
+    "escape_stairs": {
+      "bg2_scroll": [
+        767,
+        904
+      ],
+      "camera": [
+        0.0,
+        183.0
+      ],
+      "ceres_status": 2,
+      "frame": 12814,
+      "room": 57303,
+      "room_state": 57347
+    },
+    "pre_corridor": {
+      "bg2_scroll": [
+        262,
+        0
+      ],
+      "camera": [
+        9.0,
+        0.0
+      ],
+      "ceres_status": 0,
+      "frame": 8831,
+      "room": 57229,
+      "room_state": 57247
+    },
+    "pre_hall": {
+      "bg2_scroll": [
+        287,
+        0
+      ],
+      "camera": [
+        42.0,
+        0.0
+      ],
+      "ceres_status": 0,
+      "frame": 9728,
+      "room": 57451,
+      "room_state": 57469
+    },
+    "pre_stairs": {
+      "bg2_scroll": [
+        256,
+        0
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "ceres_status": 0,
+      "frame": 9100,
+      "room": 57303,
+      "room_state": 57321
+    }
+  },
+  "frames": 16836,
+  "full_asset_redraw_complete": false,
+  "presentation_leaves_core_unchanged": true,
+  "rom_unchanged": true,
+  "scope": "StatueHall BG2 library in three Ceres rooms and their two states; native scroll, CGRAM, fades, HUD/terrain/sprites preserved",
+  "state_trace_matches": true,
+  "whole_campaign_verified": false
+}

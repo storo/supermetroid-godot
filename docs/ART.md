@@ -9,6 +9,8 @@ Los gráficos originales se decodifican de la ROM local identificada en `assets/
 - `assets/extracted/objects/`: atlas de tiles de 154 encabezados de enemigo, nave ensamblada con offsets de inicialización de la ROM y cinco conjuntos de animación. Los piratas grises de suelo/pared suman 55 frames de spritemaps compuestos con offsets e hitboxes originales; los 11 frames de láser usan los tiles comunes y la paleta de sprites 5. Todos tienen variantes 4×.
 - `assets/extracted/items/`: gráficos de 17 mejoras dinámicas, decodificados desde el banco $89; dos frames y variantes con las paletas de los 29 tilesets. Los tanques usan los metatiles CRE $4A–$51.
 - `assets/remastered/crateria_backdrop.png`: fondo nuevo, destinado al proyecto, creado con la herramienta integrada ImageGen usando `assets/extracted/references/crateria_reference.png` como referencia de colores y terreno. No altera colisiones.
+- `assets/extracted/references/ceres_bg2_original.png`: mapa original BG2 de 512×256, decodificado de VRAM 4bpp, mapa y CGRAM de Ceres. Su JSON conserva hashes, direcciones, índices y colores de paleta.
+- `assets/remastered/ceres_bg2_wall.png`: redibujado de esa referencia con la herramienta integrada ImageGen, 1774×887. Su JSON guarda el prompt final, hashes y salas de destino; los originales se conservan.
 
 `shaders/asset_lighting.gdshader` añade relieve e iluminación de superficie a los sprites ampliados, derivando normales de su propia luminancia. No cambia UV, silueta, alpha ni anclajes. F1 también desactiva este material.
 
@@ -73,8 +75,8 @@ tratamiento del shader; no se generaron redibujados nuevos para este recorrido.
 
 El renderer nativo también usa `assets/remastered/crateria_backdrop.png` en
 Landing Site ($91F8), durante el estado de gameplay 8 y con F1 en modo mejorado.
-No se generó otra imagen en esta integración: se reutiliza el fondo creado con
-ImageGen y el prompt documentado arriba, basado en la referencia extraída.
+Se reutiliza el fondo creado con ImageGen y el prompt documentado arriba,
+basado en la referencia extraída.
 
 El compositor identifica los píxeles que pertenecen a BG2 en la pantalla
 principal y los mezcla con el fondo nuevo (82% arte nuevo / 18% composición
@@ -105,3 +107,34 @@ Los 344064 píxeles originales coinciden con el oráculo offline en
 `native_station_verification.json`. Las variantes a 2× usan el filtro del
 renderer sobre los assets originales de esas salas. El redibujado de esas
 familias de assets sigue pendiente.
+
+## Pared redibujada de Ceres
+
+`ceres_bg2_wall.png` mejora la pared original de seis módulos azules, con domos,
+cuellos, rejillas, conductos y paneles metálicos. Se generó como edición de
+`ceres_bg2_original.png`; el prompt completo está en
+`assets/remastered/ceres_bg2_wall.json`. No contiene personajes, HUD ni terreno
+jugable. La referencia se puede regenerar con `extract_ceres_bg2.py` usando el
+fixture `ceres_corridor` de `sm_raster_oracle`.
+
+La biblioteca original `$8F:E4A5` se comparte en `$DF8D`, `$DFD7` y `$E06B`,
+en sus estados anteriores y posteriores a la retirada de Ridley. El selector
+exige sala, estado de sala y gameplay; los otros fondos de Ceres y el ascensor
+Mode 7 quedan fuera. El compositor sustituye sólo píxeles visibles de BG2 con
+sus índices originales 81–88, protegiendo HUD, BG1 y todos los sprites.
+
+El nuevo dibujo repite el mapa lógico de 512×256 con los registros BG2 X/Y por
+línea, conservando desplazamiento y sacudidas nativos. Transfiere la diferencia
+entre CGRAM actual y la paleta de referencia de cinco bits al arte nuevo, antes
+de ventanas, color math y brillo. Conserva la mezcla 82% nuevo / 18% original.
+La iluminación de las otras capas se sigue calculando del original.
+
+`verify_ceres_art.py` reproduce 16836 ticks desde el arranque hasta Landing Site.
+Las seis capturas, tres salas y dos estados, tienen 344064 píxeles originales y
+restaurados idénticos al oráculo offline; los 1007964 píxeles protegidos de las
+variantes 2× quedan intactos. Los fixtures de presentación comprueban el período
+del mapa, desplazamiento parcial, cambios CGRAM, brillo cero, blanking y
+exclusiones. No alteran la lógica del juego. La prueba de Crateria también pasó
+después de esta ampliación. Informes: `docs/qa/native_ceres_art_*` y
+`native_art_verification.json`. Este resultado cubre ese fondo y esas salas;
+el resto del redibujado y la campaña completa siguen pendientes.

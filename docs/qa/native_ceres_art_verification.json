@@ -1,0 +1,250 @@
+{
+  "route": {
+    "asset_sha256": "621dbe1dba0fe8e61816b963edfc72bc3ef12a2c84959eb7927902ede81280e5",
+    "captures": {
+      "escape_corridor": {
+        "bg2_scroll": [
+          697,
+          1023
+        ],
+        "camera": [
+          248.0,
+          0.0
+        ],
+        "ceres_status": 2,
+        "frame": 13254,
+        "room": 57229,
+        "room_state": 57273
+      },
+      "escape_hall": {
+        "bg2_scroll": [
+          673,
+          1023
+        ],
+        "camera": [
+          216.0,
+          0.0
+        ],
+        "ceres_status": 2,
+        "frame": 12354,
+        "room": 57451,
+        "room_state": 57495
+      },
+      "escape_stairs": {
+        "bg2_scroll": [
+          767,
+          904
+        ],
+        "camera": [
+          0.0,
+          183.0
+        ],
+        "ceres_status": 2,
+        "frame": 12814,
+        "room": 57303,
+        "room_state": 57347
+      },
+      "pre_corridor": {
+        "bg2_scroll": [
+          262,
+          0
+        ],
+        "camera": [
+          9.0,
+          0.0
+        ],
+        "ceres_status": 0,
+        "frame": 8831,
+        "room": 57229,
+        "room_state": 57247
+      },
+      "pre_hall": {
+        "bg2_scroll": [
+          287,
+          0
+        ],
+        "camera": [
+          42.0,
+          0.0
+        ],
+        "ceres_status": 0,
+        "frame": 9728,
+        "room": 57451,
+        "room_state": 57469
+      },
+      "pre_stairs": {
+        "bg2_scroll": [
+          256,
+          0
+        ],
+        "camera": [
+          0.0,
+          0.0
+        ],
+        "ceres_status": 0,
+        "frame": 9100,
+        "room": 57303,
+        "room_state": 57321
+      }
+    },
+    "frames": 16836,
+    "full_asset_redraw_complete": false,
+    "presentation_leaves_core_unchanged": true,
+    "rom_unchanged": true,
+    "scope": "StatueHall BG2 library in three Ceres rooms and their two states; native scroll, CGRAM, fades, HUD/terrain/sprites preserved",
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "cases": [
+    {
+      "name": "escape_corridor",
+      "bg2_scroll": [
+        697,
+        1023
+      ],
+      "camera": [
+        248.0,
+        0.0
+      ],
+      "ceres_status": 2,
+      "frame": 13254,
+      "room": 57229,
+      "room_state": 57273,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 111844,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 117532,
+      "background_changed_pixels": 117270
+    },
+    {
+      "name": "escape_hall",
+      "bg2_scroll": [
+        673,
+        1023
+      ],
+      "camera": [
+        216.0,
+        0.0
+      ],
+      "ceres_status": 2,
+      "frame": 12354,
+      "room": 57451,
+      "room_state": 57495,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 207912,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 21464,
+      "background_changed_pixels": 18663
+    },
+    {
+      "name": "escape_stairs",
+      "bg2_scroll": [
+        767,
+        904
+      ],
+      "camera": [
+        0.0,
+        183.0
+      ],
+      "ceres_status": 2,
+      "frame": 12814,
+      "room": 57303,
+      "room_state": 57347,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 185900,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 43476,
+      "background_changed_pixels": 39399
+    },
+    {
+      "name": "pre_corridor",
+      "bg2_scroll": [
+        262,
+        0
+      ],
+      "camera": [
+        9.0,
+        0.0
+      ],
+      "ceres_status": 0,
+      "frame": 8831,
+      "room": 57229,
+      "room_state": 57247,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 109324,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 120052,
+      "background_changed_pixels": 119436
+    },
+    {
+      "name": "pre_hall",
+      "bg2_scroll": [
+        287,
+        0
+      ],
+      "camera": [
+        42.0,
+        0.0
+      ],
+      "ceres_status": 0,
+      "frame": 9728,
+      "room": 57451,
+      "room_state": 57469,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 203780,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 25596,
+      "background_changed_pixels": 22914
+    },
+    {
+      "name": "pre_stairs",
+      "bg2_scroll": [
+        256,
+        0
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "ceres_status": 0,
+      "frame": 9100,
+      "room": 57303,
+      "room_state": 57321,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 189204,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 40172,
+      "background_changed_pixels": 33938
+    }
+  ],
+  "display_fixture_checks": {
+    "camera_only_mismatched_pixels": 0,
+    "scroll_period_mismatched_pixels": 0,
+    "scroll_protected_mismatched_pixels": 0,
+    "scroll_bg2_changed_pixels": 118721,
+    "map_excluded_mismatched_pixels": 0,
+    "library_excluded_mismatched_pixels": 0,
+    "wrong_state_excluded_mismatched_pixels": 0,
+    "elevator_excluded_mismatched_pixels": 0,
+    "fade_zero_mismatched_pixels": 0,
+    "forced_blank_mismatched_pixels": 0,
+    "palette_protected_mismatched_pixels": 0,
+    "palette_bg2_changed_pixels": 120032
+  },
+  "rom_unchanged": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false,
+  "full_asset_redraw_complete": false
+}

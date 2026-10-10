@@ -1,0 +1,77 @@
+{
+  "description": "Original Ceres BG2, decoded from VRAM planar tiles, tilemap and CGRAM; no PPU framebuffer used",
+  "room": "DF8D",
+  "frame": 8890,
+  "width": 512,
+  "height": 256,
+  "bg2_map_words": 18432,
+  "bg2_tiles_words": 0,
+  "bg2_scroll": [
+    256,
+    0
+  ],
+  "flags": 1,
+  "depth": 4,
+  "palette_indices": [
+    0,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88
+  ],
+  "palette_rgb5": {
+    "0": [
+      0,
+      0,
+      0
+    ],
+    "81": [
+      0,
+      11,
+      13
+    ],
+    "82": [
+      0,
+      6,
+      9
+    ],
+    "83": [
+      0,
+      0,
+      2
+    ],
+    "84": [
+      0,
+      0,
+      1
+    ],
+    "85": [
+      0,
+      9,
+      12
+    ],
+    "86": [
+      0,
+      4,
+      6
+    ],
+    "87": [
+      0,
+      2,
+      5
+    ],
+    "88": [
+      0,
+      0,
+      7
+    ]
+  },
+  "vram_sha256": "ddbafe28ce36f96fdd2137e1140b1240b6804d202a59be44fe7a476153cc34b8",
+  "raster_sha256": "b7c4d869912852e86c8e543124ee44f31895f30632fc9377ba0e46c7f45b889a",
+  "png_sha256": "2e7b32e013de74e846e67805fb2ca605d3c1d3210f716d95956c257617a79cd8",
+  "rom_sha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72"
+}

@@ -40,6 +40,13 @@ parallax de cámara. Se aplica sólo a la capa lejana BG2 durante el gameplay;
 el HUD, Samus, la nave y el terreno conservan su composición nativa. F1 recupera
 el dibujo original. El mapa y las demás salas no reciben este fondo.
 
+Tres salas de Ceres también usan un fondo redibujado a partir de sus tiles y
+paleta: el corredor del ascensor, la escalera y el corredor previo a Ridley.
+Conserva la distribución de los seis módulos de la pared, con metal y luces de
+mayor detalle. Sigue el desplazamiento original de BG2 y los cambios de paleta,
+incluido el escape; HUD, terreno y sprites mantienen sus capas. F1 restaura el
+original en el mismo estado de juego.
+
 | Acción | Tecla |
 | --- | --- |
 | Mover | A/D o flechas |
@@ -72,6 +79,7 @@ También hay bindings de mando. La partida se guarda en el directorio `user://` 
 - Puertas grises con condiciones de jefe o cuota de enemigos. Derrotar a los cinco piratas de Pit despierta Zebes; recoger Morph Ball por sí solo no lo hace. Los láseres enemigos dañan a Samus y pueden destruirse con disparos.
 - Los siete pares de ascensores usan posiciones y dirección de la población original, velocidad de 90 px/s, animación de dos cuadros, pose frontal de Samus y demora de 48 ticks antes de la transición descendente. Se puede volver desde Morph Ball. Los disparadores virtuales se conservan separados de las puertas completas.
 - Fondo nuevo de Crateria creado a partir de la referencia extraída, lluvia, partículas, resplandor y viñeta discreta.
+- Fondo de pared de Ceres redibujado con ImageGen a partir del mapa BG2 original; integrado en tres salas y sus estados de entrada/escape de la campaña nativa.
 
 Quedan por reconstruir los disparadores de la mayoría de eventos de la historia, jefes, mayoría de IA, secuencias de Ceres y final, música SPC, comportamiento completo de PLM, líquidos y arena, todas las mejoras y fidelidad exacta de la física y las animaciones. Las puertas verdes/amarillas necesitan sus armas; varias puertas grises dependen de enemigos o secuencias todavía pendientes. El visor de salas permite abrirlas para revisar el mapa.
 
@@ -106,6 +114,13 @@ eventos, jefes y movimiento. Sus seis capturas originales suman 344064 píxeles
 RGB idénticos al oráculo offline. Requiere los targets `sm_station_route`,
 `sm_raster_oracle` y `sm_native`; evidencia en `docs/qa/native_station_*`.
 El resto de estaciones, mejoras, jefes y final siguen sin verificar.
+
+`python3 tools/native_probe/verify_ceres_art.py` verifica el fondo nuevo durante
+16836 ticks desde una partida nueva: seis capturas con original/restaurado
+idénticos al oráculo y 1007964 píxeles protegidos sin cambios. Comprueba scroll,
+paleta, fundidos y exclusión de mapa, otras bibliotecas y ascensor Mode 7.
+La comprobación de Crateria (`verify_art.py`) también sigue pasando. El
+redibujado completo de las demás familias de assets sigue pendiente.
 
 ## Regenerar assets desde la ROM local
 

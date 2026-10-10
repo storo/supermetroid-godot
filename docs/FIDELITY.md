@@ -6,7 +6,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | --- | --- | --- |
 | Ejecución nativa de Godot | CharacterBody2D, StaticBody2D, GDScript, shaders; pruebas de ejecución | Base implementada |
 | Extraer assets de la ROM proporcionada | SHA-256, tiles 4bpp, paletas, DMA/OAM, manifiesto | Implementado para tilesets, 19 conjuntos de Samus (nueve movimientos en ambos sentidos y pose frontal), nave, ascensor y atlas de enemigos |
-| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo de Crateria nuevo integrado en Landing Site nativo con parallax y máscaras de capa, alternancia F1 | Primera mejora; redibujado completo de assets pendiente |
+| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site y pared original de Ceres redibujada en tres salas/dos estados con máscaras y scroll/paleta nativos, alternancia F1 | Dos fondos integrados; redibujado completo de assets pendiente |
 | Conservar todas las salas y geometría | 261 salas / 322 estados; auditoría nativa | Datos importados; comportamiento y fondos originales incompletos |
 | Conservar todas las animaciones de Samus | 19 conjuntos renderizados desde OAM; gráficos específicos para izquierda/derecha y pose frontal del ascensor | Incompleto; faltan poses, tiempos y asimetrías |
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
