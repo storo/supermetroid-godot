@@ -225,3 +225,31 @@ offline para comprobar RGB original y un cálculo independiente para verificar
 los texels del atlas. Los fixtures de giros, IDs, paleta, scroll y exclusiones
 cambian únicamente copias del paquete de presentación. No verifican Spore
 Spawn ni la campaña completa.
+
+## Misiles inferiores y Charge Beam en Big Pink
+
+```sh
+cmake --build native/build --target sm_station_route sm_charge_route sm_native sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_charge.py
+```
+
+`charge_route.c`/`.h` continúan desde los botones de `charge_prefix.inputs`,
+validados por su manifiesto. Cargan una copia de la SRAM original de Crateria,
+bajan por los pasajes de Big Pink con Morph Ball, recogen el tanque inferior
+de misiles, rompen el paso de bombas y la esfera de la estatua de Charge Beam,
+y recuperan el control. No conceden equipo, salud, munición o posiciones.
+El tanque superior permanece disponible; este recorrido no lo recoge.
+
+El controlador mantiene Fire y lo suelta después de cargar. Los diagnósticos
+de lectura del host copian `flare_counter`, los slots activos cuyo tipo es un
+rayo cargado y `time_is_frozen_flag`; no escriben memoria del juego. La prueba
+compara esos campos y el equipo de rayo además de los 25 campos anteriores,
+comprueba que no hay carga antes de recoger la mejora y exige un proyectil
+cargado después del umbral nativo de 60 ticks, sin consumir misiles.
+
+`charge_test.gd` captura las recogidas, los avisos originales, el paso de bombas,
+la estatua, la carga, el disparo y el control posterior. Presentar las variantes
+original/mejorada mantiene el estado del núcleo. El verificador regenera la
+SRAM desde inputs de partida nueva, compara contra el guardado C/Godot ya
+certificado y usa el oráculo de dibujo sólo offline. La ROM y SRAM fuente se
+mantienen intactas. Spore Spawn y la campaña completa siguen pendientes.

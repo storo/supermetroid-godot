@@ -1,0 +1,11 @@
+{
+  "description": "Ordinary joypad buttons loading the genuine Crateria station SRAM and traversing green pirates, Brinstar and Dachora to Big Pink. No ROM, SRAM or game-memory dump. The charge controller continues through the lower missile tank and Charge Beam.",
+  "frames": 7941,
+  "encoding": "little-endian uint16 joypad mask per tick",
+  "sha256": "19c81047ce0ae004f535920601df539d983173237b4faac29397ec2e05695cfa",
+  "rom_sha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72",
+  "seed_sram_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+  "source_route": "sm_pink_route, verified in docs/qa/native_pink_route.json",
+  "native_reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
+  "whole_campaign_verified": false
+}

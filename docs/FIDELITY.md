@@ -13,7 +13,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | Puertas, elevadores, estaciones y PLM | Restricciones por color, condiciones de jefe/cuota y 14 extremos de ascensor; una estación con guardado/recarga y bloques de bombas de Parlor verificados en C/Godot | Incompleto; demás estaciones y estatua de Tourian pendientes |
 | Enemigos y sus IA originales | 154 atlas y parámetros; tres IA aproximadas; piratas grises de suelo/pared con instrucciones, frames e hitboxes de ROM y rutinas nativas | Incompleto; faltan las demás familias y comparación por fotograma |
 | Jefes y minijefes | Assets crudos y rutinas C integradas; retirada de Ridley de Ceres por salud baja y derrota original de Bomb Torizo en Godot | Incompleto; demás jefes y variantes por verificar |
-| Mejoras, armas y restricciones originales | Objetos y equipo básico; parte de las habilidades | Incompleto |
+| Mejoras, armas y restricciones originales | Morph Ball, misiles, bombas y primer tanque de energía; tanque inferior de Big Pink, Charge Beam y carga/disparo nativos comprobados C/Godot | Incompleto; resto de mejoras y armas por verificar |
 | Líquidos, calor, arena y tipos de bloque | Datos disponibles; colisiones sólidas y pendientes | Incompleto |
 | Ceres, historia, eventos y cambios de estado | 61 selectores de ROM en GDScript; Ceres → Ridley → escape → llegada controlable a Landing Site en la integración C/Godot | Tramo Ceres verificado en la integración; historia y campaña restantes incompletas |
 | Música y efectos originales | Efectos sintetizados en GDScript; reproductor SPC nativo con audio audible durante el recorrido de Ceres | Repertorio y paridad de audio completos pendientes |
@@ -179,3 +179,19 @@ exclusiones también pasan; las regresiones de Brinstar verde, Ceres y Crateria
 pasaron. La ROM y SRAM fuente permanecen intactas. Esta evidencia no cubre
 Spore Spawn, mejoras posteriores ni la campaña completa; informes en
 `docs/qa/native_pink_art_*`.
+
+`verify_charge.py` prolonga la continuación hasta el tanque inferior de Big
+Pink y Charge Beam. El recorrido de 10072 ticks conserva 29 campos de estado
+por tick entre C y Godot, incluidos rayo equipado, contador de carga,
+proyectiles cargados y `time_is_frozen_flag`. Rompe el paso de bombas y la
+esfera de la estatua, conserva los avisos de recogida y recupera el control.
+La carga supera el umbral nativo de 60 ticks; el proyectil cargado permanece
+activo 17 ticks y no consume misiles. Termina con capacidad 10, munición 5,
+rayo `1000`, equipo `1004`, energía 24/199 y eventos/jefes originales.
+
+Las diez capturas suman 573440 píxeles RGB idénticos al oráculo offline y su
+presentación deja el estado del núcleo intacto. La SRAM se regenera desde
+inputs de partida nueva y coincide con la certificada C/Godot. ROM y SRAM
+fuente permanecen intactas; el ciclo de cierre/reinicio del núcleo pasó.
+El tanque superior de Big Pink, Spore Spawn, Kraid y la campaña restante
+siguen sin verificar. Evidencia: `docs/qa/native_charge_verification.json`.

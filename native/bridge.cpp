@@ -64,6 +64,8 @@ public:
     result["missile_capacity"]=s.missile_capacity; result["selected_item"]=s.selected_item;
     result["active_projectiles"]=s.active_projectiles;
     result["active_bombs"]=s.active_bombs;
+    result["beam_charge"]=s.beam_charge; result["charged_projectiles"]=s.charged_projectiles;
+    result["time_frozen"]=s.time_frozen;
     result["max_health"]=s.max_health; result["save_station"]=s.save_station;
     result["save_slot"]=s.save_slot; result["save_writes"]=s.save_writes;
     result["room_kills"]=s.room_kills; result["room_quota"]=s.room_quota;

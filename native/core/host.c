@@ -229,6 +229,8 @@ int sm_native_state(SmNativeState *s) {
   s->missile_capacity=samus_max_missiles; s->selected_item=hud_item_index;
   s->active_projectiles=projectile_counter;
   s->active_bombs=bomb_counter;
+  s->beam_charge=flare_counter; s->time_frozen=time_is_frozen_flag;
+  for(int i=0;i<5;i++)if(projectile_damage[i]&&(projectile_type[i]&0x10)&&(projectile_type[i]&0xf00)==0)s->charged_projectiles++;
   s->max_health=samus_max_health; s->save_station=load_station_index;
   s->save_slot=selected_save_slot; s->save_writes=save_writes;
   s->room_kills=num_enemies_killed_in_room; s->room_quota=num_enemy_deaths_left_to_clear;

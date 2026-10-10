@@ -1,0 +1,650 @@
+{
+  "route": {
+    "audible_packets": 55,
+    "beams": 4096,
+    "capacity": 10,
+    "captures": {
+      "alcove": {
+        "beam_charge": 0,
+        "beams": 0,
+        "charged_projectiles": 0,
+        "frame": 9116,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7274,
+          3406
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "arrival": {
+        "beam_charge": 0,
+        "beams": 0,
+        "charged_projectiles": 0,
+        "frame": 7941,
+        "health": 24,
+        "missile_capacity": 5,
+        "missiles": 0,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7168,
+          2304
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "bomb_passage": {
+        "beam_charge": 0,
+        "beams": 0,
+        "charged_projectiles": 0,
+        "frame": 8945,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7241,
+          3328
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "charge_item": {
+        "beam_charge": 0,
+        "beams": 4096,
+        "charged_projectiles": 0,
+        "frame": 9461,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7168,
+          3526
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "charge_notice": {
+        "beam_charge": 0,
+        "beams": 4096,
+        "charged_projectiles": 0,
+        "frame": 9521,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7168,
+          3526
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "charged_shot": {
+        "beam_charge": 0,
+        "beams": 4096,
+        "charged_projectiles": 1,
+        "frame": 10054,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7180,
+          3579
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "charging": {
+        "beam_charge": 60,
+        "beams": 4096,
+        "charged_projectiles": 0,
+        "frame": 9957,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7180,
+          3579
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "control": {
+        "beam_charge": 0,
+        "beams": 4096,
+        "charged_projectiles": 0,
+        "frame": 10072,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7180,
+          3579
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "missile": {
+        "beam_charge": 0,
+        "beams": 0,
+        "charged_projectiles": 0,
+        "frame": 8498,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7168,
+          3315
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      },
+      "missile_notice": {
+        "beam_charge": 0,
+        "beams": 0,
+        "charged_projectiles": 0,
+        "frame": 8558,
+        "health": 24,
+        "missile_capacity": 10,
+        "missiles": 5,
+        "mode": 1,
+        "mode7_flags": 4,
+        "mode7_matrix": [
+          256,
+          0,
+          0,
+          256,
+          128,
+          128,
+          7168,
+          3315
+        ],
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "scanline_modes": [
+          1
+        ],
+        "time_frozen": 0,
+        "timer_status": 0
+      }
+    },
+    "charge_pickup_frame": 9461,
+    "charged_beam_does_not_consume_missiles": true,
+    "charged_projectile_frames": 17,
+    "columns_compared_per_tick": 29,
+    "frames": 10072,
+    "health": 24,
+    "items": 4100,
+    "max_health": 199,
+    "maximum_charge_counter": 120,
+    "missile_pickup_frame": 8498,
+    "missiles": 5,
+    "original_station_sram_loaded": true,
+    "rom_unchanged": true,
+    "room": 40217,
+    "rooms": [
+      37845,
+      37629,
+      39181,
+      39357,
+      39273,
+      39224,
+      39641,
+      40115,
+      40217
+    ],
+    "saved_events_retained": true,
+    "seed_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+    "source_seed_unchanged": true,
+    "spore_spawn_verified": false,
+    "state_trace_matches": true,
+    "whole_campaign_verified": false
+  },
+  "cases": [
+    {
+      "name": "alcove",
+      "beam_charge": 0,
+      "beams": 0,
+      "charged_projectiles": 0,
+      "frame": 9116,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7274,
+        3406
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "arrival",
+      "beam_charge": 0,
+      "beams": 0,
+      "charged_projectiles": 0,
+      "frame": 7941,
+      "health": 24,
+      "missile_capacity": 5,
+      "missiles": 0,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7168,
+        2304
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "bomb_passage",
+      "beam_charge": 0,
+      "beams": 0,
+      "charged_projectiles": 0,
+      "frame": 8945,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7241,
+        3328
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "charge_item",
+      "beam_charge": 0,
+      "beams": 4096,
+      "charged_projectiles": 0,
+      "frame": 9461,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7168,
+        3526
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "charge_notice",
+      "beam_charge": 0,
+      "beams": 4096,
+      "charged_projectiles": 0,
+      "frame": 9521,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7168,
+        3526
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "charged_shot",
+      "beam_charge": 0,
+      "beams": 4096,
+      "charged_projectiles": 1,
+      "frame": 10054,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7180,
+        3579
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "charging",
+      "beam_charge": 60,
+      "beams": 4096,
+      "charged_projectiles": 0,
+      "frame": 9957,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7180,
+        3579
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "control",
+      "beam_charge": 0,
+      "beams": 4096,
+      "charged_projectiles": 0,
+      "frame": 10072,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7180,
+        3579
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "missile",
+      "beam_charge": 0,
+      "beams": 0,
+      "charged_projectiles": 0,
+      "frame": 8498,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7168,
+        3315
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "missile_notice",
+      "beam_charge": 0,
+      "beams": 0,
+      "charged_projectiles": 0,
+      "frame": 8558,
+      "health": 24,
+      "missile_capacity": 10,
+      "missiles": 5,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        7168,
+        3315
+      ],
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "scanline_modes": [
+        1
+      ],
+      "time_frozen": 0,
+      "timer_status": 0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    }
+  ],
+  "rom_unchanged": true,
+  "source_seed_unchanged": true,
+  "seed_generated_from_fresh_game_normal_inputs": true,
+  "seed_matches_verified_station_sram": true,
+  "seed_is_original_sram_not_save_state": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false,
+  "spore_spawn_verified": false
+}

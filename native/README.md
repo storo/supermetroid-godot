@@ -32,7 +32,9 @@ a abrirla. `native_input_test.gd` comprueba eventos reales de teclado, botones y
 stick, combinaciones, liberación y zona muerta.
 F1 alterna arte; Escape congela la prueba. Las acciones de Morph Ball y bombas
 siguen los botones originales del núcleo (Down y X). No hay equipo concedido por
-la escena. La SRAM usa `user://native_campaign.srm` y no sustituye el JSON de la
+la escena. Después de conseguir Charge Beam, mantener J/X carga el rayo y
+soltarlo dispara; se conserva el umbral original de 60 ticks. La SRAM usa
+`user://native_campaign.srm` y no sustituye el JSON de la
 escena principal. Al arrancar, el host lee la SRAM existente antes de los menús
 originales para poder continuar desde la estación guardada. El
 `--native-core-capture` usa SRAM de prueba independiente,
@@ -63,6 +65,9 @@ comprobación de navegación usa `--native-core-ui-test` con su propia SRAM temp
   no conceden objetos ni disparan eventos.
   También expone energía máxima, índice de estación, slot de partida y un
   contador de escrituras SRAM completas, reiniciado al arrancar el núcleo.
+  `beam_charge`, `charged_projectiles` y `time_frozen` copian el contador de
+  carga, los proyectiles de rayo cargado activos y `time_is_frozen_flag`.
+  Son diagnósticos de lectura; no cambian la lógica de disparo o las pausas.
   `get_enemies()` devuelve los slots vivos con ID, posición, salud, propiedades
   y AI. Es un diagnóstico opcional; no se copia en cada snapshot de dibujo.
   `get_snapshot()` añade los datos de dibujo al mismo estado.
@@ -377,3 +382,26 @@ fuente quedan intactas; las regresiones de Brinstar verde, Ceres y Crateria
 pasan. El prompt está en `assets/remastered/pink_bg2_tiles.json` y la evidencia
 en `docs/qa/native_pink_art_*`. Spore Spawn, mejoras posteriores y campaña
 completa siguen pendientes.
+
+## Charge Beam y misiles inferiores
+
+```sh
+cmake --build native/build --target sm_station_route sm_charge_route sm_native sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_charge.py
+```
+
+El recorrido añade el tanque inferior de Big Pink, el paso de bombas, la
+esfera de la estatua y Charge Beam. Conserva los avisos originales y prueba
+carga y liberación de Fire desde una pose nativa de Samus. Son 10072 ticks
+con 29 campos de estado idénticos entre C y Godot; la carga llega al umbral
+original de 60 ticks y aparecen 17 ticks con un proyectil cargado activo.
+No consume misiles: termina con cinco disponibles sobre una capacidad de
+diez, equipo `1004`, rayo `1000`, energía 24/199 y eventos/jefes conservados.
+
+Diez capturas originales tienen 573440 píxeles RGB idénticos al oráculo,
+incluidos los avisos de recogida y el disparo. Presentarlas no altera el
+estado del núcleo. La prueba regenera la SRAM de Crateria desde inputs de
+partida nueva y mantiene la ROM/SRAM fuente intactas. La prueba de registro,
+propiedad única, 18000 ticks, cierre y reinicio del núcleo también pasó con
+los nuevos diagnósticos. Informes y capturas: `docs/qa/native_charge_*`.
+Esto no verifica el tanque superior, Spore Spawn ni la campaña completa.

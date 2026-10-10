@@ -31,6 +31,7 @@ mediante los menús originales.
 En esa campaña nativa, S/↓ agacha y transforma a Samus después de conseguir Morph
 Ball; J/X dispara o coloca bombas cuando se dispone de ellas. Enter envía Start
 para el menú/mapa original, K envía Select y Retroceso cancela el arma elegida.
+Después de recoger Charge Beam, mantener J/X carga el rayo y soltarlo dispara.
 El mando usa A para saltar, B para correr, X para disparar, Y para cancelar,
 Start/Back para Start/Select y R/L para apuntar. La cruz y el stick izquierdo
 controlan el movimiento. Escape congela la aplicación.
@@ -197,3 +198,14 @@ y 638316 píxeles protegidos sin cambios. Comprueba los texels del atlas, giros,
 IDs, CGRAM, scroll y exclusiones; las regresiones de los otros tres fondos
 pasan. La ROM/SRAM fuente permanecen intactas. Informes y capturas:
 `docs/qa/native_pink_art_*`. Campaña y redibujado completos siguen pendientes.
+
+`python3 tools/native_probe/verify_charge.py` continúa por Big Pink hasta el
+tanque inferior de misiles y Charge Beam. Reproduce 10072 ticks con 29 campos
+idénticos C/Godot, rompe el paso de bombas y la esfera original, conserva los
+avisos de recogida y comprueba un disparo cargado después del umbral de 60
+ticks. Termina con capacidad de 10 misiles, cinco disponibles, Charge Beam y
+la energía original de 24/199; el disparo no consume misiles. Diez capturas
+suman 573440 píxeles RGB idénticos al oráculo offline. La ROM/SRAM fuente
+permanecen intactas y pasó la regresión de cierre/reinicio del núcleo.
+El tanque superior de Big Pink, Spore Spawn y la campaña restante siguen
+sin verificar. Evidencia: `docs/qa/native_charge_*`.
