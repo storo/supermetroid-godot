@@ -253,3 +253,21 @@ original/mejorada mantiene el estado del núcleo. El verificador regenera la
 SRAM desde inputs de partida nueva, compara contra el guardado C/Godot ya
 certificado y usa el oráculo de dibujo sólo offline. La ROM y SRAM fuente se
 mantienen intactas. Spore Spawn y la campaña completa siguen pendientes.
+
+## Fondo rocoso de Parlor en sus dos estados
+
+`python3 tools/native_probe/verify_parlor_art.py` regenera la SRAM original
+certificada C/Godot mediante el prefijo de controles de partida nueva.
+Reproduce también el tramo inicial de ese prefijo hasta Parlor antes del
+despertar de Zebes. El controlador `sm_green_route` continúa desde la SRAM
+por los menús originales, Parlor, Terminator, los piratas, Lower Mushrooms
+y el ascensor a Brinstar verde; sus 25 campos por tick se comparan en Godot.
+
+Siete checkpoints de los estados `9314` y `932E` conservan posición, cámara,
+equipo y salud. Cada original/restaurado se compara sin tolerancia RGB con
+el oráculo offline. Los fixtures de dibujo comprueban los 44 IDs, cuatro
+giros, scroll/CGRAM, apagado/fundido y exclusiones, sin escribir memoria de
+juego. `extract_parlor_bg2.py CHECKPOINT_DIRECTORY` extrae la referencia de
+un checkpoint original de Parlor; la referencia registra paleta 4 y la
+reubicación exacta de las celdas en el atlas 8×6. El estado del escape final,
+otras salas que usan Crateria Rocks y el redibujado completo siguen pendientes.

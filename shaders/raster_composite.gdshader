@@ -6,8 +6,7 @@ uniform sampler2D sub_tex : filter_nearest, repeat_disable;
 uniform bool enhanced=true;
 uniform sampler2D backdrop_tex : filter_linear, repeat_disable;
 uniform sampler2D ceres_wall_tex : filter_linear, repeat_enable;
-uniform sampler2D green_bg2_tiles_tex : filter_linear, repeat_disable;
-uniform sampler2D pink_bg2_tiles_tex : filter_linear, repeat_disable;
+uniform sampler2D bg2_tiles_tex : filter_linear, repeat_disable;
 uniform bool remastered_background_enabled=false;
 uniform int remastered_background_kind=0;
 uniform vec2 backdrop_camera=vec2(0.0);
@@ -112,6 +111,27 @@ vec3 pink_reference_color(int index) {
 bool pink_tile_supported(int number) {
 	return number>=492 && number<=543 && number%16>=12;
 }
+vec3 parlor_reference_color(int index) {
+	if(index==65)return vec3(9.0,12.0,7.0);
+	if(index==66)return vec3(6.0,8.0,3.0);
+	if(index==67)return vec3(3.0,5.0,3.0);
+	if(index==68)return vec3(14.0,8.0,11.0);
+	if(index==69)return vec3(9.0,8.0,11.0);
+	if(index==70)return vec3(5.0,6.0,10.0);
+	if(index==71)return vec3(1.0,4.0,3.0);
+	if(index==72)return vec3(14.0,14.0,21.0);
+	if(index==73)return vec3(8.0,11.0,15.0);
+	if(index==74)return vec3(2.0,5.0,9.0);
+	if(index==75)return vec3(0.0,0.0,5.0);
+	if(index==76)return vec3(12.0,16.0,12.0);
+	if(index==77)return vec3(8.0);
+	if(index==78)return vec3(31.0);
+	return vec3(0.0,1.0,1.0);
+}
+bool parlor_tile_supported(int number) {
+	return (number>=200 && number<=255 && number%16>=8)
+		|| (number>=490 && number<=511 && number%16>=10);
+}
 vec3 remastered_background(ivec2 p,ivec2 quadrant,vec2 cell,vec3 original) {
 	// BG2 is the distant scenery. Protect the HUD, BG1 terrain, all sprites,
 	// blanking and pixels whose Scale2x neighbourhood crosses a layer boundary.
@@ -126,33 +146,41 @@ vec3 remastered_background(ivec2 p,ivec2 quadrant,vec2 cell,vec3 original) {
 		vec2 uv=(cell+vec2(float(raster_word(p.y,44)),1.0+float(raster_word(p.y,46))))/vec2(512.0,256.0);
 		color=texture(ceres_wall_tex,uv).rgb*31.0;
 		color=clamp(color+vec3(palette5(p.y,main.x))-ceres_reference_color(main.x),vec3(0.0),vec3(31.0));
-	} else if(remastered_background_kind==3 || remastered_background_kind==4) {
+	} else if(remastered_background_kind>=3 && remastered_background_kind<=5) {
 		// Follow the native BG2 map in VRAM and its live tile IDs/flips.
 		// Every replacement retains the original tile's map coordinates.
 		// Keep Scale2x pixels copied from another cell on the original path.
 		bool pink=remastered_background_kind==4;
-		int palette_first=pink?49:113;
+		bool parlor=remastered_background_kind==5;
+		int palette_first=parlor?65:(pink?49:113);
 		if(main!=center || main.x<palette_first || main.x>palette_first+14 || raster_byte(p.y,65)!=1 || raster_word(p.y,42)!=0)return original;
 		ivec2 mapped=(p+ivec2(raster_word(p.y,44),1+raster_word(p.y,46)))&ivec2(1023);
 		ivec2 tile=mapped>>ivec2(3);
 		int address=raster_word(p.y,40)+(tile.y&31)*32+(tile.x&31);
 		if((tile.x&32)!=0)address+=1024;
 		int word=vram_word(address&32767),number=word&1023;
-		if(((word>>10)&7)!=(pink?3:7) || !(pink?pink_tile_supported(number):green_tile_supported(number)))return original;
+		if(((word>>10)&7)!=(parlor?4:(pink?3:7)) || !(parlor?parlor_tile_supported(number):(pink?pink_tile_supported(number):green_tile_supported(number))))return original;
 		vec2 within=vec2(mapped&ivec2(7))+fract(cell);
 		if((word&16384)!=0)within.x=8.0-within.x;
 		if((word&32768)!=0)within.y=8.0-within.y;
-		if(pink) {
-			vec2 inset=vec2(16.0)/vec2(textureSize(pink_bg2_tiles_tex,0));
+		if(parlor) {
+			vec2 inset=vec2(32.0,24.0)/vec2(textureSize(bg2_tiles_tex,0));
+			within=clamp(within,inset,vec2(8.0)-inset);
+			ivec2 atlas_cell=number<256?ivec2(number%16-8,number/16-12):ivec2(number%16-10,number/16-26);
+			vec2 uv=(vec2(atlas_cell)*8.0+within)/vec2(64.0,48.0);
+			color=texture(bg2_tiles_tex,uv).rgb*31.0;
+			color=clamp(color+vec3(palette5(p.y,main.x))-parlor_reference_color(main.x),vec3(0.0),vec3(31.0));
+		} else if(pink) {
+			vec2 inset=vec2(16.0)/vec2(textureSize(bg2_tiles_tex,0));
 			within=clamp(within,inset,vec2(8.0)-inset);
 			vec2 uv=(vec2(float(number%16-12)*8.0,float(number/16-30)*8.0)+within)/vec2(32.0);
-			color=texture(pink_bg2_tiles_tex,uv).rgb*31.0;
+			color=texture(bg2_tiles_tex,uv).rgb*31.0;
 			color=clamp(color+vec3(palette5(p.y,main.x))-pink_reference_color(main.x),vec3(0.0),vec3(31.0));
 		} else {
-			vec2 inset=vec2(64.0,32.0)/vec2(textureSize(green_bg2_tiles_tex,0));
+			vec2 inset=vec2(64.0,32.0)/vec2(textureSize(bg2_tiles_tex,0));
 			within=clamp(within,inset,vec2(8.0)-inset);
 			vec2 uv=(vec2(float(number%16)*8.0,float(number/16-14)*8.0)+within)/vec2(128.0,64.0);
-			color=texture(green_bg2_tiles_tex,uv).rgb*31.0;
+			color=texture(bg2_tiles_tex,uv).rgb*31.0;
 			color=clamp(color+vec3(palette5(p.y,main.x))-green_reference_color(main.x),vec3(0.0),vec3(31.0));
 		}
 	} else {

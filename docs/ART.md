@@ -14,6 +14,7 @@ Los gráficos originales se decodifican de la ROM local identificada en `assets/
 - `assets/extracted/references/green_bg2_tiles_original.png`: atlas 128×64 de 66 tiles BG2 de Brinstar verde, decodificado de VRAM/CGRAM y conservando las coordenadas originales de cada tile 8×8. Su JSON registra índices, paleta, hashes y sala/estado.
 - `assets/remastered/green_bg2_tiles.png`: redibujado de ese atlas con ImageGen integrado, 1774×887. El prompt completo, hashes y alcance están en el JSON del mismo nombre. Conserva los espacios negros del atlas y la ubicación de cada grupo; se aplica al BG2 de `9AD9/9AE6`.
 - `assets/extracted/references/pink_bg2_tiles_original.png`: los 16 tiles BG2 de Big Pink, decodificados de VRAM/CGRAM y reunidos en una cuadrícula 4×4 de 32×32 píxeles. Cada celda mantiene su contenido original; su JSON registra los IDs, la paleta 3 y las coordenadas del atlas nativo.
+- `assets/extracted/references/parlor_bg2_tiles_original.png`: 44 tiles de Crateria Rocks en Parlor, extraídos de VRAM/CGRAM. El atlas 64×48 conserva los grupos nativos de filas 12–15/columnas 8–15 y filas 30–31/columnas 10–15; su JSON registra cada ID, celda y paleta 4.
 - `assets/remastered/pink_bg2_tiles.png`: edición de esa referencia con ImageGen integrado, 1254×1254. Redibuja el patrón orgánico azul oscuro; el JSON contiguo guarda el prompt completo y hashes. El compositor usa los IDs/giros de VRAM en `9D19/9D26` para ensamblar las mismas piezas, con la CGRAM y scroll actuales.
 
 `shaders/asset_lighting.gdshader` añade relieve e iluminación de superficie a los sprites ampliados, derivando normales de su propia luminancia. No cambia UV, silueta, alpha ni anclajes. F1 también desactiva este material.
@@ -179,3 +180,21 @@ conservan la composición; los fixtures de prueba
 modifican sólo copias del paquete de dibujo. Ceres y Crateria volvieron a pasar
 sus regresiones. La ROM y SRAM fuente quedaron intactas. Informes y capturas:
 `docs/qa/native_green_art_*`.
+
+## Rocas de Parlor
+
+El atlas `assets/remastered/parlor_bg2_tiles.png` se generó con la herramienta
+integrada image_gen a partir de los 44 tiles originales. Su tamaño es
+1448×1086, con celdas de 181×181 en una cuadrícula 8×6. La referencia extraída
+mide 64×48; las cuatro celdas sin ID original no se muestrean en gameplay.
+Se mantienen los grupos de roca oscura y su paleta de azul/verde, añadiendo
+fracturas y relieve fino. El prompt exacto se guarda en
+`assets/remastered/parlor_bg2_tiles.prompt.txt`; el JSON conserva hashes,
+dimensiones y procedencia.
+
+La integración utiliza los índices, giros y registros de scroll/CGRAM
+originales de Parlor `92FD/9314` y `92FD/932E`. El atlas activo comparte un
+sampler con Brinstar verde y Big Pink. F1 restaura el original. La prueba
+`verify_parlor_art.py` usa dos recorridos de botones normales y un oráculo
+PPU offline; sus capturas son del viewport propio de Godot. El estado del
+escape final y las otras salas de esta biblioteca quedan pendientes.

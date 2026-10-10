@@ -405,3 +405,31 @@ partida nueva y mantiene la ROM/SRAM fuente intactas. La prueba de registro,
 propiedad única, 18000 ticks, cierre y reinicio del núcleo también pasó con
 los nuevos diagnósticos. Informes y capturas: `docs/qa/native_charge_*`.
 Esto no verifica el tanque superior, Spore Spawn ni la campaña completa.
+
+## Fondo rocoso de Parlor
+
+```sh
+cmake --build native/build --target sm_station_route sm_green_route sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_parlor_art.py
+```
+
+`parlor_bg2_tiles.png` redibuja los 44 tiles de Crateria Rocks extraídos de
+VRAM/CGRAM, en un atlas de ocho columnas y seis filas. El shader sigue el
+mapa nativo, giros, scroll y paleta por línea; protege HUD, BG1 y sprites.
+Se aplica a Parlor `92FD` en los estados originales `9314` y `932E`. El estado
+del escape final `9348` y otras salas con esta biblioteca quedan pendientes.
+
+Los atlas de Brinstar verde, Big Pink y Parlor comparten un único sampler;
+Godot enlaza sólo la textura de la familia activa. Así las familias nuevas
+no añaden samplers para todas las texturas que no se usan en esa sala.
+
+La prueba recorre el prefijo original de partida nueva hasta Parlor dormido
+y una continuación desde la SRAM original de Crateria hasta Brinstar verde.
+Comprueba siete capturas de cámara, las dos selecciones reales de estado,
+25 campos por tick de la continuación, restauración original, píxeles
+protegidos y muestreo independiente de los 44 IDs y los cuatro giros.
+Los cambios de mapa/paleta/scroll del diagnóstico afectan sólo copias del
+paquete de presentación. Resultados: `docs/qa/native_parlor_art_*`.
+El prompt exacto está en `assets/remastered/parlor_bg2_tiles.prompt.txt`;
+los hashes y dimensiones, en su JSON. Campaña y redibujado completos
+siguen pendientes.

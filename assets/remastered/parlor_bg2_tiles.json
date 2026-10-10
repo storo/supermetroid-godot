@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "assets/extracted/references/parlor_bg2_tiles_original.png",
+  "reference_sha256": "d31586ce486cb0e6928e11d312ebc08bdbbb803e49b51628330492a27efa88fa",
+  "asset_sha256": "8f1a7c4aacf6eb12a5135ed9aaf59c0768db6665f877347fc19af9cdb4b47b0a",
+  "size": [
+    1448,
+    1086
+  ],
+  "atlas_columns": 8,
+  "atlas_rows": 6,
+  "native_tiles": 44,
+  "scope": "Crateria Rocks BG2 in Parlor 92FD, states 9314 and 932E; endgame state excluded pending verification",
+  "prompt_file": "parlor_bg2_tiles.prompt.txt",
+  "whole_campaign_verified": false,
+  "full_asset_redraw_complete": false
+}

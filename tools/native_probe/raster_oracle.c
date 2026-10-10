@@ -29,7 +29,7 @@ static void fixture(const char *directory,const char *name,int frame) {
   write_file(path,"frame.raster",raster,sizeof(raster));
   write_file(path,"frame.vram",vram,sizeof(vram));
   write_file(path,"frame.oam",oam,sizeof(oam));
-  fprintf(manifest,"%s{\"name\":\"%s\",\"frame\":%d,\"state\":%d,\"room\":%d,\"mode\":%d}",cases++?",\n":"",name,frame,state.state,state.room,state.mode);
+  fprintf(manifest,"%s{\"name\":\"%s\",\"frame\":%d,\"state\":%d,\"room\":%d,\"mode\":%d,\"room_state\":%d,\"x\":%d,\"y\":%d,\"camera_x\":%d,\"camera_y\":%d,\"pose\":%d,\"health\":%d,\"items\":%d,\"beams\":%d,\"missiles\":%d}",cases++?",\n":"",name,frame,state.state,state.room,state.mode,state.room_state,state.x,state.y,state.camera_x,state.camera_y,state.pose,state.health,state.items,state.beams,state.missiles);
 }
 int main(int argc,char **argv) {
   if(argc!=3&&argc!=5&&argc!=6) { fprintf(stderr,"Usage: sm_raster_oracle ROM OUTPUT_DIRECTORY [INPUT_TRACE CHECKPOINT_CSV [SRAM_SEED]]\n"); return 1; }

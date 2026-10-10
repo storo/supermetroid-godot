@@ -1,0 +1,117 @@
+{
+  "asset_sha256": "8f1a7c4aacf6eb12a5135ed9aaf59c0768db6665f877347fc19af9cdb4b47b0a",
+  "captures": {
+    "awake_gate": {
+      "bg2_scroll": [
+        101,
+        512
+      ],
+      "camera": [
+        135.0,
+        0.0
+      ],
+      "frame": 2180,
+      "health": 179,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37678
+    },
+    "awake_lower": {
+      "bg2_scroll": [
+        192,
+        896
+      ],
+      "camera": [
+        256.0,
+        512.0
+      ],
+      "frame": 1444,
+      "health": 189,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37678
+    },
+    "awake_middle": {
+      "bg2_scroll": [
+        192,
+        716
+      ],
+      "camera": [
+        256.0,
+        272.0
+      ],
+      "frame": 1598,
+      "health": 189,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37678
+    },
+    "awake_upper": {
+      "bg2_scroll": [
+        192,
+        527
+      ],
+      "camera": [
+        256.0,
+        21.0
+      ],
+      "frame": 1813,
+      "health": 179,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37678
+    },
+    "dormant_entry": {
+      "bg2_scroll": [
+        960,
+        114
+      ],
+      "camera": [
+        256.0,
+        153.0
+      ],
+      "frame": 17693,
+      "health": 99,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37652
+    },
+    "dormant_lower": {
+      "bg2_scroll": [
+        960,
+        757
+      ],
+      "camera": [
+        256.0,
+        1010.0
+      ],
+      "frame": 18117,
+      "health": 99,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37652
+    },
+    "dormant_middle": {
+      "bg2_scroll": [
+        960,
+        537
+      ],
+      "camera": [
+        256.0,
+        717.0
+      ],
+      "frame": 17967,
+      "health": 99,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37652
+    }
+  },
+  "frames": 23433,
+  "full_asset_redraw_complete": false,
+  "rom_unchanged": true,
+  "scope": "44 native Crateria Rocks BG2 cells in Parlor 92FD, actual dormant 9314 and awake 932E states, three/four original camera checkpoints",
+  "trace_columns": 25,
+  "trace_frames": 5316,
+  "whole_campaign_verified": false
+}

@@ -6,7 +6,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | --- | --- | --- |
 | Ejecución nativa de Godot | CharacterBody2D, StaticBody2D, GDScript, shaders; pruebas de ejecución | Base implementada |
 | Extraer assets de la ROM proporcionada | SHA-256, tiles 4bpp, paletas, DMA/OAM, manifiesto | Implementado para tilesets, 19 conjuntos de Samus (nueve movimientos en ambos sentidos y pose frontal), nave, ascensor y atlas de enemigos |
-| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site, pared de Ceres redibujada en tres salas/dos estados, 66 tiles BG2 de Brinstar verde y 16 de Big Pink redibujados con IDs/giros/scroll/paleta nativos, alternancia F1 | Cuatro familias de fondo integradas; redibujado completo de assets pendiente |
+| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site, pared de Ceres redibujada en tres salas/dos estados, 66 tiles BG2 de Brinstar verde, 16 de Big Pink y 44 de Parlor en dos estados, con IDs/giros/scroll/paleta nativos, alternancia F1 | Cinco familias de fondo integradas; redibujado completo de assets pendiente |
 | Conservar todas las salas y geometría | 261 salas / 322 estados; auditoría nativa | Datos importados; comportamiento y fondos originales incompletos |
 | Conservar todas las animaciones de Samus | 19 conjuntos renderizados desde OAM; gráficos específicos para izquierda/derecha y pose frontal del ascensor | Incompleto; faltan poses, tiempos y asimetrías |
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
@@ -195,3 +195,21 @@ inputs de partida nueva y coincide con la certificada C/Godot. ROM y SRAM
 fuente permanecen intactas; el ciclo de cierre/reinicio del núcleo pasó.
 El tanque superior de Big Pink, Spore Spawn, Kraid y la campaña restante
 siguen sin verificar. Evidencia: `docs/qa/native_charge_verification.json`.
+
+`verify_parlor_art.py` comprueba los 44 tiles redibujados de Crateria Rocks
+usando los estados reales de Parlor `92FD/9314` y `92FD/932E`. Reproduce
+23433 ticks: tres checkpoints del prefijo de partida nueva y cuatro de
+la continuación desde Crateria Save. Los 5316 ticks de esta continuación
+conservan 25 campos por tick entre C y Godot; las capturas conservan además
+posición, cámara, pose, salud y equipo originales. El dibujo se captura
+en un SubViewport propio y no modifica el estado del núcleo.
+
+Las siete capturas suman 401408 píxeles RGB originales/restaurados idénticos
+al oráculo offline. Los 755560 píxeles protegidos mantienen HUD, terreno
+y sprites. El cálculo independiente comprueba los 44 IDs y cuatro modos
+de giro, además de CGRAM/scroll, con error máximo de un nivel RGB. Fundido,
+blanking y exclusiones pasan. Crateria, Ceres, Brinstar verde y Big Pink
+pasaron sus regresiones después de compartir el sampler del atlas activo.
+ROM y SRAM fuente quedan intactas. El estado del escape final `9348`, las
+demás salas de esta biblioteca, Spore Spawn y la campaña completa siguen
+pendientes. Evidencia: `docs/qa/native_parlor_art_*`.

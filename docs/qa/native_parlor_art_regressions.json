@@ -1,0 +1,31 @@
+{
+  "regressions": [
+    {
+      "family": "green",
+      "log": "native_parlor_art_green_regression.log",
+      "sha256": "5b66863ee023688e66ebb9bde653538ab4bf2f33bf60ec5f60dacc9e42a2251c",
+      "verification_succeeded": true
+    },
+    {
+      "family": "pink",
+      "log": "native_parlor_art_pink_regression.log",
+      "sha256": "da645b42c4689aa000c1bb006fdd36422d23c2d1acfcc79597b918fbe44c0dc4",
+      "verification_succeeded": true
+    },
+    {
+      "family": "crateria",
+      "log": "native_parlor_art_crateria_regression.log",
+      "sha256": "6d46dcb23ded13538e313f03c415ea9cda889e1a11ddd36cdcae6434708c3455",
+      "verification_succeeded": true
+    },
+    {
+      "family": "ceres",
+      "log": "native_parlor_art_ceres_regression.log",
+      "sha256": "f5026b41043908a30110404cb809f8b2c1bbe7837c0e7e7fc4a8333e1fc3499b",
+      "verification_succeeded": true
+    }
+  ],
+  "all_succeeded": true,
+  "scope": "Previous four background families after sharing the active tile-atlas sampler. Green artwork assertions isolate its own BG2 library.",
+  "whole_campaign_verified": false
+}

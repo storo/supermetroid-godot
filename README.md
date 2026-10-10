@@ -93,6 +93,7 @@ También hay bindings de mando. La partida se guarda en el directorio `user://` 
 - Fondo de pared de Ceres redibujado con ImageGen a partir del mapa BG2 original; integrado en tres salas y sus estados de entrada/escape de la campaña nativa.
 - Atlas de 66 tiles BG2 de Brinstar verde redibujados con ImageGen a partir de VRAM/CGRAM, integrado con los índices y giros originales en el pozo principal nativo.
 - Atlas de 16 tiles BG2 de Big Pink redibujados con ImageGen desde VRAM/CGRAM; conserva índices, giros, scroll, paleta y límites de cada celda en la campaña nativa.
+- Atlas de 44 tiles del fondo rocoso de Parlor redibujados desde VRAM/CGRAM, integrado en sus estados anterior y posterior al despertar de Zebes. La textura activa se selecciona por sala/estado y comparte un sampler con los demás atlas BG2.
 
 Quedan por reconstruir los disparadores de la mayoría de eventos de la historia, jefes, mayoría de IA, secuencias de Ceres y final, música SPC, comportamiento completo de PLM, líquidos y arena, todas las mejoras y fidelidad exacta de la física y las animaciones. Las puertas verdes/amarillas necesitan sus armas; varias puertas grises dependen de enemigos o secuencias todavía pendientes. El visor de salas permite abrirlas para revisar el mapa.
 
@@ -209,3 +210,13 @@ suman 573440 píxeles RGB idénticos al oráculo offline. La ROM/SRAM fuente
 permanecen intactas y pasó la regresión de cierre/reinicio del núcleo.
 El tanque superior de Big Pink, Spore Spawn y la campaña restante siguen
 sin verificar. Evidencia: `docs/qa/native_charge_*`.
+
+`python3 tools/native_probe/verify_parlor_art.py` comprueba los 44 tiles
+redibujados de Parlor en sus estados anterior y posterior al despertar.
+Reproduce 23433 ticks, incluidos 5316 con 25 campos idénticos C/Godot.
+Siete capturas conservan 401408 píxeles RGB originales/restaurados exactos
+y 755560 píxeles protegidos sin cambios. El muestreo independiente incluye
+los 44 IDs, los cuatro giros y cambios de scroll/CGRAM; las regresiones de
+los cuatro fondos anteriores pasan. ROM/SRAM quedan intactas. El estado
+del escape final, otras salas de Crateria Rocks y el remake completo
+siguen pendientes. Evidencia: `docs/qa/native_parlor_art_*`.

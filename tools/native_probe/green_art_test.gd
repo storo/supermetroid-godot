@@ -61,7 +61,8 @@ func capture(name: String, state: Dictionary) -> void:
 	size_enhanced()
 	renderer.remastered_backgrounds=false
 	await save_image(name+"_filtered",snapshot)
-	renderer.remastered_backgrounds=true
+	# Isolate this library's protection checks from other new BG2 families.
+	renderer.remastered_backgrounds=state.room==0x9ad9
 	await save_image(name+"_remastered",snapshot)
 	if name=="control":await display_checks(snapshot)
 	size_original()
