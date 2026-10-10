@@ -172,3 +172,31 @@ independiente del atlas contempla giros, filtrado y color math; permite sólo
 dos niveles de redondeo RGB. El original/restaurado se compara sin tolerancia.
 `extract_green_bg2.py CHECKPOINT` reproduce la referencia del atlas desde un
 checkpoint de `sm_raster_oracle` en `9AD9`, usando tiles y CGRAM.
+
+## Recorrido hasta Big Pink
+
+`pink_route.c`/`.h` extienden el controlador de continuación: derrotan a los
+cinco piratas verdes con misiles, recuperan munición de drops originales, bajan
+por Brinstar verde, abren la puerta roja con cinco misiles y rompen con bombas
+la barrera de Dachora hasta entrar en Big Pink (`$8F:9D19`). La salud y los drops
+son originales; no se otorga equipo ni se modifica memoria de gameplay.
+
+```sh
+cmake --build native/build --target sm_pink_route --parallel 4
+route_output=$(mktemp -d)
+# seed.srm debe ser la SRAM genuina de Crateria generada por sm_station_route.
+# Copiarla al directorio del fixture también permite la reproducción Godot.
+cp /ruta/a/seed.srm "$route_output/seed.srm"
+native/build/sm_pink_route /ruta/a/SuperMetroid.sfc "$route_output" /ruta/a/seed.srm tools/native_probe/fixtures/pink_prefix.inputs
+godot --headless --path . --script tools/native_probe/pink_test.gd -- --route-fixture "$route_output"
+```
+
+El prefijo contiene 2980 máscaras de botones y su manifiesto registra hashes
+de ROM, input y SRAM de referencia. El controlador usa una copia privada de
+SRAM y termina al llegar a Big Pink con vida. La planificación de drops prueba
+únicamente botones en procesos hijos y comprueba que el estado principal no
+cambió. El target queda fuera de la compilación normal y requiere POSIX.
+
+`pink_test.gd` compara 25 campos por tick entre C y Godot y comprueba los cinco
+piratas y la munición recuperada. Esta prueba no compara píxeles con el oráculo
+ni verifica Spore Spawn, las mejoras posteriores o la campaña completa.

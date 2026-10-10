@@ -177,3 +177,9 @@ python3 tools/verify_assets.py
 Las pruebas básicas verifican movimiento, salto, proyectil, Morph Ball, cambio de sala, alternancia de arte y guardado/carga. La auditoría instancia cada sala y estado con colisiones nativas y comprueba un punto de aparición libre. La prueba de progresión verifica los 261 estados por defecto, las 61 condiciones, prioridad, cuotas y persistencia. La prueba de piratas ejecuta sus ataques, comprueba daño y destrucción de láseres, mata a los cinco con proyectiles nativos y verifica puertas y cambio de estado. Estas pruebas **no demuestran equivalencia con el juego completo**.
 
 La prueba de ascensores recorre Crateria ↔ Brinstar con teclado y física del motor; comprueba pausa, bloqueo temporal de controles, retorno desde Morph Ball, comparación de arte y guardado al llegar. Los 14 trayectos se recorren además con pasos nativos deterministas. El caso de Morph Ball comprueba que el contacto con el piso permita ponerse de pie y que un techo real lo impida. Los procesos acotados deben imprimir su marcador `*_OK`; un código de salida 0 por alcanzar `--quit-after` no prueba que la verificación haya terminado.
+
+La prueba adicional `sm_pink_route` continúa hasta Big Pink: cinco piratas
+verdes, sus drops de munición, puerta roja y barrera de bombas de Dachora.
+`tools/native_probe/pink_test.gd` reproduce el registro con 25 campos por tick
+en Godot; el alcance está documentado en `tools/native_probe/README.md`.
+Spore Spawn y la campaña completa siguen pendientes.
