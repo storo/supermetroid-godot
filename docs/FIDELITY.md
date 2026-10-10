@@ -24,7 +24,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 ## Orden de trabajo pendiente
 
 1. Completar la extracción de poses, fondos, gráficos de PLM y metadatos de eventos; conservar las direcciones originales como trazabilidad.
-2. Ampliar la ruta nativa verificada hasta el primer tanque de energía y Crateria Save hacia Brinstar y Kraid, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
+2. Ampliar la continuación nativa verificada desde Crateria Save hasta Brinstar verde hacia Spore Spawn y Kraid, con puertas/elevadores/objetos reales y sin habilitar equipo de prueba.
 3. Implementar el sistema de eventos y selección de estado de sala; establecer pruebas por escena original y condición de progresión.
 4. Portar las armas, mejoras, colisiones especiales, líquidos y estaciones; comparar controles y física a 60 Hz con capturas/datos del original.
 5. Portar todas las familias de enemigos y jefes, con estados y vulnerabilidades originales.
@@ -61,6 +61,17 @@ eventos/jefes; Samus vuelve a moverse tras la animación de entrada. Los informe
 `docs/qa/native_station_*` limitan el resultado a esa ruta, tanque y estación.
 Las seis capturas de esa prueba suman 344064 píxeles RGB idénticos al oráculo
 offline. La campaña completa, demás estaciones, secretos y final siguen pendientes.
+
+`verify_green.py` comprueba 5316 ticks de continuación desde esa SRAM original.
+La genera de nuevo mediante botones desde el arranque, verifica el hash del
+guardado ya certificado C/Godot y carga una copia por los menús originales.
+Sube Parlor, rompe su pared con bombas, cruza Terminator y Green Pirates Shaft,
+atraviesa Lower Mushrooms y viaja en el ascensor hasta el pozo de Brinstar verde.
+Compara 25 campos por tick, preserva equipo/eventos/jefes y prueba movimiento
+al llegar. Siete capturas suman 401408 píxeles RGB idénticos al oráculo.
+El daño es real: llega con 9/199 de energía. No prueba todas las rutas, el
+combate de los piratas verdes, Spore Spawn, Kraid ni la campaña restante.
+Informe: `docs/qa/native_green_verification.json`.
 
 ## Investigación de la lógica C original
 

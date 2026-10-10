@@ -1,0 +1,179 @@
+{
+  "area": 1,
+  "audible_packets": 29,
+  "capacity": 5,
+  "captures": {
+    "arrival": {
+      "frame": 4862,
+      "health": 9,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        5120,
+        768
+      ],
+      "room": 39641,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "control": {
+      "frame": 5316,
+      "health": 9,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        5120,
+        1339
+      ],
+      "room": 39641,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "elevator": {
+      "frame": 4612,
+      "health": 9,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        5120,
+        512
+      ],
+      "room": 39224,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "loaded": {
+      "frame": 1155,
+      "health": 189,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        0,
+        0
+      ],
+      "room": 37845,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "mushrooms": {
+      "frame": 3886,
+      "health": 69,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        6144,
+        512
+      ],
+      "room": 39273,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "parlor": {
+      "frame": 1427,
+      "health": 189,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        256,
+        0
+      ],
+      "room": 37629,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    },
+    "pirates": {
+      "frame": 2961,
+      "health": 169,
+      "mode": 1,
+      "mode7_flags": 4,
+      "mode7_matrix": [
+        256,
+        0,
+        0,
+        256,
+        128,
+        128,
+        6400,
+        0
+      ],
+      "room": 39357,
+      "scanline_modes": [
+        1
+      ],
+      "timer_status": 0
+    }
+  },
+  "frames": 5316,
+  "green_movement": true,
+  "health": 9,
+  "items": 4100,
+  "max_health": 199,
+  "missiles": 5,
+  "original_station_sram_loaded": true,
+  "rom_unchanged": true,
+  "room": 39641,
+  "rooms": [
+    37845,
+    37629,
+    39181,
+    39357,
+    39273,
+    39224,
+    39641
+  ],
+  "saved_events_retained": true,
+  "scope": "Original Crateria station SRAM, menu/load/control, Parlor ascent/bomb gate, Terminator, Green Pirates shaft, Lower Mushrooms, original elevator and green Brinstar arrival/control",
+  "seed_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+  "source_seed_unchanged": true,
+  "state_trace_matches": true,
+  "supers": 0,
+  "whole_campaign_verified": false
+}

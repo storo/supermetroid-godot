@@ -302,6 +302,36 @@ terreno y sprites protegidos sin cambios. Además comprueba período/scroll de
 BG2, CGRAM, fade/blanking y exclusiones. La segunda prueba vuelve a comprobar
 Crateria. El alcance y las capturas están en `docs/qa/native_ceres_art_*`;
 las demás familias de assets y la campaña completa siguen pendientes.
+
+## Continuación hasta Brinstar verde
+
+```sh
+cmake --build native/build --target sm_station_route sm_green_route sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_green.py
+```
+
+La prueba genera la SRAM original de Crateria Save desde el prefijo de botones
+de partida nueva y comprueba que sus 8192 bytes coincidan con el guardado ya
+verificado entre C y Godot. Cada host arranca con una copia privada de esa SRAM,
+recorre los menús y espera la animación de carga. La continuación sube Parlor,
+cruza su pared de bombas, pasa Terminator, baja Green Pirates Shaft, atraviesa
+Lower Mushrooms y activa el ascensor original hasta Green Brinstar Main Shaft.
+Se comprueba movimiento al llegar, con Morph Ball, bombas, tanque de energía,
+misiles y los bytes de evento/jefe conservados.
+
+Son 5316 ticks de partida recargada, 25 campos idénticos por tick entre C y
+Godot y siete capturas originales con 401408 píxeles RGB idénticos al oráculo
+offline. La SRAM fuente y ROM permanecen intactas; hay audio no silencioso.
+El controlador recibe daño normal y termina con 9 de energía sobre un máximo
+de 199. No concede salud, equipo, munición, eventos ni posición. El recorrido
+atraviesa el pozo de piratas; no prueba derrotarlos ni todas sus variantes de IA.
+
+`green_route` es un ensayo opcional POSIX, fuera del binario del juego. Sus
+planificadores proponen botones en procesos hijos y sus máscaras de geometría
+son de lectura. La comprobación publicada usa `--seed` con SRAM original;
+el modo alternativo `--prefix` todavía no forma parte de esta evidencia.
+Los informes y capturas están en `docs/qa/native_green_*`. Spore Spawn, Kraid,
+otras rutas y el final siguen sin verificar.
 El redibujado de las demás familias sigue pendiente.
 
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa

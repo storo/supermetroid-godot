@@ -138,3 +138,11 @@ exclusiones. No alteran la lógica del juego. La prueba de Crateria también pas
 después de esta ampliación. Informes: `docs/qa/native_ceres_art_*` y
 `native_art_verification.json`. Este resultado cubre ese fondo y esas salas;
 el resto del redibujado y la campaña completa siguen pendientes.
+
+La continuación hasta Brinstar verde añade siete grupos
+`native_green_*_{original,enhanced,oracle}.png`: partida cargada, Parlor, pozo
+de piratas, Lower Mushrooms, ascensor, llegada y control en Brinstar. Los
+401408 píxeles originales coinciden con el oráculo offline en
+`native_green_verification.json`. Las variantes 2× mantienen el filtro actual;
+este recorrido no añade otros redibujados. El fondo nuevo de Ceres sigue
+limitado a sus tres salas y el de Crateria a Landing Site.

@@ -142,3 +142,23 @@ paquete de presentación, para comprobar scroll, CGRAM, fundidos y exclusiones;
 no escriben memoria del juego. La regresión del fondo de Crateria se ejecuta
 con `verify_art.py`. Los informes mantienen campaña y redibujado completos
 como pendientes.
+
+## Continuación desde Crateria Save a Brinstar verde
+
+```sh
+cmake --build native/build --target sm_station_route sm_green_route sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_green.py
+```
+
+La prueba regenera una SRAM genuina desde el prefijo de botones de partida
+nueva, exige el mismo hash que el guardado C/Godot previamente verificado y
+usa copias privadas. `green_route.c` carga la partida por los menús originales;
+`green_route.h` sólo envía botones normales a través de Parlor, Terminator,
+Green Pirates Shaft, Lower Mushrooms y el ascensor a Brinstar verde.
+
+`green_test.gd` reproduce los 5316 ticks de esa recarga/continuación con 25
+campos de estado idénticos y equipo/eventos intactos. El oráculo offline lee
+otra copia de la SRAM y compara siete capturas. Los originales no se modifican.
+Se documentan el daño real y el alcance en `docs/qa/native_green_*`; los
+siguientes jefes y el final siguen pendientes. El modo de input `--prefix`
+existe para planificación posterior, pero no integra el resultado publicado.

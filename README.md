@@ -115,6 +115,18 @@ RGB idénticos al oráculo offline. Requiere los targets `sm_station_route`,
 `sm_raster_oracle` y `sm_native`; evidencia en `docs/qa/native_station_*`.
 El resto de estaciones, mejoras, jefes y final siguen sin verificar.
 
+La continuación desde esa partida hasta Brinstar verde también se comprobó:
+menús y recarga original → subida de Parlor y bloques de bombas → Terminator
+→ pozo de piratas verdes → Lower Mushrooms → ascensor → control en el pozo
+principal de Brinstar. `python3 tools/native_probe/verify_green.py` genera la
+SRAM mediante botones desde una partida nueva, la carga por los menús originales
+y reproduce 5316 ticks en Godot. Sus 25 campos de estado coinciden con C y siete
+capturas suman 401408 píxeles RGB idénticos al oráculo. Conserva el equipo y los
+eventos guardados; la ROM y SRAM fuente permanecen intactas. Es un recorrido
+concreto de continuación, con daño real (termina con 9 de energía), y cubre
+el viaje en ascensor y movimiento al llegar. Spore Spawn, Kraid y el resto de
+la progresión siguen pendientes.
+
 `python3 tools/native_probe/verify_ceres_art.py` verifica el fondo nuevo durante
 16836 ticks desde una partida nueva: seis capturas con original/restaurado
 idénticos al oráculo y 1007964 píxeles protegidos sin cambios. Comprueba scroll,
