@@ -334,5 +334,27 @@ Los informes y capturas están en `docs/qa/native_green_*`. Spore Spawn, Kraid,
 otras rutas y el final siguen sin verificar.
 El redibujado de las demás familias sigue pendiente.
 
+## Atlas mejorado de Brinstar verde
+
+```sh
+python3 tools/native_probe/verify_green_art.py
+```
+
+`green_bg2_tiles.png` redibuja los 66 tiles de la paleta BG2 7 presentes en
+Green Brinstar Main Shaft (`9AD9/9AE6`). La extracción conserva las coordenadas
+de su atlas 8×8; el shader consulta el mapa nativo en VRAM para elegir cada
+pieza, incluyendo sus giros y scroll. Mantiene las animaciones de CGRAM,
+ventanas, brillo/color math y las capas de HUD, terreno y sprites.
+
+La prueba usa una SRAM original regenerada mediante botones y recorre los
+menús hasta Brinstar. Reproduce todos los campos de la continuación C/Godot,
+compara las variantes original/restaurada con el oráculo y comprueba píxeles
+protegidos, varias alturas de cámara y fixtures de presentación. Un cálculo
+independiente verifica el muestreo del atlas y sus giros, con tolerancia de
+redondeo de dos niveles RGB; la comparación del original es sin tolerancia.
+Los fixtures cambian sólo copias del paquete de dibujo. El prompt y hashes
+están en `assets/remastered/green_bg2_tiles.json`; resultados en
+`docs/qa/native_green_art_*`. Campaña y redibujado completos siguen pendientes.
+
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa
 MIT (`docs/licenses/godot-cpp.txt`). Los gráficos y audio vienen de la ROM local.

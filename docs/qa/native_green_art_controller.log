@@ -1,0 +1,370 @@
+GREEN_FRAME 1 state=0 room=0000 x=0 y=0 pose=0000 health=0/0 phase=0 ledge=0 joy=1080
+GREEN_FRAME 181 state=1 room=0000 x=0 y=0 pose=0000 health=189/199 phase=0 ledge=0 joy=1080
+GREEN_FRAME 361 state=4 room=0000 x=0 y=0 pose=0000 health=189/199 phase=0 ledge=0 joy=1080
+GREEN_FRAME 541 state=5 room=0000 x=0 y=0 pose=0000 health=189/199 phase=0 ledge=0 joy=1080
+GREEN_FRAME 595 state=5 room=93d5 x=96 y=152 pose=0000 health=189/199 phase=0 ledge=0 joy=0000
+GREEN_FRAME 721 state=7 room=93d5 x=96 y=152 pose=0000 health=189/199 phase=0 ledge=0 joy=1080
+GREEN_FRAME 901 state=8 room=93d5 x=96 y=152 pose=0000 health=189/199 phase=0 ledge=0 joy=0000
+GREEN_FRAME 1081 state=8 room=93d5 x=96 y=152 pose=0000 health=189/199 phase=0 ledge=0 joy=0000
+v1=fe
+v1=fe
+v1=f8
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_FRAME 1261 state=8 room=93d5 x=187 y=91 pose=0051 health=189/199 phase=0 ledge=0 joy=01c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_FRAME 1317 state=11 room=92fd x=236 y=139 pose=000b health=189/199 phase=0 ledge=0 joy=0000
+v1=fd
+GREEN_FRAME 1441 state=8 room=92fd x=304 y=665 pose=0037 health=189/199 phase=0 ledge=0 joy=0000
+v1=f9
+GREEN_ASCENT stage=0 ticks=62 score=103646 live_core_unchanged=1
+v1=fd
+v1=fe
+v1=fe
+GREEN_ASCENT stage=1 ticks=36 score=109576 live_core_unchanged=1
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_ASCENT stage=3 ticks=49 score=107992 live_core_unchanged=1
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_ASCENT stage=5 ticks=55 score=107880 live_core_unchanged=1
+v1=fd
+v1=f8
+GREEN_FRAME 1621 state=8 room=92fd x=453 y=411 pose=0054 health=184/199 phase=2 ledge=5 joy=8280
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_ASCENT stage=6 ticks=59 score=103180 live_core_unchanged=1
+v1=fe
+v1=fe
+GREEN_ASCENT stage=7 ticks=74 score=109032 live_core_unchanged=1
+v1=fe
+v1=fe
+GREEN_ASCENT stage=9 ticks=56 score=106392 live_core_unchanged=1
+v1=fd
+GREEN_FRAME 1801 state=8 room=92fd x=383 y=231 pose=0051 health=179/199 phase=2 ledge=9 joy=8180
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_ASCENT stage=10 ticks=90 score=101692 live_core_unchanged=1
+v1=fd
+v1=f8
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=ff
+v1=fd
+GREEN_FRAME 1981 state=8 room=92fd x=277 y=144 pose=0028 health=179/199 phase=4 ledge=11 joy=0000
+v1=f9
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=fd
+GREEN_FRAME 2161 state=8 room=92fd x=199 y=139 pose=000c health=179/199 phase=5 ledge=11 joy=0240
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 2256 state=11 room=990d x=18 y=139 pose=000c health=179/199 phase=5 ledge=11 joy=0000
+GREEN_FRAME 2341 state=11 room=990d x=1496 y=139 pose=000c health=179/199 phase=0 ledge=0 joy=0000
+v1=fe
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_FRAME 2521 state=8 room=990d x=1012 y=321 pose=000c health=179/199 phase=0 ledge=0 joy=82c0
+v1=0
+v1=0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+GREEN_FRAME 2701 state=8 room=990d x=402 y=625 pose=000c health=179/199 phase=0 ledge=0 joy=82c0
+v1=0
+v1=0
+v1=0
+GREEN_FRAME 2830 state=11 room=99bd x=16 y=651 pose=000c health=169/199 phase=0 ledge=0 joy=0000
+GREEN_FRAME 2881 state=11 room=99bd x=247 y=1163 pose=000c health=169/199 phase=0 ledge=0 joy=0000
+v1=ff
+v1=fd
+v1=f9
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 3061 state=8 room=99bd x=87 y=1192 pose=0032 health=149/199 phase=0 ledge=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 3241 state=8 room=99bd x=153 y=1337 pose=001f health=129/199 phase=0 ledge=0 joy=0200
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 3421 state=8 room=99bd x=182 y=1478 pose=0031 health=109/199 phase=0 ledge=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 3601 state=8 room=99bd x=117 y=1558 pose=0031 health=69/199 phase=0 ledge=0 joy=0100
+v1=ff
+v1=ff
+v1=ff
+v1=fd
+v1=f8
+v1=ff
+v1=ff
+GREEN_FRAME 3776 state=11 room=9969 x=20 y=1675 pose=000c health=69/199 phase=0 ledge=0 joy=0000
+GREEN_FRAME 3781 state=11 room=9969 x=1039 y=139 pose=000c health=69/199 phase=0 ledge=0 joy=0000
+v1=fe
+v1=fe
+v1=0
+v1=fe
+GREEN_FRAME 3961 state=8 room=9969 x=776 y=82 pose=001a health=69/199 phase=0 ledge=0 joy=82c0
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+GREEN_FRAME 4141 state=8 room=9969 x=502 y=82 pose=0052 health=69/199 phase=0 ledge=0 joy=82c0
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+v1=0
+v1=fe
+v1=fe
+GREEN_FRAME 4321 state=8 room=9969 x=277 y=158 pose=008a health=29/199 phase=0 ledge=0 joy=8240
+v1=ff
+v1=fd
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=fe
+v1=0
+GREEN_FRAME 4501 state=11 room=9969 x=16 y=139 pose=000c health=9/199 phase=0 ledge=0 joy=0000
+GREEN_FRAME 4502 state=11 room=9938 x=16 y=139 pose=000c health=9/199 phase=0 ledge=0 joy=0000
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 4681 state=9 room=9938 x=128 y=224 pose=0000 health=9/199 phase=0 ledge=0 joy=0000
+GREEN_FRAME 4744 state=11 room=9ad9 x=128 y=292 pose=0000 health=9/199 phase=0 ledge=0 joy=0000
+v1=ff
+v1=ff
+GREEN_FRAME 4861 state=8 room=9ad9 x=128 y=32 pose=0000 health=9/199 phase=0 ledge=0 joy=0100
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 5041 state=8 room=9ad9 x=128 y=302 pose=0000 health=9/199 phase=0 ledge=0 joy=0100
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+GREEN_FRAME 5221 state=8 room=9ad9 x=128 y=572 pose=0000 health=9/199 phase=0 ledge=0 joy=0100
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=ff
+v1=f8
+GREEN_ROUTE_OK: room=9ad9 area=1 moved=1 health=9

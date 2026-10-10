@@ -3,8 +3,14 @@ extends "res://tools/native_probe/campaign_test.gd"
 const GREEN_SAVE := "user://native_green_route_test.srm"
 const ROOMS := {0x92fd:"parlor",0x99bd:"pirates",0x9969:"mushrooms",0x9938:"elevator",0x9ad9:"arrival"}
 
+func replay_tick(_state: Dictionary) -> void:
+	pass
+
+func supplement_report(report: Dictionary) -> Dictionary:
+	return report
+
 func run() -> void:
-	capture_prefix="native_green"
+	if capture_prefix=="native_campaign":capture_prefix="native_green"
 	var args := OS.get_cmdline_user_args()
 	var index := args.find("--route-fixture")
 	require(index>=0 and index+1<args.size(),"Missing green fixture")
@@ -53,6 +59,7 @@ func run() -> void:
 			if state.room==0x9ad9:
 				if ages[state.room]==1:first_green_x=state.position.x
 				if absf(state.position.x-first_green_x)>20:moved=true
+		await replay_tick(state)
 		if tick%180==0:
 			for sample in core.get_audio():
 				if sample!=Vector2.ZERO:
@@ -74,7 +81,8 @@ func run() -> void:
 		"saved_events_retained":true,"green_movement":moved,"audible_packets":audible,"rom_unchanged":true,
 		"scope":"Original Crateria station SRAM, menu/load/control, Parlor ascent/bomb gate, Terminator, Green Pirates shaft, Lower Mushrooms, original elevator and green Brinstar arrival/control",
 		"whole_campaign_verified":false}
-	var file := FileAccess.open("res://docs/qa/native_green_route.json",FileAccess.WRITE)
+	report=supplement_report(report)
+	var file := FileAccess.open("res://docs/qa/%s_route.json" % capture_prefix,FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"  ")+"\n")
 	file.close()
 	core.close()

@@ -11,6 +11,8 @@ Los gráficos originales se decodifican de la ROM local identificada en `assets/
 - `assets/remastered/crateria_backdrop.png`: fondo nuevo, destinado al proyecto, creado con la herramienta integrada ImageGen usando `assets/extracted/references/crateria_reference.png` como referencia de colores y terreno. No altera colisiones.
 - `assets/extracted/references/ceres_bg2_original.png`: mapa original BG2 de 512×256, decodificado de VRAM 4bpp, mapa y CGRAM de Ceres. Su JSON conserva hashes, direcciones, índices y colores de paleta.
 - `assets/remastered/ceres_bg2_wall.png`: redibujado de esa referencia con la herramienta integrada ImageGen, 1774×887. Su JSON guarda el prompt final, hashes y salas de destino; los originales se conservan.
+- `assets/extracted/references/green_bg2_tiles_original.png`: atlas 128×64 de 66 tiles BG2 de Brinstar verde, decodificado de VRAM/CGRAM y conservando las coordenadas originales de cada tile 8×8. Su JSON registra índices, paleta, hashes y sala/estado.
+- `assets/remastered/green_bg2_tiles.png`: redibujado de ese atlas con ImageGen integrado, 1774×887. El prompt completo, hashes y alcance están en el JSON del mismo nombre. Conserva los espacios negros del atlas y la ubicación de cada grupo; se aplica al BG2 de `9AD9/9AE6`.
 
 `shaders/asset_lighting.gdshader` añade relieve e iluminación de superficie a los sprites ampliados, derivando normales de su propia luminancia. No cambia UV, silueta, alpha ni anclajes. F1 también desactiva este material.
 
@@ -146,3 +148,32 @@ de piratas, Lower Mushrooms, ascensor, llegada y control en Brinstar. Los
 `native_green_verification.json`. Las variantes 2× mantienen el filtro actual;
 este recorrido no añade otros redibujados. El fondo nuevo de Ceres sigue
 limitado a sus tres salas y el de Crateria a Landing Site.
+
+## Tiles BG2 de Brinstar verde
+
+`extract_green_bg2.py` decodifica 66 tiles 4bpp de la paleta 7 del pozo principal
+(`9AD9`, estado `9AE6`), a partir de un paquete nativo de VRAM/CGRAM. La sala
+original usa `LibBG_Brinstar_6_Vertical_GlowPatches` (`8F:BA37`). El atlas mantiene
+16 columnas y las filas originales 14–21; los tiles no usados quedan negros.
+ImageGen redibuja las formas azules de roca y raíces dentro de esa distribución.
+
+El shader lee los IDs y giros de la tilemap BG2 que está en VRAM, usando su
+scroll por línea. Muestrea cada pieza del atlas nuevo por separado y evita
+filtrar fuera de sus límites. Mantiene las animaciones de CGRAM 113–127,
+ventanas, color math, brillo y blanking. Conserva un 18% de la contribución
+original y protege HUD, BG1, sprites y los píxeles Scale2x copiados de otra
+celda. F1 devuelve el renderizado original del mismo estado nativo.
+
+El cambio está limitado a esa sala/estado y a los 66 IDs extraídos; no añade
+redibujados de personajes ni de las demás salas. El juego completo y el resto
+del redibujado siguen pendientes.
+
+`verify_green_art.py` pasó con 5316 ticks de continuación, nueve capturas
+originales/restauradas (516096 píxeles RGB exactos) y 1830828 píxeles protegidos
+sin cambios. Incluye tres alturas con el muro BG2 visible; un cálculo
+independiente de 433838 muestras del atlas comprobó IDs, giros y CGRAM con
+error máximo de un nivel RGB. Scroll, selección de sala/estado, fade y blanking
+conservan la composición; los fixtures de prueba
+modifican sólo copias del paquete de dibujo. Ceres y Crateria volvieron a pasar
+sus regresiones. La ROM y SRAM fuente quedaron intactas. Informes y capturas:
+`docs/qa/native_green_art_*`.

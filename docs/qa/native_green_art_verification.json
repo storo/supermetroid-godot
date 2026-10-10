@@ -1,0 +1,433 @@
+{
+  "route": {
+    "additional_art_captures": {
+      "wall_middle": {
+        "bg2_scroll": [
+          0,
+          612
+        ],
+        "camera": [
+          0.0,
+          518.0
+        ],
+        "frame": 5260,
+        "health": 9,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39641,
+        "room_state": 39654
+      },
+      "wall_upper": {
+        "bg2_scroll": [
+          0,
+          522
+        ],
+        "camera": [
+          0.0,
+          398.0
+        ],
+        "frame": 5180,
+        "health": 9,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39641,
+        "room_state": 39654
+      }
+    },
+    "area": 1,
+    "art_scope": "66 BG2 tiles in Green Brinstar Main Shaft 9AD9/9AE6, native tile map, flips, scroll/CGRAM/blank/fade; foreground and native state preserved",
+    "asset_sha256": "5d02a26d01429fdd1ea61e24b7cfd426370de8e79033fbb72bbe193ad4a317cc",
+    "audible_packets": 29,
+    "capacity": 5,
+    "captures": {
+      "arrival": {
+        "bg2_scroll": [
+          0,
+          224
+        ],
+        "camera": [
+          0.0,
+          0.0
+        ],
+        "frame": 4862,
+        "health": 9,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39641,
+        "room_state": 39654
+      },
+      "control": {
+        "bg2_scroll": [
+          0,
+          652
+        ],
+        "camera": [
+          0.0,
+          571.0
+        ],
+        "frame": 5316,
+        "health": 9,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39641,
+        "room_state": 39654
+      },
+      "elevator": {
+        "bg2_scroll": [
+          768,
+          0
+        ],
+        "camera": [
+          0.0,
+          0.0
+        ],
+        "frame": 4612,
+        "health": 9,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39224,
+        "room_state": 39237
+      },
+      "loaded": {
+        "bg2_scroll": [
+          0,
+          0
+        ],
+        "camera": [
+          0.0,
+          0.0
+        ],
+        "frame": 1155,
+        "health": 189,
+        "presentation_leaves_core_unchanged": true,
+        "room": 37845,
+        "room_state": 37858
+      },
+      "mushrooms": {
+        "bg2_scroll": [
+          576,
+          0
+        ],
+        "camera": [
+          768.0,
+          0.0
+        ],
+        "frame": 3886,
+        "health": 69,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39273,
+        "room_state": 39286
+      },
+      "parlor": {
+        "bg2_scroll": [
+          192,
+          896
+        ],
+        "camera": [
+          256.0,
+          512.0
+        ],
+        "frame": 1427,
+        "health": 189,
+        "presentation_leaves_core_unchanged": true,
+        "room": 37629,
+        "room_state": 37678
+      },
+      "pirates": {
+        "bg2_scroll": [
+          768,
+          768
+        ],
+        "camera": [
+          0.0,
+          1024.0
+        ],
+        "frame": 2961,
+        "health": 169,
+        "presentation_leaves_core_unchanged": true,
+        "room": 39357,
+        "room_state": 39370
+      }
+    },
+    "frames": 5316,
+    "full_asset_redraw_complete": false,
+    "green_movement": true,
+    "health": 9,
+    "items": 4100,
+    "max_health": 199,
+    "missiles": 5,
+    "original_station_sram_loaded": true,
+    "rom_unchanged": true,
+    "room": 39641,
+    "rooms": [
+      37845,
+      37629,
+      39181,
+      39357,
+      39273,
+      39224,
+      39641
+    ],
+    "saved_events_retained": true,
+    "scope": "Original Crateria station SRAM, menu/load/control, Parlor ascent/bomb gate, Terminator, Green Pirates shaft, Lower Mushrooms, original elevator and green Brinstar arrival/control",
+    "seed_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+    "source_seed_unchanged": true,
+    "state_trace_matches": true,
+    "supers": 0,
+    "whole_campaign_verified": false
+  },
+  "cases": [
+    {
+      "name": "arrival",
+      "bg2_scroll": [
+        0,
+        224
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "frame": 4862,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 229376,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 0,
+      "background_changed_pixels": 0
+    },
+    {
+      "name": "control",
+      "bg2_scroll": [
+        0,
+        652
+      ],
+      "camera": [
+        0.0,
+        571.0
+      ],
+      "frame": 5316,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 112888,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 116488,
+      "background_changed_pixels": 106147
+    },
+    {
+      "name": "elevator",
+      "bg2_scroll": [
+        768,
+        0
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "frame": 4612,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39224,
+      "room_state": 39237,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 229376,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 0,
+      "background_changed_pixels": 0
+    },
+    {
+      "name": "loaded",
+      "bg2_scroll": [
+        0,
+        0
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "frame": 1155,
+      "health": 189,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37845,
+      "room_state": 37858,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 229376,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 0,
+      "background_changed_pixels": 0
+    },
+    {
+      "name": "mushrooms",
+      "bg2_scroll": [
+        576,
+        0
+      ],
+      "camera": [
+        768.0,
+        0.0
+      ],
+      "frame": 3886,
+      "health": 69,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39273,
+      "room_state": 39286,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 229376,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 0,
+      "background_changed_pixels": 0
+    },
+    {
+      "name": "parlor",
+      "bg2_scroll": [
+        192,
+        896
+      ],
+      "camera": [
+        256.0,
+        512.0
+      ],
+      "frame": 1427,
+      "health": 189,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37678,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 229376,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 0,
+      "background_changed_pixels": 0
+    },
+    {
+      "name": "pirates",
+      "bg2_scroll": [
+        768,
+        768
+      ],
+      "camera": [
+        0.0,
+        1024.0
+      ],
+      "frame": 2961,
+      "health": 169,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39357,
+      "room_state": 39370,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 229376,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 0,
+      "background_changed_pixels": 0
+    },
+    {
+      "name": "wall_middle",
+      "bg2_scroll": [
+        0,
+        612
+      ],
+      "camera": [
+        0.0,
+        518.0
+      ],
+      "frame": 5260,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 138112,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 91264,
+      "background_changed_pixels": 83153
+    },
+    {
+      "name": "wall_upper",
+      "bg2_scroll": [
+        0,
+        522
+      ],
+      "camera": [
+        0.0,
+        398.0
+      ],
+      "frame": 5180,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654,
+      "pixels": 57344,
+      "original_mismatched_pixels": 0,
+      "restored_mismatched_pixels": 0,
+      "protected_pixels": 203572,
+      "protected_mismatched_pixels": 0,
+      "eligible_bg2_pixels": 25804,
+      "background_changed_pixels": 23193
+    }
+  ],
+  "display_fixture_checks": {
+    "camera_only_mismatched_pixels": 0,
+    "scroll_period_mismatched_pixels": 0,
+    "fade_zero_mismatched_pixels": 0,
+    "forced_blank_mismatched_pixels": 0,
+    "map_excluded_mismatched_pixels": 0,
+    "room_excluded_mismatched_pixels": 0,
+    "state_excluded_mismatched_pixels": 0,
+    "scroll_shift_protected_mismatched_pixels": 0,
+    "scroll_shift_bg2_changed_pixels": 115370,
+    "palette_flash_protected_mismatched_pixels": 0,
+    "palette_flash_bg2_changed_pixels": 116386,
+    "tile_flip_protected_mismatched_pixels": 0,
+    "tile_flip_bg2_changed_pixels": 115279,
+    "tile_remap_protected_mismatched_pixels": 0,
+    "tile_remap_bg2_changed_pixels": 112986
+  },
+  "independent_atlas_lookups": [
+    {
+      "name": "control",
+      "checked_pixels": 106359,
+      "max_channel_error": 1,
+      "allowed_rounding_error": 2
+    },
+    {
+      "name": "tile_flip",
+      "checked_pixels": 106849,
+      "max_channel_error": 1,
+      "allowed_rounding_error": 2
+    },
+    {
+      "name": "tile_remap",
+      "checked_pixels": 114271,
+      "max_channel_error": 1,
+      "allowed_rounding_error": 2
+    },
+    {
+      "name": "palette_flash",
+      "checked_pixels": 106359,
+      "max_channel_error": 1,
+      "allowed_rounding_error": 2
+    }
+  ],
+  "rom_unchanged": true,
+  "source_seed_unchanged": true,
+  "seed_generated_from_fresh_game_normal_inputs": true,
+  "seed_matches_verified_station_sram": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false,
+  "full_asset_redraw_complete": false
+}

@@ -162,3 +162,13 @@ otra copia de la SRAM y compara siete capturas. Los originales no se modifican.
 Se documentan el daño real y el alcance en `docs/qa/native_green_*`; los
 siguientes jefes y el final siguen pendientes. El modo de input `--prefix`
 existe para planificación posterior, pero no integra el resultado publicado.
+
+`verify_green_art.py` regenera esa misma SRAM/continuación para comprobar los
+66 tiles BG2 redibujados en el pozo de Brinstar. `green_art_test.gd` reutiliza
+la comparación de 25 campos por tick y añade capturas original, restaurada,
+filtrada y redibujada, capas y fixtures de scroll/CGRAM/giros/IDs. Las copias
+de VRAM/raster de prueba quedan en su directorio temporal. La comparación
+independiente del atlas contempla giros, filtrado y color math; permite sólo
+dos niveles de redondeo RGB. El original/restaurado se compara sin tolerancia.
+`extract_green_bg2.py CHECKPOINT` reproduce la referencia del atlas desde un
+checkpoint de `sm_raster_oracle` en `9AD9`, usando tiles y CGRAM.

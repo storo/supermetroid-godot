@@ -6,6 +6,7 @@ uniform sampler2D sub_tex : filter_nearest, repeat_disable;
 uniform bool enhanced=true;
 uniform sampler2D backdrop_tex : filter_linear, repeat_disable;
 uniform sampler2D ceres_wall_tex : filter_linear, repeat_enable;
+uniform sampler2D green_bg2_tiles_tex : filter_linear, repeat_disable;
 uniform bool remastered_background_enabled=false;
 uniform int remastered_background_kind=0;
 uniform vec2 backdrop_camera=vec2(0.0);
@@ -71,6 +72,26 @@ vec3 ceres_reference_color(int index) {
 	if(index==87)return vec3(0.0,2.0,5.0);
 	return vec3(0.0,0.0,7.0);
 }
+vec3 green_reference_color(int index) {
+	// CGRAM at the source atlas checkpoint. Preserve native palette animation.
+	if(index==113)return vec3(0.0,4.0,18.0);
+	if(index==114)return vec3(0.0,0.0,14.0);
+	if(index==115)return vec3(0.0,0.0,3.0);
+	if(index==116)return vec3(0.0,6.0,9.0);
+	if(index==117)return vec3(0.0,5.0,7.0);
+	if(index==118)return vec3(0.0,4.0,5.0);
+	if(index==119)return vec3(0.0,2.0,4.0);
+	if(index==120 || index==126)return vec3(31.0,22.0,5.0);
+	if(index==121)return vec3(23.0,14.0,5.0);
+	if(index==122)return vec3(14.0,7.0,5.0);
+	if(index==123)return vec3(6.0,4.0,5.0);
+	if(index==124 || index==125)return vec3(24.0);
+	return vec3(0.0,0.0,2.0);
+}
+bool green_tile_supported(int number) {
+	return (number>=236 && number<=239) || (number>=252 && number<=255)
+		|| (number>=291 && number<=303) || (number>=307 && number<=351);
+}
 vec3 remastered_background(ivec2 p,ivec2 quadrant,vec2 cell,vec3 original) {
 	// BG2 is the distant scenery. Protect the HUD, BG1 terrain, all sprites,
 	// blanking and pixels whose Scale2x neighbourhood crosses a layer boundary.
@@ -85,6 +106,26 @@ vec3 remastered_background(ivec2 p,ivec2 quadrant,vec2 cell,vec3 original) {
 		vec2 uv=(cell+vec2(float(raster_word(p.y,44)),1.0+float(raster_word(p.y,46))))/vec2(512.0,256.0);
 		color=texture(ceres_wall_tex,uv).rgb*31.0;
 		color=clamp(color+vec3(palette5(p.y,main.x))-ceres_reference_color(main.x),vec3(0.0),vec3(31.0));
+	} else if(remastered_background_kind==3) {
+		// Follow the native BG2 map in VRAM and its live tile IDs/flips.
+		// Every replacement retains the original tile's map coordinates.
+		// Keep Scale2x pixels copied from another cell on the original path.
+		if(main!=center || main.x<113 || main.x>127 || raster_byte(p.y,65)!=1 || raster_word(p.y,42)!=0)return original;
+		ivec2 mapped=(p+ivec2(raster_word(p.y,44),1+raster_word(p.y,46)))&ivec2(1023);
+		ivec2 tile=mapped>>ivec2(3);
+		int address=raster_word(p.y,40)+(tile.y&31)*32+(tile.x&31);
+		if((tile.x&32)!=0)address+=1024;
+		int word=vram_word(address&32767),number=word&1023;
+		if(((word>>10)&7)!=7 || !green_tile_supported(number))return original;
+		vec2 within=vec2(mapped&ivec2(7))+fract(cell);
+		if((word&16384)!=0)within.x=8.0-within.x;
+		if((word&32768)!=0)within.y=8.0-within.y;
+		vec2 texel=1.0/vec2(textureSize(green_bg2_tiles_tex,0));
+		vec2 inset=texel*vec2(128.0,64.0)*0.5;
+		within=clamp(within,inset,vec2(8.0)-inset);
+		vec2 uv=(vec2(float(number%16)*8.0,float(number/16-14)*8.0)+within)/vec2(128.0,64.0);
+		color=texture(green_bg2_tiles_tex,uv).rgb*31.0;
+		color=clamp(color+vec3(palette5(p.y,main.x))-green_reference_color(main.x),vec3(0.0),vec3(31.0));
 	} else {
 		vec2 uv=vec2((cell.x+backdrop_camera.x*0.25)/1024.0,
 			(cell.y-32.0)/256.0+0.1+max(backdrop_camera.y-512.0,0.0)/4096.0);

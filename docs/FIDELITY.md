@@ -6,7 +6,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | --- | --- | --- |
 | Ejecución nativa de Godot | CharacterBody2D, StaticBody2D, GDScript, shaders; pruebas de ejecución | Base implementada |
 | Extraer assets de la ROM proporcionada | SHA-256, tiles 4bpp, paletas, DMA/OAM, manifiesto | Implementado para tilesets, 19 conjuntos de Samus (nueve movimientos en ambos sentidos y pose frontal), nave, ascensor y atlas de enemigos |
-| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site y pared original de Ceres redibujada en tres salas/dos estados con máscaras y scroll/paleta nativos, alternancia F1 | Dos fondos integrados; redibujado completo de assets pendiente |
+| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site, pared de Ceres redibujada en tres salas/dos estados y 66 tiles BG2 de Brinstar verde redibujados con IDs/giros/scroll/paleta nativos, alternancia F1 | Tres familias de fondo integradas; redibujado completo de assets pendiente |
 | Conservar todas las salas y geometría | 261 salas / 322 estados; auditoría nativa | Datos importados; comportamiento y fondos originales incompletos |
 | Conservar todas las animaciones de Samus | 19 conjuntos renderizados desde OAM; gráficos específicos para izquierda/derecha y pose frontal del ascensor | Incompleto; faltan poses, tiempos y asimetrías |
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
@@ -72,6 +72,15 @@ al llegar. Siete capturas suman 401408 píxeles RGB idénticos al oráculo.
 El daño es real: llega con 9/199 de energía. No prueba todas las rutas, el
 combate de los piratas verdes, Spore Spawn, Kraid ni la campaña restante.
 Informe: `docs/qa/native_green_verification.json`.
+
+La mejora de 66 tiles BG2 en `9AD9/9AE6` se comprobó en esa continuación,
+con nueve capturas original/restaurada y 516096 píxeles RGB exactos, 1830828
+píxeles protegidos sin cambios y varias alturas con el fondo visible. Un
+cálculo independiente de 433838 muestras verifica la selección del atlas,
+giros y CGRAM con un nivel RGB de error máximo; se permite hasta dos por
+redondeo. La presentación deja el estado nativo intacto. Las regresiones de
+Ceres/Crateria pasaron. Este alcance no demuestra el resto de assets o campaña;
+informe `docs/qa/native_green_art_verification.json`.
 
 ## Investigación de la lógica C original
 

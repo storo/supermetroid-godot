@@ -6,6 +6,7 @@ const LAYER_SHADER = preload("res://shaders/raster_layers.gdshader")
 const COMPOSITE_SHADER = preload("res://shaders/raster_composite.gdshader")
 const CRATERIA_BACKDROP = preload("res://assets/remastered/crateria_backdrop.png")
 const CERES_WALL = preload("res://assets/remastered/ceres_bg2_wall.png")
+const GREEN_BG2_TILES = preload("res://assets/remastered/green_bg2_tiles.png")
 const CERES_WALL_STATES := {
 	0xdf8d:[0xdf9f,0xdfb9],
 	0xdfd7:[0xdfe9,0xe003],
@@ -90,6 +91,7 @@ func _ready() -> void:
 	composite.set_shader_parameter("sub_tex",sub_view.get_texture())
 	composite.set_shader_parameter("backdrop_tex",CRATERIA_BACKDROP)
 	composite.set_shader_parameter("ceres_wall_tex",CERES_WALL)
+	composite.set_shader_parameter("green_bg2_tiles_tex",GREEN_BG2_TILES)
 	quad(self,composite)
 
 func present(snapshot: Dictionary) -> void:
@@ -105,10 +107,12 @@ func present(snapshot: Dictionary) -> void:
 	composite.set_shader_parameter("enhanced",enhanced)
 	# Select art by the native room and gameplay state, never by palette alone.
 	# Ceres' three matching rooms share the original StatueHall BG2 library.
-	# Other Ceres libraries, Mode 7, menus and transitions keep their own art.
+	# Green Brinstar uses its native BG2 tile atlas and map. Other libraries,
+	# Mode 7, menus and transitions keep their own art.
 	var room: int=snapshot.get("room",0)
 	var kind := 1 if room==0x91f8 else 0
 	if CERES_WALL_STATES.has(room) and snapshot.get("room_state",0) in CERES_WALL_STATES[room]:kind=2
+	if room==0x9ad9 and snapshot.get("room_state",0)==0x9ae6:kind=3
 	composite.set_shader_parameter("remastered_background_kind",kind)
 	composite.set_shader_parameter("remastered_background_enabled",enhanced and remastered_backgrounds and snapshot.get("state",0)==8 and kind!=0)
 	composite.set_shader_parameter("backdrop_camera",snapshot.get("camera",Vector2.ZERO))

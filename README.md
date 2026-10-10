@@ -47,6 +47,11 @@ mayor detalle. Sigue el desplazamiento original de BG2 y los cambios de paleta,
 incluido el escape; HUD, terreno y sprites mantienen sus capas. F1 restaura el
 original en el mismo estado de juego.
 
+El pozo principal de Brinstar verde también usa sus 66 tiles BG2 redibujados
+con ImageGen. Conserva los índices, posiciones y giros de cada pieza en el mapa
+nativo, además de las animaciones de paleta. Se aplica a esa sala/estado;
+F1 recupera el original y las capas del HUD, terreno y sprites se conservan.
+
 | Acción | Tecla |
 | --- | --- |
 | Mover | A/D o flechas |
@@ -80,6 +85,7 @@ También hay bindings de mando. La partida se guarda en el directorio `user://` 
 - Los siete pares de ascensores usan posiciones y dirección de la población original, velocidad de 90 px/s, animación de dos cuadros, pose frontal de Samus y demora de 48 ticks antes de la transición descendente. Se puede volver desde Morph Ball. Los disparadores virtuales se conservan separados de las puertas completas.
 - Fondo nuevo de Crateria creado a partir de la referencia extraída, lluvia, partículas, resplandor y viñeta discreta.
 - Fondo de pared de Ceres redibujado con ImageGen a partir del mapa BG2 original; integrado en tres salas y sus estados de entrada/escape de la campaña nativa.
+- Atlas de 66 tiles BG2 de Brinstar verde redibujados con ImageGen a partir de VRAM/CGRAM, integrado con los índices y giros originales en el pozo principal nativo.
 
 Quedan por reconstruir los disparadores de la mayoría de eventos de la historia, jefes, mayoría de IA, secuencias de Ceres y final, música SPC, comportamiento completo de PLM, líquidos y arena, todas las mejoras y fidelidad exacta de la física y las animaciones. Las puertas verdes/amarillas necesitan sus armas; varias puertas grises dependen de enemigos o secuencias todavía pendientes. El visor de salas permite abrirlas para revisar el mapa.
 
@@ -126,6 +132,15 @@ eventos guardados; la ROM y SRAM fuente permanecen intactas. Es un recorrido
 concreto de continuación, con daño real (termina con 9 de energía), y cubre
 el viaje en ascensor y movimiento al llegar. Spore Spawn, Kraid y el resto de
 la progresión siguen pendientes.
+
+`python3 tools/native_probe/verify_green_art.py` comprueba los tiles BG2
+redibujados de Brinstar en esa continuación. Nueve capturas originales y
+restauradas suman 516096 píxeles RGB idénticos al oráculo; 1830828 píxeles
+protegidos mantienen HUD, terreno y sprites. Un cálculo independiente comprueba
+433838 muestras del atlas, incluidos cambios de IDs, giros y CGRAM, con error
+máximo de un nivel RGB. También verifica scroll, exclusiones, fade y blanking.
+La ROM/SRAM fuente permanecen intactas; campaña y redibujado completos siguen
+pendientes. Evidencia: `docs/qa/native_green_art_verification.json`.
 
 `python3 tools/native_probe/verify_ceres_art.py` verifica el fondo nuevo durante
 16836 ticks desde una partida nueva: seis capturas con original/restaurado

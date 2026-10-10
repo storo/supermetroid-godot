@@ -1,0 +1,22 @@
+{
+  "tool_mode": "built-in image_gen edit",
+  "prompt": "Use case: style-transfer. Asset type: high-resolution 2D game background tile atlas, native Godot remake. Edit target: the supplied original Green Brinstar BG2 atlas extracted from the user's Super Metroid ROM. Primary request: redraw the existing indigo-blue organic cave wall, twisted roots and rock fragments with crisp hand-painted detail, depth and subtle blue-violet highlights while faithfully keeping the original artwork layout. This is a technical texture atlas, NOT a scene or screenshot. Composition invariants: exact 2:1 aspect ratio; preserve every existing cluster's position, extent, orientation and silhouette; preserve all empty black cells and the empty black upper left area. The source is a 16-column by 8-row grid of 8x8 native tile cells, enlarged proportionally; keep the cell grid locations fixed, do not rearrange or join separated clusters, do not add separators, margins or gutters. The larger connected dark blue root/rock cluster fills most of the lower half; the small isolated blue clusters stay at the same upper right locations. Improve detail inside the existing shapes, preserving the dark near-black background and subdued blue palette suitable for distant scenery. Orthographic flat asset sheet; no perspective. No characters, doors, platforms, UI, labels, text, watermarks or new objects. Keep seams between adjacent original pieces coherent so the native game can assemble the same wall.",
+  "reference": "assets/extracted/references/green_bg2_tiles_original.png",
+  "reference_manifest": "assets/extracted/references/green_bg2_tiles_original.json",
+  "description": "Hand-painted replacement of the 66 decoded Green Brinstar main-shaft BG2 tiles. Native 16-column atlas, tile IDs and flips remain authoritative; source black gaps retained.",
+  "scope": {
+    "room": "9AD9",
+    "room_state": "9AE6",
+    "layer": "BG2",
+    "palette": 7,
+    "first_tile": 224,
+    "tile_columns": 16,
+    "tile_rows": 8,
+    "tile_size": 8,
+    "full_asset_redraw_complete": false
+  },
+  "asset_sha256": "5d02a26d01429fdd1ea61e24b7cfd426370de8e79033fbb72bbe193ad4a317cc",
+  "reference_sha256": "c15538da263847d55de2c47771388f0a318f0159df3fff0ea68fabedea36eb23",
+  "width": 1774,
+  "height": 887
+}

@@ -1,0 +1,172 @@
+{
+  "additional_art_captures": {
+    "wall_middle": {
+      "bg2_scroll": [
+        0,
+        612
+      ],
+      "camera": [
+        0.0,
+        518.0
+      ],
+      "frame": 5260,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654
+    },
+    "wall_upper": {
+      "bg2_scroll": [
+        0,
+        522
+      ],
+      "camera": [
+        0.0,
+        398.0
+      ],
+      "frame": 5180,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654
+    }
+  },
+  "area": 1,
+  "art_scope": "66 BG2 tiles in Green Brinstar Main Shaft 9AD9/9AE6, native tile map, flips, scroll/CGRAM/blank/fade; foreground and native state preserved",
+  "asset_sha256": "5d02a26d01429fdd1ea61e24b7cfd426370de8e79033fbb72bbe193ad4a317cc",
+  "audible_packets": 29,
+  "capacity": 5,
+  "captures": {
+    "arrival": {
+      "bg2_scroll": [
+        0,
+        224
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "frame": 4862,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654
+    },
+    "control": {
+      "bg2_scroll": [
+        0,
+        652
+      ],
+      "camera": [
+        0.0,
+        571.0
+      ],
+      "frame": 5316,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39641,
+      "room_state": 39654
+    },
+    "elevator": {
+      "bg2_scroll": [
+        768,
+        0
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "frame": 4612,
+      "health": 9,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39224,
+      "room_state": 39237
+    },
+    "loaded": {
+      "bg2_scroll": [
+        0,
+        0
+      ],
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "frame": 1155,
+      "health": 189,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37845,
+      "room_state": 37858
+    },
+    "mushrooms": {
+      "bg2_scroll": [
+        576,
+        0
+      ],
+      "camera": [
+        768.0,
+        0.0
+      ],
+      "frame": 3886,
+      "health": 69,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39273,
+      "room_state": 39286
+    },
+    "parlor": {
+      "bg2_scroll": [
+        192,
+        896
+      ],
+      "camera": [
+        256.0,
+        512.0
+      ],
+      "frame": 1427,
+      "health": 189,
+      "presentation_leaves_core_unchanged": true,
+      "room": 37629,
+      "room_state": 37678
+    },
+    "pirates": {
+      "bg2_scroll": [
+        768,
+        768
+      ],
+      "camera": [
+        0.0,
+        1024.0
+      ],
+      "frame": 2961,
+      "health": 169,
+      "presentation_leaves_core_unchanged": true,
+      "room": 39357,
+      "room_state": 39370
+    }
+  },
+  "frames": 5316,
+  "full_asset_redraw_complete": false,
+  "green_movement": true,
+  "health": 9,
+  "items": 4100,
+  "max_health": 199,
+  "missiles": 5,
+  "original_station_sram_loaded": true,
+  "rom_unchanged": true,
+  "room": 39641,
+  "rooms": [
+    37845,
+    37629,
+    39181,
+    39357,
+    39273,
+    39224,
+    39641
+  ],
+  "saved_events_retained": true,
+  "scope": "Original Crateria station SRAM, menu/load/control, Parlor ascent/bomb gate, Terminator, Green Pirates shaft, Lower Mushrooms, original elevator and green Brinstar arrival/control",
+  "seed_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+  "source_seed_unchanged": true,
+  "state_trace_matches": true,
+  "supers": 0,
+  "whole_campaign_verified": false
+}

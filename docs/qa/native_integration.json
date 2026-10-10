@@ -1,6 +1,6 @@
 {
   "complete_remake_verified": false,
-  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration; native Climb/Parlor/Morph passage/Flyway five-missile door/bomb pickup/Bomb Torizo defeat/bomb placement and standing control; complete fresh-game input/state replay and seven original RGB checkpoints; Terminator energy tank, grey exit and Parlor bomb barriers, Crateria Save original dialog/write, 8192-byte C/Godot-identical SRAM, close/reopen through original menus, restored inventory/events and movement, six RGB checkpoints; original Ceres StatueHall BG2 decoded and redrawn with ImageGen, integrated in three rooms/both states using native BG2 scroll and CGRAM, six original/restored RGB checkpoints, protected layers and display-only scroll/palette/fade/exclusion checks; verified original-SRAM continuation through Crateria Save/Parlor/Terminator/Green Pirates Shaft/Lower Mushrooms/original elevator to green Brinstar control, 25-field C/Godot replay and seven original RGB checkpoints",
+  "scope": "Native Godot integration; Ceres, early Zebes, Morph Ball, first missile tank/message/weapon use, return elevator, original Pit pirates/death quota/Zebes awakening, controls/lifecycle; remastered Landing Site BG2/parallax with protected layers and original restoration; native Climb/Parlor/Morph passage/Flyway five-missile door/bomb pickup/Bomb Torizo defeat/bomb placement and standing control; complete fresh-game input/state replay and seven original RGB checkpoints; Terminator energy tank, grey exit and Parlor bomb barriers, Crateria Save original dialog/write, 8192-byte C/Godot-identical SRAM, close/reopen through original menus, restored inventory/events and movement, six RGB checkpoints; original Ceres StatueHall BG2 decoded and redrawn with ImageGen, integrated in three rooms/both states using native BG2 scroll and CGRAM, six original/restored RGB checkpoints, protected layers and display-only scroll/palette/fade/exclusion checks; verified original-SRAM continuation through Crateria Save/Parlor/Terminator/Green Pirates Shaft/Lower Mushrooms/original elevator to green Brinstar control, 25-field C/Godot replay and seven original RGB checkpoints; redrawn 66 native Green Brinstar BG2 tiles in 9AD9/9AE6 selected from live VRAM map with native IDs/flips/scroll/CGRAM, nine original/restored RGB checkpoints, protected layers, display fixtures and independent atlas sampling checks; Ceres/Crateria art regressions rerun",
   "reference_revision": "578f90b3cc49557bb70060ad033bb90b8cf8ac50",
   "godot_cpp_revision": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
   "godot_version": "4.7.1.stable.official.a13da4feb",
@@ -377,6 +377,41 @@
       ],
       "errors": [],
       "process_exit": 0
+    },
+    "native_green_art_station.log": {
+      "terminal_markers": [
+        "STATION_ROUTE_OK: tank=1 saved=1 writes=6 station=1"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_green_art_controller.log": {
+      "terminal_markers": [
+        "GREEN_ROUTE_OK: room=9ad9 area=1 moved=1 health=9"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_green_art_godot.log": {
+      "terminal_markers": [
+        "GREEN_GODOT_OK: 5316 saved-game ticks; native menu/station/Parlor/Terminator/pirates/mushrooms/elevator/green Brinstar control; C trace parity, source SRAM and ROM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_green_art_oracle.log": {
+      "terminal_markers": [
+        "RASTER_ORACLE_OK: 9 replay fixtures from 5316 native input ticks"
+      ],
+      "errors": [],
+      "process_exit": 0
+    },
+    "native_green_art_verification.log": {
+      "terminal_markers": [
+        "GREEN_ART_VERIFICATION_OK: 5316 original saved-game ticks; 66 BG2 tiles; 516096 exact original/restored RGB pixels; 1830828 protected pixels unchanged; native atlas IDs/flips/scroll/CGRAM; ROM/SRAM intact"
+      ],
+      "errors": [],
+      "process_exit": 0
     }
   },
   "pixel_comparison_report": "docs/qa/native_raster_comparison.json",
@@ -390,5 +425,6 @@
   "station_verification_report": "docs/qa/native_station_verification.json",
   "station_seed_io_report": "docs/qa/native_station_seed_io.json",
   "ceres_art_verification_report": "docs/qa/native_ceres_art_verification.json",
-  "green_verification_report": "docs/qa/native_green_verification.json"
+  "green_verification_report": "docs/qa/native_green_verification.json",
+  "green_art_verification_report": "docs/qa/native_green_art_verification.json"
 }
