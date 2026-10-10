@@ -87,6 +87,15 @@ la integración aún requiere comparación y correcciones.
 
 ## Evidencia y límites
 
+La continuación desde Charge Beam ya comprueba tres saltos de pared originales,
+regreso por el túnel de Morph Ball y movimiento de pie en Big Pink. Son 10503
+ticks con 29 campos idénticos entre C y Godot; los últimos 431 ticks realizan
+la salida sin cambiar salud, equipo, munición ni eventos. Ocho capturas suman
+458752 píxeles RGB idénticos al oráculo offline. El ensayo recrea la SRAM de
+Crateria desde controles normales y conserva los archivos fuente. Evidencia:
+`docs/qa/native_pink_ascent_verification.json`. No verifica Spore Spawn ni
+la campaña completa.
+
 `godot_test.gd` verifica registro, propiedad única, 18000 ticks, llegada a Ceres,
 movimiento, muestras de audio no silenciosas, tamaños de datos de dibujo y
 descriptores de Mode 7, cierre/reinicio e integridad de ROM. La captura visual

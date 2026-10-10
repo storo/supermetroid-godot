@@ -1,0 +1,331 @@
+{
+  "route": {
+    "audible_packets": 58,
+    "beams": 4096,
+    "capacity": 10,
+    "captures": {
+      "alcove_control": {
+        "camera": [
+          524.0,
+          1787.0
+        ],
+        "frame": 10072,
+        "health": 24,
+        "movement_type": 5,
+        "pose": 39,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 620.0,
+        "y": 1920.0
+      },
+      "control": {
+        "camera": [
+          517.0,
+          1535.0
+        ],
+        "frame": 10503,
+        "health": 24,
+        "movement_type": 0,
+        "pose": 1,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 640.0,
+        "y": 1675.0
+      },
+      "exit_standing": {
+        "camera": [
+          528.0,
+          1535.0
+        ],
+        "frame": 10378,
+        "health": 24,
+        "movement_type": 5,
+        "pose": 40,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 664.0,
+        "y": 1680.0
+      },
+      "normal_jump": {
+        "camera": [
+          618.0,
+          1716.0
+        ],
+        "frame": 10162,
+        "health": 24,
+        "movement_type": 2,
+        "pose": 81,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 714.0,
+        "y": 1863.0
+      },
+      "top_platform": {
+        "camera": [
+          593.0,
+          1535.0
+        ],
+        "frame": 10307,
+        "health": 24,
+        "movement_type": 0,
+        "pose": 166,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 714.0,
+        "y": 1675.0
+      },
+      "tunnel_morph": {
+        "camera": [
+          566.0,
+          1535.0
+        ],
+        "frame": 10358,
+        "health": 24,
+        "movement_type": 4,
+        "pose": 31,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 693.0,
+        "y": 1689.0
+      },
+      "wall_first": {
+        "camera": [
+          633.0,
+          1657.0
+        ],
+        "frame": 10202,
+        "health": 24,
+        "movement_type": 20,
+        "pose": 132,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 730.0,
+        "y": 1817.0
+      },
+      "wall_third": {
+        "camera": [
+          649.0,
+          1606.0
+        ],
+        "frame": 10254,
+        "health": 24,
+        "movement_type": 20,
+        "pose": 132,
+        "presentation_leaves_core_unchanged": true,
+        "room": 40217,
+        "room_state": 40230,
+        "x": 746.0,
+        "y": 1751.0
+      }
+    },
+    "columns_compared_per_tick": 29,
+    "frames": 10503,
+    "health": 24,
+    "health_and_equipment_retained_during_ascent": true,
+    "items": 4100,
+    "max_health": 199,
+    "missiles": 5,
+    "original_station_sram_loaded": true,
+    "prefix_frame": 10072,
+    "rom_unchanged": true,
+    "room": 40217,
+    "saved_events_retained": true,
+    "seed_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+    "source_seed_unchanged": true,
+    "spore_spawn_verified": false,
+    "standing_movement_after_exit": true,
+    "state_trace_matches": true,
+    "wall_jump_frames": 6,
+    "wall_jumps": [
+      {
+        "frame": 10202,
+        "pose": 132,
+        "x": 730.0,
+        "y": 1817.0
+      },
+      {
+        "frame": 10217,
+        "pose": 132,
+        "x": 730.0,
+        "y": 1772.0
+      },
+      {
+        "frame": 10254,
+        "pose": 132,
+        "x": 746.0,
+        "y": 1751.0
+      }
+    ],
+    "whole_campaign_verified": false
+  },
+  "cases": [
+    {
+      "name": "alcove_control",
+      "camera": [
+        524.0,
+        1787.0
+      ],
+      "frame": 10072,
+      "health": 24,
+      "movement_type": 5,
+      "pose": 39,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 620.0,
+      "y": 1920.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "control",
+      "camera": [
+        517.0,
+        1535.0
+      ],
+      "frame": 10503,
+      "health": 24,
+      "movement_type": 0,
+      "pose": 1,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 640.0,
+      "y": 1675.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "exit_standing",
+      "camera": [
+        528.0,
+        1535.0
+      ],
+      "frame": 10378,
+      "health": 24,
+      "movement_type": 5,
+      "pose": 40,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 664.0,
+      "y": 1680.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "normal_jump",
+      "camera": [
+        618.0,
+        1716.0
+      ],
+      "frame": 10162,
+      "health": 24,
+      "movement_type": 2,
+      "pose": 81,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 714.0,
+      "y": 1863.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "top_platform",
+      "camera": [
+        593.0,
+        1535.0
+      ],
+      "frame": 10307,
+      "health": 24,
+      "movement_type": 0,
+      "pose": 166,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 714.0,
+      "y": 1675.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "tunnel_morph",
+      "camera": [
+        566.0,
+        1535.0
+      ],
+      "frame": 10358,
+      "health": 24,
+      "movement_type": 4,
+      "pose": 31,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 693.0,
+      "y": 1689.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "wall_first",
+      "camera": [
+        633.0,
+        1657.0
+      ],
+      "frame": 10202,
+      "health": 24,
+      "movement_type": 20,
+      "pose": 132,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 730.0,
+      "y": 1817.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    },
+    {
+      "name": "wall_third",
+      "camera": [
+        649.0,
+        1606.0
+      ],
+      "frame": 10254,
+      "health": 24,
+      "movement_type": 20,
+      "pose": 132,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230,
+      "x": 746.0,
+      "y": 1751.0,
+      "pixels": 57344,
+      "mismatched_pixels": 0,
+      "max_channel_error": 0
+    }
+  ],
+  "rom_unchanged": true,
+  "source_seed_unchanged": true,
+  "seed_generated_from_fresh_game_normal_inputs": true,
+  "seed_matches_verified_station_sram": true,
+  "seed_is_original_sram_not_save_state": true,
+  "controller_uses_only_normal_joypad_inputs": true,
+  "oracle_used_by_gameplay": false,
+  "whole_campaign_verified": false,
+  "spore_spawn_verified": false
+}

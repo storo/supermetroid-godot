@@ -213,3 +213,14 @@ pasaron sus regresiones después de compartir el sampler del atlas activo.
 ROM y SRAM fuente quedan intactas. El estado del escape final `9348`, las
 demás salas de esta biblioteca, Spore Spawn y la campaña completa siguen
 pendientes. Evidencia: `docs/qa/native_parlor_art_*`.
+
+`verify_pink_ascent.py` comprueba la vuelta desde el recinto de Charge Beam al
+suelo principal de Big Pink mediante tres saltos de pared y el túnel de Morph
+Ball. El recorrido completo contiene 10503 ticks, con 29 campos idénticos entre
+C y Godot; los últimos 431 ticks conservan energía 24/199, cinco misiles,
+capacidad 10, equipo y eventos. Termina con movimiento de pie y sin bombas
+activas. Ocho capturas suman 458752 píxeles RGB idénticos al oráculo offline y
+su presentación no cambia el núcleo. La SRAM de Crateria se regenera desde
+inputs de partida nueva; ROM y SRAM fuente quedan intactas. Esto verifica
+las mecánicas originales en este tramo, no Spore Spawn ni la campaña completa.
+Evidencia: `docs/qa/native_pink_ascent_verification.json`.

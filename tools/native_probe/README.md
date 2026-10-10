@@ -55,6 +55,26 @@ sólo esos fotogramas. La prueba de navegación del menú usa
 
 Licencia del código de referencia: `docs/licenses/snesrev-sm.txt`.
 
+## Regreso desde Charge Beam
+
+`pink_ascent_route.c` continúa el prefijo certificado de Charge Beam mediante
+botones originales: tres saltos de pared, túnel en Morph Ball y movimiento de
+pie en Big Pink. El prefijo contiene únicamente 10072 máscaras de botones;
+los 431 ticks siguientes recuperan el control conservando salud, munición,
+equipo y eventos. No concede objetos ni cambia memoria del juego.
+
+```sh
+cmake --build native/build --target sm_pink_ascent_route sm_station_route sm_native sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_pink_ascent.py
+```
+
+La comprobación regenera la SRAM original de Crateria desde una partida nueva,
+reproduce 10503 ticks en Godot, compara 29 campos por tick y ocho capturas con
+458752 píxeles RGB idénticos al oráculo offline. Las capturas usan un SubViewport
+propio y conservan el estado del núcleo. El resultado termina con energía
+24/199, cinco misiles y capacidad 10. Los informes `docs/qa/native_pink_ascent_*`
+registran el alcance; Spore Spawn y la campaña completa siguen pendientes.
+
 ## Recorrido hasta bombas y Bomb Torizo
 
 `bomb_route.c` y `bomb_route.h` prolongan el recorrido de despertar de Zebes.

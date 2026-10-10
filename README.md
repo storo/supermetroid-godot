@@ -101,6 +101,13 @@ El guardado rápido se habilita al terminar el viaje en ascensor, para conservar
 
 Consulta `docs/FIDELITY.md` para los requisitos del juego completo, `docs/ART.md` para el origen del arte y `docs/qa/` para pruebas y capturas.
 
+También se verificó la salida del recinto de Charge Beam: tres saltos de pared,
+paso por el túnel en Morph Ball y regreso al control de pie en Big Pink.
+`verify_pink_ascent.py` compara 10503 ticks y 29 campos de estado por tick entre
+C y Godot, y ocho capturas con 458752 píxeles RGB idénticos al oráculo offline.
+Conserva energía 24/199, cinco misiles, capacidad 10 y los eventos originales.
+Spore Spawn y la campaña completa siguen pendientes.
+
 Hay además una integración independiente de las rutinas C de la lógica original
 mediante GDExtension en `native/`. Se verificó el recorrido Ceres → Ridley → escape
 → llegada a Landing Site → Morph Ball → primeros misiles → despertar de Zebes
