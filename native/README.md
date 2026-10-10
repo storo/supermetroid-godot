@@ -358,3 +358,22 @@ están en `assets/remastered/green_bg2_tiles.json`; resultados en
 
 Licencias: la referencia usa MIT (`docs/licenses/snesrev-sm.txt`); godot-cpp usa
 MIT (`docs/licenses/godot-cpp.txt`). Los gráficos y audio vienen de la ROM local.
+
+## Fondo mejorado de Big Pink
+
+`pink_bg2_tiles.png` redibuja los 16 tiles originales del BG2 de Big Pink,
+con referencia extraída de VRAM y CGRAM. El mapa nativo conserva los IDs,
+giros, scroll por línea y paleta; el reemplazo se limita a `9D19/9D26` durante
+gameplay. HUD, BG1 y sprites mantienen sus capas. F1 restaura el original.
+
+`python3 tools/native_probe/verify_pink_art.py` regenera una SRAM original
+mediante botones desde el arranque y la carga por los menús originales.
+Reproduce 8241 ticks con 25 campos por tick idénticos C/Godot, hasta Big Pink
+y movimiento dentro de esa sala. Sus seis capturas tienen 344064 píxeles
+RGB originales/restaurados idénticos al oráculo; 638316 píxeles protegidos
+quedan intactos. El cálculo independiente de 562644 muestras verifica IDs,
+giros y cambios de CGRAM, con un nivel RGB de error máximo. La ROM y SRAM
+fuente quedan intactas; las regresiones de Brinstar verde, Ceres y Crateria
+pasan. El prompt está en `assets/remastered/pink_bg2_tiles.json` y la evidencia
+en `docs/qa/native_pink_art_*`. Spore Spawn, mejoras posteriores y campaña
+completa siguen pendientes.

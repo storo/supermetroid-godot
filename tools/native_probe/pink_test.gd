@@ -3,6 +3,16 @@ extends SceneTree
 const ROM := "res://rom_src/Super Metroid (Japan, USA) (En,Ja).sfc"
 const SAVE := "user://native_pink_publish_test.srm"
 var core: Object
+var report_prefix := "native_pink"
+
+func prepare_display() -> void:
+	pass
+
+func replay_tick(_state: Dictionary) -> void:
+	pass
+
+func finish_report(report: Dictionary) -> Dictionary:
+	return report
 
 func _initialize() -> void:
 	call_deferred("run")
@@ -33,6 +43,7 @@ func run() -> void:
 	if not check(extension!=null,"Native extension unavailable"):return
 	core=ClassDB.instantiate("SmNativeCore")
 	if not check(core.boot(ROM,SAVE),"Boot failed: "+core.get_error()):return
+	prepare_display()
 	var rooms: Dictionary={}
 	var pirates := false
 	var state: Dictionary
@@ -48,10 +59,12 @@ func run() -> void:
 		if state.state==8:
 			rooms[state.room]=true
 			if state.room==0x99bd and state.room_kills>=5 and state.missiles==5:pirates=true
+		await replay_tick(state)
 	if not check(state.state==8 and state.room==0x9d19 and state.area==1 and state.health>0 and state.items==0x1004 and pirates and rooms.has(0x9ad9) and rooms.has(0x9cb3),"Incomplete Big Pink approach"):return
 	if not check(FileAccess.get_sha256(ROM)==before and FileAccess.get_sha256(directory.path_join("seed.srm"))==seed_hash,"Source changed"):return
 	var report := {"frames":inputs.size()/2,"columns_compared_per_tick":25,"state_trace_matches":true,"rooms":rooms.keys(),"final_room":state.room,"health":state.health,"green_pirates_defeated_with_ammo_recovered":pirates,"rom_unchanged":true,"source_sram_unchanged":true,"seed_sha256":seed_hash,"whole_campaign_verified":false,"spore_spawn_verified":false,"raster_comparison_performed":false}
-	var output := FileAccess.open("res://docs/qa/native_pink_route.json",FileAccess.WRITE)
+	report=finish_report(report)
+	var output := FileAccess.open("res://docs/qa/%s_route.json" % report_prefix,FileAccess.WRITE)
 	output.store_string(JSON.stringify(report,"  ")+"\n")
 	output.close()
 	core.close()

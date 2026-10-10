@@ -13,6 +13,8 @@ Los gráficos originales se decodifican de la ROM local identificada en `assets/
 - `assets/remastered/ceres_bg2_wall.png`: redibujado de esa referencia con la herramienta integrada ImageGen, 1774×887. Su JSON guarda el prompt final, hashes y salas de destino; los originales se conservan.
 - `assets/extracted/references/green_bg2_tiles_original.png`: atlas 128×64 de 66 tiles BG2 de Brinstar verde, decodificado de VRAM/CGRAM y conservando las coordenadas originales de cada tile 8×8. Su JSON registra índices, paleta, hashes y sala/estado.
 - `assets/remastered/green_bg2_tiles.png`: redibujado de ese atlas con ImageGen integrado, 1774×887. El prompt completo, hashes y alcance están en el JSON del mismo nombre. Conserva los espacios negros del atlas y la ubicación de cada grupo; se aplica al BG2 de `9AD9/9AE6`.
+- `assets/extracted/references/pink_bg2_tiles_original.png`: los 16 tiles BG2 de Big Pink, decodificados de VRAM/CGRAM y reunidos en una cuadrícula 4×4 de 32×32 píxeles. Cada celda mantiene su contenido original; su JSON registra los IDs, la paleta 3 y las coordenadas del atlas nativo.
+- `assets/remastered/pink_bg2_tiles.png`: edición de esa referencia con ImageGen integrado, 1254×1254. Redibuja el patrón orgánico azul oscuro; el JSON contiguo guarda el prompt completo y hashes. El compositor usa los IDs/giros de VRAM en `9D19/9D26` para ensamblar las mismas piezas, con la CGRAM y scroll actuales.
 
 `shaders/asset_lighting.gdshader` añade relieve e iluminación de superficie a los sprites ampliados, derivando normales de su propia luminancia. No cambia UV, silueta, alpha ni anclajes. F1 también desactiva este material.
 

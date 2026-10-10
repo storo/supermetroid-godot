@@ -6,7 +6,7 @@ El encargo es reconstruir Super Metroid en Godot, mejorar los assets extraídos 
 | --- | --- | --- |
 | Ejecución nativa de Godot | CharacterBody2D, StaticBody2D, GDScript, shaders; pruebas de ejecución | Base implementada |
 | Extraer assets de la ROM proporcionada | SHA-256, tiles 4bpp, paletas, DMA/OAM, manifiesto | Implementado para tilesets, 19 conjuntos de Samus (nueve movimientos en ambos sentidos y pose frontal), nave, ascensor y atlas de enemigos |
-| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site, pared de Ceres redibujada en tres salas/dos estados y 66 tiles BG2 de Brinstar verde redibujados con IDs/giros/scroll/paleta nativos, alternancia F1 | Tres familias de fondo integradas; redibujado completo de assets pendiente |
+| Mejorar gráficos manteniendo identidad | Scale2x por tile/frames, fondo nuevo de Crateria en Landing Site, pared de Ceres redibujada en tres salas/dos estados, 66 tiles BG2 de Brinstar verde y 16 de Big Pink redibujados con IDs/giros/scroll/paleta nativos, alternancia F1 | Cuatro familias de fondo integradas; redibujado completo de assets pendiente |
 | Conservar todas las salas y geometría | 261 salas / 322 estados; auditoría nativa | Datos importados; comportamiento y fondos originales incompletos |
 | Conservar todas las animaciones de Samus | 19 conjuntos renderizados desde OAM; gráficos específicos para izquierda/derecha y pose frontal del ascensor | Incompleto; faltan poses, tiempos y asimetrías |
 | Física equivalente a SNES | Constantes originales de gravedad/salto/carrera; pendientes y cuadrantes BTS de ROM | Incompleto; no hay comparación por fotograma |
@@ -164,3 +164,18 @@ se comprueban con el mismo snapshot, sin escribir al núcleo de juego. El inform
 `docs/qa/native_art_verification.json` registra diferencias por capa y límites
 del alcance. Esto integra el fondo ya generado, no completa el redibujado de
 tiles, personajes, enemigos ni otros fondos.
+
+La mejora del fondo de Big Pink (`9D19/9D26`) añade 16 tiles BG2 redibujados
+desde VRAM/CGRAM. `verify_pink_art.py` regenera la partida de Crateria desde
+inputs normales y reproduce 8241 ticks con 25 campos idénticos C/Godot: cinco
+piratas verdes, drops de munición, puerta roja, barrera de bombas de Dachora
+y movimiento dentro de Big Pink. Se conservan la salud y el equipo originales.
+
+Las seis capturas original/restaurada suman 344064 píxeles RGB idénticos al
+oráculo offline. Los 638316 píxeles protegidos conservan HUD, terreno y sprites.
+Un cálculo independiente comprueba 562644 muestras del atlas con error máximo
+de un nivel RGB, incluidos giros, IDs y CGRAM. Scroll, fade, blanking y
+exclusiones también pasan; las regresiones de Brinstar verde, Ceres y Crateria
+pasaron. La ROM y SRAM fuente permanecen intactas. Esta evidencia no cubre
+Spore Spawn, mejoras posteriores ni la campaña completa; informes en
+`docs/qa/native_pink_art_*`.

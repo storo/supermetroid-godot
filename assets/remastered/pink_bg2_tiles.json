@@ -1,0 +1,23 @@
+{
+  "tool_mode": "built-in image_gen edit",
+  "prompt": "Use case: style-transfer. Asset type: high-resolution 2D Godot game background tile atlas. Edit target: the supplied original Big Pink BG2 tile atlas extracted from the user's Super Metroid ROM. Redraw this existing very dark navy-blue organic cave wall pattern with crisp hand-painted surface detail, subtle depth, and restrained indigo highlights. Preserve the original interwoven root/rock shapes and their exact positions, diagonals, orientation, silhouettes and black negative spaces. This is a square technical atlas consisting of a 4 by 4 grid of native tiles; enlarge proportionally, keeping every cell in the same location. Keep the whole pattern edge-coherent and suitable for repetition assembled from those sixteen tiles, including flipped tiles. The source is a distant background and must stay dim: nearly black navy shadows, dark blue ridges, small muted cobalt highlights. Add detail only inside the existing shapes. Orthographic flat texture sheet. No perspective, scene composition, characters, enemies, terrain platforms, doors, props, UI, text, labels, grid lines, separators, margins or watermark. The full canvas is the atlas; do not frame it. Improve the supplied original asset, preserving the arrangement rather than inventing another wall.",
+  "reference": "assets/extracted/references/pink_bg2_tiles_original.png",
+  "reference_manifest": "assets/extracted/references/pink_bg2_tiles_original.json",
+  "description": "Hand-painted redraw of Big Pink BG2 sixteen-tile organic blue cave atlas; native tiles 492..543 retain their original coordinates and flips.",
+  "scope": {
+    "room": "9D19",
+    "room_state": "9D26",
+    "layer": "BG2",
+    "palette": 3,
+    "tile_columns": 4,
+    "tile_rows": 4,
+    "native_first_column": 12,
+    "native_first_row": 30,
+    "tile_size": 8,
+    "full_asset_redraw_complete": false
+  },
+  "asset_sha256": "5634a8414d45099f935a2861417f180ae4a18326f08db86f20cc1f0244f4490e",
+  "reference_sha256": "312b235716ed6f72c563ee89ede5c02c9ec2b212b786e78595be426b164ace9d",
+  "width": 1254,
+  "height": 1254
+}

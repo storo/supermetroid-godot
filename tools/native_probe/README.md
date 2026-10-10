@@ -200,3 +200,28 @@ cambió. El target queda fuera de la compilación normal y requiere POSIX.
 `pink_test.gd` compara 25 campos por tick entre C y Godot y comprueba los cinco
 piratas y la munición recuperada. Esta prueba no compara píxeles con el oráculo
 ni verifica Spore Spawn, las mejoras posteriores o la campaña completa.
+
+## Fondo orgánico de Big Pink
+
+```sh
+cmake --build native/build --target sm_station_route sm_pink_route sm_raster_oracle --parallel 4
+python3 tools/native_probe/verify_pink_art.py
+```
+
+`extract_pink_bg2.py` decodifica los 16 tiles originales de la paleta BG2 3
+desde un checkpoint de Big Pink. Reúne las columnas nativas 12–15 y filas
+30–33 en un atlas 4×4 sin cambiar el contenido de ninguna celda. La edición
+ImageGen y su prompt/hashes quedan en `assets/remastered/pink_bg2_tiles.*`.
+
+El compositor consulta el mapa de VRAM para seleccionar IDs y giros, mantiene
+el scroll por línea y transfiere las diferencias de CGRAM al nuevo dibujo.
+Protege HUD, terreno, sprites y bordes Scale2x. F1 recupera el modo original.
+
+El controlador opcional `--art-walk` añade 300 ticks de desplazamiento normal
+dentro de Big Pink para comprobar varias posiciones de cámara. La prueba
+regenera la SRAM original desde el arranque y compara el recorrido completo
+contra C. Captura original, filtrado, redibujado y restaurado; usa el oráculo
+offline para comprobar RGB original y un cálculo independiente para verificar
+los texels del atlas. Los fixtures de giros, IDs, paleta, scroll y exclusiones
+cambian únicamente copias del paquete de presentación. No verifican Spore
+Spawn ni la campaña completa.

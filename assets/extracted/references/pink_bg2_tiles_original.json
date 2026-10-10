@@ -1,0 +1,119 @@
+{
+  "description": "Original Big Pink BG2 planar tiles, columns 12..15 and rows 30..33, repacked as a 4x4 atlas without changing any cell",
+  "room": "9D19",
+  "room_state": "9D26",
+  "frame": 7941,
+  "width": 32,
+  "height": 32,
+  "tile_size": 8,
+  "tile_columns": 4,
+  "tile_rows": 4,
+  "native_first_column": 12,
+  "native_first_row": 30,
+  "used_tiles": [
+    492,
+    493,
+    494,
+    495,
+    508,
+    509,
+    510,
+    511,
+    524,
+    525,
+    526,
+    527,
+    540,
+    541,
+    542,
+    543
+  ],
+  "palette": 3,
+  "palette_rgb5": {
+    "49": [
+      18,
+      21,
+      28
+    ],
+    "50": [
+      7,
+      14,
+      28
+    ],
+    "51": [
+      3,
+      8,
+      19
+    ],
+    "52": [
+      4,
+      5,
+      12
+    ],
+    "53": [
+      1,
+      3,
+      9
+    ],
+    "54": [
+      0,
+      2,
+      6
+    ],
+    "55": [
+      0,
+      0,
+      2
+    ],
+    "56": [
+      18,
+      18,
+      23
+    ],
+    "57": [
+      11,
+      11,
+      16
+    ],
+    "58": [
+      4,
+      7,
+      12
+    ],
+    "59": [
+      0,
+      3,
+      7
+    ],
+    "60": [
+      24,
+      24,
+      24
+    ],
+    "61": [
+      24,
+      24,
+      24
+    ],
+    "62": [
+      28,
+      28,
+      31
+    ],
+    "63": [
+      0,
+      0,
+      0
+    ]
+  },
+  "bg2_map_words": 18432,
+  "bg2_tiles_words": 0,
+  "bg2_scroll": [
+    128,
+    896
+  ],
+  "vram_sha256": "78e2fed66cd413fbecf590a774cfe3f77189e5a4122eb176705c94793ea3cd85",
+  "raster_sha256": "3082eee3cc37630e13b0e576a0749cf4a8c71b9dc36464358e7f0113c4141f95",
+  "png_sha256": "312b235716ed6f72c563ee89ede5c02c9ec2b212b786e78595be426b164ace9d",
+  "rom_sha256": "12b77c4bc9c1832cee8881244659065ee1d84c70c3d29e6eaf92e6798cc2ca72"
+}

@@ -2,9 +2,10 @@
 
 static int16_t audio[1068];
 int main(int argc,char **argv) {
-  if(argc!=5) {
-    fprintf(stderr,"Usage: sm_pink_route ROM OUTPUT_DIRECTORY SRAM_SEED INPUT_PREFIX\n"); return 1;
+  if(argc!=5&&(argc!=6||strcmp(argv[5],"--art-walk"))) {
+    fprintf(stderr,"Usage: sm_pink_route ROM OUTPUT_DIRECTORY SRAM_SEED INPUT_PREFIX [--art-walk]\n"); return 1;
   }
+  int art_walk=argc==6,arrival_frame=-1;
   int seeded=1;
   FILE *source=fopen(argv[3],"rb");
   if(!source) { perror("Route source"); return 1; }
@@ -43,6 +44,9 @@ int main(int argc,char **argv) {
         }
         route.approach.ready=1; route.approach.load_age=400; joy=pink_route_input(&route,&s);
       }
+    } else if(art_walk&&arrival_frame>=0) {
+      int age=frame-arrival_frame;
+      joy=age<160?0x100:age<184?0x200:0;
     } else joy=pink_route_input(&route,&s);
     uint8_t bytes[2]={joy&255,joy>>8}; fwrite(bytes,1,2,inputs);
     if(!sm_native_tick(joy,audio)) { fprintf(stderr,"Frame %d: %s\n",frame,sm_native_error()); break; }
@@ -52,7 +56,10 @@ int main(int argc,char **argv) {
       printf("PINK_FRAME %d state=%d room=%04x x=%d y=%d pose=%04x health=%d/%d phase=%d ledge=%d joy=%04x\n",frame+1,s.state,s.room,s.x,s.y,s.pose,s.health,s.max_health,route.phase,route.target,joy);
       fflush(stdout); previous_room=s.room;
     }
-    if(s.state==8&&s.room==0x9d19&&s.health>0&&s.missile_capacity==5&&s.items==0x1004&&s.area==1) { success=1; break; }
+    if(s.state==8&&s.room==0x9d19&&s.health>0&&s.missile_capacity==5&&s.items==0x1004&&s.area==1) {
+      if(arrival_frame<0)arrival_frame=frame+1;
+      if(!art_walk||frame+1-arrival_frame>=300) { success=1; break; }
+    }
     if(s.state>=19&&s.state<=26) { fprintf(stderr,"Samus died\n"); break; }
     if(!source&&s.state==8&&route.age>4000) { fprintf(stderr,"Route stalled in %04x\n",s.room); break; }
   }

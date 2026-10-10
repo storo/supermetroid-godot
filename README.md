@@ -52,6 +52,11 @@ con ImageGen. Conserva los índices, posiciones y giros de cada pieza en el mapa
 nativo, además de las animaciones de paleta. Se aplica a esa sala/estado;
 F1 recupera el original y las capas del HUD, terreno y sprites se conservan.
 
+Big Pink tiene además sus 16 tiles del fondo orgánico azul redibujados a partir
+de la referencia extraída. El mapa nativo sigue eligiendo las piezas y sus giros;
+se conservan scroll, paleta y composición de las otras capas. F1 restaura el
+original en el mismo estado de juego.
+
 | Acción | Tecla |
 | --- | --- |
 | Mover | A/D o flechas |
@@ -86,6 +91,7 @@ También hay bindings de mando. La partida se guarda en el directorio `user://` 
 - Fondo nuevo de Crateria creado a partir de la referencia extraída, lluvia, partículas, resplandor y viñeta discreta.
 - Fondo de pared de Ceres redibujado con ImageGen a partir del mapa BG2 original; integrado en tres salas y sus estados de entrada/escape de la campaña nativa.
 - Atlas de 66 tiles BG2 de Brinstar verde redibujados con ImageGen a partir de VRAM/CGRAM, integrado con los índices y giros originales en el pozo principal nativo.
+- Atlas de 16 tiles BG2 de Big Pink redibujados con ImageGen desde VRAM/CGRAM; conserva índices, giros, scroll, paleta y límites de cada celda en la campaña nativa.
 
 Quedan por reconstruir los disparadores de la mayoría de eventos de la historia, jefes, mayoría de IA, secuencias de Ceres y final, música SPC, comportamiento completo de PLM, líquidos y arena, todas las mejoras y fidelidad exacta de la física y las animaciones. Las puertas verdes/amarillas necesitan sus armas; varias puertas grises dependen de enemigos o secuencias todavía pendientes. El visor de salas permite abrirlas para revisar el mapa.
 
@@ -183,3 +189,11 @@ verdes, sus drops de munición, puerta roja y barrera de bombas de Dachora.
 `tools/native_probe/pink_test.gd` reproduce el registro con 25 campos por tick
 en Godot; el alcance está documentado en `tools/native_probe/README.md`.
 Spore Spawn y la campaña completa siguen pendientes.
+
+`python3 tools/native_probe/verify_pink_art.py` comprueba el fondo nuevo de
+Big Pink en 8241 ticks desde la SRAM original regenerada. Compara 25 campos
+por tick, seis capturas con 344064 píxeles RGB originales/restaurados exactos
+y 638316 píxeles protegidos sin cambios. Comprueba los texels del atlas, giros,
+IDs, CGRAM, scroll y exclusiones; las regresiones de los otros tres fondos
+pasan. La ROM/SRAM fuente permanecen intactas. Informes y capturas:
+`docs/qa/native_pink_art_*`. Campaña y redibujado completos siguen pendientes.

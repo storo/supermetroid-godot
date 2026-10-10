@@ -1,0 +1,120 @@
+{
+  "art_scope": "Sixteen Big Pink BG2 tiles in 9D19/9D26, native IDs/flips/scroll/CGRAM; geometry, sprites and core state preserved",
+  "asset_sha256": "5634a8414d45099f935a2861417f180ae4a18326f08db86f20cc1f0244f4490e",
+  "captures": {
+    "arrival": {
+      "bg2_scroll": [
+        128,
+        896
+      ],
+      "camera": [
+        512.0,
+        512.0
+      ],
+      "frame": 7941,
+      "health": 24,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230
+    },
+    "control": {
+      "bg2_scroll": [
+        320,
+        70
+      ],
+      "camera": [
+        768.0,
+        777.0
+      ],
+      "frame": 8241,
+      "health": 24,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230
+    },
+    "dachora": {
+      "bg2_scroll": [
+        256,
+        0
+      ],
+      "camera": [
+        1.0,
+        0.0
+      ],
+      "frame": 6790,
+      "health": 99,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40115,
+      "room_state": 40128
+    },
+    "wall_left": {
+      "bg2_scroll": [
+        320,
+        896
+      ],
+      "camera": [
+        768.0,
+        512.0
+      ],
+      "frame": 8021,
+      "health": 24,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230
+    },
+    "wall_lower": {
+      "bg2_scroll": [
+        320,
+        70
+      ],
+      "camera": [
+        768.0,
+        777.0
+      ],
+      "frame": 8191,
+      "health": 24,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230
+    },
+    "wall_right": {
+      "bg2_scroll": [
+        320,
+        975
+      ],
+      "camera": [
+        768.0,
+        618.0
+      ],
+      "frame": 8101,
+      "health": 24,
+      "presentation_leaves_core_unchanged": true,
+      "room": 40217,
+      "room_state": 40230
+    }
+  },
+  "columns_compared_per_tick": 25,
+  "final_room": 40217,
+  "frames": 8241,
+  "full_asset_redraw_complete": false,
+  "green_pirates_defeated_with_ammo_recovered": true,
+  "health": 24,
+  "raster_comparison_performed": false,
+  "rom_unchanged": true,
+  "rooms": [
+    37845,
+    37629,
+    39181,
+    39357,
+    39273,
+    39224,
+    39641,
+    40115,
+    40217
+  ],
+  "seed_sha256": "6e87bb03ae85524f2c933dc975c33c49f98693e364aed263a88b10bf260d9ba3",
+  "source_sram_unchanged": true,
+  "spore_spawn_verified": false,
+  "state_trace_matches": true,
+  "whole_campaign_verified": false
+}
